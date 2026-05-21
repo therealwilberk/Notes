@@ -1,3 +1,15 @@
+---
+tags:
+  - project
+  - linear
+  - design
+  - research
+aliases:
+  - "Linear Layout Analysis"
+parent: "[[Linear Clone — Map of Content]]"
+created: 2026-05-21
+---
+
 # Linear.app — Layout Analysis
 
 > **Goal:** Document every section, color, font, and spacing value so you can rebuild it in Framer without constantly alt-tabbing back to the live site.
@@ -178,7 +190,3 @@ _(Write anything else you notice — scroll animations, hover effects, subtle gr
 
 *Template created: 2026-05-20*
 *Source: https://linear.app*
-
-
----
-

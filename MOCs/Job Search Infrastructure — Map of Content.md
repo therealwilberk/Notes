@@ -4,6 +4,7 @@ tags:
   - project
   - job-search
   - n8n
+  - automation
   - kenya
 aliases:
   - "Job Search Infrastructure"
@@ -14,12 +15,8 @@ status: planning
 
 # Job Search Infrastructure — Map of Content
 
-> [!summary] Architecture for automated job feed collection using n8n, feeding into JustHireMe for AI-powered ranking and tailoring.
->
-> **Goal:** Passive monitoring of KE job sites → filter → rank → notify
-> **Stack:** n8n (scraper) + JustHireMe (AI engine) + Discord (output)
-
-## Architecture
+> **Automated job feed collection → AI ranking → Discord alerts.**
+> Stack: n8n (scraper) · JustHireMe (AI) · Discord (output)
 
 ```mermaid
 graph LR
@@ -31,40 +28,24 @@ graph LR
     E --> F
 ```
 
-## Research
-
-- [[n8n Setup & Configuration]]
-- [[Kenyan Job Sites — Feeds & Scraping]]
-- [[n8n + Discord Integration]]
-
 ## Components
 
-### n8n (Data Collection)
-- Self-hosted workflow engine
-- Schedule triggers (daily/hourly)
-- HTTP request nodes for scraping
-- Webhook output to JustHireMe
+| Layer | Tool | Notes |
+|---|---|---|
+| Scraping | [[n8n Setup & Configuration]] | RSS + HTTP + Playwright |
+| Sites | [[Kenyan Job Sites — Feeds & Scraping]] | 8 sites mapped by difficulty |
+| Output | [[n8n + Discord Integration]] | Rich embeds by relevance score |
+| AI | JustHireMe | Matching + tailoring (TBD) |
 
-### JustHireMe (AI Ranking)
-- Existing Python/FastAPI backend
-- Job description → resume matching
-- Tailored application generation
-- See: [[JustHireMe — Current State]]
+## Decisions
 
-### Discord (Output)
-- Job alerts channel
-- Filtered by relevance score
-- Click-through to apply
-
-## Decisions Log
-
-- **2026-05-21:** Decided to use n8n as scraping layer, not rewrite scraping in JustHireMe
-- **2026-05-21:** n8n first (get feeds flowing), JustHireMe integration second
+- **2026-05-21:** n8n as scraping layer, not rewriting scraping in JustHireMe
+- **2026-05-21:** n8n first (feeds), JustHireMe second
 
 ## Progress
 
 - [ ] Research n8n self-hosting on Arch
-- [ ] Map KE job site structures (BrighterMonday, MyJobMag)
+- [ ] Map KE job site structures
 - [ ] Design n8n workflow schemas
-- [ ] Set up Discord webhook for output
+- [ ] Set up Discord webhook
 - [ ] Connect to JustHireMe API

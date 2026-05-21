@@ -4,6 +4,7 @@ tags:
   - project
   - electrical
   - motor-starter
+  - iec
 aliases:
   - "Motor Starter Design"
   - "Motor Mini-Project"
@@ -13,32 +14,26 @@ status: in-progress
 
 # Motor Starter Design — Map of Content
 
-> [!summary] Design and draw complete electrical schematics (power + control) for three motor starter configurations. Weekend deliverable — draw.io, IEC symbols, exportable for LinkedIn.
->
-> **Motor:** 7.5kW, 400V, 15.9A FLC squirrel cage induction motor driving a centrifugal pump.
+> **3 starter configurations for a 7.5kW pump motor.** Draw.io schematics with IEC symbols. Weekend deliverable.
 
 ## Drawings
 
-| # | Configuration | Status |
-|---|---------------|--------|
-| 1 | [[01 — DOL Starter]] | Not started |
-| 2 | [[02 — Star-Delta Starter]] | Not started |
-| 3 | [[03 — VFD Fed Motor Circuit]] | Not started |
-| 4 | [[04 — Device & Cable Schedule]] | Not started |
+| # | Configuration | Status | Note |
+|---|---|---|---|
+| 1 | [[01 — DOL Starter]] | Not started | Self-latching, overload relay |
+| 2 | [[02 — Star-Delta Starter]] | Not started | Timer + interlocks |
+| 3 | [[03 — VFD Fed Motor Circuit]] | Not started | Screened cable, bypass |
+| 4 | [[04 — Device & Cable Schedule]] | Not started | Sizing per IEC 60364 |
 
 ## Reference
 
-- [[Motor Data & Case Study]] — motor specs, supply details, application context
-- [[Deliverables & Phasing]] — tool setup, phasing plan, LinkedIn output
-
-## Decisions Log
-
-- **2026-05-21:** Project defined. Three configurations: DOL, Star-Delta, VFD. Draw.io with IEC symbols.
+- [[Motor Data & Case Study]] — 7.5kW, 15.9A FLC, centrifugal pump
+- [[Deliverables & Phasing]] — tool setup, weekend plan, LinkedIn output
 
 ## Progress
 
-- [ ] Drawing 1 — DOL Starter
-- [ ] Drawing 2 — Star-Delta Starter
-- [ ] Drawing 3 — VFD Circuit
-- [ ] Drawing 4 — Device & Cable Schedule
-- [ ] Export and post to LinkedIn
+- [ ] DOL power + control circuit
+- [ ] Star-delta power + control circuit
+- [ ] VFD circuit
+- [ ] Device & cable schedule
+- [ ] Export & post to LinkedIn

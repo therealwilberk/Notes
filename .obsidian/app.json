@@ -1,0 +1,13 @@
+{
+  "livePreview": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "showFrontmatter": false,
+  "foldHeading": true,
+  "foldIndent": true,
+  "defaultViewMode": "source",
+  "attachmentFolderPath": "Engineering/Electrical/IEC-Motor-Testing/Attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Inbox",
+  "useMarkdownLinks": false
+}

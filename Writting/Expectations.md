@@ -1,4 +1,7 @@
 
-I think most people at sometime, some place had some kind of exception about x.. that it will be/look/feel some sort of way... mostly doesn't. It's never what you expect.
-Not in the happiness $\propto$ expectations thought.. 
-The plan you had when young, I'll do x, see y, be with z... some times it actually happens as you'd imagined... imagine, interesting choice of frame... & It's great! But what about the times it doesn't; it's not bad per se, just, different... & you notice it
+Most people at some time, some place, had some kind of expectation about x — that it will be, look, feel some sort of way. Mostly, it doesn't. It's never what you expect.  
+  
+Not in the happiness ∝ expectations way.  
+  
+The plan you had when young: I'll do x, see y, be with z. Sometimes it actually happens as you'd imagined — _imagined_, interesting choice of frame — and it's great. But what about the times it doesn't? It's not bad per se. Just different. And you notice it.
+

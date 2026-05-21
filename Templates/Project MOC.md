@@ -3,27 +3,77 @@ tags:
   - project
   - <% tp.file.cursor(1) %>
 aliases: []
-created: <% tp.file.creation_date("YYYY-MM-DD") %>
 status: planning
+priority: 
+created: <% tp.file.creation_date("YYYY-MM-DD") %>
+modified: <% tp.file.creation_date("YYYY-MM-DD") %>
+deadline: 
 ---
 
-# <% tp.file.title %> — Map of Content
+# <% tp.file.title %> — Project Hub
 
 > [!summary] 
 
-## Architecture
+## 🎯 Problem Statement
+
+*What problem are we solving? For whom? Why now?*
+
+
+## 📐 Scope
+
+### In Scope
+- 
+
+### Out of Scope
+> [!danger] Anti-goals — what we are explicitly NOT doing.
+
+-
+
+### Success Criteria
+
+| Metric | Target | Current |
+|--------|--------|---------|
+| | | |
+
+## 🏗️ Architecture
 
 ```mermaid
 
 ```
 
-## Components
+## 📦 Components
 
+| Component | Status | Owner | Notes |
+|-----------|--------|-------|-------|
+| | | | |
 
-## Progress
+## ✅ Progress
 
+### Phase 1:
 - [ ] 
 
-## Decisions Log
+### Phase 2:
+- [ ] 
 
-- **<% tp.file.creation_date("YYYY-MM-DD") %>:** 
+### Phase 3:
+- [ ] 
+
+## 🔒 Risks & Mitigations
+
+| Risk | Impact | Likelihood | Mitigation |
+|------|--------|------------|------------|
+| | | | |
+
+## 📋 Decision Log
+
+| Date | Decision | Rationale | Reversible? |
+|------|----------|-----------|-------------|
+| <% tp.file.creation_date("YYYY-MM-DD") %> | | | |
+
+## 🔗 Related
+
+- 
+
+## 📚 Resources
+
+- 

@@ -3,20 +3,47 @@ tags:
   - <% tp.file.cursor(1) %>
 aliases: []
 parent: ""
+source: ""
+confidence: 
 created: <% tp.file.creation_date("YYYY-MM-DD") %>
-status: draft
+modified: <% tp.file.creation_date("YYYY-MM-DD") %>
 ---
 
 # <% tp.file.title %>
 
-> [!summary] 
+> [!abstract] TL;DR — 
 
 ## Definition
 
 
-## Details
+## How It Works
 
+```mermaid
+
+```
+
+## Key Parameters
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| | | |
+
+## Practical Example
+
+> [!example] 
+
+-
+
+## Common Misconceptions
+
+> [!warning] What people get wrong.
+
+-
 
 ## See Also
 
--
+- 
+
+## Sources
+
+- 

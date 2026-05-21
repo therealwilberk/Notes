@@ -75,11 +75,12 @@ left:
 right:
   id: af246568753de8a3
   type: split
-  children: [2 items: {...}, {...}...]
+  children: [1 items: {...}...]
   direction: horizontal
-  width: 514.5
+  width: 576.5
 left-ribbon:
   hiddenItems:
+    obsidian-git:Open Git source control: false
     bases:Create new base: false
     switcher:Open quick switcher: false
     graph:Open graph view: false
@@ -88,9 +89,10 @@ left-ribbon:
     templates:Insert template: false
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
-    copilot:Open Copilot Chat: false
-active: 00392da42dc766e2
-lastOpenFiles: [35 items: Projects/Job-Search-Infrastructure/n8n/n8n + Discord Integration.md, Projects/Job-Search-Infrastructure/n8n/n8n Setup & Configuration.md, Projects/Job-Search-Infrastructure/Job-Sites/Kenyan Job Sites — Feeds & Scraping.md...]
+    vault-operator:Vault Operator: false
+    obsidian-kanban:Create new board: false
+active: d1a1b8d307f4b67e
+lastOpenFiles: [36 items: Writting/Expectations.md, Engineering/Electrical/IEC-Motor-Testing/Modules/Module 02 — Motor Starting Methods.md, Writting...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

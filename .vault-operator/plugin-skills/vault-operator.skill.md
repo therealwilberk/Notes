@@ -76,10 +76,10 @@ mcpServers:
     isBuiltIn: true
 currentMode: agent
 autoApproval:
-  enabled: false
+  enabled: true
   showMenuInChat: true
   read: true
-  noteEdits: false
+  noteEdits: true
   vaultChanges: false
   web: false
   mcp: false
@@ -176,9 +176,10 @@ mastery:
 onboarding:
   completed: false
   currentStep: backup
+  startedAt: 2026-05-21T17:13:38.742Z
   firstRunModalShownCount: 1
   dontShowFirstRunAgain: false
-  modalCompleted: false
+  modalCompleted: true
 sandboxMode: auto
 taskExtraction:
   enabled: true
@@ -215,6 +216,8 @@ vaultIngest:
     minDaysSinceCheck: 30
     perClusterCooldownDays: 7
     maxHintsPerDay: 5
+providerConfigs: [1 items: {...}...]
+activeProviderId: custom-main
 defaultMainModelTier: mid
 _globalStorageMigrated: true
 _parentDirMigrated: true

@@ -75,6 +75,9 @@ anuppuccin-theme-settings@@anp-status-bar-select: anp-floating-status-bar
 anuppuccin-theme-settings@@anp-alt-tab-style: anp-alternate-tab-toggle
 anuppuccin-theme-settings@@anp-safari-tab-animated: false
 anuppuccin-theme-settings@@anp-hide-borders: true
+anuppuccin-theme-settings@@anuppuccin-theme-light: ctp-rosepine-light
+anuppuccin-theme-settings@@anuppuccin-theme-dark: ctp-mocha
+anuppuccin-theme-settings@@anuppuccin-theme-accents: ctp-accent-pink
 ```
 
 For full settings, read: `.obsidian/plugins/obsidian-style-settings/data.json`

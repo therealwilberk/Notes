@@ -6,8 +6,7 @@ plugin-type: core
 status: enabled
 class: FULL
 description: "Create and navigate daily journal notes"
-has-settings: false
-needs-setup: true
+has-settings: true
 commands:
   - id: "daily-notes:open"
     name: "Open today's daily note"
@@ -26,10 +25,6 @@ Available commands:
 
 Use this skill when the user asks about daily notes, journals, today's note, or date-based note navigation. The daily note format and folder are configured in Obsidian settings.
 
-## Setup Required
-
-No settings file found (data.json). Plugin may need initial setup via Obsidian Settings.
-
 ## Configuration File
 
 Settings path: `.obsidian/daily-notes.json`
@@ -40,6 +35,17 @@ To configure this plugin programmatically:
 3. Write changes: write_file(".obsidian/daily-notes.json", updatedJSON)
 
 Do NOT ask the user to open Settings UI. Modify config directly.
+
+## Current Configuration
+
+```
+format: YYYY-MM-DD
+template: Templates/Daily Note.md
+folder: Daily
+autorun: false
+```
+
+For full settings, read: `.obsidian/daily-notes.json`
 
 ## Documentation
 

@@ -6,8 +6,7 @@ plugin-type: community
 status: enabled
 class: FULL
 description: "Complex data views for the data-obsessed."
-has-settings: false
-needs-setup: true
+has-settings: true
 commands:
   - id: "dataview:dataview-force-refresh-views"
     name: "Dataview: Force refresh all views and blocks"
@@ -22,11 +21,6 @@ commands:
 **Description:** Complex data views for the data-obsessed.
 **Status:** Enabled
 **Plugin ID:** dataview
-
-## Setup Required
-
-No settings file found (data.json). Plugin may need initial setup via Obsidian Settings.
-Guide the user to configure this plugin via Obsidian Settings if needed.
 
 ## Available Commands
 
@@ -81,6 +75,33 @@ To configure this plugin programmatically:
 3. Write changes: write_file(".obsidian/plugins/dataview/data.json", updatedJSON)
 
 Do NOT ask the user to open Settings UI. Modify data.json directly.
+
+## Current Configuration
+
+These are the plugin's current settings (sensitive values redacted):
+
+```
+enableDataviewJs: true
+enableInlineDataview: true
+enableInlineDataviewJs: false
+prettyRenderFields: true
+dataviewJsKeyword: dataviewjs
+tableIdColumnName: File
+tableGroupColumnName: Group
+warnOnEmptyResult: true
+refreshInterval: 2500
+maxRecursiveRenderDepth: 6
+nullValue: NULL
+taskCompletionTracking: true
+taskCompletionUseEmojiShorthand: false
+taskCompletionText: completion
+date format: YYYY-MM-DD
+datetimeFormat: YYYY-MM-DD[T]HH:mm
+csvDelimiter: ,
+csvRowHeight: 27
+```
+
+For full settings, read: `.obsidian/plugins/dataview/data.json`
 
 ## Documentation
 

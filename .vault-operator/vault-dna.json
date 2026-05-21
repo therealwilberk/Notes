@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-21T17:09:20.185Z",
+  "scannedAt": "2026-05-21T19:38:40.128Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -214,26 +214,15 @@
       "description": "Window controls: zoom and always-on-top"
     },
     {
-      "id": "copilot",
-      "name": "Copilot",
+      "id": "dataview",
+      "name": "Dataview",
       "type": "community",
       "classification": "FULL",
-      "status": "disabled",
-      "version": "3.3.3",
+      "status": "enabled",
+      "version": "0.5.68",
       "source": "vault-native",
-      "description": "Your AI Copilot: Chat with Your Second Brain, Learn Faster, Work Smarter.",
-      "skillFile": "copilot.skill.md"
-    },
-    {
-      "id": "highlightr-plugin",
-      "name": "Highlightr",
-      "type": "community",
-      "classification": "FULL",
-      "status": "disabled",
-      "version": "1.2.2",
-      "source": "vault-native",
-      "description": "A minimal and aesthetically pleasing highlighting menu that makes color-coded highlighting much easier with a configurable assortment of highlight colors 🎨.",
-      "skillFile": "highlightr-plugin.skill.md"
+      "description": "Complex data views for the data-obsessed.",
+      "skillFile": "dataview.skill.md"
     },
     {
       "id": "obsidian-excalidraw-plugin",
@@ -247,6 +236,28 @@
       "skillFile": "obsidian-excalidraw-plugin.skill.md"
     },
     {
+      "id": "obsidian-git",
+      "name": "Git",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "2.38.3",
+      "source": "vault-native",
+      "description": "Integrate Git version control with automatic backup and other advanced features.",
+      "skillFile": "obsidian-git.skill.md"
+    },
+    {
+      "id": "obsidian-kanban",
+      "name": "Kanban",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "2.0.51",
+      "source": "vault-native",
+      "description": "Create markdown-backed Kanban boards in Obsidian.",
+      "skillFile": "obsidian-kanban.skill.md"
+    },
+    {
       "id": "obsidian-style-settings",
       "name": "Style Settings",
       "type": "community",
@@ -256,6 +267,39 @@
       "source": "vault-native",
       "description": "Offers controls for adjusting theme, plugin, and snippet CSS variables.",
       "skillFile": "obsidian-style-settings.skill.md"
+    },
+    {
+      "id": "obsidian-tasks-plugin",
+      "name": "Tasks",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "8.0.0",
+      "source": "vault-native",
+      "description": "Track tasks across your vault. Supports due dates, recurring tasks, done dates, sub-set of checklist items, and filtering.",
+      "skillFile": "obsidian-tasks-plugin.skill.md"
+    },
+    {
+      "id": "quickadd",
+      "name": "QuickAdd",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "2.12.1",
+      "source": "vault-native",
+      "description": "Quickly add new pages or content to your vault.",
+      "skillFile": "quickadd.skill.md"
+    },
+    {
+      "id": "recent-files-obsidian",
+      "name": "Recent Files",
+      "type": "community",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "version": "1.7.9",
+      "source": "vault-native",
+      "description": "List files by most recently opened.",
+      "skillFile": "recent-files-obsidian.skill.md"
     },
     {
       "id": "vault-operator",

@@ -6,8 +6,7 @@ plugin-type: community
 status: enabled
 class: FULL
 description: "Integrate Git version control with automatic backup and other advanced features."
-has-settings: false
-needs-setup: true
+has-settings: true
 commands:
   - id: "obsidian-git:edit-gitignore"
     name: "Git: Edit .gitignore"
@@ -101,11 +100,6 @@ commands:
 **Status:** Enabled
 **Plugin ID:** obsidian-git
 
-## Setup Required
-
-No settings file found (data.json). Plugin may need initial setup via Obsidian Settings.
-Guide the user to configure this plugin via Obsidian Settings if needed.
-
 ## Available Commands
 
 Available command IDs (use execute_command for Obsidian-native commands):
@@ -162,6 +156,80 @@ To configure this plugin programmatically:
 3. Write changes: write_file(".obsidian/plugins/obsidian-git/data.json", updatedJSON)
 
 Do NOT ask the user to open Settings UI. Modify data.json directly.
+
+## Current Configuration
+
+These are the plugin's current settings (sensitive values redacted):
+
+```
+commitMessage: vault_backup_{{date}}
+autoCommitMessage: vault_backup_{{date}}
+commitDateFormat: YYYY-MM-DD HH:mm:ss
+autoSaveInterval: 5
+autoPushInterval: 0
+autoPullInterval: 0
+autoPullOnBoot: false
+autoCommitOnlyStaged: false
+disablePush: true
+pullBeforePush: false
+disablePopups: false
+showErrorNotices: true
+disablePopupsForNoChanges: false
+listChangedFilesInMessageBody: false
+showStatusBar: true
+updateSubmodules: false
+syncMethod: merge
+mergeStrategy: none
+customMessageOnAutoBackup: false
+autoBackupAfterFileChange: true
+treeStructure: false
+refreshSourceControl: true
+differentIntervalCommitAndPush: false
+changedFilesInStatusBar: false
+showedMobileNotice: false
+refreshSourceControlTimer: 7000
+showBranchStatusBar: true
+setLastSaveToLastCommit: false
+submoduleRecurseCheckout: false
+showFileMenu: true
+authorInHistoryView: hide
+dateInHistoryView: false
+diffStyle: split
+hunks:
+  showSigns: false
+  hunkCommands: false
+  statusBar: disabled
+lineAuthor:
+  show: false
+  followMovement: inactive
+  authorDisplay: date
+  showCommitHash: false
+  dateTimeFormatCustomString: YYYY-MM-DD HH:mm
+  coloringMaxAge: 1y
+  colorNew:
+    r: 255
+    g: 150
+    b: 150
+  colorOld:
+    r: 120
+    g: 160
+    b: 255
+  textColorCss: var(--text-muted)
+  ignoreWhitespace: false
+  ageCustomText:
+    1-7 days ago: This day
+    1-4 weeks ago: This week
+    1-12 months ago: This month
+    over 1 year ago: This year
+  ageThreshold: 30 days
+autoPullOnStartup: false
+autoCommitOnStartup: true
+dateInCommitMessage: true
+autoCommitAfterFileChange: false
+customMessageOnAutoCommit: false
+```
+
+For full settings, read: `.obsidian/plugins/obsidian-git/data.json`
 
 ## Documentation
 

@@ -6,8 +6,7 @@ plugin-type: community
 status: enabled
 class: PARTIAL
 description: "List files by most recently opened."
-has-settings: false
-needs-setup: true
+has-settings: true
 commands:
   - id: "recent-files-obsidian:recent-files-open"
     name: "Recent Files: Open"
@@ -18,11 +17,6 @@ commands:
 **Description:** List files by most recently opened.
 **Status:** Enabled
 **Plugin ID:** recent-files-obsidian
-
-## Setup Required
-
-No settings file found (data.json). Plugin may need initial setup via Obsidian Settings.
-Guide the user to configure this plugin via Obsidian Settings if needed.
 
 ## Available Commands
 
@@ -39,6 +33,18 @@ To configure this plugin programmatically:
 3. Write changes: write_file(".obsidian/plugins/recent-files-obsidian/data.json", updatedJSON)
 
 Do NOT ask the user to open Settings UI. Modify data.json directly.
+
+## Current Configuration
+
+These are the plugin's current settings (sensitive values redacted):
+
+```
+recentFiles: [2 items]
+updateOn: file-open
+omitBookmarks: false
+```
+
+For full settings, read: `.obsidian/plugins/recent-files-obsidian/data.json`
 
 ## Documentation
 

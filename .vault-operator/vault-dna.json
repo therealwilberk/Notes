@@ -1,0 +1,273 @@
+{
+  "scannedAt": "2026-05-21T17:09:20.185Z",
+  "agentVersion": "0.1.0",
+  "mode": "local",
+  "plugins": [
+    {
+      "id": "daily-notes",
+      "name": "Daily Notes",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "daily-notes.skill.md",
+      "description": "Create and navigate daily journal notes"
+    },
+    {
+      "id": "canvas",
+      "name": "Canvas",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "canvas.skill.md",
+      "description": "Visual canvas with cards, links, and spatial notes"
+    },
+    {
+      "id": "backlink",
+      "name": "Backlinks",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "backlink.skill.md",
+      "description": "View and navigate backlinks between notes"
+    },
+    {
+      "id": "note-composer",
+      "name": "Note Composer",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "note-composer.skill.md",
+      "description": "Split, merge, and extract content between notes"
+    },
+    {
+      "id": "workspace",
+      "name": "Workspace",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "workspace.skill.md",
+      "description": "Native workspace operations: PDF export, tab/pane management, file paths"
+    },
+    {
+      "id": "templates",
+      "name": "Templates",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "templates.skill.md",
+      "description": "Insert predefined note templates"
+    },
+    {
+      "id": "global-search",
+      "name": "Search",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "global-search.skill.md",
+      "description": "Full-text search across the vault"
+    },
+    {
+      "id": "switcher",
+      "name": "Quick Switcher",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "switcher.skill.md",
+      "description": "Quickly navigate to any note by name"
+    },
+    {
+      "id": "bookmarks",
+      "name": "Bookmarks",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "bookmarks.skill.md",
+      "description": "Bookmark and organize favorite notes"
+    },
+    {
+      "id": "outline",
+      "name": "Outline",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "outline.skill.md",
+      "description": "View heading structure of the current note"
+    },
+    {
+      "id": "tag-pane",
+      "name": "Tags",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "tag-pane.skill.md",
+      "description": "Browse all tags used in the vault"
+    },
+    {
+      "id": "random-note",
+      "name": "Random Note",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "disabled",
+      "source": "core",
+      "skillFile": "random-note.skill.md",
+      "description": "Open a random note from the vault"
+    },
+    {
+      "id": "app",
+      "name": "App",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "app.skill.md",
+      "description": "Core app operations: navigation, delete, reload, sidebars"
+    },
+    {
+      "id": "editor",
+      "name": "Editor",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "editor.skill.md",
+      "description": "Editor operations: formatting, headings, inserts, folding, view mode"
+    },
+    {
+      "id": "file-explorer",
+      "name": "File Explorer",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "file-explorer.skill.md",
+      "description": "File explorer: create, move, and reveal files"
+    },
+    {
+      "id": "markdown",
+      "name": "Markdown",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "markdown.skill.md",
+      "description": "Toggle between editing and reading view"
+    },
+    {
+      "id": "graph",
+      "name": "Graph View",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "graph.skill.md",
+      "description": "Visualize note connections as a graph"
+    },
+    {
+      "id": "slides",
+      "name": "Slides",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "disabled",
+      "source": "core",
+      "skillFile": "slides.skill.md",
+      "description": "Present notes as slideshows using --- separators"
+    },
+    {
+      "id": "open-with-default-app",
+      "name": "Open with Default App",
+      "type": "core",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "open-with-default-app.skill.md",
+      "description": "Open files in the system default app or file manager"
+    },
+    {
+      "id": "theme",
+      "name": "Theme",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "theme.skill.md",
+      "description": "Switch between light and dark mode or change themes"
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "type": "core",
+      "classification": "FULL",
+      "status": "enabled",
+      "source": "core",
+      "skillFile": "window.skill.md",
+      "description": "Window controls: zoom and always-on-top"
+    },
+    {
+      "id": "copilot",
+      "name": "Copilot",
+      "type": "community",
+      "classification": "FULL",
+      "status": "disabled",
+      "version": "3.3.3",
+      "source": "vault-native",
+      "description": "Your AI Copilot: Chat with Your Second Brain, Learn Faster, Work Smarter.",
+      "skillFile": "copilot.skill.md"
+    },
+    {
+      "id": "highlightr-plugin",
+      "name": "Highlightr",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "1.2.2",
+      "source": "vault-native",
+      "description": "A minimal and aesthetically pleasing highlighting menu that makes color-coded highlighting much easier with a configurable assortment of highlight colors 🎨.",
+      "skillFile": "highlightr-plugin.skill.md"
+    },
+    {
+      "id": "obsidian-excalidraw-plugin",
+      "name": "Excalidraw",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "2.23.3",
+      "source": "vault-native",
+      "description": "Sketch Your Mind. Edit and view Excalidraw drawings. Enter the world of 4D Visual PKM.",
+      "skillFile": "obsidian-excalidraw-plugin.skill.md"
+    },
+    {
+      "id": "obsidian-style-settings",
+      "name": "Style Settings",
+      "type": "community",
+      "classification": "PARTIAL",
+      "status": "enabled",
+      "version": "1.0.9",
+      "source": "vault-native",
+      "description": "Offers controls for adjusting theme, plugin, and snippet CSS variables.",
+      "skillFile": "obsidian-style-settings.skill.md"
+    },
+    {
+      "id": "vault-operator",
+      "name": "Vault Operator",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "2.11.6",
+      "source": "vault-native",
+      "description": "Agentic AI operating layer for your vault. Discovers and uses installed plugins, maintains persistent unified memory, and adapts to your workflows, skills and tools with full safety controls.",
+      "skillFile": "vault-operator.skill.md"
+    }
+  ],
+  "archived": []
+}

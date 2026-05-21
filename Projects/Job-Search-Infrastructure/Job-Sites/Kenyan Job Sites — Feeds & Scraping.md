@@ -122,6 +122,7 @@ Lighter than BrighterMonday. Standard rate limiting.
 - **Params:** `locale_code`, `keywords`, `location`, `page`, `pagesize`
 - **Auth:** API key (free for publishers)
 - **Docs:** https://www.careerjet.com/partners/api
+- **⚠️ Compliance:** Requires attribution/branding per terms of service
 
 ---
 
@@ -162,6 +163,8 @@ Lighter than BrighterMonday. Standard rate limiting.
 - **Pagination:** `?page={N}`
 
 ### Anti-Scraping
+> [!warning] **Medium-Hard difficulty** - client-side rendering may require headless browser fallback
+
 Standard web protection. HTTP scrape with pagination should work.
 
 ---
@@ -179,13 +182,22 @@ Standard web protection. HTTP scrape with pagination should work.
 │  └── Careerjet API (HTTP Request node)             │
 ├─────────────────────────────────────────────────────┤
 │  Phase 3: HTTP scraping (day 3+)                   │
-│  ├── MyJobMag (HTTP + CSS selectors)               │
-│  └── Fuzu (HTTP + pagination)                      │
+│  ├── MyJobMag (HTTP + CSS selectors + sitemap)     │
+│  └── Fuzu (HTTP + pagination + headless fallback)  │
 ├─────────────────────────────────────────────────────┤
 │  Phase 4: Browser scraping (last resort)           │
 │  └── BrighterMonday (Playwright node)              │
 └─────────────────────────────────────────────────────┘
 ```
+
+## Implementation Considerations
+
+### Additional Notes
+
+- **Fuzu difficulty:** Medium-Hard (client-side rendering, may need headless browser)
+- **BrighterMonday URL pattern:** `/job/{slug}-{id}` (newer format)
+- **Careerjet API:** Requires attribution/branding per terms
+- **MyJobMag alternative:** Sitemap at `/sitemap.xml` can supplement HTTP scraping
 
 ## See Also
 

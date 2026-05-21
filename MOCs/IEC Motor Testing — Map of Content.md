@@ -82,3 +82,41 @@ Bearing failure, winding faults, VFD troubleshooting
 - [ ] Module 6 — Synchronous
 - [x] Module 7 — Testing & Pre-Commissioning (resources collected)
 - [x] Module 8 — Fault Diagnosis (resources collected)
+
+---
+
+## Dataview: All Tasks
+
+```dataview
+TASK
+WHERE contains(file.path, "IEC-Motor-Testing")
+GROUP BY file.link
+```
+
+## Dataview: Modules by Status
+
+```dataview
+TABLE status, module AS "Module #", length(file.outlinks) AS "Links"
+FROM "Engineering/Electrical/IEC-Motor-Testing/Modules"
+SORT file.name ASC
+```
+
+## Dataview: Recent Changes
+
+```dataview
+TABLE file.mtime AS "Modified"
+FROM "Engineering/Electrical/IEC-Motor-Testing"
+SORT file.mtime DESC
+LIMIT 10
+```
+
+## Dataview: All Tags
+
+```dataview
+LIST rows.file.link
+FROM "Engineering/Electrical/IEC-Motor-Testing"
+FLATTEN file.tags AS tag
+WHERE tag != "#moc" AND tag != "#motor-testing"
+GROUP BY tag
+SORT length(rows) DESC
+```

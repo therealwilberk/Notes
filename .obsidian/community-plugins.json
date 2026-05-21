@@ -1,6 +1,13 @@
 [
   "obsidian-style-settings",
-  "copilot",
   "obsidian-excalidraw-plugin",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "vault-operator",
+  "dataview",
+  "templater-obsidian",
+  "obsidian-git",
+  "obsidian-tasks-plugin",
+  "obsidian-kanban",
+  "quickadd",
+  "recent-files-obsidian"
 ]

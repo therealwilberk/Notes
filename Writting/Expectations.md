@@ -18,7 +18,7 @@ Two major ways to look at this; long-term & short-term.
 <!-- ellipses are creeping back. watch for it. -->
 <!-- "reality is funny in it's own way" — weak ending for a strong paragraph. reality isn't funny. reality is indifferent. that's the point, isn't it? -->
 
-*Long term:* You planning what/where you'll be in your 20's or 30's, who you'll be with, how you'll be. But.. will your wishful imaginations truly be. Love, Luck (goog/bad), timing; the things we can't truly control, happen, & it trickles, causing a ripple effect. Maybe it's you, you control the thing; maybe you didn't know, maybe you did, maybe yo didn't think much of it, but here we are; older you looking back, "is this it?"
+*Long term:* You planning what/where you'll be in your 20's or 30's, who you'll be with, how you'll be. But.. will your wishful imaginations truly be. Love, Luck (good/bad), timing; the things we can't truly control, happen, & it trickles, causing a ripple effect. Maybe it's you, you control the thing; maybe you didn't know, maybe you did, maybe yo didn't think much of it, but here we are; older you looking back, "is this it?"
 <!-- "is this it?" — this is where the essay actually starts. everything before was throat-clearing. what if you started HERE and worked backwards? -->
 <!-- the ripple effect idea is real but underdeveloped. one decision at 20 changes everything at 30. what's an example from YOUR life? -->
 <!-- "maybe you didn't know, maybe you did, maybe you didn't think much of it" — this is honest. keep the uncertainty, it's the point. but tighten it. maybe: "maybe you knew. maybe you didn't think much of it. either way, here we are." -->

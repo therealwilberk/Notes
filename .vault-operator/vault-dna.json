@@ -229,7 +229,7 @@
       "name": "Highlightr",
       "type": "community",
       "classification": "FULL",
-      "status": "enabled",
+      "status": "disabled",
       "version": "1.2.2",
       "source": "vault-native",
       "description": "A minimal and aesthetically pleasing highlighting menu that makes color-coded highlighting much easier with a configurable assortment of highlight colors 🎨.",

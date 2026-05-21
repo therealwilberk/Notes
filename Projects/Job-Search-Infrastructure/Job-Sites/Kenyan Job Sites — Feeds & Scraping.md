@@ -23,15 +23,32 @@ Research on Kenyan job sites for automated feed collection via [[n8n Setup & Con
 
 | Site | RSS/API | Difficulty | Recommendation |
 |------|---------|------------|----------------|
-| **Careerjet Kenya** | ✅ Public API | Easy | **BEST** — Use API |
+| **OpenedCareer** | ✅ WordPress RSS | Easy | **BEST** — Use `/feed/` RSS |
+| **Careerjet Kenya** | ✅ Public API | Easy | Use API endpoint |
 | **CareerPoint Kenya** | ✅ WordPress RSS | Easy | Use `/feed/` RSS |
 | **JobWeb Kenya** | ✅ WordPress RSS | Easy | Use `/feed/` RSS |
-| **MyJobMag Kenya** | ⚠️ XML Feed (verify) | Medium | Verify feed URL |
+| **MyJobMag Kenya** | ❌ No RSS/API | Medium | HTTP scrape (CSS selectors) |
 | **BrighterMonday** | ❌ | Hard | Browser scrape needed |
 | **Fuzu** | ❌ | Medium | HTTP scrape |
 | **LinkedIn** | ❌ | Very Hard | **SKIP** |
 
 > [!success] No existing Telegram/Discord bots found for any of these sites. No competition.
+
+---
+
+## 0. OpenedCareer
+
+- **URL:** `https://openedcareer.com/`
+- **Listings:** `https://openedcareer.com/category/jobs/`
+- **RSS:** `https://openedcareer.com/feed/` ✅
+- **Pagination:** `/category/jobs/page/{N}/`
+- **WordPress-based**
+
+### RSS Feed
+> [!success] **Working RSS feed confirmed.** Full XML with job listings. Drop-in for n8n RSS Feed Trigger.
+
+### Anti-Scraping
+None. Standard WordPress, no Cloudflare.
 
 ---
 
@@ -65,7 +82,7 @@ Research on Kenyan job sites for automated feed collection via [[n8n Setup & Con
 - **Category:** `/cp/{category-slug}` (e.g., `/cp/procurement-jobs-nairobi`)
 
 ### RSS
-> [!tip] XML Feed mentioned in page footer. Likely at `https://www.myjobmag.co.ke/feed` or `/feeds/`. Verify.
+> [!danger] **No RSS/XML feed.** Despite `/feeds/` link in footer, it's just an HTML page. No API, no WordPress REST. Must use HTTP scraping with CSS selectors.
 
 ### Anti-Scraping
 Lighter than BrighterMonday. Standard rate limiting.
@@ -153,16 +170,20 @@ Standard web protection. HTTP scrape with pagination should work.
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│  Phase 1: RSS + API (day 1)                        │
-│  ├── Careerjet API (HTTP Request node)             │
+│  Phase 1: RSS feeds (day 1)                        │
+│  ├── OpenedCareer RSS (RSS Feed Trigger)           │
 │  ├── CareerPoint RSS (RSS Feed Trigger)            │
 │  └── JobWeb RSS (RSS Feed Trigger)                 │
 ├─────────────────────────────────────────────────────┤
-│  Phase 2: Verified feeds (day 2-3)                 │
-│  └── MyJobMag XML (verify, then RSS Trigger)       │
+│  Phase 2: API (day 1-2)                            │
+│  └── Careerjet API (HTTP Request node)             │
 ├─────────────────────────────────────────────────────┤
-│  Phase 3: Browser scraping (if needed)             │
-│  └── BrighterMonday (Playwright node, last resort) │
+│  Phase 3: HTTP scraping (day 3+)                   │
+│  ├── MyJobMag (HTTP + CSS selectors)               │
+│  └── Fuzu (HTTP + pagination)                      │
+├─────────────────────────────────────────────────────┤
+│  Phase 4: Browser scraping (last resort)           │
+│  └── BrighterMonday (Playwright node)              │
 └─────────────────────────────────────────────────────┘
 ```
 

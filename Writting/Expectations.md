@@ -6,4 +6,6 @@ Not in the happiness ∝ expectations way.
 The plan you had when young: I'll do x, see y, be with z. Sometimes it actually happens as you'd imagined — _imagined_, interesting choice of frame — and it's great. But what about the times it doesn't? It's not bad per se. Just different. And you notice it.
 
 Two major ways to look at this; long-term & short-term.
-*Short term:* The meetup, the interview, the 'talk', the party.... the {x}... minor, you almost don't think too much about it, unless you try to analyze every possible interaction; the overthinker; the perfectionist. But, you already have some kind of imagination  on how the thing will be or result to... the 
+*Short term:* The meetup, the interview, the 'talk', the party, the {x} and it's, in this case, minor, you almost don't think too much about it, unless you try to analyze every possible interaction; the overthinker; the perfectionist. But, you already have some kind of imagination  on how the thing will be or result to... the mind wonders, visualizes the thing.. the kiss, the talk, the action.  It might not come about as you'd expected; for better or worse. It might suck, might be one if the greatest thing to happen to you. but it might not be what you expected and I think that's okay, reality is funny in it's own way
+
+*Long term:* You planning what/where you'll be in your 20's or 30's, who you'll be with, how you'll be. B

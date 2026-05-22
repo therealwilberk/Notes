@@ -9,5 +9,6 @@
   "attachmentFolderPath": "Inbox",
   "newFileLocation": "folder",
   "newFileFolderPath": "Inbox",
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": true
 }

@@ -18,7 +18,6 @@ status: complete
 > **The shift:** The question is never "functions or classes?" It's one specific question: **does this thing need to remember state?**
 
 ---
-
 ## The one rule that clears it up
 
 Every other heuristic you'll read about this is downstream of one thing:

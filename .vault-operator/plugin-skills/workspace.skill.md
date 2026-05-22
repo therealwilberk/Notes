@@ -92,7 +92,7 @@ left-ribbon:
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [36 items: Writting/Expectations.md, Engineering/Electrical/IEC-Motor-Testing/Modules/Module 02 — Motor Starting Methods.md, Writting...]
+lastOpenFiles: [36 items: Templates/Daily Note.md, MOCs/Motor Starter Design — Map of Content.md, MOCs/Linear Clone — Map of Content.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

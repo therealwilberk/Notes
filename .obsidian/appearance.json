@@ -1,4 +1,7 @@
 {
   "cssTheme": "AnuPpuccin",
-  "nativeMenus": true
+  "nativeMenus": true,
+  "monospaceFontFamily": "Noto Color Emoji",
+  "baseFontSizeAction": true,
+  "baseFontSize": 14
 }

@@ -61,7 +61,7 @@ showFrontmatter: false
 foldHeading: true
 foldIndent: true
 defaultViewMode: source
-attachmentFolderPath: Engineering/Electrical/IEC-Motor-Testing/Attachments
+attachmentFolderPath: Inbox
 newFileLocation: folder
 newFileFolderPath: Inbox
 useMarkdownLinks: false

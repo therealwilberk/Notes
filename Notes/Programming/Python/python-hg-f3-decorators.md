@@ -161,9 +161,7 @@ print(add.__doc__)    # 'Add two numbers.' ✅
 > **Rule:** Every decorator you write should use `@functools.wraps(func)` on the wrapper. No exceptions.
 
 ---
-
 ## The decorator template
-
 Here is the base template. Copy this every time you write a new decorator:
 
 ```python

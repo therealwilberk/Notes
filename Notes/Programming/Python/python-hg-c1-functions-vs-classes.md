@@ -1,3 +1,16 @@
+---
+tags:
+  - python
+  - functions
+  - classes
+aliases:
+  - "C1"
+  - "Functions vs Classes"
+parent: "[[Python — Map of Content]]"
+created: 2026-05-21
+status: complete
+---
+
 # C1 — Functions vs Classes
 
 > **What this fixes:** Defaulting to classes for everything because it feels "proper", or avoiding them entirely because they feel complex — neither is right.

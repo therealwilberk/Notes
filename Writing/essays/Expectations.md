@@ -1,3 +1,15 @@
+---
+tags:
+  - writing
+  - essay
+  - draft
+aliases:
+  - "Expectations"
+  - "Expectation vs Reality"
+parent: "[[Writing — Map of Content]]"
+created: 2026-05-21
+status: draft
+---
 
 Most people at some time, some place, had some kind of expectation about x — that it will be, look, feel some sort of way. Mostly, it doesn't. It's never what you expect.  
 <!-- strong opening. the "x" is vague on purpose — keep it, it works. -->

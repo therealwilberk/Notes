@@ -1,3 +1,17 @@
+---
+tags:
+  - python
+  - inheritance
+  - oop
+  - composition
+aliases:
+  - "C3"
+  - "Inheritance"
+parent: "[[Python — Map of Content]]"
+created: 2026-05-21
+status: complete
+---
+
 # C3 — Inheritance and When to Avoid It
 
 > **What this fixes:** Either never using inheritance (and duplicating code), or overusing it (and creating fragile class trees that break when anything changes).

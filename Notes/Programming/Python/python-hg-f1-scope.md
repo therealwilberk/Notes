@@ -1,3 +1,15 @@
+---
+tags:
+  - python
+  - scope
+aliases:
+  - "F1"
+  - "Python Scope"
+parent: "[[Python — Map of Content]]"
+created: 2026-05-21
+status: complete
+---
+
 # F1 — Scope
 
 > **What this fixes:** Mystery `NameError`s, `UnboundLocalError`s you don't understand, and the reflex to make everything global when things don't work.

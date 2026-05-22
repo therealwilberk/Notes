@@ -1,3 +1,16 @@
+---
+tags:
+  - python
+  - classes
+  - oop
+aliases:
+  - "C2"
+  - "Classes Properly"
+parent: "[[Python — Map of Content]]"
+created: 2026-05-21
+status: complete
+---
+
 # C2 — Classes Properly
 
 > **What this fixes:** Understanding the syntax but not what `self` actually is, or being confused about why some attributes are shared and some aren't.

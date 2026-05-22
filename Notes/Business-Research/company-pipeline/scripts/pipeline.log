@@ -1,0 +1,18 @@
+2026-05-22 17:20:19,212 [INFO] Starting epra...
+2026-05-22 17:20:19,212 [INFO] === Module 1: EPRA Licensed Contractors ===
+2026-05-22 17:20:19,212 [INFO] Parsing EPRA PDF...
+2026-05-22 17:20:19,419 [INFO] EPRA: extracted 92 companies
+2026-05-22 17:20:19,420 [INFO] Saved 92 companies to /home/kamaa/Documents/Text/Notes/Business-Research/company-pipeline/temp/01-epra.json
+2026-05-22 17:20:19,420 [INFO] Completed epra: 92 companies in 0.2s
+2026-05-22 17:20:26,927 [INFO] Skipping solar_africa — 02-solar-africa.json already exists with data
+2026-05-22 17:20:28,297 [INFO] Skipping enf — 03-enf-solar.json already exists with data
+2026-05-22 17:20:38,475 [INFO] Starting ppra...
+2026-05-22 17:20:38,475 [INFO] === Module 4: PPRA Contract Awards ===
+2026-05-22 17:20:40,275 [INFO] PPRA: extracted 0 companies
+2026-05-22 17:20:40,276 [INFO] Saved 0 companies to /home/kamaa/Documents/Text/Notes/Business-Research/company-pipeline/temp/04-ppra.json
+2026-05-22 17:20:40,276 [INFO] Completed ppra: 0 companies in 1.8s
+2026-05-22 17:20:41,733 [INFO] Starting eee...
+2026-05-22 17:20:41,733 [INFO] === Module 5: EEE Kenya ===
+2026-05-22 17:20:45,330 [INFO] EEE Kenya: extracted 29 companies
+2026-05-22 17:20:45,333 [INFO] Saved 29 companies to /home/kamaa/Documents/Text/Notes/Business-Research/company-pipeline/temp/05-eee-kenya.json
+2026-05-22 17:20:45,333 [INFO] Completed eee: 29 companies in 3.6s

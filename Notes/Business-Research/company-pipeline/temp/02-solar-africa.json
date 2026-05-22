@@ -1,17 +1,5 @@
 [
   {
-    "company_name": "World of Sun & Wind Power",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "South Africa",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Leading importer, wholesaler, and distributor of renewable energy products across Southern Africa. Founded in 2019, specializes in solar and wind solutions for residential, commercial, and industrial applications."
-  },
-  {
     "company_name": "Collective Energy Africa",
     "source": "Solar Africa",
     "sector": "solar",
@@ -34,42 +22,6 @@
     "contact_person": null,
     "linkedin_url": null,
     "raw_notes": "Mission is to make solar energy accessible to everyone. Self-described as the Best Solar Company in Kenya. Empowering a global lifestyle with a brighter and greener tomorrow."
-  },
-  {
-    "company_name": "Shanghai Raggie Power Co., Ltd.",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "China",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Solar power company from Shanghai, China."
-  },
-  {
-    "company_name": "Sun2Earth Solar",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "India",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Leading manufacturer and supplier of 12V modules in India. Product line includes Poly, Mono, Mono-MBB (M10), TOPCon with power ratings ranging from 3Wp to 545Wp."
-  },
-  {
-    "company_name": "Nakoda Products",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "India",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Solar products company from India."
   },
   {
     "company_name": "Teravon",
@@ -156,18 +108,6 @@
     "raw_notes": "Company integrates R&D and production of solar/energy products."
   },
   {
-    "company_name": "GoodWe",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "China",
-    "website": "https://www.goodwe.com",
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "World-leading PV inverter manufacturer and smart energy solution provider. Founded in 2010. Listed on the Shanghai Stock Exchange (Stock Code: 688390) in 2020."
-  },
-  {
     "company_name": "ALLTOP Solar Africa Ltd",
     "source": "Solar Africa",
     "sector": "solar",
@@ -178,30 +118,6 @@
     "contact_person": null,
     "linkedin_url": null,
     "raw_notes": "Leading provider of high-quality solar energy solutions. Participating at the 10th Solar Kenya 2026."
-  },
-  {
-    "company_name": "Inverex Global",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "Pakistan",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Dedicated to providing innovative solar power solutions that make a positive impact on our planet. Exhibiting at the 10th Solar Kenya 2026."
-  },
-  {
-    "company_name": "G and J Group",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "Liberia",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Participating at the 10th Solar Kenya 2026."
   },
   {
     "company_name": "PowerAll Limited",
@@ -216,18 +132,6 @@
     "raw_notes": "Fully registered solar supplies company in Kenya, committed to creating a brighter and more sustainable future."
   },
   {
-    "company_name": "Cworth Energy Service Tanzania Limited",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "Tanzania",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Parent company: Guangdong Cworth Energy Technology Co., Ltd. High-tech new energy enterprise integrating R&D, production, project design, installation guidance, and after-sales service. Over 10 years of industry experience."
-  },
-  {
     "company_name": "Sunleada Energy Solutions Limited",
     "source": "Solar Africa",
     "sector": "solar",
@@ -238,18 +142,6 @@
     "contact_person": null,
     "linkedin_url": null,
     "raw_notes": "Also known as Solareon. Kenyan company offering durable solar solutions, supplying high quality solar panels, inverters, lithium batteries, pumps, solar structures and mounting accessories from the best manufacturers at affordable prices."
-  },
-  {
-    "company_name": "Shenzhen Glow Wise Tech",
-    "source": "Solar Africa",
-    "sector": "solar",
-    "location": "China",
-    "website": null,
-    "email": null,
-    "phone": null,
-    "contact_person": null,
-    "linkedin_url": null,
-    "raw_notes": "Leading innovator in renewable energy technology. High-efficiency solar inverters for reliable, sustainable energy solutions. Committed to bridging the gap for off-grid communities."
   },
   {
     "company_name": "FoxESS",

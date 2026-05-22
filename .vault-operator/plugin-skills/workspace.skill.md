@@ -69,15 +69,15 @@ main:
 left:
   id: 411a1bd43555aeac
   type: split
-  children: [2 items: {...}, {...}...]
+  children: [3 items: {...}, {...}, {...}...]
   direction: horizontal
   width: 355.5110321044922
 right:
   id: af246568753de8a3
   type: split
-  children: [1 items: {...}...]
+  children: [2 items: {...}, {...}...]
   direction: horizontal
-  width: 576.5
+  width: 535.5
 left-ribbon:
   hiddenItems:
     obsidian-git:Open Git source control: false
@@ -92,7 +92,7 @@ left-ribbon:
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [36 items: Templates/Daily Note.md, MOCs/Motor Starter Design — Map of Content.md, MOCs/Linear Clone — Map of Content.md...]
+lastOpenFiles: [36 items: Notes/Programming/Python/python-hg-c2-classes-properly.md, Notes/Programming/Python/python-hg-c1-functions-vs-classes.md, MOCs/Python — Map of Content.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

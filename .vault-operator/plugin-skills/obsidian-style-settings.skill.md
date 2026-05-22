@@ -41,7 +41,7 @@ These are the plugin's current settings (sensitive values redacted):
 ```
 anuppuccin-theme-settings@@anp-header-color-toggle: true
 anuppuccin-theme-settings@@anp-decoration-toggle: true
-anuppuccin-theme-settings@@anp-active-line: anp-current-line
+anuppuccin-theme-settings@@anp-active-line: anp-current-line-border-only
 anuppuccin-theme-settings@@anp-callout-select: anp-callout-sleek
 anuppuccin-theme-settings@@anp-callout-color-toggle: true
 anuppuccin-theme-settings@@anp-custom-checkboxes: true

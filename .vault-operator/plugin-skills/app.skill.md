@@ -65,6 +65,7 @@ attachmentFolderPath: Inbox
 newFileLocation: folder
 newFileFolderPath: Inbox
 useMarkdownLinks: false
+alwaysUpdateLinks: true
 ```
 
 For full settings, read: `.obsidian/app.json`

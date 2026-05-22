@@ -353,3 +353,61 @@ Now that scope is clear — including closures — you're ready for `*args` and 
 ---
 
 *Part of the Python Hitchhiker's Guide | Last updated: May 2026*
+
+
+---
+
+## Class-based Counter (Alternative to Closures for State Management)
+
+While closures are powerful for creating functions with persistent state, for more complex state management or when you need multiple related operations, a **class** often provides a cleaner and more extensible solution.
+
+Here's the `Counter` class implementation:
+
+```python
+class Counter:
+    def __init__(self, initial_value: int = 0):
+        self.count = initial_value
+
+    def increment(self) -> int:
+        self.count += 1
+        return self.count
+
+    def decrement(self) -> int:
+        self.count -= 1
+        return self.count
+
+    def reset(self, new_value: int) -> int:
+        self.count = new_value
+        return self.count
+```
+
+### Usage and Benefits
+
+Each instance of the `Counter` class maintains its own independent `count` state.
+
+```python
+# Create independent counter instances
+hits_counter = Counter(22)
+page_views_counter = Counter(100)
+
+print(f"Initial hits: {hits_counter.count}") # 22
+print(f"Initial page views: {page_views_counter.count}") # 100
+
+# Perform operations
+print(f"Increment hits: {hits_counter.increment()}") # 23
+print(f"Increment hits: {hits_counter.increment()}") # 24
+print(f"Decrement page views: {page_views_counter.decrement()}") # 99
+print(f"Reset hits to 5: {hits_counter.reset(5)}") # 5
+
+print(f"Final hits: {hits_counter.count}") # 5
+print(f"Final page views: {page_views_counter.count}") # 99
+```
+
+**Advantages of the class-based approach:**
+
+*   **Encapsulation:** State (`self.count`) and behavior (methods like `increment`, `decrement`) are bundled together, making the code more organized and easier to understand.
+*   **Reusability:** You can create multiple independent `Counter` objects, each with its own state, without worrying about variable name collisions or complex `nonlocal` logic.
+*   **Extensibility:** It's straightforward to add new methods (e.g., `get_count`, `multiply`) to the `Counter` class as your needs evolve.
+*   **Clarity:** The intent of the code is often clearer with a class, especially for objects that manage their own internal state over time.
+
+This approach is particularly useful when you need to manage more complex state or when an object has multiple related actions it can perform.

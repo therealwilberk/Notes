@@ -15,6 +15,7 @@
 ## What's Ready to Execute
 - Pipeline spec: `~/Documents/Text/Notes/Business-Research/company-pipeline/PROJECT.md`
 - Temp dirs created: `company-pipeline/{temp,enriched,output}/`
+- **Notion database CREATED:** db_id=`24bcf230-518f-4d40-8816-f7021342af55`, ds_id=`3e77b704-4431-4705-99ab-18ef8eb01bb4`
 - NOT executed yet — agents haven't run
 
 ## What Needs to Happen Next

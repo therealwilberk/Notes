@@ -109,8 +109,10 @@ Stage 3: NOTION WRITE (single agent or manual)
 | Status | select | new / verified / contacted / dead |
 | Notes | rich_text | |
 
-**Notion IDs (existing workspace):**
+**Notion IDs:**
 - Job Search HQ page: `35988eb2-5161-8004-988e-f5a8794c90c3`
+- Company Pipeline database_id: `24bcf230-518f-4d40-8816-f7021342af55`
+- Company Pipeline data_source_id: `3e77b704-4431-4705-99ab-18ef8eb01bb4`
 - Token: `~/.zshrc` (export before ntn calls)
 
 ## File Locations

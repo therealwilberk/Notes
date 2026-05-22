@@ -92,7 +92,7 @@ left-ribbon:
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [36 items: Notes/Programming/Python/python-hg-c2-classes-properly.md, Notes/Programming/Python/python-hg-c1-functions-vs-classes.md, MOCs/Python — Map of Content.md...]
+lastOpenFiles: [36 items: Notes/Programming/Python/python-hg-c1-functions-vs-classes.md, Inbox/LinkedIn follow-ups 2026-05-.md, Notes/Programming/Python/python-hg-c2-classes-properly.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

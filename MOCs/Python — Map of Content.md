@@ -24,8 +24,8 @@ status: in-progress
 
 ## Functions Track
 
-| # | Topic | Status |
-|---|---|---|
-| F1 | [[python-hg-f1-scope\|Scope]] | Complete |
-| F2 | [[python-hg-f2-args-kwargs\|*args and **kwargs]] | Draft |
-| F3 | [[python-hg-f3-decorators\|Decorators]] | Draft |
+| #   | Topic                                            | Status   |
+| --- | ------------------------------------------------ | -------- |
+| F1  | [[python-hg-f1-scope\|Scope]]                    | Complete |
+| F2  | [[python-hg-f2-args-kwargs\|*args and **kwargs]] | Draft    |
+| F3  | [[python-hg-f3-decorators\|Decorators]]          | Draft    |

@@ -164,7 +164,7 @@ print(request_count)          # 2
 ```
 
 > ⚠️ **Trap and note:** Using `global` to share mutable state between functions is almost always a design problem. If multiple functions need to read and write the same counter or flag, that's a signal they belong together in a class, or the state should be passed explicitly as an argument.
->
+
 > ```python
 > # This pattern — global mutable state — is fragile and hard to test
 > total = 0

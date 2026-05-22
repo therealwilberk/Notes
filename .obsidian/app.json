@@ -1,6 +1,6 @@
 {
   "livePreview": true,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "strictLineBreaks": false,
   "showFrontmatter": false,
   "foldHeading": true,

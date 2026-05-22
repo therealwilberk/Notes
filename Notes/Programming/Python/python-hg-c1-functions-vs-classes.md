@@ -24,7 +24,7 @@ Every other heuristic you'll read about this is downstream of one thing:
 
 > **If your code needs to remember information between calls — use a class. If it doesn't — use a function.**
 
-State is the deciding factor. Everything els455e follows.
+State is the deciding factor. Everything els4555e follows.
 
 ```python
 # No state — same inputs always give same outputs — function

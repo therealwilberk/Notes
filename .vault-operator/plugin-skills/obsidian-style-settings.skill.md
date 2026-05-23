@@ -63,13 +63,13 @@ anuppuccin-theme-settings@@anp-file-icons: true
 anuppuccin-theme-settings@@anp-floating-header: true
 anuppuccin-theme-settings@@anp-collapse-folders: true
 anuppuccin-theme-settings@@anp-pdf-blend-toggle-dark: true
-anuppuccin-theme-settings@@anp-alt-rainbow-style: anp-full-rainbow-color-toggle
+anuppuccin-theme-settings@@anp-alt-rainbow-style: anp-simple-rainbow-color-toggle
 anuppuccin-theme-settings@@anp-rainbow-file-toggle: false
 anuppuccin-theme-settings@@anp-full-rainbow-text-color-toggle-light: false
 anuppuccin-theme-settings@@anp-full-rainbow-text-color-toggle-dark: false
-anuppuccin-theme-settings@@anp-simple-rainbow-title-toggle: true
+anuppuccin-theme-settings@@anp-simple-rainbow-title-toggle: false
 anuppuccin-theme-settings@@anp-simple-rainbow-collapse-icon-toggle: true
-anuppuccin-theme-settings@@anp-simple-rainbow-icon-toggle: false
+anuppuccin-theme-settings@@anp-simple-rainbow-icon-toggle: true
 anuppuccin-theme-settings@@anp-rainbow-subfolder-color-toggle: true
 anuppuccin-theme-settings@@anp-status-bar-select: anp-floating-status-bar
 anuppuccin-theme-settings@@anp-alt-tab-style: anp-alternate-tab-toggle
@@ -78,6 +78,18 @@ anuppuccin-theme-settings@@anp-hide-borders: true
 anuppuccin-theme-settings@@anuppuccin-theme-light: ctp-rosepine-light
 anuppuccin-theme-settings@@anuppuccin-theme-dark: ctp-mocha
 anuppuccin-theme-settings@@anuppuccin-theme-accents: ctp-accent-pink
+anuppuccin-theme-settings@@anp-color-transition-toggle: true
+anuppuccin-theme-settings@@anp-toggle-scrollbars: true
+anuppuccin-theme-settings@@anp-hide-status-bar: true
+anuppuccin-theme-settings@@anp-tooltip-toggle: true
+anuppuccin-theme-settings@@anp-toggle-metadata: true
+anuppuccin-theme-settings@@hide-comment-indicators: true
+anuppuccin-theme-settings@@hide-comments: false
+anuppuccin-theme-settings@@anp-layout-select: anp-card-layout
+anuppuccin-theme-settings@@anp-card-layout-padding: 8
+anuppuccin-theme-settings@@anp-card-shadows: false
+anuppuccin-theme-settings@@anp-card-layout-actions: true
+anuppuccin-theme-settings@@anp-card-layout-filebrowser: true
 ```
 
 For full settings, read: `.obsidian/plugins/obsidian-style-settings/data.json`

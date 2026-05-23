@@ -55,7 +55,7 @@ Do NOT ask the user to open Settings UI. Modify config directly.
 
 ```
 livePreview: true
-readableLineLength: true
+readableLineLength: false
 strictLineBreaks: false
 showFrontmatter: false
 foldHeading: true

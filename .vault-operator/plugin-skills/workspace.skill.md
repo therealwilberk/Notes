@@ -75,9 +75,9 @@ left:
 right:
   id: af246568753de8a3
   type: split
-  children: [2 items: {...}, {...}...]
+  children: [1 items: {...}...]
   direction: horizontal
-  width: 535.5
+  width: 640.5
 left-ribbon:
   hiddenItems:
     obsidian-git:Open Git source control: false
@@ -92,7 +92,7 @@ left-ribbon:
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [36 items: Notes/Programming/Python/python-hg-c1-functions-vs-classes.md, Inbox/LinkedIn follow-ups 2026-05-.md, Notes/Programming/Python/python-hg-c2-classes-properly.md...]
+lastOpenFiles: [36 items: Notes/Business-Research/company-pipeline/PROJECT.md, Notes/Business-Research/company-pipeline/company-pipeline-review.md, Notes/Business-Research/company-pipeline/FUTURE-ME.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

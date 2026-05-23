@@ -7,7 +7,6 @@ status: enabled
 class: PARTIAL
 description: "Bookmark and organize favorite notes"
 has-settings: false
-needs-setup: true
 commands:
   - id: "bookmarks:bookmark-current-view"
     name: "Bookmark current view"
@@ -22,10 +21,6 @@ Available commands:
 - bookmarks:unbookmark-current-view -- Remove the current note from bookmarks
 
 Use this skill when the user wants to bookmark or unbookmark notes.
-
-## Setup Required
-
-No settings file found (data.json). Plugin may need initial setup via Obsidian Settings.
 
 ## Configuration File
 

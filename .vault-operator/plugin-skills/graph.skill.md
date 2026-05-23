@@ -52,7 +52,7 @@ centerStrength: 0.518713248970312
 repelStrength: 10
 linkStrength: 1
 linkDistance: 250
-scale: 0.16880402208501222
+scale: 0.11330490433883732
 close: true
 ```
 

@@ -96,7 +96,7 @@ Practical differences you'll see:
 
 **`controlbyte.tech/blog/how-to-read-electrical-wiring-diagram`**
 
-Covers IEC reference designation, parent-child relationships, cross-references, and wire identification with actual diagram examples. Free. More thorough than most paid resources on the IEC-specific conventions.
+https://controlbyte.tech/blog/how-to-read-electrical-wiring-diagram/
 
 ---
 

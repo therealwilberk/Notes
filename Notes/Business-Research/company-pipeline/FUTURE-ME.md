@@ -1,45 +1,48 @@
 # Future Me — Session Handoff Notes
-> Left: May 22, 2026
+> Updated: May 22, 2026 (Session 3 — PIPELINE COMPLETE)
 
-## What Happened This Session
-- Researched business ideas (Kenya, <10K KES, non-cliche) — 3 agents, files in `~/Documents/Text/Notes/Business-Research/`
-- Set up n8n note in Obsidian (`~/Documents/Text/Notes/Hermes-Agent/n8n-setup.md`) — not installed yet, waiting on Docker (sudo issues, needs PC restart)
-- Wilber's sudo is broken — password not accepted, needs restart
-- Wilber's sister is using his PC — he's not at the keyboard right now
-- Read Wilber's Notion outreach playbook + scripts (full content loaded)
-- Discovered his real problem: LinkedIn network exhaustion, not outreach scripts
-- Researched company discovery sources — file at `05-company-discovery-playbook.md`
-- Designed 3-stage pipeline: search → enrich → Notion
-- Modularized into 6 source modules + enrichment agent
+## Status: DONE
 
-## What's Ready to Execute
-- Pipeline spec: `~/Documents/Text/Notes/Business-Research/company-pipeline/PROJECT.md`
-- Temp dirs created: `company-pipeline/{temp,enriched,output}/`
-- **Notion database CREATED:** db_id=`24bcf230-518f-4d40-8816-f7021342af55`, ds_id=`3e77b704-4431-4705-99ab-18ef8eb01bb4`
-- NOT executed yet — agents haven't run
+## What Was Accomplished
+- Enriched all 429 companies across 22 batches (sequential agents)
+- Each agent searched web for website, LinkedIn, description, sector
+- Merged, filtered, deduped → 140 real targets (with website OR LinkedIn)
+- Wrote all 140 to Notion Company Pipeline database (0 errors)
 
-## What Needs to Happen Next
-1. Create Notion database for companies (need token: `~/.zshrc`)
-2. Run 6 search agents (modules 1-6 in PROJECT.md)
-3. Run enrichment agent
-4. Write to Notion
-5. Wilber starts outreach using discovered companies
+## Final Numbers
+```
+Total scraped:           429
+Dead (no web presence):  187
+Active but no web:       102
+Real targets (web/LinkedIn): 140
+Written to Notion:       140 ✓
+```
 
-## Key User Preferences (reinforced this session)
-- COO/Orchestrator role — delegate heavy work to agents
-- No cliche ideas — he's heard them all
-- Doesn't want dumps — wants actionable, focused output
-- Meta API is off the table (tried before, hit walls)
-- Hunter.io/Skrapp.io don't work in Kenya
-- Prefers iterative approach: clarify → filter → deep-dive on validated only
+## Notion Database
+- Name: Company Pipeline (in Job Search HQ)
+- db_id: `24bcf230-518f-4d40-8816-f7021342af55`
+- Properties: Name, Source, Sector, Status, Location, Website, Email, Phone, LinkedIn, Contact Person, Notes
+- All 140 entries have: website or LinkedIn, description, sector classification, contact info
 
-## Wilber's Job Search State
-- Has Notion Job Search HQ with outreach playbook + scripts
-- Has tier system (A/B/C) for company approach
-- Has scenario matrix for different contact situations
-- Missing: the actual companies to target (this pipeline solves that)
+## Notable Companies Found
+- Davis & Shirtliff (1946, major water/solar supplier)
+- Sterling And Wilson Solar (global, 11.6 GWp)
+- Schindler Limited (Swiss group, Kenya since 1972)
+- International Energy Technik (75+ years, industrial automation)
+- Voltalia Kenya (French renewables, Kopere Solar)
+- Chloride Exide Kenya (major battery/energy)
+- Equator Energy (C&I solar market leader)
+- Critical Power East Africa (2003, multi-country)
+- Kinetic Controls (1985, 40+ years)
 
-## Context That Survives
-- MEMORY.md already has orchestrator role, Obsidian structure, file conventions
-- Notion token in ~/.zshrc (not .hermes/.env)
-- Workspace IDs in skill file references/wilber-notion-workspace.md
+## What's Next
+- Outreach using Notion outreach playbook + scripts
+- Tier classification (A/B/C) based on company size/sector
+- Contact enrichment: find decision-makers at each company
+- Pipeline is self-sustaining: add new companies as discovered
+
+## Files
+- Pipeline: `~/Documents/Text/Notes/Business-Research/company-pipeline/`
+- Scripts: `company-pipeline/scripts/scrape_companies.py`, `parse_epra.py`
+- Enriched data: `company-pipeline/enriched/` (all 22 batch files + real_targets.json)
+- Source playbook: `05-company-discovery-playbook.md`

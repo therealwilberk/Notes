@@ -174,8 +174,8 @@ Instead of manually picking colors, matugen does the heavy lifting: it reads the
 
 ---
 
-### Module 6: QuickShell Port (Optional)
-**Goal:** Keyboard-first desktop shell, themed via the same `colors.toml`.
+### Module 6: QuickShell Desktop Shell
+**Goal:** Keyboard-first desktop shell, themed via the same `colors.toml`. Everything accessible via TUI — no mouse required.
 
 **Components:**
 - Status bar (replaces waybar)
@@ -192,31 +192,33 @@ Instead of manually picking colors, matugen does the heavy lifting: it reads the
 
 ## Phases
 
-### Phase 1: Foundation (MVP)
-- [ ] Module 1: Basic wallpaper classifier (matugen + simple clustering)
+### Phase 1: Foundation
 - [ ] Module 2: Template engine (bash, sed-based)
+- [ ] Module 1: Basic wallpaper classifier (matugen + simple clustering)
 - [ ] Module 4: Apply to waybar + foot + hyprland only
 - [ ] Module 3: CLI switcher (fzf)
 - **Goal:** Pick a theme, desktop matches the wallpaper vibe
 
-### Phase 2: Polish
+### Phase 2: QuickShell
+- [ ] Module 6: QML status bar (replaces waybar, keyboard-navigable)
+- [ ] Module 6: App launcher (replaces rofi, QML-based)
+- [ ] Module 6: Notification center + calendar popup
+- [ ] Module 6: Battery/audio/bluetooth widgets
+- [ ] Integrate theme palette into all QML components
+- **Goal:** Full TUI desktop, no mouse required
+
+### Phase 3: Polish
 - [ ] Module 1: Improve clustering (auto-detect cluster count, better naming)
-- [ ] Module 4: Extend to all components (mako, btop, neovim, GTK)
-- [ ] Module 3: Rofi switcher with preview images
+- [ ] Module 4: Extend theming to all components (mako, btop, neovim, GTK)
+- [ ] Module 3: Rofi/QML switcher with preview images
 - [ ] Wallpaper cycling within theme
 - **Goal:** Full mood-based theming, smooth switching
 
-### Phase 3: Automation
+### Phase 4: Automation
 - [ ] Module 5: Auto-classify new wallpapers
 - [ ] Scheduled theme rotation (time-based, random)
 - [ ] Theme export/import (share themes)
 - **Goal:** Set it and forget it
-
-### Phase 4: QuickShell (Optional)
-- [ ] Module 6: Port desktop shell to QuickShell
-- [ ] Integrate theme palette into QML components
-- [ ] Keyboard-first navigation for everything
-- **Goal:** Full TUI desktop, no mouse required
 
 ---
 
@@ -244,5 +246,5 @@ Instead of manually picking colors, matugen does the heavy lifting: it reads the
 
 - Omarchy themes hardcode configs per theme. Dusky version generates from `colors.toml` via templates — adding a theme is just colors + wallpapers, not 20 config files.
 - Wallpaper clustering is the hard part. Everything else is plumbing.
-- QuickShell is optional but would solve the "TUI for everything" goal.
+- **QuickShell is core, not optional.** The whole point is keyboard-first TUI desktop. Everything accessible without mouse.
 - This could be packaged as an AUR tool or standalone git repo.

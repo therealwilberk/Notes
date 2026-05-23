@@ -39,7 +39,7 @@ Do NOT ask the user to open Settings UI. Modify data.json directly.
 These are the plugin's current settings (sensitive values redacted):
 
 ```
-recentFiles: [20 items: {...}, {...}, {...}...]
+recentFiles: [21 items: {...}, {...}, {...}...]
 updateOn: file-open
 omitBookmarks: false
 ```

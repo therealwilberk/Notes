@@ -92,7 +92,7 @@ left-ribbon:
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [36 items: Notes/Business-Research/company-pipeline/PROJECT.md, Notes/Business-Research/company-pipeline/company-pipeline-review.md, Notes/Business-Research/company-pipeline/FUTURE-ME.md...]
+lastOpenFiles: [36 items: Projects/active/Motor-Starter-Design/01 — DOL Starter.md, Projects/active/Motor-Starter-Design/Deliverables & Phasing.md, Projects/active/Motor-Starter-Design/Motor Data & Case Study.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

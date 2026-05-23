@@ -3,10 +3,10 @@
 _Source: Upmation — How to Read Electrical Diagrams_
 
 ---
-<iframe width="760" height="515" src="https://www.youtube.com/embed/GHhcyH99inE?si=ETElVsmGWNXOrNS7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GHhcyH99inE?si=ETElVsmGWNXOrNS7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## General
 
-Wiring diagrams aren't universal — they change based on country (standards), company (layout preferences), and the software used (EPLAN, AutoCAD Electrical, etc.). When you see one for the first time, give yourself time to get familiar with its structure before trying to read it. Don't panic.
+Wiring diagrams aren't universal — they change based on country (standards), company (layout preferences), and the software used (EPLAN, AutoCAD Electrical, etc.). 
 
 They can range from a single page (ceiling fan wiring) to 200+ pages (industrial control panel). Same skill, different scale.
 

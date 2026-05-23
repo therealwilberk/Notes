@@ -1,0 +1,75 @@
+---
+tags:
+  - project
+  - wpick
+  - theming
+  - desktop
+aliases:
+  - "wpick MOC"
+  - "Wallpaper Picker"
+status: active
+created: 2026-05-23
+---
+
+# wpick — Wallpaper Clustering & Smart Picker
+
+> Wallpaper-driven mood system for Hyprland. Cluster by color, pick by vibe, theme follows.
+
+## Pipeline
+
+```
+wallpapers/ (dark/ & light/)
+       ↓  scan
+auto-palette (Rust)
+       ↓
+features.jsonl
+       ↓  cluster
+HDBSCAN
+       ↓
+clusters.json (with named centroids)
+       ↓  pick
+rofi card grid (Hyde-style)
+       ↓
+swww img <path> + matugen image <path>
+```
+
+**Key separation:** matugen is downstream. Clustering = navigation. Theme accuracy = matugen's job.
+
+## Subdocs
+
+- [[00-Architecture]] — Mental model, data flow, module map
+- [[01-Setup]] — uv, dependencies, config.toml
+- [[02-Database]] — SQLite schema, db.py operations
+- [[03-Extraction]] — auto-palette integration, feature vectors
+- [[04-Clustering]] — HDBSCAN, cluster naming, recluster strategy
+- [[05-Assignment]] — Incremental assignment, cosine similarity
+- [[06-Orchestrator]] — Watcher, swww, matugen integration
+- [[07-Picker]] — rofi card grid, Hyde-style UI, thumbnails
+- [[08-CLI]] — Entry points, commands, keybinds
+- [[09-Tests]] — Fixtures, test strategy
+- [[10-Deployment]] — systemd service, production checklist
+
+## Stack
+
+- Python 3.12+ (uv managed)
+- auto-palette (Rust binary, extraction)
+- HDBSCAN + scikit-learn (clustering)
+- Pillow (thumbnails)
+- Typer (CLI)
+- SQLite (storage)
+- swww (wallpaper)
+- matugen (theming)
+- rofi-wayland (picker UI)
+
+## References
+
+- [[Dusky-Theme-Engine]] — Parent project
+- [[quickshell-analysis]] — QuickShell deep dive (Phase 2)
+- [[research-existing-solutions]] — Competitive research
+- Hyde-project/hyde — Card grid reference
+- bjarneo/quickshell — Keyboard-first shell base
+
+## Source
+
+- Spec: `Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md`
+- Project dir: `~/.config/wpick/`

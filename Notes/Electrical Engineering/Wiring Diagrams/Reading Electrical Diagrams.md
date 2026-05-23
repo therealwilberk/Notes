@@ -84,15 +84,11 @@ Practical differences you'll see:
 
 ---
 
-## Resources — Ranked by ROI for Your Situation
+## Resources — Ranked by ROI 
 
 ### 1. Upmation — Free, Start Here
 
-**`upmation.com/wiring-diagrams`** + their YouTube channel
-
-In Part 1 of this multi-part article you'll learn how to read a wiring diagram by means of an actual industrial control panel's wiring diagram. And in Part 2, you'll learn how to read a PLC wiring diagram and its modules.
-
-This is the free starting point. The article walks through a real industrial panel's wiring diagram — not a textbook example. The YouTube video "How to Read Electrical Diagrams | Wiring Diagrams Explained" is the visual companion. Watch first, read second.
+**`upmation.com/wiring-diagrams`**  [[Wiring Diagram Reading — Notes]]
 
 ---
 

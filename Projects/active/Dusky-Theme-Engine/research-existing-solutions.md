@@ -50,29 +50,29 @@ Tools that use matugen:
 
 ## 3. Color Clustering Tools
 
-| Tool | Language | Algorithm | Features |
-|------|----------|-----------|----------|
-| **auto-palette** (t28hub) | Rust | DBSCAN, KMeans, SLIC, SNIC | Wasm + CLI. Theme-based swatch selection (Colorful, Vivid, Muted, Light, Dark). Multiple color spaces. |
-| **huex** (khzaw) | Rust | k-means++ in Oklab | JSON output, SVG swatches, color harmonies, Delta-E merge, stdin support. |
-| **Okolors** (IanManske) | Rust | k-means in Oklab | Multi-lightness output, SIMD via quantette, fast. Inspired by kmeans-colors. |
-| **swatchify** (james-see) | Go | k-means++ | CLI + REST API + JS. PNG palette output, white/black exclusion, quality control. |
-| **pigmnts** (blenderskool) | Rust/Wasm | k-means++ | Web + CLI. Multiple output formats, fast Wasm extraction. |
-| **dominant-colours** (llaisdy) | Rust | k-means (linfa) | SVG swatches, percentage reports, simple CLI. |
-| **MareArts Xcolor** | Python | KMeans, DBSCAN | GPU acceleration, LAB space, CLAHE preprocessing, mask support. |
+| Tool                           | Language  | Algorithm                  | Features                                                                                               |
+| ------------------------------ | --------- | -------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **auto-palette** (t28hub)      | Rust      | DBSCAN, KMeans, SLIC, SNIC | Wasm + CLI. Theme-based swatch selection (Colorful, Vivid, Muted, Light, Dark). Multiple color spaces. |
+| **huex** (khzaw)               | Rust      | k-means++ in Oklab         | JSON output, SVG swatches, color harmonies, Delta-E merge, stdin support.                              |
+| **Okolors** (IanManske)        | Rust      | k-means in Oklab           | Multi-lightness output, SIMD via quantette, fast. Inspired by kmeans-colors.                           |
+| **swatchify** (james-see)      | Go        | k-means++                  | CLI + REST API + JS. PNG palette output, white/black exclusion, quality control.                       |
+| **pigmnts** (blenderskool)     | Rust/Wasm | k-means++                  | Web + CLI. Multiple output formats, fast Wasm extraction.                                              |
+| **dominant-colours** (llaisdy) | Rust      | k-means (linfa)            | SVG swatches, percentage reports, simple CLI.                                                          |
+| **MareArts Xcolor**            | Python    | KMeans, DBSCAN             | GPU acceleration, LAB space, CLAHE preprocessing, mask support.                                        |
 
 All these can cluster images by dominant color for grouping. **auto-palette** and **huex** are the most feature-complete for a theme engine use case.
 
 ## 4. Theme Managers for Wayland/Hyprland
 
-| Tool | Language | Features |
-|------|----------|----------|
-| **vsHypr Theme Manager** | Python | Full Hyprland theme system. Rofi picker, matugen dynamic themes, 15 app types, GTK/Qt support, wallpaper engine. |
-| **theme-switcher** (enes-less) | Bash | Template-based, JSON color palettes, swww, jq. 8 apps supported. |
-| **WallTheme** (gb8462) | Bash | Lightweight, CLI menu, auto wallpaper sync. |
-| **theme-switcher** (StephenGunn) | Bash | Pre-built palettes only (Gruvbox, Catppuccin, etc.), no image generation. pywal as fallback for some apps. |
-| **WaybarDynamicTheme** | Bash | Single-script hub. Uses wallust. Full system sync (Hyprland, Waybar, GTK, Kitty, SwayNC, Cava). Visual wallpaper picker. |
-| **hypr-bg-manager** | Bash | Wallpaper manager with per-workspace/global/timer modes. Multiple backends (swww, hyprpaper, swaybg, mpvpaper). |
-| **anand-dots** | Bash/Python | Mature Hyprland config with matugen. Settings GUI, 9 scheme styles, auto low-saturation detection. |
+| Tool                             | Language    | Features                                                                                                                 |
+| -------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **vsHypr Theme Manager**         | Python      | Full Hyprland theme system. Rofi picker, matugen dynamic themes, 15 app types, GTK/Qt support, wallpaper engine.         |
+| **theme-switcher** (enes-less)   | Bash        | Template-based, JSON color palettes, swww, jq. 8 apps supported.                                                         |
+| **WallTheme** (gb8462)           | Bash        | Lightweight, CLI menu, auto wallpaper sync.                                                                              |
+| **theme-switcher** (StephenGunn) | Bash        | Pre-built palettes only (Gruvbox, Catppuccin, etc.), no image generation. pywal as fallback for some apps.               |
+| **WaybarDynamicTheme**           | Bash        | Single-script hub. Uses wallust. Full system sync (Hyprland, Waybar, GTK, Kitty, SwayNC, Cava). Visual wallpaper picker. |
+| **hypr-bg-manager**              | Bash        | Wallpaper manager with per-workspace/global/timer modes. Multiple backends (swww, hyprpaper, swaybg, mpvpaper).          |
+| **anand-dots**                   | Bash/Python | Mature Hyprland config with matugen. Settings GUI, 9 scheme styles, auto low-saturation detection.                       |
 
 **Key observation**: Most existing solutions are opinionated dotfile repos, not reusable theme engines. vsHypr Theme Manager is the closest to a standalone reusable tool, but it's still tied to a specific config layout.
 

@@ -126,3 +126,5 @@ The next part of this series will cover reading and understanding **PLC (Program
 **Wiring Diagrams:**
 
 *   **Page 1 of the wiring diagram** is mentioned in the transcript. I will locate and attach this diagram.
+
+

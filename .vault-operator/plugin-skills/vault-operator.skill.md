@@ -80,7 +80,7 @@ autoApproval:
   showMenuInChat: true
   read: true
   noteEdits: true
-  vaultChanges: false
+  vaultChanges: true
   web: false
   mcp: false
   mode: false

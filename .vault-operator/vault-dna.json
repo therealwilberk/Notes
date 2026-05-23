@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-23T12:29:43.946Z",
+  "scannedAt": "2026-05-23T13:00:38.948Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -302,15 +302,15 @@
       "skillFile": "recent-files-obsidian.skill.md"
     },
     {
-      "id": "obsidian-threaded-comments",
+      "id": "threaded-comments",
       "name": "Threaded Comments",
       "type": "community",
       "classification": "PARTIAL",
       "status": "enabled",
-      "version": "0.1.0",
+      "version": "2.0.0",
       "source": "vault-native",
-      "description": "Notion-style threaded comments for Obsidian notes.",
-      "skillFile": "obsidian-threaded-comments.skill.md"
+      "description": "Notion-style inline comments with highlights, speech bubbles, and threaded replies.",
+      "skillFile": "threaded-comments.skill.md"
     },
     {
       "id": "vault-operator",

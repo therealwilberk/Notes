@@ -91,9 +91,8 @@ left-ribbon:
     obsidian-excalidraw-plugin:New drawing: false
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
-    obsidian-threaded-comments:Threaded Comments: false
-active: d1a1b8d307f4b67e
-lastOpenFiles: [36 items: Projects/active/Motor-Starter-Design/Deliverables & Phasing.md, Projects/active/Motor-Starter-Design/01 — DOL Starter.md, Projects/active/Motor-Starter-Design/Motor Data & Case Study.md...]
+active: 327ba9951c6bbade
+lastOpenFiles: [37 items: Notes/Electrical Engineering/Wiring Diagrams/Reading and Understanding Electrical Wiring Diagrams.md, Notes/Electrical Engineering/Wiring Diagrams/Reading Electrical Wiring Diagrams - Notes.md, Notes/Electrical Engineering/Wiring Diagrams/Reading Electrical Diagrams.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

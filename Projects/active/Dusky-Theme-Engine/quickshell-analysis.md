@@ -85,11 +85,11 @@ quickshell/
 
 ### 2.1 `shell.qml` — Entry Point
 
-| Property | Value |
-|---|---|
-| Imports | `QtQuick`, `Quickshell` |
-| Root type | `ShellRoot` |
-| Children | `Theme { id: theme }`, `Navbar { id: nav }`, `OmniMenu { id: omni }` |
+| Property  | Value                                                                |
+| --------- | -------------------------------------------------------------------- |
+| Imports   | `QtQuick`, `Quickshell`                                              |
+| Root type | `ShellRoot`                                                          |
+| Children  | `Theme { id: theme }`, `Navbar { id: nav }`, `OmniMenu { id: omni }` |
 
 Connects `nav.onPaletteToggleRequested` → `omni.toggle()`. This is the single QS process: bar + palette are always co-resident.
 
@@ -99,33 +99,33 @@ The largest component. Owns **all** bar state, IPC handlers, probe timers, and p
 
 **Exposed properties (consumed by all children via `root:` injection):**
 
-| Property group | Details |
-|---|---|
-| Theme colours | `paper`, `ink`, `inkDeep`, `sumi`, `indigo`, `seal`, `bg`, `fg`, `muted`, `accent`, `warn`, `sep` |
-| Fonts | `serif: "serif"`, `mono: "JetBrainsMono Nerd Font"` |
-| Geometry | `barHeight: 26`, `barEdge` (cycles `top`→`right`→`bottom`→`left`), `isHorizontal` |
-| Telemetry | `cpuVal`, `memVal`, `batVal`, `batState`, `batPower` |
-| Time | `hh`, `mm`, `dd`, `mon` (updated 1 Hz) |
-| Audio | `audioIcon`, `audioVol`, `audioMuted`, `audioSinks` |
-| Network | `netIcon`, `netKind`, `wifiSsid`, `wifiSignal`, `wifiNetworks` |
-| Bluetooth | `btIcon`, `btPowered`, `btCount`, `btDevices` |
-| Weather | `weatherLocation`, `weatherVisible`, `weatherLoaded`, `weatherTempC`, `weatherFeelsC`, `weatherWindKmh`, `weatherWindDir`, `weatherHumidity`, `weatherUv`, `weatherDesc`, `weatherCode`, `weatherSunrise`, `weatherSunset`, `weatherIcon`, `weatherForecast` |
-| Display | `displayVisible`, `warmthK`, `brightnessPct`, `gammaPct`, `monitorName`, `monitorRes`, `monitorRate`, `monitorScale`, `displayPresets`, `selectedPreset`, `displayRow` |
-| Calendar | `calendarVisible`, `calendarMonthOffset`, `calendarTick`, `selectedDay` |
-| Screenshots | `screenshotsVisible`, `screenshotPage`, `screenshotFiles`, `selectedScreenshot` |
-| Videos | `videosVisible`, `videoPage`, `videoFiles`, `selectedVideo` |
-| Aether | `aetherVisible`, `aetherBlueprints`, `selectedAether`, `aetherQuery` |
-| MPRIS | `musicPlayer`, `musicTitle`, `musicArtist`, `musicPlaying` |
-| Other | `activeWs`, `existingWs`, `lastDirection`, `tooltipText`, `popupAnchorX/Y`, `omarchyUpdateAvailable`, `powerProfile`, `powerProfiles` |
+| Property group | Details                                                                                                                                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Theme colours  | `paper`, `ink`, `inkDeep`, `sumi`, `indigo`, `seal`, `bg`, `fg`, `muted`, `accent`, `warn`, `sep`                                                                                                                                                            |
+| Fonts          | `serif: "serif"`, `mono: "JetBrainsMono Nerd Font"`                                                                                                                                                                                                          |
+| Geometry       | `barHeight: 26`, `barEdge` (cycles `top`→`right`→`bottom`→`left`), `isHorizontal`                                                                                                                                                                            |
+| Telemetry      | `cpuVal`, `memVal`, `batVal`, `batState`, `batPower`                                                                                                                                                                                                         |
+| Time           | `hh`, `mm`, `dd`, `mon` (updated 1 Hz)                                                                                                                                                                                                                       |
+| Audio          | `audioIcon`, `audioVol`, `audioMuted`, `audioSinks`                                                                                                                                                                                                          |
+| Network        | `netIcon`, `netKind`, `wifiSsid`, `wifiSignal`, `wifiNetworks`                                                                                                                                                                                               |
+| Bluetooth      | `btIcon`, `btPowered`, `btCount`, `btDevices`                                                                                                                                                                                                                |
+| Weather        | `weatherLocation`, `weatherVisible`, `weatherLoaded`, `weatherTempC`, `weatherFeelsC`, `weatherWindKmh`, `weatherWindDir`, `weatherHumidity`, `weatherUv`, `weatherDesc`, `weatherCode`, `weatherSunrise`, `weatherSunset`, `weatherIcon`, `weatherForecast` |
+| Display        | `displayVisible`, `warmthK`, `brightnessPct`, `gammaPct`, `monitorName`, `monitorRes`, `monitorRate`, `monitorScale`, `displayPresets`, `selectedPreset`, `displayRow`                                                                                       |
+| Calendar       | `calendarVisible`, `calendarMonthOffset`, `calendarTick`, `selectedDay`                                                                                                                                                                                      |
+| Screenshots    | `screenshotsVisible`, `screenshotPage`, `screenshotFiles`, `selectedScreenshot`                                                                                                                                                                              |
+| Videos         | `videosVisible`, `videoPage`, `videoFiles`, `selectedVideo`                                                                                                                                                                                                  |
+| Aether         | `aetherVisible`, `aetherBlueprints`, `selectedAether`, `aetherQuery`                                                                                                                                                                                         |
+| MPRIS          | `musicPlayer`, `musicTitle`, `musicArtist`, `musicPlaying`                                                                                                                                                                                                   |
+| Other          | `activeWs`, `existingWs`, `lastDirection`, `tooltipText`, `popupAnchorX/Y`, `omarchyUpdateAvailable`, `powerProfile`, `powerProfiles`                                                                                                                        |
 
 **Signals:**
 
-| Signal | Emitted by |
-|---|---|
+| Signal                     | Emitted by                                               |
+| -------------------------- | -------------------------------------------------------- |
 | `paletteToggleRequested()` | Bar's omarchy glyph click → wired to `OmniMenu.toggle()` |
-| `netBurst()` | Network burst detector → arc animation on wifi module |
-| `showTooltip(text, x, y)` | Any Module/Workspace on hover → `TooltipOverlay` |
-| `hideTooltip(text)` | Any Module/Workspace on exit |
+| `netBurst()`               | Network burst detector → arc animation on wifi module    |
+| `showTooltip(text, x, y)`  | Any Module/Workspace on hover → `TooltipOverlay`         |
+| `hideTooltip(text)`        | Any Module/Workspace on exit                             |
 
 **Popups instantiated as children:**
 
@@ -142,14 +142,14 @@ AetherPopup, DisplayPopup, WeatherPopup
 
 A `PanelWindow` with `WlrLayershell.layer: WlrLayer.Top`.
 
-| Feature | Detail |
-|---|---|
-| Layout | `GridLayout` (LTR or TTB based on `isHorizontal`) |
-| Left cluster | omarchy glyph → `Separator` → 10 kanji workspace cells |
-| Centre | Clock (`HH:MM` horizontal, stacked vertical); click opens calendar |
-| Right cluster | weather → Separator → cpu → bt → wifi → audio → update badge → battery → edge arrow |
-| Now-playing pill | MPRIS pill with artist/title, click toggles play/pause, right/→next, middle/←prev |
-| Cloud mode | When `round && isHorizontal`: the bar gets a rounded backdrop with air gaps |
+| Feature          | Detail                                                                              |
+| ---------------- | ----------------------------------------------------------------------------------- |
+| Layout           | `GridLayout` (LTR or TTB based on `isHorizontal`)                                   |
+| Left cluster     | omarchy glyph → `Separator` → 10 kanji workspace cells                              |
+| Centre           | Clock (`HH:MM` horizontal, stacked vertical); click opens calendar                  |
+| Right cluster    | weather → Separator → cpu → bt → wifi → audio → update badge → battery → edge arrow |
+| Now-playing pill | MPRIS pill with artist/title, click toggles play/pause, right/→next, middle/←prev   |
+| Cloud mode       | When `round && isHorizontal`: the bar gets a rounded backdrop with air gaps         |
 
 **Behaviour:** Idle dim (`IdleMonitor` 60s timeout, bar fades to 0.7 opacity over 6s, restores in 60ms).
 
@@ -197,12 +197,12 @@ A `PanelWindow` at `WlrLayer.Overlay` with `ExclusionMode.Ignore`. Its `IpcHandl
 
 ### 2.11 `Palette.js` — Theme Parser (50 lines)
 
-| Function | Purpose |
-|---|---|
-| `parseAll(text)` | Parses TOML `key = "value"` pairs → JS object |
-| `mapKeys(raw)` | Renames `WANTED` keys (background→paper, foreground→ink, color7→inkDeep, color8→sumi, accent→indigo, color1→sealRaw) |
-| `parse(text)` | Combined `parseAll` + `mapKeys` |
-| `apply(theme, palette)` | Writes onto a live `Theme.qml` instance (missing slots left unchanged) |
+| Function                | Purpose                                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `parseAll(text)`        | Parses TOML `key = "value"` pairs → JS object                                                                        |
+| `mapKeys(raw)`          | Renames `WANTED` keys (background→paper, foreground→ink, color7→inkDeep, color8→sumi, accent→indigo, color1→sealRaw) |
+| `parse(text)`           | Combined `parseAll` + `mapKeys`                                                                                      |
+| `apply(theme, palette)` | Writes onto a live `Theme.qml` instance (missing slots left unchanged)                                               |
 
 ### 2.12 `Data.js` — Menu Data + Helpers (315 lines)
 
@@ -247,20 +247,20 @@ Scans `$OMARCHY_PATH/themes`, `~/.local/share/omarchy/themes`, `~/.config/omarch
 
 ### 2.19 Quick Detail Panels (12 files)
 
-| File | Content |
-|---|---|
-| `QuickBatteryBody.qml` | Capacity bar, power state, power-profile selector |
-| `QuickAudioBody.qml` | Mute toggle, volume slider, output sink picker |
-| `QuickWifiBody.qml` | Radio toggle, scan, network list (iwctl) |
-| `QuickBluetoothBody.qml` | Power toggle, scan, device list (bluez-tools) |
-| `QuickWeatherBody.qml` | Current + forecast, refresh/edit actions |
-| `QuickDisplayBody.qml` | Warmth/brightness/gamma sliders, presets, monitor info |
-| `QuickAetherBody.qml` | 3-tab: Blueprints / Wallhaven / Themes |
-| `QuickCpuBody.qml` | CPU + memory bars, btop launch |
-| `QuickCalendarBody.qml` | Month grid with day selection |
-| `QuickScreenshotsBody.qml` | Recent screenshots grid, capture button |
-| `QuickVideosBody.qml` | Recent videos grid, open folder button |
-| `QuickPowerBody.qml` | Lock, Suspend, Hibernate, Logout, Reboot, Shutdown |
+| File                       | Content                                                |
+| -------------------------- | ------------------------------------------------------ |
+| `QuickBatteryBody.qml`     | Capacity bar, power state, power-profile selector      |
+| `QuickAudioBody.qml`       | Mute toggle, volume slider, output sink picker         |
+| `QuickWifiBody.qml`        | Radio toggle, scan, network list (iwctl)               |
+| `QuickBluetoothBody.qml`   | Power toggle, scan, device list (bluez-tools)          |
+| `QuickWeatherBody.qml`     | Current + forecast, refresh/edit actions               |
+| `QuickDisplayBody.qml`     | Warmth/brightness/gamma sliders, presets, monitor info |
+| `QuickAetherBody.qml`      | 3-tab: Blueprints / Wallhaven / Themes                 |
+| `QuickCpuBody.qml`         | CPU + memory bars, btop launch                         |
+| `QuickCalendarBody.qml`    | Month grid with day selection                          |
+| `QuickScreenshotsBody.qml` | Recent screenshots grid, capture button                |
+| `QuickVideosBody.qml`      | Recent videos grid, open folder button                 |
+| `QuickPowerBody.qml`       | Lock, Suspend, Hibernate, Logout, Reboot, Shutdown     |
 
 ---
 

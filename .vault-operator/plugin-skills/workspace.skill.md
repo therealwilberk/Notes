@@ -64,7 +64,7 @@ Do NOT ask the user to open Settings UI. Modify config directly.
 main:
   id: 6ad08367c77f50e3
   type: split
-  children: [1 items]
+  children: [1 items: {...}...]
   direction: vertical
 left:
   id: 411a1bd43555aeac
@@ -77,7 +77,7 @@ right:
   type: split
   children: [1 items: {...}...]
   direction: horizontal
-  width: 640.5
+  width: 478.5
 left-ribbon:
   hiddenItems:
     obsidian-git:Open Git source control: false
@@ -91,8 +91,8 @@ left-ribbon:
     obsidian-excalidraw-plugin:New drawing: false
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
-active: 327ba9951c6bbade
-lastOpenFiles: [37 items: Notes/Electrical Engineering/Wiring Diagrams/Reading and Understanding Electrical Wiring Diagrams.md, Notes/Electrical Engineering/Wiring Diagrams/Reading Electrical Wiring Diagrams - Notes.md, Notes/Electrical Engineering/Wiring Diagrams/Reading Electrical Diagrams.md...]
+active: d1a1b8d307f4b67e
+lastOpenFiles: [37 items: Writing/essays/Expectations.md, Notes/Electrical Engineering/Wiring Diagrams/Wiring Diagram Reading — Notes.md, Notes/Programming/Python/python-hg-f1-scope.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

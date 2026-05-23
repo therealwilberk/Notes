@@ -42,7 +42,7 @@ Do NOT ask the user to open Settings UI. Modify data.json directly.
 These are the plugin's current settings (sensitive values redacted):
 
 ```
-authorName: user
+authorName: Wilber
 highlightColor: rgba(249, 226, 175, 0.25)
 showBubbles: true
 showResolved: false

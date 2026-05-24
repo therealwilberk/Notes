@@ -187,4 +187,4 @@ c0fe852 chore: add .gitignore
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction]] — auto-palette spec
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/04-Clustering]] — HDBSCAN spec
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — Hyde card grid spec
-- [[08-CLI]] — Full command set
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI]] — Full command set

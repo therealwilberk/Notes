@@ -149,4 +149,4 @@ def cycle_wallpaper(direction: str = "next") -> None:
 
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/05-Assignment]] — What watcher triggers
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — How wallpaper is selected
-- [[08-CLI]] — `wpick watch` command
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI]] — `wpick watch` command

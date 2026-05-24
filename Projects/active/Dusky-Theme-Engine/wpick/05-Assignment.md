@@ -102,4 +102,4 @@ def assign_all_unassigned(wallpapers_root: Path) -> tuple[int, int]:
 
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/04-Clustering]] — When to recluster
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/06-Orchestrator]] — Watcher triggers assignment
-- [[08-CLI]] — `wpick assign` command
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI]] — `wpick assign` command

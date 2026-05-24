@@ -124,6 +124,22 @@ class WpickConfig:
 
 `tomllib` is stdlib in 3.11+ — no external dep needed.
 
+**Config caching:** `load_config()` must cache the result. The current implementation re-reads and re-merges config files on every call — the cluster debug log showed 30+ config loads in a single `wpick cluster` run. Cache pattern:
+
+```python
+_config: WpickConfig | None = None
+
+def load_config(*, force: bool = False) -> WpickConfig:
+    global _config
+    if _config is not None and not force:
+        return _config
+    # ... load, merge, validate ...
+    _config = cfg
+    return _config
+```
+
+`force=True` bypasses the cache for testing or when the user edits config at runtime. Every module calls `load_config()` without worrying about perf — the cache handles it.
+
 ### Task 6 — Makefile targets
 
 Verify or add these targets:

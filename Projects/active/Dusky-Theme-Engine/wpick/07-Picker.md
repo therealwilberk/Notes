@@ -334,5 +334,5 @@ def launch_picker() -> None:
 ## See Also
 
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/06-Orchestrator]] — What happens after selection
-- [[08-CLI]] — `wpick pick` command
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI]] — `wpick pick` command
 - [[10-Deployment]] — Keybind setup

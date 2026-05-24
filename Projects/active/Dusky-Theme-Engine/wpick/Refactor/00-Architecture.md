@@ -6,7 +6,7 @@
 src/wpick/
   db.py           # SQLite ops — raw connection helpers, scattered queries
   extractor.py    # auto-palette subprocess, writes features.jsonl
-  clusterer.py    # HDBSCAN, reads features.jsonl, writes clusters.json
+  clusterer.py    # KMeans clustering, reads from DB, writes to DB
   assigner.py     # nearest-centroid, reads clusters.json
   picker.py       # rofi UI, thumbnails
   orchestrator.py # watcher, swww, matugen calls

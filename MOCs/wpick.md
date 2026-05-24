@@ -45,8 +45,8 @@ swww img <path> + matugen image <path>
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/05-Assignment]] — Incremental assignment, cosine similarity
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/06-Orchestrator]] — Watcher, swww, matugen integration
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — rofi card grid, Hyde-style UI, thumbnails
-- [[08-CLI]] — Entry points, commands, keybinds
-- [[09-Tests]] — Fixtures, test strategy
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI]] — Entry points, commands, keybinds
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/09-Tests]] — Fixtures, test strategy
 - [[10-Deployment]] — systemd service, production checklist
 
 ## Stack

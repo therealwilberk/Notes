@@ -159,8 +159,8 @@ c0fe852 chore: add .gitignore
 ### Post-completion fixes
 
 ```
-{latest} fix: auto-palette CLI integration — correct flags, JSON parsing, test fixtures
-{latest} fix: zero mypy errors — type annotations, import stubs, Observer return type
+35d6e2d fix: zero mypy errors — type annotations, import stubs, Observer return type
+77c786a fix: auto-palette CLI integration — correct flags, JSON parsing, test fixtures
 ```
 
 ### Verification

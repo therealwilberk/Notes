@@ -77,7 +77,7 @@ right:
   type: split
   children: [1 items: {...}...]
   direction: horizontal
-  width: 478.5
+  width: 577.5
 left-ribbon:
   hiddenItems:
     obsidian-git:Open Git source control: false
@@ -92,7 +92,7 @@ left-ribbon:
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Writing/essays/Expectations.md, Notes/Electrical Engineering/Wiring Diagrams/Wiring Diagram Reading — Notes.md, Notes/Programming/Python/python-hg-f1-scope.md...]
+lastOpenFiles: [37 items: Notes/Design/Premium Desktop Feel.md, Notes/Design, Projects/active/Dusky-Theme-Engine/wpick/Phase-2-Upgrades.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-23T17:20:03.296Z",
+  "scannedAt": "2026-05-24T09:50:45.750Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -273,7 +273,7 @@
       "name": "Tasks",
       "type": "community",
       "classification": "FULL",
-      "status": "enabled",
+      "status": "disabled",
       "version": "8.0.0",
       "source": "vault-native",
       "description": "Track tasks across your vault. Supports due dates, recurring tasks, done dates, sub-set of checklist items, and filtering.",

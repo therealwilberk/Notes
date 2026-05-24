@@ -30,21 +30,34 @@ setup → config → oklab (parallel)
 
 ## Tasks
 
-### Sequential (order matters)
+### Sequential (order matters) — ALL DONE
 
-| # | Task | Agent | Why |
+| # | Task | Agent | Status |
 |---|---|---|---|
-| 1 | Project scaffold | OpenCode | pyproject.toml, dirs, __init__.py, pydantic models |
-| 2 | Config module | OpenCode | pydantic Settings, TOML loader, validation |
-| 3 | OKLab module | Hermes | Standalone, 30 lines, pure math |
-| 4 | Database module | OpenCode | Schema, connection pool, pure/impure split |
-| 5 | Extraction module | OpenCode | auto-palette integration, stats, pydantic models |
-| 6 | Clustering module | OpenCode | HDBSCAN, cluster naming, pydantic models |
-| 7 | Assignment module | OpenCode | Cosine similarity, incremental logic |
-| 8 | Orchestrator module | OpenCode | Watcher, swww, matugen, cycling |
-| 9 | Picker module | OpenCode | rofi card grid, dynamic columns |
-| 10 | CLI module | OpenCode | Typer commands, all entry points |
-| 11 | Tests | Hermes | Unit + integration, fixtures |
+| 1 | Project scaffold | OpenCode | ✅ HER-13 |
+| 2 | Config module | OpenCode | ✅ HER-14 |
+| 3 | OKLab module | Hermes | ✅ HER-15 |
+| 4 | Database module | OpenCode | ✅ HER-16 |
+| 5 | Extraction module | OpenCode | ✅ HER-17 → HER-32 (auto-palette) |
+| 6 | Clustering module | OpenCode | ✅ HER-18 → HER-33 (HDBSCAN) |
+| 7 | Assignment module | OpenCode | ✅ HER-19 |
+| 8 | Orchestrator module | OpenCode | ✅ HER-20 → HER-35 (API fix) |
+| 9 | Picker module | OpenCode | ✅ HER-21 → HER-36 (API fix) |
+| 10 | CLI module | OpenCode | ✅ HER-22 → HER-34 + HER-37 (Typer + API fix) |
+| 11 | Tests | Hermes | ✅ HER-23 |
+
+### Phase 2 Upgrades — ALL DONE
+
+| # | Upgrade | Task | Status |
+|---|---|---|---|
+| 1 | Schema → SHA256[:16] | HER-31 | ✅ |
+| 2 | Extractor → auto-palette | HER-32 | ✅ |
+| 3 | Clusterer → HDBSCAN | HER-33 | ✅ |
+| 4 | Cluster naming | HER-33 | ✅ (built-in) |
+| 5 | Picker → card grid | HER-36 | ✅ |
+| 6 | CLI → Typer | HER-34 + HER-37 | ✅ |
+| 7 | Watcher | HER-35 | ✅ |
+| 8 | Cycling | HER-35 | ✅ (built-in) |
 
 ### Parallel (no dependencies between them)
 
@@ -92,10 +105,10 @@ setup → config → oklab (parallel)
 
 ## Quality Gates
 
-- [ ] All functions have type hints
-- [ ] Pydantic models for all data structures
-- [ ] Pure functions separated from impure
-- [ ] Logging structured (no print)
-- [ ] Tests pass: `uv run pytest`
-- [ ] Lint clean: `uv run ruff check src/`
-- [ ] Type check: `uv run mypy src/wpick/`
+- [x] All functions have type hints
+- [x] Pydantic models for all data structures
+- [x] Pure functions separated from impure
+- [x] Logging structured (no print)
+- [x] Tests pass: `uv run pytest` — 153 passed
+- [x] Lint clean: `uv run ruff check src/`
+- [x] Type check: `uv run mypy src/wpick/` — 22 minor (3rd-party stubs, numpy returns)

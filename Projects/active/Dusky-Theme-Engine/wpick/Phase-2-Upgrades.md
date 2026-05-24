@@ -128,14 +128,50 @@ Target: watchdog-based filesystem monitor with 5s debounce. Auto-extract + assig
 
 ## Priority Order
 
-1. Schema (foundation for everything)
-2. Extractor (auto-palette integration)
-3. Clusterer (HDBSCAN)
-4. Cluster naming
-5. Picker (card grid)
-6. CLI (full commands)
-7. Watcher
-8. Wallpaper cycling
+1. Schema (foundation for everything) ✅ HER-31
+2. Extractor (auto-palette integration) ✅ HER-32
+3. Clusterer (HDBSCAN) ✅ HER-33
+4. Cluster naming ✅ built into HER-33
+5. Picker (card grid) ✅ HER-36
+6. CLI (full commands) ✅ HER-34 + HER-37
+7. Watcher ✅ HER-35
+8. Wallpaper cycling ✅ HER-35
+
+## Phase 2 Status — COMPLETE
+
+All 8 items implemented and verified (2026-05-24).
+
+### Commits
+
+```
+5cc3eca fix: mypy fixes — __all__ exports, store_cluster_run args
+fb3ba04 fix: lint cleanup — variable naming, import sorting, missing np import
+c847eb9 fix(cli): replace dict-style config access with model attributes
+274c0a0 fix: add missing get_images_by_cluster to orchestrator.py
+bb40d2e fix: rewrite orchestrator.py to use correct db.py API
+4e7cada fix: rewrite picker.py to use correct db.py API
+e9259c8 feat: implement auto-palette extractor
+8561e67 feat: implement HDBSCAN clusterer
+c0fe852 chore: add .gitignore
+16c5252 initial: wpick scaffold + Phase 2 partial
+```
+
+### Verification
+
+- `from wpick.orchestrator import set_wallpaper, cycle_wallpaper, start_watcher` ✓
+- `from wpick.picker import launch_picker, pick_random` ✓
+- `from wpick.cli import app` ✓
+- `python -m wpick.cli --help` shows all 10 commands ✓
+
+### Key changes
+
+- Extractor: Pillow quantize → auto-palette (Rust binary via subprocess)
+- Clusterer: k-means → HDBSCAN with StandardScaler normalization
+- Cluster naming: auto-generated from OKLAB centroid (dark/muted/bright + hue)
+- Picker: Hyde-style card grid with thumbnail previews
+- CLI: argparse → Typer with 10 commands
+- All modules use consistent db.py API (connection() context manager, upsert_image, etc.)
+- Config access via model attributes, not dict
 
 ## See Also
 

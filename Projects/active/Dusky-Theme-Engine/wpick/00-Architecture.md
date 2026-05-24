@@ -76,6 +76,6 @@ matugen image <path>  ← generates color scheme
 
 ## See Also
 
-- [[01-Setup]] — Environment and dependencies
-- [[03-Extraction]] — auto-palette integration details
-- [[04-Clustering]] — HDBSCAN parameters and strategy
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/01-Setup]] — Environment and dependencies
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction]] — auto-palette integration details
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/04-Clustering]] — HDBSCAN parameters and strategy

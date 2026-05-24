@@ -213,6 +213,6 @@ def run_clustering() -> dict:
 
 ## See Also
 
-- [[03-Extraction]] — How features are computed
-- [[05-Assignment]] — Incremental assignment (no recluster)
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction]] — How features are computed
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/05-Assignment]] — Incremental assignment (no recluster)
 - [[08-CLI]] — `wpick cluster` command

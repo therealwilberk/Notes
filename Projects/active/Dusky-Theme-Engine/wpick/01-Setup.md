@@ -131,6 +131,6 @@ uv run pytest --collect-only
 
 ## See Also
 
-- [[00-Architecture]] — Module overview
-- [[02-Database]] — Schema details
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/00-Architecture]] — Module overview
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/02-Database]] — Schema details
 - [[10-Deployment]] — Production setup

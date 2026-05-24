@@ -199,4 +199,4 @@ if __name__ == "__main__":
 ## See Also
 
 - [[10-Deployment]] — Keybinds and systemd setup
-- [[07-Picker]] — rofi UI details
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — rofi UI details

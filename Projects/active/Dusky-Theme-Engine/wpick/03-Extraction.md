@@ -292,6 +292,6 @@ def _append_jsonl(result: dict) -> None:
 
 ## See Also
 
-- [[00-Architecture]] — Pipeline overview
-- [[04-Clustering]] — What happens after extraction
-- [[07-Picker]] — How palette is displayed
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/00-Architecture]] — Pipeline overview
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/04-Clustering]] — What happens after extraction
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — How palette is displayed

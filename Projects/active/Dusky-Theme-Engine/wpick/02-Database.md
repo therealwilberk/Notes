@@ -91,6 +91,6 @@ CREATE INDEX IF NOT EXISTS idx_history_recent ON history(set_at DESC);
 
 ## See Also
 
-- [[03-Extraction]] — How features are computed
-- [[04-Clustering]] — How clusters are created
-- [[05-Assignment]] — How images are assigned to clusters
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction]] — How features are computed
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/04-Clustering]] — How clusters are created
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/05-Assignment]] — How images are assigned to clusters

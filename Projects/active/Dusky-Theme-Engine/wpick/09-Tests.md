@@ -118,5 +118,5 @@ uv run mypy src/wpick/
 
 ## See Also
 
-- [[01-Setup]] — Dev dependencies
-- [[03-Extraction]] — What extraction tests validate
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/01-Setup]] — Dev dependencies
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction]] — What extraction tests validate

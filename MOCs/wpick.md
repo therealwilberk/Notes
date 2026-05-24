@@ -37,14 +37,14 @@ swww img <path> + matugen image <path>
 
 ## Subdocs
 
-- [[00-Architecture]] — Mental model, data flow, module map
-- [[01-Setup]] — uv, dependencies, config.toml
-- [[02-Database]] — SQLite schema, db.py operations
-- [[03-Extraction]] — auto-palette integration, feature vectors
-- [[04-Clustering]] — HDBSCAN, cluster naming, recluster strategy
-- [[05-Assignment]] — Incremental assignment, cosine similarity
-- [[06-Orchestrator]] — Watcher, swww, matugen integration
-- [[07-Picker]] — rofi card grid, Hyde-style UI, thumbnails
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/00-Architecture]] — Mental model, data flow, module map
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/01-Setup]] — uv, dependencies, config.toml
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/02-Database]] — SQLite schema, db.py operations
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction]] — auto-palette integration, feature vectors
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/04-Clustering]] — HDBSCAN, cluster naming, recluster strategy
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/05-Assignment]] — Incremental assignment, cosine similarity
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/06-Orchestrator]] — Watcher, swww, matugen integration
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — rofi card grid, Hyde-style UI, thumbnails
 - [[08-CLI]] — Entry points, commands, keybinds
 - [[09-Tests]] — Fixtures, test strategy
 - [[10-Deployment]] — systemd service, production checklist

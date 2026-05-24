@@ -126,5 +126,5 @@ wpick cluster
 ## See Also
 
 - [[08-CLI]] — Available commands
-- [[06-Orchestrator]] — Watcher and matugen integration
-- [[07-Picker]] — rofi UI setup
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/06-Orchestrator]] — Watcher and matugen integration
+- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — rofi UI setup

@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-24T09:50:45.750Z",
+  "scannedAt": "2026-05-24T13:05:07.001Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -272,7 +272,7 @@
       "id": "obsidian-tasks-plugin",
       "name": "Tasks",
       "type": "community",
-      "classification": "FULL",
+      "classification": "PARTIAL",
       "status": "disabled",
       "version": "8.0.0",
       "source": "vault-native",

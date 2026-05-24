@@ -75,9 +75,9 @@ anuppuccin-theme-settings@@anp-status-bar-select: anp-floating-status-bar
 anuppuccin-theme-settings@@anp-alt-tab-style: anp-alternate-tab-toggle
 anuppuccin-theme-settings@@anp-safari-tab-animated: false
 anuppuccin-theme-settings@@anp-hide-borders: true
-anuppuccin-theme-settings@@anuppuccin-theme-light: ctp-rosepine-light
-anuppuccin-theme-settings@@anuppuccin-theme-dark: ctp-mocha
-anuppuccin-theme-settings@@anuppuccin-theme-accents: ctp-accent-pink
+anuppuccin-theme-settings@@anuppuccin-theme-light: ctp-latte
+anuppuccin-theme-settings@@anuppuccin-theme-dark: ctp-mocha-old
+anuppuccin-theme-settings@@anuppuccin-theme-accents: ctp-accent-sky
 anuppuccin-theme-settings@@anp-color-transition-toggle: true
 anuppuccin-theme-settings@@anp-toggle-scrollbars: true
 anuppuccin-theme-settings@@anp-hide-status-bar: true
@@ -89,7 +89,13 @@ anuppuccin-theme-settings@@anp-layout-select: anp-card-layout
 anuppuccin-theme-settings@@anp-card-layout-padding: 8
 anuppuccin-theme-settings@@anp-card-shadows: false
 anuppuccin-theme-settings@@anp-card-layout-actions: true
-anuppuccin-theme-settings@@anp-card-layout-filebrowser: true
+anuppuccin-theme-settings@@anp-card-layout-filebrowser: false
+anuppuccin-theme-settings@@anuppuccin-light-theme-accents: ctp-accent-light-rosewater
+anuppuccin-theme-settings@@anuppuccin-accent-toggle: true
+anuppuccin-theme-settings@@embed-corner-radius: 1
+anuppuccin-theme-settings@@anp-bg-fix: false
+anuppuccin-theme-settings@@anp-card-radius: 1
+anuppuccin-theme-settings@@anp-card-header-left-padding: 15
 ```
 
 For full settings, read: `.obsidian/plugins/obsidian-style-settings/data.json`

@@ -156,6 +156,13 @@ c0fe852 chore: add .gitignore
 16c5252 initial: wpick scaffold + Phase 2 partial
 ```
 
+### Post-completion fixes
+
+```
+{latest} fix: auto-palette CLI integration — correct flags, JSON parsing, test fixtures
+{latest} fix: zero mypy errors — type annotations, import stubs, Observer return type
+```
+
 ### Verification
 
 - `from wpick.orchestrator import set_wallpaper, cycle_wallpaper, start_watcher` ✓

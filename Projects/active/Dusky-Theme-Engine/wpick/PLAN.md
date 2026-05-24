@@ -111,4 +111,4 @@ setup → config → oklab (parallel)
 - [x] Logging structured (no print)
 - [x] Tests pass: `uv run pytest` — 153 passed
 - [x] Lint clean: `uv run ruff check src/`
-- [x] Type check: `uv run mypy src/wpick/` — 22 minor (3rd-party stubs, numpy returns)
+- [x] Type check: `uv run mypy src/wpick/` — 0 errors

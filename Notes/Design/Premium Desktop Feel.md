@@ -78,6 +78,48 @@ Blur is applied per-layer via `hl.layer_rule()`:
 - **Mako**: `blur = true`, `ignore_alpha = 0.0` — notifications get the same frost
 - **Waybar**: `blur = true` — bar blends with desktop
 
+## Motions & Animation
+
+Speed is premium. Animations should feel intentional, not decorative. Fast enough to never block your flow, curved enough to have personality.
+
+### Active Preset: "FLUID Dusky — Premium Tuned"
+
+Based on the Dusky showcase edition, tightened for daily driving. Same overshot curves, faster execution.
+
+**Curves:**
+
+| Curve | Bezier | Character |
+|---|---|---|
+| `overshot` | `(0.05, 0.9) (0.1, 1.1)` | Snap + subtle bounce. The signature feel |
+| `fluid` | `(0.25, 1) (0, 1)` | Smooth deceleration |
+| `snap` | `(0.5, 0.9) (0.1, 1.05)` | Quick settle, less bounce than overshot |
+| `menu_decel` | `(0.1, 1) (0, 1)` | Fast start, slow end. Menus/layers |
+| `liner` | `(1, 1) (1, 1)` | Linear. Border transitions only |
+
+**Animation Speeds:**
+
+| Element | Speed | Curve | Style | Rationale |
+|---|---|---|---|---|
+| `windowsIn` | 8 | overshot | popin 80% | Snappy open, slight overshoot |
+| `windowsOut` | 8 | snap | popin 80% | Match open speed — no lingering |
+| `windowsMove` | 8 | overshot | slide | Consistent with open/close |
+| `border` | 4 | liner | — | Fast color pulse on focus change |
+| `borderangle` | 40 | liner | once | Near-instant gradient rotation |
+| `fade` | 5 | fluid | — | Smooth opacity transitions |
+| `layersIn` | 6 | overshot | popin 70% | Rofi/mako pop in with punch |
+| `fadeLayersIn` | 6 | menu_decel | — | Fast layer fade-in |
+| `fadeLayersOut` | 6 | menu_decel | — | Match in-speed — dismiss cleanly |
+| `workspaces` | 10 | overshot | slide | Hero moment — fast, decisive |
+| `specialWorkspace` | 10 | overshot | slidevert | Match workspace speed |
+
+### Design Rules
+
+1. **Open and close at the same speed.** Asymmetric open/close feels laggy.
+2. **Layers are faster than windows.** Rofi/mako are transient — they should pop and dismiss without lingering.
+3. **Workspace switch is the hero.** Highest speed, most visual real estate. It should feel decisive.
+4. **Bounce is personality, not decoration.** The overshot curve adds subtle bounce — enough to feel alive, not enough to feel playful.
+5. **Border transitions should be invisible.** Speed 4+ on liner — you shouldn't notice it happening.
+
 ## What We Explicitly Rejected
 
 | Rejected | Why |
@@ -88,6 +130,9 @@ Blur is applied per-layer via `hl.layer_rule()`:
 | `blur.size = 6` (upstream) | Too subtle. 13 gives the frosted glass premium feel |
 | `active_opacity = 0.75` | Too transparent. 0.95 keeps readability while allowing frost |
 | `gaps_out = 6` (upstream) | Too tight for single-window layouts. 14 gives breathing room |
+| `windowsOut speed 5` (showcase) | Slow close. You're already looking at the next thing. Match open speed |
+| `fadeLayersOut speed 4` (showcase) | Layers linger after dismissal. Snappy dismiss is premium |
+| `border speed 2` (showcase) | Border color transition crawls. 4 is the sweet spot |
 
 ## Design Mantra
 

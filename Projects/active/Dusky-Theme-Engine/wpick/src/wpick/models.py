@@ -130,8 +130,12 @@ class ThumbnailResult:
 
 @dataclass
 class WpickConfig:
-    wallpaper_dir: Path = field(default_factory=lambda: Path.home() / "Pictures" / "wallpapers")
-    db_path: Path = field(default_factory=lambda: Path.home() / ".local" / "share" / "wpick" / "wpick.db")
+    wallpaper_dir: Path = field(
+        default_factory=lambda: Path.home() / "Pictures" / "wallpapers"
+    )
+    db_path: Path = field(
+        default_factory=lambda: Path.home() / ".local" / "share" / "wpick" / "wpick.db"
+    )
     cache_dir: Path = field(default_factory=lambda: Path.home() / ".cache" / "wpick")
     max_colors: int = 16
     cluster_count: int = 6

@@ -6,7 +6,7 @@ from collections.abc import Callable
 import numpy as np
 
 from wpick.db import WallpaperDB
-from wpick.models import AssignResult, AssignerError, BatchAssignResult
+from wpick.models import AssignerError, AssignResult, BatchAssignResult
 
 logger = logging.getLogger(__name__)
 
@@ -52,10 +52,7 @@ def assign_all_unassigned(
     force: bool = False,
     on_progress: Callable[[int, int], None] | None = None,
 ) -> BatchAssignResult:
-    if force:
-        images = db.get_all_images()
-    else:
-        images = db.get_unassigned_images()
+    images = db.get_all_images() if force else db.get_unassigned_images()
 
     total = len(images)
     assigned = 0

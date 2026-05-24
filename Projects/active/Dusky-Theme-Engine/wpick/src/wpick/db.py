@@ -8,7 +8,7 @@ from contextlib import contextmanager
 from pathlib import Path
 from typing import Any
 
-from wpick.models import ClusterRow, DatabaseError, FeatureRow, ImageRow
+from wpick.models import ClusterRow, DatabaseError, FeatureRow, ImageRow, ScanResult
 
 logger = logging.getLogger(__name__)
 
@@ -107,7 +107,9 @@ class WallpaperDB:
 
     def get_image(self, image_id: str) -> ImageRow | None:
         with self._transaction() as cur:
-            cur.execute("SELECT image_id, path FROM images WHERE image_id = ?", (image_id,))
+            cur.execute(
+                "SELECT image_id, path FROM images WHERE image_id = ?", (image_id,)
+            )
             row = cur.fetchone()
             return self._row_to_image(row) if row else None
 
@@ -137,7 +139,8 @@ class WallpaperDB:
     def get_features(self, image_id: str) -> FeatureRow | None:
         with self._transaction() as cur:
             cur.execute(
-                "SELECT f.image_id, i.path, f.oklab_vector, f.color_count, f.extracted_at "
+                "SELECT f.image_id, i.path, f.oklab_vector, "
+                "f.color_count, f.extracted_at "
                 "FROM features f "
                 "JOIN images i ON f.image_id = i.image_id "
                 "WHERE f.image_id = ?",
@@ -149,7 +152,8 @@ class WallpaperDB:
     def get_all_features(self) -> list[FeatureRow]:
         with self._transaction() as cur:
             cur.execute(
-                "SELECT f.image_id, i.path, f.oklab_vector, f.color_count, f.extracted_at "
+                "SELECT f.image_id, i.path, f.oklab_vector, "
+                "f.color_count, f.extracted_at "
                 "FROM features f "
                 "JOIN images i ON f.image_id = i.image_id"
             )
@@ -157,13 +161,17 @@ class WallpaperDB:
 
     def get_clusters(self) -> list[ClusterRow]:
         with self._transaction() as cur:
-            cur.execute("SELECT cluster_id, centroid, label, member_count, run_id FROM clusters ORDER BY cluster_id")
+            cur.execute(
+                "SELECT cluster_id, centroid, label, member_count, run_id "
+                "FROM clusters ORDER BY cluster_id"
+            )
             return [self._row_to_cluster(row) for row in cur.fetchall()]
 
     def assign_image_cluster(self, image_id: str, cluster_id: int) -> None:
         with self._transaction() as cur:
             cur.execute(
-                "INSERT OR REPLACE INTO image_cluster (image_id, cluster_id) VALUES (?, ?)",
+                "INSERT OR REPLACE INTO image_cluster (image_id, cluster_id) "
+                "VALUES (?, ?)",
                 (image_id, cluster_id),
             )
 

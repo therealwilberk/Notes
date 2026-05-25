@@ -112,13 +112,13 @@ Architecture diagram: `system-architecture.excalidraw` in project root.
 
 ## Workflows
 
-| # | Workflow | Trigger | Status |
-|---|----------|---------|--------|
-|| 1 | [[wf1-job-feed-scanner]] | Cron (4h) | Building — Tasks 1-5 done, Task 6 (Notion) next |
-| 2 | [[wf2-company-enrichment]] | Sub-workflow from WF1 + 12h cron fallback | Ready to build |
-| 3 | Daily Dashboard | Cron (8am EAT) | Planned |
-| 4 | Cover Letter Generator | React emoji trigger | Later |
-| 5 | JustHireMe Integration | Manual/cron | Later |
+| #   | Workflow                   | Trigger                                   | Status         |                                                 |
+| --- | -------------------------- | ----------------------------------------- | -------------- | ----------------------------------------------- |
+|     | 1                          | [[wf1-job-feed-scanner]]                  | Cron (4h)      | Building — Tasks 1-5 done, Task 6 (Notion) next |
+| 2   | [[wf2-company-enrichment]] | Sub-workflow from WF1 + 12h cron fallback | Ready to build |                                                 |
+| 3   | Daily Dashboard            | Cron (8am EAT)                            | Planned        |                                                 |
+| 4   | Cover Letter Generator     | React emoji trigger                       | Later          |                                                 |
+| 5   | JustHireMe Integration     | Manual/cron                               | Later          |                                                 |
 
 ## Notion as Default DB
 

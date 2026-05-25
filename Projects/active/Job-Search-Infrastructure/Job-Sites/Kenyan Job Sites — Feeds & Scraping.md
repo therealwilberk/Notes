@@ -31,6 +31,7 @@ Research on Kenyan job sites for automated feed collection via [[n8n Setup & Con
 | **BrighterMonday**    | ❌               | Hard       | Browser scrape needed       |
 | **Fuzu**              | ❌               | Medium     | HTTP scrape                 |
 | **LinkedIn**          | ❌               | Very Hard  | **SKIP**                    |
+| **Blog Nevine**       | {Not sure}      | {Not sure} | {confirm}                   |
 
 > [!success] No existing Telegram/Discord bots found for any of these sites. No competition.
 
@@ -167,7 +168,11 @@ Lighter than BrighterMonday. Standard rate limiting.
 
 Standard web protection. HTTP scrape with pagination should work.
 
+
 ---
+
+## 8. Blog Nevine
+url: https://blog.nevine.me/
 
 ## Recommended n8n Workflow
 

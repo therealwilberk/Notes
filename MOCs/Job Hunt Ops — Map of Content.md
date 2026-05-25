@@ -65,15 +65,15 @@ graph LR
 
 ## Model Assignment (FreeLLM — 89 models)
 
-| Task | Model | Why |
-|------|-------|-----|
-| Job feed scanning | `openai/gpt-oss-20b:free` | Fast, cheap, structured extraction |
-| Job validation/scoring | `google/gemma-4-31b-it:free` | Reasoning for relevance filtering |
-| Cover letter drafts | `mistralai/mistral-large-3-675b-instruct-2512` | Best writing quality |
-| Company enrichment | `openai/gpt-oss-120b:free` | Deep research, multi-source |
-| Code/scraper logic | `deepseek-ai/deepseek-v4-pro` | Code generation |
-| Vision | `mimo-v2-omni` | Screenshots, job images |
-| Compression | `gemini-2.5-flash` | Summarization |
+| Task                   | Model                                          | Why                                |
+| ---------------------- | ---------------------------------------------- | ---------------------------------- |
+| Job feed scanning      | `openai/gpt-oss-20b:free`                      | Fast, cheap, structured extraction |
+| Job validation/scoring | `google/gemma-4-31b-it:free`                   | Reasoning for relevance filtering  |
+| Cover letter drafts    | `mistralai/mistral-large-3-675b-instruct-2512` | Best writing quality               |
+| Company enrichment     | `openai/gpt-oss-120b:free`                     | Deep research, multi-source        |
+| Code/scraper logic     | `deepseek-ai/deepseek-v4-pro`                  | Code generation                    |
+| Vision                 | `mimo-v2-omni`                                 | Screenshots, job images            |
+| Compression            | `gemini-2.5-flash`                             | Summarization                      |
 
 ## Discord Layout
 

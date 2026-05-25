@@ -147,7 +147,7 @@ graph LR
 - **2026-05-25:** Enrichment pipeline pattern (collect → validate → write)
 
 ## Progress
-
+3
 - [x] n8n self-hosted on Docker (running, Postgres healthy)
 - [x] Map KE job site structures (8 sites, priority matrix done)
 - [x] FreeLLM proxy running (89 models)

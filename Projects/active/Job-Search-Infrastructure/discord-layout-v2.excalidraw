@@ -5,28 +5,27 @@
   "elements": [
     {
       "type": "rectangle",
-      "id": "el_1",
+      "id": "e1",
       "x": -200,
-      "y": -100,
-      "width": 2000,
-      "height": 1400,
+      "y": -80,
+      "width": 1600,
+      "height": 900,
       "backgroundColor": "#1e1e2e",
       "fillStyle": "solid",
       "strokeColor": "transparent",
       "strokeWidth": 0,
       "roughness": 0,
-      "opacity": 100,
-      "boundElements": []
+      "opacity": 100
     },
     {
       "type": "text",
-      "id": "el_2",
-      "x": 350,
-      "y": -60,
-      "width": 492.80000000000007,
-      "height": 39.199999999999996,
+      "id": "e2",
+      "x": 250,
+      "y": -50,
+      "width": 416.0,
+      "height": 36.4,
       "text": "JOB HUNT OPS \u2014 DISCORD LAYOUT V2",
-      "fontSize": 28,
+      "fontSize": 26,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
@@ -36,1461 +35,1285 @@
     },
     {
       "type": "text",
-      "id": "el_3",
-      "x": 350,
-      "y": -20,
-      "width": 466.40000000000003,
-      "height": 22.4,
-      "text": "n8n + FreeLLM + Zenicious | Webhook-driven automation",
-      "fontSize": 16,
+      "id": "e3",
+      "x": 250,
+      "y": -15,
+      "width": 352.5,
+      "height": 21.0,
+      "text": "n8n + FreeLLM + Zenicious | Color = driver type",
+      "fontSize": 15,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "n8n + FreeLLM + Zenicious | Webhook-driven automation",
+      "originalText": "n8n + FreeLLM + Zenicious | Color = driver type",
       "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_4",
+      "id": "e4",
       "x": 40,
-      "y": 30,
-      "width": 500,
-      "height": 40,
+      "y": 25,
+      "width": 440,
+      "height": 35,
       "backgroundColor": "#1e3a5f",
       "fillStyle": "solid",
       "strokeColor": "#4a9eed",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_5",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e5",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_5",
-      "x": 290.0,
-      "y": 50.0,
-      "width": 138.60000000000002,
-      "height": 25.2,
+      "id": "e5",
+      "x": 260.0,
+      "y": 42.5,
+      "width": 119.0,
+      "height": 23.799999999999997,
       "text": "COMMAND CENTER",
-      "fontSize": 18,
+      "fontSize": 17,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "COMMAND CENTER",
       "autoResize": true,
-      "containerId": "el_4"
+      "containerId": "e4"
     },
     {
       "type": "rectangle",
-      "id": "el_6",
+      "id": "e6",
       "x": 50,
-      "y": 85,
-      "width": 240,
-      "height": 36,
+      "y": 75,
+      "width": 140,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_7",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e7",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_7",
-      "x": 170.0,
-      "y": 103.0,
-      "width": 82.5,
-      "height": 21.0,
+      "id": "e7",
+      "x": 120.0,
+      "y": 91.0,
+      "width": 70.0,
+      "height": 19.599999999999998,
       "text": "#dashboard",
-      "fontSize": 15,
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#dashboard",
       "autoResize": true,
-      "containerId": "el_6"
+      "containerId": "e6"
     },
     {
       "type": "rectangle",
-      "id": "el_8",
-      "x": 300,
-      "y": 85,
-      "width": 240,
-      "height": 36,
+      "id": "e8",
+      "x": 200,
+      "y": 75,
+      "width": 130,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_9",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e9",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_9",
-      "x": 420.0,
-      "y": 103.0,
-      "width": 57.75000000000001,
-      "height": 21.0,
+      "id": "e9",
+      "x": 265.0,
+      "y": 91.0,
+      "width": 49.0,
+      "height": 19.599999999999998,
       "text": "#alerts",
-      "fontSize": 15,
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#alerts",
       "autoResize": true,
-      "containerId": "el_8"
+      "containerId": "e8"
     },
     {
       "type": "rectangle",
-      "id": "el_10",
-      "x": 50,
-      "y": 130,
-      "width": 240,
-      "height": 36,
+      "id": "e10",
+      "x": 340,
+      "y": 75,
+      "width": 130,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_11",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e11",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_11",
-      "x": 170.0,
-      "y": 148.0,
-      "width": 41.25,
-      "height": 21.0,
+      "id": "e11",
+      "x": 405.0,
+      "y": 91.0,
+      "width": 35.0,
+      "height": 19.599999999999998,
       "text": "#logs",
-      "fontSize": 15,
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#logs",
       "autoResize": true,
-      "containerId": "el_10"
+      "containerId": "e10"
     },
     {
       "type": "text",
-      "id": "el_12",
-      "x": 550,
-      "y": 93,
-      "width": 223.3,
-      "height": 19.599999999999998,
-      "text": "< Daily cron summary, 8am EAT",
-      "fontSize": 14,
+      "id": "e12",
+      "x": 510,
+      "y": 82,
+      "width": 266.5,
+      "height": 18.2,
+      "text": "Daily cron, high-score alerts, n8n health",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "< Daily cron summary, 8am EAT",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_13",
-      "x": 550,
-      "y": 138,
-      "width": 231.00000000000003,
-      "height": 19.599999999999998,
-      "text": "< n8n + agent execution health",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "< n8n + agent execution health",
+      "originalText": "Daily cron, high-score alerts, n8n health",
       "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_14",
+      "id": "e13",
       "x": 40,
-      "y": 195,
-      "width": 500,
-      "height": 40,
+      "y": 130,
+      "width": 440,
+      "height": 35,
       "backgroundColor": "#2d1b69",
       "fillStyle": "solid",
       "strokeColor": "#8b5cf6",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_15",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e14",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_15",
-      "x": 290.0,
-      "y": 215.0,
-      "width": 39.6,
-      "height": 25.2,
+      "id": "e14",
+      "x": 260.0,
+      "y": 147.5,
+      "width": 34.0,
+      "height": 23.799999999999997,
       "text": "JOBS",
-      "fontSize": 18,
+      "fontSize": 17,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "JOBS",
       "autoResize": true,
-      "containerId": "el_14"
+      "containerId": "e13"
     },
     {
       "type": "rectangle",
-      "id": "el_16",
+      "id": "e15",
       "x": 50,
-      "y": 250,
-      "width": 155,
-      "height": 36,
+      "y": 180,
+      "width": 105,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_17",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e16",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_17",
-      "x": 127.5,
-      "y": 268.0,
-      "width": 69.30000000000001,
-      "height": 19.599999999999998,
+      "id": "e16",
+      "x": 102.5,
+      "y": 196.0,
+      "width": 58.5,
+      "height": 18.2,
       "text": "#feed-eee",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#feed-eee",
       "autoResize": true,
-      "containerId": "el_16"
+      "containerId": "e15"
     },
     {
       "type": "rectangle",
-      "id": "el_18",
-      "x": 215,
-      "y": 250,
-      "width": 155,
-      "height": 36,
+      "id": "e17",
+      "x": 163,
+      "y": 180,
+      "width": 115,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_19",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e18",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_19",
-      "x": 292.5,
-      "y": 268.0,
-      "width": 100.10000000000001,
-      "height": 19.599999999999998,
+      "id": "e18",
+      "x": 220.5,
+      "y": 196.0,
+      "width": 84.5,
+      "height": 18.2,
       "text": "#feed-general",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#feed-general",
       "autoResize": true,
-      "containerId": "el_18"
+      "containerId": "e17"
     },
     {
       "type": "rectangle",
-      "id": "el_20",
-      "x": 380,
-      "y": 250,
-      "width": 160,
-      "height": 36,
+      "id": "e19",
+      "x": 286,
+      "y": 180,
+      "width": 100,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_21",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e20",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_21",
-      "x": 460.0,
-      "y": 268.0,
-      "width": 77.0,
-      "height": 19.599999999999998,
+      "id": "e20",
+      "x": 336.0,
+      "y": 196.0,
+      "width": 65.0,
+      "height": 18.2,
       "text": "#validated",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#validated",
       "autoResize": true,
-      "containerId": "el_20"
+      "containerId": "e19"
     },
     {
       "type": "rectangle",
-      "id": "el_22",
-      "x": 50,
-      "y": 298,
-      "width": 155,
-      "height": 36,
+      "id": "e21",
+      "x": 394,
+      "y": 180,
+      "width": 80,
+      "height": 32,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_23",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e22",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_23",
-      "x": 127.5,
-      "y": 316.0,
-      "width": 61.60000000000001,
-      "height": 19.599999999999998,
+      "id": "e22",
+      "x": 434.0,
+      "y": 196.0,
+      "width": 52.0,
+      "height": 18.2,
       "text": "#applied",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#applied",
       "autoResize": true,
-      "containerId": "el_22"
+      "containerId": "e21"
     },
     {
       "type": "rectangle",
-      "id": "el_24",
-      "x": 215,
-      "y": 298,
-      "width": 155,
-      "height": 36,
+      "id": "e23",
+      "x": 394,
+      "y": 220,
+      "width": 80,
+      "height": 32,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_25",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e24",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_25",
-      "x": 292.5,
-      "y": 316.0,
-      "width": 46.2,
-      "height": 19.599999999999998,
+      "id": "e24",
+      "x": 434.0,
+      "y": 236.0,
+      "width": 39.0,
+      "height": 18.2,
       "text": "#saved",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#saved",
       "autoResize": true,
-      "containerId": "el_24"
+      "containerId": "e23"
     },
     {
       "type": "text",
-      "id": "el_26",
-      "x": 550,
-      "y": 258,
-      "width": 215.60000000000002,
-      "height": 19.599999999999998,
-      "text": "< Raw feeds (webhook-driven)",
-      "fontSize": 14,
+      "id": "e25",
+      "x": 510,
+      "y": 187,
+      "width": 227.5,
+      "height": 18.2,
+      "text": "Raw feeds, scored matches, tracking",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "< Raw feeds (webhook-driven)",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_27",
-      "x": 550,
-      "y": 306,
-      "width": 246.40000000000003,
-      "height": 19.599999999999998,
-      "text": "< Manual tracking (bot-reactive)",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "< Manual tracking (bot-reactive)",
+      "originalText": "Raw feeds, scored matches, tracking",
       "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_28",
-      "x": 175,
-      "y": 295,
-      "width": 38,
-      "height": 18,
+      "id": "e26",
+      "x": 445,
+      "y": 178,
+      "width": 32,
+      "height": 14,
       "backgroundColor": "#5c1a1a",
       "fillStyle": "solid",
       "strokeColor": "#ef4444",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_29",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e27",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_29",
-      "x": 194.0,
-      "y": 304.0,
-      "width": 19.8,
-      "height": 16.799999999999997,
+      "id": "e27",
+      "x": 461.0,
+      "y": 185.0,
+      "width": 15.0,
+      "height": 14.0,
       "text": "NEW",
-      "fontSize": 12,
+      "fontSize": 10,
       "fontFamily": 1,
       "strokeColor": "#ef4444",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "NEW",
       "autoResize": true,
-      "containerId": "el_28"
+      "containerId": "e26"
     },
     {
       "type": "rectangle",
-      "id": "el_30",
-      "x": 650,
-      "y": 195,
-      "width": 280,
-      "height": 40,
+      "id": "e28",
+      "x": 40,
+      "y": 270,
+      "width": 250,
+      "height": 35,
       "backgroundColor": "#1a4d4d",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_31",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e29",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_31",
-      "x": 790.0,
-      "y": 215.0,
-      "width": 79.2,
-      "height": 25.2,
+      "id": "e29",
+      "x": 165.0,
+      "y": 287.5,
+      "width": 68.0,
+      "height": 23.799999999999997,
       "text": "RESEARCH",
-      "fontSize": 18,
+      "fontSize": 17,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "RESEARCH",
       "autoResize": true,
-      "containerId": "el_30"
+      "containerId": "e28"
     },
     {
       "type": "rectangle",
-      "id": "el_32",
-      "x": 660,
-      "y": 250,
-      "width": 130,
-      "height": 36,
+      "id": "e30",
+      "x": 50,
+      "y": 320,
+      "width": 115,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_33",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e31",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_33",
-      "x": 725.0,
-      "y": 268.0,
-      "width": 77.0,
-      "height": 19.599999999999998,
+      "id": "e31",
+      "x": 107.5,
+      "y": 336.0,
+      "width": 65.0,
+      "height": 18.2,
       "text": "#companies",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#companies",
       "autoResize": true,
-      "containerId": "el_32"
+      "containerId": "e30"
     },
     {
       "type": "rectangle",
-      "id": "el_34",
-      "x": 800,
-      "y": 250,
-      "width": 120,
-      "height": 36,
+      "id": "e32",
+      "x": 173,
+      "y": 320,
+      "width": 105,
+      "height": 32,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_35",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e33",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_35",
-      "x": 860.0,
-      "y": 268.0,
-      "width": 46.2,
-      "height": 19.599999999999998,
-      "text": "#intel",
-      "fontSize": 14,
+      "id": "e33",
+      "x": 225.5,
+      "y": 336.0,
+      "width": 84.5,
+      "height": 18.2,
+      "text": "#market-intel",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "#intel",
+      "originalText": "#market-intel",
       "autoResize": true,
-      "containerId": "el_34"
-    },
-    {
-      "type": "text",
-      "id": "el_36",
-      "x": 935,
-      "y": 258,
-      "width": 215.60000000000002,
-      "height": 19.599999999999998,
-      "text": "< Company profiles (webhook)",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "< Company profiles (webhook)",
-      "autoResize": true
+      "containerId": "e32"
     },
     {
       "type": "rectangle",
-      "id": "el_37",
-      "x": 650,
-      "y": 310,
-      "width": 280,
-      "height": 40,
+      "id": "e34",
+      "x": 310,
+      "y": 270,
+      "width": 170,
+      "height": 35,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_38",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e35",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_38",
-      "x": 790.0,
-      "y": 330.0,
-      "width": 89.10000000000001,
-      "height": 25.2,
+      "id": "e35",
+      "x": 395.0,
+      "y": 287.5,
+      "width": 76.5,
+      "height": 23.799999999999997,
       "text": "MATERIALS",
-      "fontSize": 18,
+      "fontSize": 17,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "MATERIALS",
       "autoResize": true,
-      "containerId": "el_37"
+      "containerId": "e34"
     },
     {
       "type": "rectangle",
-      "id": "el_39",
-      "x": 660,
-      "y": 365,
-      "width": 130,
-      "height": 36,
+      "id": "e36",
+      "x": 320,
+      "y": 320,
+      "width": 75,
+      "height": 32,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_40",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e37",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_40",
-      "x": 725.0,
-      "y": 383.0,
-      "width": 107.80000000000001,
-      "height": 19.599999999999998,
-      "text": "#cover-letters",
-      "fontSize": 14,
+      "id": "e37",
+      "x": 357.5,
+      "y": 336.0,
+      "width": 65.0,
+      "height": 18.2,
+      "text": "#cover-...",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "#cover-letters",
+      "originalText": "#cover-...",
       "autoResize": true,
-      "containerId": "el_39"
+      "containerId": "e36"
     },
     {
       "type": "rectangle",
-      "id": "el_41",
-      "x": 800,
-      "y": 365,
-      "width": 120,
-      "height": 36,
+      "id": "e38",
+      "x": 403,
+      "y": 320,
+      "width": 70,
+      "height": 32,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_42",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e39",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_42",
-      "x": 860.0,
-      "y": 383.0,
-      "width": 123.20000000000002,
-      "height": 19.599999999999998,
-      "text": "#resume-versions",
-      "fontSize": 14,
+      "id": "e39",
+      "x": 438.0,
+      "y": 336.0,
+      "width": 71.5,
+      "height": 18.2,
+      "text": "#resume-...",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "#resume-versions",
+      "originalText": "#resume-...",
       "autoResize": true,
-      "containerId": "el_41"
+      "containerId": "e38"
     },
     {
       "type": "text",
-      "id": "el_43",
-      "x": 935,
-      "y": 373,
-      "width": 215.60000000000002,
-      "height": 19.599999999999998,
-      "text": "< Manual / future automation",
-      "fontSize": 14,
+      "id": "e40",
+      "x": 510,
+      "y": 327,
+      "width": 227.5,
+      "height": 18.2,
+      "text": "Company intel, CLs, resume variants",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "< Manual / future automation",
+      "originalText": "Company intel, CLs, resume variants",
       "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_44",
+      "id": "e41",
       "x": 40,
-      "y": 370,
-      "width": 500,
-      "height": 40,
+      "y": 375,
+      "width": 440,
+      "height": 35,
       "backgroundColor": "#1a4d4d",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_45",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e42",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_45",
-      "x": 290.0,
-      "y": 390.0,
-      "width": 99.00000000000001,
-      "height": 25.2,
+      "id": "e42",
+      "x": 260.0,
+      "y": 392.5,
+      "width": 85.0,
+      "height": 23.799999999999997,
       "text": "AUTOMATION",
-      "fontSize": 18,
+      "fontSize": 17,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "AUTOMATION",
       "autoResize": true,
-      "containerId": "el_44"
+      "containerId": "e41"
     },
     {
       "type": "rectangle",
-      "id": "el_46",
+      "id": "e43",
       "x": 50,
       "y": 425,
-      "width": 160,
-      "height": 36,
+      "width": 130,
+      "height": 32,
       "backgroundColor": "#1e3a5f",
       "fillStyle": "solid",
       "strokeColor": "#4a9eed",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_47",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e44",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_47",
-      "x": 130.0,
-      "y": 443.0,
-      "width": 100.10000000000001,
-      "height": 19.599999999999998,
+      "id": "e44",
+      "x": 115.0,
+      "y": 441.0,
+      "width": 84.5,
+      "height": 18.2,
       "text": "#agent-status",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#agent-status",
       "autoResize": true,
-      "containerId": "el_46"
+      "containerId": "e43"
     },
     {
       "type": "rectangle",
-      "id": "el_48",
-      "x": 220,
+      "id": "e45",
+      "x": 190,
       "y": 425,
-      "width": 160,
-      "height": 36,
+      "width": 140,
+      "height": 32,
       "backgroundColor": "#1e3a5f",
       "fillStyle": "solid",
       "strokeColor": "#4a9eed",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_49",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e46",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_49",
-      "x": 300.0,
-      "y": 443.0,
-      "width": 130.9,
-      "height": 19.599999999999998,
+      "id": "e46",
+      "x": 260.0,
+      "y": 441.0,
+      "width": 110.5,
+      "height": 18.2,
       "text": "#agent-playground",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#agent-playground",
       "autoResize": true,
-      "containerId": "el_48"
+      "containerId": "e45"
     },
     {
       "type": "rectangle",
-      "id": "el_50",
-      "x": 390,
+      "id": "e47",
+      "x": 340,
       "y": 425,
-      "width": 150,
-      "height": 36,
+      "width": 130,
+      "height": 32,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_51",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e48",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_51",
-      "x": 465.0,
-      "y": 443.0,
-      "width": 107.80000000000001,
-      "height": 19.599999999999998,
+      "id": "e48",
+      "x": 405.0,
+      "y": 441.0,
+      "width": 91.0,
+      "height": 18.2,
       "text": "#workflow-logs",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#workflow-logs",
       "autoResize": true,
-      "containerId": "el_50"
+      "containerId": "e47"
     },
     {
       "type": "text",
-      "id": "el_52",
-      "x": 550,
-      "y": 433,
-      "width": 200.20000000000002,
-      "height": 19.599999999999998,
-      "text": "< FreeLLM health + testing",
-      "fontSize": 14,
+      "id": "e49",
+      "x": 510,
+      "y": 432,
+      "width": 240.5,
+      "height": 18.2,
+      "text": "FreeLLM health, testing, debug output",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "< FreeLLM health + testing",
+      "originalText": "FreeLLM health, testing, debug output",
       "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_53",
-      "x": 510,
-      "y": 422,
-      "width": 38,
-      "height": 18,
+      "id": "e50",
+      "x": 440,
+      "y": 423,
+      "width": 32,
+      "height": 14,
       "backgroundColor": "#5c1a1a",
       "fillStyle": "solid",
       "strokeColor": "#ef4444",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_54",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e51",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_54",
-      "x": 529.0,
-      "y": 431.0,
-      "width": 19.8,
-      "height": 16.799999999999997,
+      "id": "e51",
+      "x": 456.0,
+      "y": 430.0,
+      "width": 15.0,
+      "height": 14.0,
       "text": "NEW",
-      "fontSize": 12,
+      "fontSize": 10,
       "fontFamily": 1,
       "strokeColor": "#ef4444",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "NEW",
       "autoResize": true,
-      "containerId": "el_53"
+      "containerId": "e50"
     },
     {
       "type": "rectangle",
-      "id": "el_55",
-      "x": 650,
-      "y": 435,
-      "width": 280,
-      "height": 40,
+      "id": "e52",
+      "x": 40,
+      "y": 480,
+      "width": 440,
+      "height": 35,
       "backgroundColor": "#555555",
       "fillStyle": "solid",
       "strokeColor": "#a0a0a0",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_56",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e53",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_56",
-      "x": 790.0,
-      "y": 455.0,
-      "width": 69.30000000000001,
-      "height": 25.2,
+      "id": "e53",
+      "x": 260.0,
+      "y": 497.5,
+      "width": 59.5,
+      "height": 23.799999999999997,
       "text": "GENERAL",
-      "fontSize": 18,
+      "fontSize": 17,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "GENERAL",
       "autoResize": true,
-      "containerId": "el_55"
+      "containerId": "e52"
     },
     {
       "type": "rectangle",
-      "id": "el_57",
-      "x": 660,
-      "y": 490,
+      "id": "e54",
+      "x": 50,
+      "y": 530,
       "width": 130,
-      "height": 36,
+      "height": 32,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_58",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e55",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_58",
-      "x": 725.0,
-      "y": 508.0,
-      "width": 69.30000000000001,
-      "height": 19.599999999999998,
+      "id": "e55",
+      "x": 115.0,
+      "y": 546.0,
+      "width": 58.5,
+      "height": 18.2,
       "text": "#strategy",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#strategy",
       "autoResize": true,
-      "containerId": "el_57"
+      "containerId": "e54"
     },
     {
       "type": "rectangle",
-      "id": "el_59",
-      "x": 800,
-      "y": 490,
-      "width": 120,
-      "height": 36,
+      "id": "e56",
+      "x": 190,
+      "y": 530,
+      "width": 130,
+      "height": 32,
       "backgroundColor": "#555555",
       "fillStyle": "solid",
       "strokeColor": "#a0a0a0",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_60",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e57",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_60",
-      "x": 860.0,
-      "y": 508.0,
-      "width": 53.900000000000006,
-      "height": 19.599999999999998,
+      "id": "e57",
+      "x": 255.0,
+      "y": 546.0,
+      "width": 45.5,
+      "height": 18.2,
       "text": "#random",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "#random",
       "autoResize": true,
-      "containerId": "el_59"
+      "containerId": "e56"
+    },
+    {
+      "type": "text",
+      "id": "e58",
+      "x": 510,
+      "y": 537,
+      "width": 175.5,
+      "height": 18.2,
+      "text": "Career direction, off-topic",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#a0a0a0",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "Career direction, off-topic",
+      "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_61",
-      "x": 760,
-      "y": 487,
-      "width": 38,
-      "height": 18,
+      "id": "e59",
+      "x": 150,
+      "y": 528,
+      "width": 32,
+      "height": 14,
       "backgroundColor": "#5c1a1a",
       "fillStyle": "solid",
       "strokeColor": "#ef4444",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_62",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e60",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_62",
-      "x": 779.0,
-      "y": 496.0,
-      "width": 19.8,
-      "height": 16.799999999999997,
+      "id": "e60",
+      "x": 166.0,
+      "y": 535.0,
+      "width": 15.0,
+      "height": 14.0,
       "text": "NEW",
-      "fontSize": 12,
+      "fontSize": 10,
       "fontFamily": 1,
       "strokeColor": "#ef4444",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "NEW",
       "autoResize": true,
-      "containerId": "el_61"
+      "containerId": "e59"
     },
     {
       "type": "rectangle",
-      "id": "el_63",
-      "x": 890,
-      "y": 487,
-      "width": 38,
-      "height": 18,
+      "id": "e61",
+      "x": 290,
+      "y": 528,
+      "width": 32,
+      "height": 14,
       "backgroundColor": "#5c1a1a",
       "fillStyle": "solid",
       "strokeColor": "#ef4444",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_64",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e62",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_64",
-      "x": 909.0,
-      "y": 496.0,
-      "width": 19.8,
-      "height": 16.799999999999997,
+      "id": "e62",
+      "x": 306.0,
+      "y": 535.0,
+      "width": 15.0,
+      "height": 14.0,
       "text": "NEW",
-      "fontSize": 12,
+      "fontSize": 10,
       "fontFamily": 1,
       "strokeColor": "#ef4444",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "NEW",
       "autoResize": true,
-      "containerId": "el_63"
+      "containerId": "e61"
     },
     {
       "type": "rectangle",
-      "id": "el_65",
+      "id": "e63",
       "x": -170,
-      "y": 250,
-      "width": 140,
-      "height": 80,
+      "y": 160,
+      "width": 120,
+      "height": 60,
       "backgroundColor": "#1e3a5f",
       "fillStyle": "solid",
       "strokeColor": "#4a9eed",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_66",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e64",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_66",
-      "x": -100.0,
-      "y": 290.0,
-      "width": 36.300000000000004,
-      "height": 30.799999999999997,
+      "id": "e64",
+      "x": -110.0,
+      "y": 190.0,
+      "width": 30.0,
+      "height": 28.0,
       "text": "n8n",
-      "fontSize": 22,
+      "fontSize": 20,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "n8n",
       "autoResize": true,
-      "containerId": "el_65"
+      "containerId": "e63"
     },
     {
-      "type": "rectangle",
-      "id": "el_67",
+      "type": "text",
+      "id": "e65",
       "x": -170,
-      "y": 130,
-      "width": 65,
-      "height": 28,
-      "backgroundColor": "#1a4d2e",
-      "fillStyle": "solid",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_68",
-          "type": "text"
-        }
-      ],
-      "roundness": {
-        "type": 3
-      }
-    },
-    {
-      "type": "text",
-      "id": "el_68",
-      "x": -137.5,
-      "y": 144.0,
-      "width": 39.6,
+      "y": 230,
+      "width": 126.0,
       "height": 16.799999999999997,
-      "text": "RSS x3",
+      "text": "RSS x3 + API + scrape",
       "fontSize": 12,
       "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
+      "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "RSS x3",
-      "autoResize": true,
-      "containerId": "el_67"
+      "originalText": "RSS x3 + API + scrape",
+      "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_69",
-      "x": -95,
-      "y": 130,
-      "width": 65,
-      "height": 28,
-      "backgroundColor": "#1a4d2e",
-      "fillStyle": "solid",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_70",
-          "type": "text"
-        }
-      ],
-      "roundness": {
-        "type": 3
-      }
-    },
-    {
-      "type": "text",
-      "id": "el_70",
-      "x": -62.5,
-      "y": 144.0,
-      "width": 59.400000000000006,
-      "height": 16.799999999999997,
-      "text": "Careerjet",
-      "fontSize": 12,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "Careerjet",
-      "autoResize": true,
-      "containerId": "el_69"
-    },
-    {
-      "type": "rectangle",
-      "id": "el_71",
+      "id": "e66",
       "x": -170,
-      "y": 165,
-      "width": 65,
-      "height": 28,
-      "backgroundColor": "#1a4d2e",
-      "fillStyle": "solid",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_72",
-          "type": "text"
-        }
-      ],
-      "roundness": {
-        "type": 3
-      }
-    },
-    {
-      "type": "text",
-      "id": "el_72",
-      "x": -137.5,
-      "y": 179.0,
-      "width": 52.800000000000004,
-      "height": 16.799999999999997,
-      "text": "MyJobMag",
-      "fontSize": 12,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "MyJobMag",
-      "autoResize": true,
-      "containerId": "el_71"
-    },
-    {
-      "type": "rectangle",
-      "id": "el_73",
-      "x": -95,
-      "y": 165,
-      "width": 65,
-      "height": 28,
-      "backgroundColor": "#5c3d1a",
-      "fillStyle": "solid",
-      "strokeColor": "#f59e0b",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_74",
-          "type": "text"
-        }
-      ],
-      "roundness": {
-        "type": 3
-      }
-    },
-    {
-      "type": "text",
-      "id": "el_74",
-      "x": -62.5,
-      "y": 179.0,
-      "width": 59.400000000000006,
-      "height": 16.799999999999997,
-      "text": "BrightMon",
-      "fontSize": 12,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "BrightMon",
-      "autoResize": true,
-      "containerId": "el_73"
-    },
-    {
-      "type": "rectangle",
-      "id": "el_75",
-      "x": -170,
-      "y": 370,
-      "width": 140,
-      "height": 50,
+      "y": 280,
+      "width": 120,
+      "height": 45,
       "backgroundColor": "#2d1b69",
       "fillStyle": "solid",
       "strokeColor": "#8b5cf6",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_76",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e67",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_76",
-      "x": -100.0,
-      "y": 395.0,
-      "width": 69.30000000000001,
-      "height": 25.2,
+      "id": "e67",
+      "x": -110.0,
+      "y": 302.5,
+      "width": 56.0,
+      "height": 22.4,
       "text": "FreeLLM",
-      "fontSize": 18,
+      "fontSize": 16,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "FreeLLM",
       "autoResize": true,
-      "containerId": "el_75"
+      "containerId": "e66"
     },
     {
       "type": "text",
-      "id": "el_77",
+      "id": "e68",
       "x": -170,
-      "y": 430,
-      "width": 69.30000000000001,
-      "height": 19.599999999999998,
+      "y": 335,
+      "width": 54.0,
+      "height": 16.799999999999997,
       "text": "89 models",
-      "fontSize": 14,
+      "fontSize": 12,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -1499,188 +1322,11 @@
       "autoResize": true
     },
     {
-      "type": "arrow",
-      "id": "el_78",
-      "x": -105,
-      "y": 158,
-      "width": 5,
-      "height": 92,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          5,
-          92
-        ]
-      ],
-      "endArrowhead": "arrow",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "strokeStyle": "dashed"
-    },
-    {
-      "type": "arrow",
-      "id": "el_79",
-      "x": -30,
-      "y": 158,
-      "width": 0,
-      "height": 92,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          92
-        ]
-      ],
-      "endArrowhead": "arrow",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "strokeStyle": "dashed"
-    },
-    {
-      "type": "arrow",
-      "id": "el_80",
-      "x": -100,
-      "y": 330,
-      "width": 0,
-      "height": 40,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          0,
-          40
-        ]
-      ],
-      "endArrowhead": "arrow",
-      "strokeColor": "#8b5cf6",
-      "strokeWidth": 2,
-      "roughness": 0,
-      "strokeStyle": "solid"
-    },
-    {
-      "type": "arrow",
-      "id": "el_81",
-      "x": -30,
-      "y": 290,
-      "width": 80,
-      "height": -22,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          80,
-          -22
-        ]
-      ],
-      "endArrowhead": "arrow",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 2,
-      "roughness": 0,
-      "strokeStyle": "solid"
-    },
-    {
-      "type": "text",
-      "id": "el_82",
-      "x": -10,
-      "y": 270,
-      "width": 61.60000000000001,
-      "height": 19.599999999999998,
-      "text": "webhooks",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#22c55e",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "webhooks",
-      "autoResize": true
-    },
-    {
-      "type": "arrow",
-      "id": "el_83",
-      "x": -30,
-      "y": 270,
-      "width": 80,
-      "height": -167,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          80,
-          -167
-        ]
-      ],
-      "endArrowhead": "arrow",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "strokeStyle": "dashed"
-    },
-    {
-      "type": "arrow",
-      "id": "el_84",
-      "x": -30,
-      "y": 310,
-      "width": 80,
-      "height": -162,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          80,
-          -162
-        ]
-      ],
-      "endArrowhead": "arrow",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "strokeStyle": "dashed"
-    },
-    {
-      "type": "arrow",
-      "id": "el_85",
-      "x": -30,
-      "y": 300,
-      "width": 690,
-      "height": -32,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          690,
-          -32
-        ]
-      ],
-      "endArrowhead": "arrow",
-      "strokeColor": "#22c55e",
-      "strokeWidth": 1,
-      "roughness": 0,
-      "strokeStyle": "dashed"
-    },
-    {
       "type": "rectangle",
-      "id": "el_86",
+      "id": "e69",
       "x": -170,
-      "y": 460,
-      "width": 140,
+      "y": 380,
+      "width": 120,
       "height": 40,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
@@ -1688,42 +1334,42 @@
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [
-        {
-          "id": "el_87",
-          "type": "text"
-        }
-      ],
       "roundness": {
         "type": 3
-      }
+      },
+      "boundElements": [
+        {
+          "id": "e70",
+          "type": "text"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "el_87",
-      "x": -100.0,
-      "y": 480.0,
-      "width": 79.2,
-      "height": 22.4,
+      "id": "e70",
+      "x": -110.0,
+      "y": 400.0,
+      "width": 63.0,
+      "height": 19.599999999999998,
       "text": "Zenicious",
-      "fontSize": 16,
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
       "originalText": "Zenicious",
       "autoResize": true,
-      "containerId": "el_86"
+      "containerId": "e69"
     },
     {
       "type": "text",
-      "id": "el_88",
+      "id": "e71",
       "x": -170,
-      "y": 510,
-      "width": 130.9,
-      "height": 19.599999999999998,
+      "y": 430,
+      "width": 102.0,
+      "height": 16.799999999999997,
       "text": "Bot (interactive)",
-      "fontSize": 14,
+      "fontSize": 12,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -1733,19 +1379,126 @@
     },
     {
       "type": "arrow",
-      "id": "el_89",
-      "x": -30,
-      "y": 480,
-      "width": 80,
-      "height": -164,
+      "id": "e72",
+      "x": -50,
+      "y": 190,
+      "width": 100,
+      "height": -102,
       "points": [
         [
           0,
           0
         ],
         [
-          80,
-          -164
+          100,
+          -102
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "roughness": 0
+    },
+    {
+      "type": "text",
+      "id": "e73",
+      "x": -20,
+      "y": 130,
+      "width": 52.0,
+      "height": 18.2,
+      "text": "webhooks",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#22c55e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "originalText": "webhooks",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "e74",
+      "x": -110,
+      "y": 220,
+      "width": 0,
+      "height": 60,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          60
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "arrow",
+      "id": "e75",
+      "x": -50,
+      "y": 200,
+      "width": 100,
+      "height": -4,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          100,
+          -4
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "arrow",
+      "id": "e76",
+      "x": -50,
+      "y": 210,
+      "width": 100,
+      "height": 126,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          100,
+          126
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "strokeStyle": "dashed"
+    },
+    {
+      "type": "arrow",
+      "id": "e77",
+      "x": -50,
+      "y": 400,
+      "width": 444,
+      "height": -204,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          444,
+          -204
         ]
       ],
       "endArrowhead": "arrow",
@@ -1756,13 +1509,13 @@
     },
     {
       "type": "text",
-      "id": "el_90",
-      "x": -10,
-      "y": 400,
-      "width": 77.0,
-      "height": 19.599999999999998,
+      "id": "e78",
+      "x": 100,
+      "y": 460,
+      "width": 65.0,
+      "height": 18.2,
       "text": "react/read",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#f59e0b",
       "textAlign": "center",
@@ -1772,13 +1525,13 @@
     },
     {
       "type": "text",
-      "id": "el_91",
-      "x": 40,
-      "y": 570,
-      "width": 59.400000000000006,
-      "height": 25.2,
+      "id": "e79",
+      "x": 650,
+      "y": 25,
+      "width": 51.0,
+      "height": 23.799999999999997,
       "text": "LEGEND",
-      "fontSize": 18,
+      "fontSize": 17,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
@@ -1788,65 +1541,63 @@
     },
     {
       "type": "rectangle",
-      "id": "el_92",
-      "x": 40,
-      "y": 600,
-      "width": 20,
-      "height": 20,
+      "id": "e80",
+      "x": 650,
+      "y": 55,
+      "width": 16,
+      "height": 16,
       "backgroundColor": "#1a4d2e",
       "fillStyle": "solid",
       "strokeColor": "#22c55e",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [],
       "roundness": {
         "type": 3
       }
     },
     {
       "type": "text",
-      "id": "el_93",
-      "x": 70,
-      "y": 610,
-      "width": 254.10000000000002,
-      "height": 19.599999999999998,
-      "text": "= Webhook-driven (n8n auto-posts)",
-      "fontSize": 14,
+      "id": "e81",
+      "x": 680,
+      "y": 63,
+      "width": 175.5,
+      "height": 18.2,
+      "text": "= Webhook-driven (n8n auto)",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "= Webhook-driven (n8n auto-posts)",
+      "originalText": "= Webhook-driven (n8n auto)",
       "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_94",
-      "x": 40,
-      "y": 628,
-      "width": 20,
-      "height": 20,
+      "id": "e82",
+      "x": 650,
+      "y": 80,
+      "width": 16,
+      "height": 16,
       "backgroundColor": "#5c3d1a",
       "fillStyle": "solid",
       "strokeColor": "#f59e0b",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [],
       "roundness": {
         "type": 3
       }
     },
     {
       "type": "text",
-      "id": "el_95",
-      "x": 70,
-      "y": 638,
-      "width": 177.10000000000002,
-      "height": 19.599999999999998,
+      "id": "e83",
+      "x": 680,
+      "y": 88,
+      "width": 149.5,
+      "height": 18.2,
       "text": "= Manual / Bot-reactive",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -1856,31 +1607,30 @@
     },
     {
       "type": "rectangle",
-      "id": "el_96",
-      "x": 40,
-      "y": 656,
-      "width": 20,
-      "height": 20,
+      "id": "e84",
+      "x": 650,
+      "y": 105,
+      "width": 16,
+      "height": 16,
       "backgroundColor": "#1e3a5f",
       "fillStyle": "solid",
       "strokeColor": "#4a9eed",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [],
       "roundness": {
         "type": 3
       }
     },
     {
       "type": "text",
-      "id": "el_97",
-      "x": 70,
-      "y": 666,
-      "width": 169.4,
-      "height": 19.599999999999998,
+      "id": "e85",
+      "x": 680,
+      "y": 113,
+      "width": 143.0,
+      "height": 18.2,
       "text": "= Agent infrastructure",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -1890,31 +1640,30 @@
     },
     {
       "type": "rectangle",
-      "id": "el_98",
-      "x": 40,
-      "y": 684,
-      "width": 38,
-      "height": 18,
+      "id": "e86",
+      "x": 650,
+      "y": 130,
+      "width": 30,
+      "height": 14,
       "backgroundColor": "#5c1a1a",
       "fillStyle": "solid",
       "strokeColor": "#ef4444",
       "strokeWidth": 1,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [],
       "roundness": {
         "type": 3
       }
     },
     {
       "type": "text",
-      "id": "el_99",
-      "x": 50,
-      "y": 693,
-      "width": 19.8,
-      "height": 16.799999999999997,
+      "id": "e87",
+      "x": 670,
+      "y": 137,
+      "width": 15.0,
+      "height": 14.0,
       "text": "NEW",
-      "fontSize": 12,
+      "fontSize": 10,
       "fontFamily": 1,
       "strokeColor": "#ef4444",
       "textAlign": "center",
@@ -1924,47 +1673,46 @@
     },
     {
       "type": "text",
-      "id": "el_100",
-      "x": 90,
-      "y": 693,
-      "width": 354.20000000000005,
-      "height": 19.599999999999998,
-      "text": "= Channel doesn't exist yet, proposed addition",
-      "fontSize": 14,
+      "id": "e88",
+      "x": 710,
+      "y": 137,
+      "width": 143.0,
+      "height": 18.2,
+      "text": "= Proposed new channel",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "= Channel doesn't exist yet, proposed addition",
+      "originalText": "= Proposed new channel",
       "autoResize": true
     },
     {
       "type": "rectangle",
-      "id": "el_101",
-      "x": 1100,
-      "y": 30,
-      "width": 480,
-      "height": 420,
+      "id": "e89",
+      "x": 650,
+      "y": 165,
+      "width": 430,
+      "height": 300,
       "backgroundColor": "#1e3a5f",
       "fillStyle": "solid",
       "strokeColor": "#4a9eed",
       "strokeWidth": 2,
       "roughness": 0,
       "opacity": 100,
-      "boundElements": [],
       "roundness": {
         "type": 3
       }
     },
     {
       "type": "text",
-      "id": "el_102",
-      "x": 1340,
-      "y": 55,
-      "width": 176.0,
-      "height": 28.0,
+      "id": "e90",
+      "x": 865,
+      "y": 185,
+      "width": 144.0,
+      "height": 25.2,
       "text": "KEY IMPROVEMENTS",
-      "fontSize": 20,
+      "fontSize": 18,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
@@ -1974,77 +1722,61 @@
     },
     {
       "type": "text",
-      "id": "el_103",
-      "x": 1115,
-      "y": 85,
-      "width": 264.0,
-      "height": 21.0,
-      "text": "1. SPLIT #logs INTO TWO CHANNELS",
-      "fontSize": 15,
+      "id": "e91",
+      "x": 665,
+      "y": 210,
+      "width": 161.0,
+      "height": 19.599999999999998,
+      "text": "1. Split #logs into two",
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "1. SPLIT #logs INTO TWO CHANNELS",
+      "originalText": "1. Split #logs into two",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_104",
-      "x": 1115,
-      "y": 105,
-      "width": 392.70000000000005,
-      "height": 19.599999999999998,
-      "text": "   #logs = n8n execution health (errors, run stats)",
-      "fontSize": 14,
+      "id": "e92",
+      "x": 665,
+      "y": 228,
+      "width": 162.5,
+      "height": 18.2,
+      "text": "   #logs = n8n ops health",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "   #logs = n8n execution health (errors, run stats)",
+      "originalText": "   #logs = n8n ops health",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_105",
-      "x": 1115,
-      "y": 125,
-      "width": 369.6,
-      "height": 19.599999999999998,
-      "text": "   #workflow-logs = per-workflow detailed output",
-      "fontSize": 14,
+      "id": "e93",
+      "x": 665,
+      "y": 246,
+      "width": 208.0,
+      "height": 18.2,
+      "text": "   #workflow-logs = debug detail",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "   #workflow-logs = per-workflow detailed output",
+      "originalText": "   #workflow-logs = debug detail",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_106",
-      "x": 1115,
-      "y": 145,
-      "width": 323.40000000000003,
-      "height": 19.599999999999998,
-      "text": "   Keeps ops noise separate from debugging",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   Keeps ops noise separate from debugging",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_107",
-      "x": 1115,
-      "y": 165,
+      "id": "e94",
+      "x": 665,
+      "y": 264,
       "width": 0.0,
-      "height": 19.599999999999998,
+      "height": 18.2,
       "text": "",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -2054,77 +1786,61 @@
     },
     {
       "type": "text",
-      "id": "el_108",
-      "x": 1115,
-      "y": 185,
-      "width": 198.00000000000003,
-      "height": 21.0,
-      "text": "2. ADD #applied TRACKING",
-      "fontSize": 15,
+      "id": "e95",
+      "x": 665,
+      "y": 282,
+      "width": 168.0,
+      "height": 19.599999999999998,
+      "text": "2. Add #applied tracking",
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "2. ADD #applied TRACKING",
+      "originalText": "2. Add #applied tracking",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_109",
-      "x": 1115,
-      "y": 205,
-      "width": 284.90000000000003,
-      "height": 19.599999999999998,
-      "text": "   Bot-reactive: emoji to mark status",
-      "fontSize": 14,
+      "id": "e96",
+      "x": 665,
+      "y": 300,
+      "width": 195.0,
+      "height": 18.2,
+      "text": "   Bot-reactive emoji pipeline",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "   Bot-reactive: emoji to mark status",
+      "originalText": "   Bot-reactive emoji pipeline",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_110",
-      "x": 1115,
-      "y": 225,
-      "width": 354.20000000000005,
-      "height": 19.599999999999998,
-      "text": "   Tracks: applied, interview, rejected, offer",
-      "fontSize": 14,
+      "id": "e97",
+      "x": 665,
+      "y": 318,
+      "width": 195.0,
+      "height": 18.2,
+      "text": "   applied > interview > offer",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "   Tracks: applied, interview, rejected, offer",
+      "originalText": "   applied > interview > offer",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_111",
-      "x": 1115,
-      "y": 245,
-      "width": 261.8,
-      "height": 19.599999999999998,
-      "text": "   Connects to Notion Status field",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   Connects to Notion Status field",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_112",
-      "x": 1115,
-      "y": 265,
+      "id": "e98",
+      "x": 665,
+      "y": 336,
       "width": 0.0,
-      "height": 19.599999999999998,
+      "height": 18.2,
       "text": "",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -2134,61 +1850,45 @@
     },
     {
       "type": "text",
-      "id": "el_113",
-      "x": 1115,
-      "y": 285,
-      "width": 214.50000000000003,
-      "height": 21.0,
-      "text": "3. ADD #strategy + #random",
-      "fontSize": 15,
+      "id": "e99",
+      "x": 665,
+      "y": 354,
+      "width": 182.0,
+      "height": 19.599999999999998,
+      "text": "3. Add #strategy + #random",
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "3. ADD #strategy + #random",
+      "originalText": "3. Add #strategy + #random",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_114",
-      "x": 1115,
-      "y": 305,
-      "width": 323.40000000000003,
-      "height": 19.599999999999998,
-      "text": "   Career direction, networking, off-topic",
-      "fontSize": 14,
+      "id": "e100",
+      "x": 665,
+      "y": 372,
+      "width": 208.0,
+      "height": 18.2,
+      "text": "   Career networking + off-topic",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "   Career direction, networking, off-topic",
+      "originalText": "   Career networking + off-topic",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_115",
-      "x": 1115,
-      "y": 325,
-      "width": 315.70000000000005,
-      "height": 19.599999999999998,
-      "text": "   Separates signal from noise in GENERAL",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   Separates signal from noise in GENERAL",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_116",
-      "x": 1115,
-      "y": 345,
+      "id": "e101",
+      "x": 665,
+      "y": 390,
       "width": 0.0,
-      "height": 19.599999999999998,
+      "height": 18.2,
       "text": "",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -2198,61 +1898,45 @@
     },
     {
       "type": "text",
-      "id": "el_117",
-      "x": 1115,
-      "y": 365,
-      "width": 330.0,
-      "height": 21.0,
-      "text": "4. MERGE agent-status + agent-playground",
-      "fontSize": 15,
+      "id": "e102",
+      "x": 665,
+      "y": 408,
+      "width": 224.0,
+      "height": 19.599999999999998,
+      "text": "4. Rename #intel > #market-intel",
+      "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "4. MERGE agent-status + agent-playground",
+      "originalText": "4. Rename #intel > #market-intel",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_118",
-      "x": 1115,
-      "y": 385,
-      "width": 261.8,
-      "height": 19.599999999999998,
-      "text": "   INTO single AUTOMATION category",
-      "fontSize": 14,
+      "id": "e103",
+      "x": 665,
+      "y": 426,
+      "width": 214.5,
+      "height": 18.2,
+      "text": "   Matches docs, more descriptive",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "   INTO single AUTOMATION category",
+      "originalText": "   Matches docs, more descriptive",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_119",
-      "x": 1115,
-      "y": 405,
-      "width": 315.70000000000005,
-      "height": 19.599999999999998,
-      "text": "   Clearer grouping, less category sprawl",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   Clearer grouping, less category sprawl",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_120",
-      "x": 1115,
-      "y": 425,
+      "id": "e104",
+      "x": 665,
+      "y": 444,
       "width": 0.0,
-      "height": 19.599999999999998,
+      "height": 18.2,
       "text": "",
-      "fontSize": 14,
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
@@ -2262,308 +1946,66 @@
     },
     {
       "type": "text",
-      "id": "el_121",
-      "x": 1115,
-      "y": 445,
-      "width": 181.50000000000003,
-      "height": 21.0,
-      "text": "5. WEBHOOK ROUTING MAP",
-      "fontSize": 15,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "5. WEBHOOK ROUTING MAP",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_122",
-      "x": 1115,
-      "y": 465,
-      "width": 269.5,
+      "id": "e105",
+      "x": 665,
+      "y": 462,
+      "width": 210.0,
       "height": 19.599999999999998,
-      "text": "   WF1 -> #feed-eee, #alerts, #logs",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   WF1 -> #feed-eee, #alerts, #logs",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_123",
-      "x": 1115,
-      "y": 485,
-      "width": 207.9,
-      "height": 19.599999999999998,
-      "text": "   WF2 -> #companies, #logs",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   WF2 -> #companies, #logs",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_124",
-      "x": 1115,
-      "y": 505,
-      "width": 200.20000000000002,
-      "height": 19.599999999999998,
-      "text": "   Dashboard -> #dashboard",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   Dashboard -> #dashboard",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_125",
-      "x": 1115,
-      "y": 525,
-      "width": 292.6,
-      "height": 19.599999999999998,
-      "text": "   Bot -> #validated, #applied, #saved",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "   Bot -> #validated, #applied, #saved",
-      "autoResize": true
-    },
-    {
-      "type": "rectangle",
-      "id": "el_126",
-      "x": 1100,
-      "y": 470,
-      "width": 480,
-      "height": 230,
-      "backgroundColor": "#2d1b69",
-      "fillStyle": "solid",
-      "strokeColor": "#8b5cf6",
-      "strokeWidth": 2,
-      "roughness": 0,
-      "opacity": 100,
-      "boundElements": [],
-      "roundness": {
-        "type": 3
-      }
-    },
-    {
-      "type": "text",
-      "id": "el_127",
-      "x": 1340,
-      "y": 490,
-      "width": 148.5,
-      "height": 25.2,
-      "text": "WEBHOOK ROUTING",
-      "fontSize": 18,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "WEBHOOK ROUTING",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_128",
-      "x": 1115,
-      "y": 520,
-      "width": 115.50000000000001,
-      "height": 19.599999999999998,
-      "text": "WF1 Job Scanner",
+      "text": "5. Webhook routing per channel",
       "fontSize": 14,
       "fontFamily": 1,
       "strokeColor": "#e5e5e5",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "WF1 Job Scanner",
+      "originalText": "5. Webhook routing per channel",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_129",
-      "x": 1270,
-      "y": 520,
-      "width": 331.1,
-      "height": 19.599999999999998,
-      "text": "-> #feed-eee, #feed-general, #alerts, #logs",
-      "fontSize": 14,
+      "id": "e106",
+      "x": 665,
+      "y": 480,
+      "width": 182.0,
+      "height": 18.2,
+      "text": "   WF1 > feeds, alerts, logs",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "-> #feed-eee, #feed-general, #alerts, #logs",
+      "originalText": "   WF1 > feeds, alerts, logs",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_130",
-      "x": 1115,
-      "y": 548,
-      "width": 107.80000000000001,
-      "height": 19.599999999999998,
-      "text": "WF2 Enrichment",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "WF2 Enrichment",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_131",
-      "x": 1270,
-      "y": 548,
-      "width": 154.0,
-      "height": 19.599999999999998,
-      "text": "-> #companies, #logs",
-      "fontSize": 14,
+      "id": "e107",
+      "x": 665,
+      "y": 498,
+      "width": 156.0,
+      "height": 18.2,
+      "text": "   WF2 > companies, logs",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "-> #companies, #logs",
+      "originalText": "   WF2 > companies, logs",
       "autoResize": true
     },
     {
       "type": "text",
-      "id": "el_132",
-      "x": 1115,
-      "y": 576,
-      "width": 100.10000000000001,
-      "height": 19.599999999999998,
-      "text": "WF3 Dashboard",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "WF3 Dashboard",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_133",
-      "x": 1270,
-      "y": 576,
-      "width": 215.60000000000002,
-      "height": 19.599999999999998,
-      "text": "-> #dashboard (8am EAT cron)",
-      "fontSize": 14,
+      "id": "e108",
+      "x": 665,
+      "y": 516,
+      "width": 221.0,
+      "height": 18.2,
+      "text": "   Bot > validated, applied, saved",
+      "fontSize": 13,
       "fontFamily": 1,
       "strokeColor": "#a0a0a0",
       "textAlign": "center",
       "verticalAlign": "middle",
-      "originalText": "-> #dashboard (8am EAT cron)",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_134",
-      "x": 1115,
-      "y": 604,
-      "width": 130.9,
-      "height": 19.599999999999998,
-      "text": "WF4 Cover Letters",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "WF4 Cover Letters",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_135",
-      "x": 1270,
-      "y": 604,
-      "width": 254.10000000000002,
-      "height": 19.599999999999998,
-      "text": "-> #cover-letters (emoji trigger)",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "-> #cover-letters (emoji trigger)",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_136",
-      "x": 1115,
-      "y": 632,
-      "width": 107.80000000000001,
-      "height": 19.599999999999998,
-      "text": "WF5 JustHireMe",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "WF5 JustHireMe",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_137",
-      "x": 1270,
-      "y": 632,
-      "width": 169.4,
-      "height": 19.599999999999998,
-      "text": "-> #validated (future)",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "-> #validated (future)",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_138",
-      "x": 1115,
-      "y": 660,
-      "width": 100.10000000000001,
-      "height": 19.599999999999998,
-      "text": "Bot Zenicious",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#e5e5e5",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "Bot Zenicious",
-      "autoResize": true
-    },
-    {
-      "type": "text",
-      "id": "el_139",
-      "x": 1270,
-      "y": 660,
-      "width": 269.5,
-      "height": 19.599999999999998,
-      "text": "-> reads all, reacts, pins, manages",
-      "fontSize": 14,
-      "fontFamily": 1,
-      "strokeColor": "#a0a0a0",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "originalText": "-> reads all, reacts, pins, manages",
+      "originalText": "   Bot > validated, applied, saved",
       "autoResize": true
     }
   ],

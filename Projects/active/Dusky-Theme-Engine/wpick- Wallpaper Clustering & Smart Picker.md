@@ -2372,5 +2372,68 @@ The binary reads a path, outputs JSON matching the existing `features.jsonl` for
 
 ---
 
-_Last updated: 2026-05-23_  
-_Stack: Python 3.12 · uv · HDBSCAN · Pillow · Typer · SQLite · swww · matugen · rofi-wayland_
+_Last updated: 2026-05-24_  
+_Stack: Python 3.12 · uv · KMeans · Pillow · Typer · SQLite · rofi-wayland_
+
+---
+
+## Session Log: 2026-05-24
+
+### What happened
+
+Full refactor session. 10 commits on master, dispatched via herdr TUI with opencode.
+
+**Code quality:**
+- mypy: 15 errors → 0
+- ruff: 33 E501 → 0
+- tests: 179 → 200 passing
+- All HDBSCAN references replaced with KMeans (code + README)
+
+**Bugs found & fixed:**
+- `WallpaperDB.__init__` required `Path`, crashed on `str` → now accepts `Path | str`
+- `upsert_features` never set `extracted_at` on images table → stats showed `extracted_images: 0`
+- README still referenced HDBSCAN, `min_cluster_size`, `min_samples` → updated
+
+**Branches cleaned:** 11 hanging `refactor/*` branches deleted, only `master` remains
+
+**Integration test (48 images: 24 dark + 24 light):**
+- Pipeline: init → scan → cluster → stats all pass
+- 4 clusters found, distribution: 24 / 14 / 7 / 6
+- Dark/light separation mostly works (cluster 3 = light bucket, clusters 0/1/2 = dark-heavy)
+- 3 extra images leaked from root dir (china.jpg, dots.png, flower.jpg) — scanner picks up everything in `wallpaper_dir`
+
+**Picker test:**
+- Rofi launches, thumbnails generate, selection captured (light/0018.jpg)
+- Looks bad — "rofi is unsure what to show" on some runs
+- Hardcoded for swww (user uses something else — TBD)
+- No cluster → wallpaper drill-down flow
+- No `set_wallpaper` after pick (CLI doesn't wire it)
+
+### What needs to happen next
+
+1. **Clone & customize HyDE's theme selector** for wpick's card grid picker
+   - HyDE reference: `selector.rasi` + `rofiselect.sh` pattern
+   - Spec at `docs/rofi-picker-spec.md` was written but lost (never committed) — rewrite it
+   - Key: large icon cards, centered grid, dynamic columns, search bar
+
+2. **Two-stage pick flow:** cluster list first → wallpaper grid within cluster
+   - `wpick pick` shows clusters as cards (dark, light, nature, neon...)
+   - User picks cluster → see wallpapers in that cluster
+   - Or `wpick pick --cluster dark` to skip to a specific cluster
+
+3. **Check what matugen expects** — cluster naming needs to align with matugen's theme structure
+   - Does matugen care about folder structure? Cluster labels? File naming?
+   - This might affect how we name/organize clusters
+
+4. **Swap swww for user's actual wallpaper setter** — TBD which one (swaybg? hyprpaper? wpaperd?)
+
+5. **Wire `set_wallpaper` in CLI** — `pick` command should actually apply the selection
+
+6. **Thumbnail cache invalidation** — check if source image changed before serving cached thumb
+
+### Open questions
+
+- What wallpaper setter does the user actually use? (not swww)
+- How many themes/clusters should the real run produce? (currently `cluster_count = 4`, real would be ~8-10)
+- Should cluster naming be automatic (from dominant colors) or manual?
+- Does matugen need specific folder/cluster structure?

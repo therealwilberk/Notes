@@ -108,6 +108,7 @@ graph LR
 ```
 
 Layout diagram: `discord-layout-v2.excalidraw` in project root.
+Architecture diagram: `system-architecture.excalidraw` in project root.
 
 ## Workflows
 
@@ -160,10 +161,10 @@ Layout diagram: `discord-layout-v2.excalidraw` in project root.
 - [x] Workflow 1 spec complete (job feed scanner)
 - [x] Workflow 2 spec complete (company enrichment)
 - [x] Discord architecture defined (two-bot model)
-- [ ] Add `extra_hosts` to docker-compose for FreeLLM access
-- [ ] Refresh Notion API token (currently 401)
-- [ ] Create Notion databases (Jobs, Companies)
-- [ ] Create Discord bot + webhooks
+- [x] Add `extra_hosts` to docker-compose for FreeLLM access
+- [x] Refresh Notion API token (currently 401)
+- [x] Create Notion databases (Jobs, Companies)
+- [ ] Create Discord bot + webhooks (in progress — other session)
 - [ ] Build Workflow 1 in n8n
 - [ ] Build Workflow 2 in n8n
 - [ ] Store CV in Notion (Canva for formatting)

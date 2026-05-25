@@ -10,42 +10,18 @@ aliases:
   - "Job Search Infrastructure"
   - "n8n + JustHireMe"
 created: 2026-05-21
-status: planning
+updated: 2026-05-25
+status: deprecated
 ---
 
 # Job Search Infrastructure — Map of Content
 
-> **Automated job feed collection → AI ranking → Discord alerts.**
-> Stack: n8n (scraper) · JustHireMe (AI) · Discord (output)
+> [!warning] **Superseded by [[Job Hunt Ops — Map of Content]]**
+> This MOC was the initial planning doc (2026-05-21). The project has evolved into a full Discord-first ops hub with Notion as DB, FreeLLM agents, and enrichment pipeline. All updates go to the new MOC.
 
-```mermaid
-graph LR
-    A[BrighterMonday] --> D[n8n Workflows]
-    B[MyJobMag] --> D
-    C[LinkedIn KE] --> D
-    D --> E[JustHireMe API]
-    D --> F[Discord Channel]
-    E --> F
-```
-
-## Components
-
-| Layer | Tool | Notes |
-|---|---|---|
-| Scraping | [[n8n Setup & Configuration]] | RSS + HTTP + Playwright |
-| Sites | [[Kenyan Job Sites — Feeds & Scraping]] | 8 sites mapped by difficulty |
-| Output | [[n8n + Discord Integration]] | Rich embeds by relevance score |
-| AI | JustHireMe | Matching + tailoring (TBD) |
-
-## Decisions
+## Original Decisions (preserved)
 
 - **2026-05-21:** n8n as scraping layer, not rewriting scraping in JustHireMe
 - **2026-05-21:** n8n first (feeds), JustHireMe second
 
-## Progress
-
-- [ ] Research n8n self-hosting on Arch
-- [ ] Map KE job site structures
-- [ ] Design n8n workflow schemas
-- [ ] Set up Discord webhook
-- [ ] Connect to JustHireMe API
+## → [[Job Hunt Ops — Map of Content]]

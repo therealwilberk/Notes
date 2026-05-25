@@ -8,9 +8,10 @@ tags:
 aliases:
   - "KE Job Sites"
   - "Kenya Jobs"
-parent: "[[Job Search Infrastructure — Map of Content]]"
+parent: "[[Job Hunt Ops — Map of Content]]"
 created: 2026-05-21
-status: researched
+updated: 2026-05-25
+status: active
 ---
 
 # Kenyan Job Sites — Feeds & Scraping

@@ -89,6 +89,7 @@ Each workflow targets its own webhook URL. Zero conflicts. Independent failure d
 | #agent-playground | ✅ | ✅ | ✅ | ✅ | ❌ | |
 | #strategy | ✅ | ✅ | ❌ | ✅ | ❌ | |
 | #random | ✅ | ✅ | ❌ | ✅ | ❌ | |
+| #workflow-logs | ✅ | ❌ | ❌ | ❌ | ❌ | Monitor only (like #logs) |
 
 ### n8n (Webhooks)
 
@@ -100,6 +101,7 @@ Each workflow targets its own webhook URL. Zero conflicts. Independent failure d
 | #dashboard | ✅ | Daily Dashboard |
 | #log | ✅ | All workflows (execution log) |
 | #agent-status | ✅ | Health check cron |
+| #workflow-logs | ✅ | All workflows (detailed execution output) |
 | #validated | ✅ | Job Validator |
 | #companies | ✅ | Company Enrichment |
 

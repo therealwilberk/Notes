@@ -74,37 +74,40 @@ graph LR
 | Vision | `mimo-v2-omni` | Screenshots, job images |
 | Compression | `gemini-2.5-flash` | Summarization |
 
-## Discord Layout
+## Discord Layout (v2)
 
 ```
-📋 COMMAND CENTER
-├── #dashboard          — Daily automated summary (8am EAT cron)
-├── #alerts             — Instant high-score job matches
-├── #log                — n8n execution logs, errors, health
+📋 COMMAND CENTER                          [webhook-driven]
+├── #dashboard          — Daily cron summary (8am EAT)
+├── #alerts             — Instant high-score matches (score > 90)
+├── #logs               — n8n execution health, errors, run stats
 
-🎯 JOBS
+🎯 JOBS                                    [webhook + bot]
 ├── #feed-eee           — Raw EEE job feed (auto-posted)
 ├── #feed-general       — Adjacent roles (energy, power, automation)
 ├── #validated          — Agent-scored + vetted (score > 70)
-├── #applied            — Application tracking
-├── #saved              — Bookmarks
+├── #applied            — Application tracking (bot-reactive emoji)
+├── #saved              — Bookmarks (bot-reactive)
 
-🔬 RESEARCH
-├── #companies          — Enriched company profiles
+🔬 RESEARCH                               [webhook-driven]
+├── #companies          — Enriched company profiles (WF2)
 ├── #market-intel       — Salary data, hiring trends
 
-📝 MATERIALS
+📝 MATERIALS                              [manual / future]
 ├── #cover-letters      — Agent-drafted CLs, human review
 ├── #resume-versions    — Tailored resume variants
 
-🤖 AGENTS
+🤖 AUTOMATION                             [agent infra]
 ├── #agent-status       — FreeLLM health, model availability
 ├── #agent-playground   — Workflow testing, prompt tuning
+├── #workflow-logs      — Per-workflow detailed output (debugging)
 
 💬 GENERAL
 ├── #strategy           — Career direction, networking
 ├── #random             — Off-topic
 ```
+
+Layout diagram: `discord-layout-v2.excalidraw` in project root.
 
 ## Workflows
 

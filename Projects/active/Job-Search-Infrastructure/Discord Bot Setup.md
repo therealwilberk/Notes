@@ -19,37 +19,45 @@ status: setup
 
 Discord is the operations hub. All job feeds, alerts, and agent output surface here.
 
-## Channel Layout
+## Channel Layout (v2 — improved)
 
 ```
-📋 COMMAND CENTER
-├── #dashboard          — Daily automated summary (8am EAT cron)
+📋 COMMAND CENTER                          [webhook-driven]
+├── #dashboard          — Daily cron summary (8am EAT)
 ├── #alerts             — Instant high-score matches (score > 90)
-├── #log                — n8n execution logs, errors, health
+├── #logs               — n8n execution health, errors, run stats
 
-🎯 JOBS
+🎯 JOBS                                    [webhook + bot]
 ├── #feed-eee           — Raw EEE job feed (auto-posted, unfiltered)
 ├── #feed-general       — Adjacent roles (energy, power, automation)
 ├── #validated          — Agent-scored + vetted (score > 70)
-├── #applied            — Application tracking
-├── #saved              — Bookmarks
+├── #applied            — Application tracking (bot-reactive emoji)
+├── #saved              — Bookmarks (bot-reactive)
 
-🔬 RESEARCH
-├── #companies          — Enriched company profiles
+🔬 RESEARCH                               [webhook-driven]
+├── #companies          — Enriched company profiles (WF2)
 ├── #market-intel       — Salary data, hiring trends
 
-📝 MATERIALS
+📝 MATERIALS                              [manual / future automation]
 ├── #cover-letters      — Agent-drafted CLs, human review
 ├── #resume-versions    — Tailored resume variants
 
-🤖 AGENTS
+🤖 AUTOMATION                             [agent infrastructure]
 ├── #agent-status       — FreeLLM health, model availability
-├── #agent-playground   — Workflow testing
+├── #agent-playground   — Workflow testing, prompt tuning
+├── #workflow-logs      — Per-workflow detailed output (debugging)
 
 💬 GENERAL
-├── #strategy           — Career direction
+├── #strategy           — Career direction, networking
 ├── #random             — Off-topic
 ```
+
+### v2 Changes from v1
+- Split `#log` into `#logs` (ops health) and `#workflow-logs` (debugging detail)
+- Renamed `#market-intel` from `#intel` for clarity
+- Added `#strategy` and `#random` under GENERAL
+- Merged AGENTS into AUTOMATION category with `#workflow-logs` added
+- Documented webhook vs bot-reactive per category
 
 ## Bot Creation Checklist
 

@@ -7,33 +7,33 @@
 .theme-dark, .theme-light {
 
     /* ── Accent colors ─────────────────────────────────────── */
-    --ctp-custom-rosewater:  188, 195, 255;
-    --ctp-custom-flamingo:   230, 186, 215;
+    --ctp-custom-rosewater:  175, 198, 255;
+    --ctp-custom-flamingo:   223, 187, 222;
     --ctp-custom-pink:       255, 180, 171;
-    --ctp-custom-mauve:      196, 197, 221;
+    --ctp-custom-mauve:      191, 198, 220;
     --ctp-custom-red:        255, 180, 171;
     --ctp-custom-maroon:     147, 0, 10;
-    --ctp-custom-peach:      230, 186, 215;
-    --ctp-custom-yellow:     196, 197, 221;
-    --ctp-custom-green:      188, 195, 255;
-    --ctp-custom-teal:       230, 186, 215;
-    --ctp-custom-sky:        188, 195, 255;
-    --ctp-custom-sapphire:   188, 195, 255;
-    --ctp-custom-blue:       188, 195, 255;
-    --ctp-custom-lavender:   196, 197, 221;
+    --ctp-custom-peach:      223, 187, 222;
+    --ctp-custom-yellow:     191, 198, 220;
+    --ctp-custom-green:      175, 198, 255;
+    --ctp-custom-teal:       223, 187, 222;
+    --ctp-custom-sky:        175, 198, 255;
+    --ctp-custom-sapphire:   175, 198, 255;
+    --ctp-custom-blue:       175, 198, 255;
+    --ctp-custom-lavender:   191, 198, 220;
 
     /* ── Neutral / surface scale ───────────────────────────── */
-    --ctp-custom-text:       228, 225, 233;
-    --ctp-custom-subtext1:   199, 197, 208;
-    --ctp-custom-subtext0:   144, 144, 154;
-    --ctp-custom-overlay2:   144, 144, 154;
-    --ctp-custom-overlay1:   70, 70, 79;
-    --ctp-custom-overlay0:   52, 52, 58;
-    --ctp-custom-surface2:   41, 41, 47;
-    --ctp-custom-surface1:   31, 31, 37;
-    --ctp-custom-surface0:   27, 27, 33;
-    --ctp-custom-base:       19, 19, 24;
-    --ctp-custom-mantle:     19, 19, 24;
-    --ctp-custom-crust:      19, 19, 24;
+    --ctp-custom-text:       226, 226, 233;
+    --ctp-custom-subtext1:   197, 198, 208;
+    --ctp-custom-subtext0:   142, 144, 153;
+    --ctp-custom-overlay2:   142, 144, 153;
+    --ctp-custom-overlay1:   68, 71, 79;
+    --ctp-custom-overlay0:   51, 53, 58;
+    --ctp-custom-surface2:   40, 42, 47;
+    --ctp-custom-surface1:   30, 31, 37;
+    --ctp-custom-surface0:   26, 27, 32;
+    --ctp-custom-base:       18, 19, 24;
+    --ctp-custom-mantle:     18, 19, 24;
+    --ctp-custom-crust:      18, 19, 24;
 
 }

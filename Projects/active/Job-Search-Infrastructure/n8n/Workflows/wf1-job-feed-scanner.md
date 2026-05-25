@@ -25,19 +25,21 @@ n8n workflow. Cron-triggered every 4h. Scrapes EEE job sources, scores with Free
 ```
 Cron (4h)
   ↓
-[Parallel Fetch: RSS × 4 (OpenedCareer + CareerPoint + JobWeb + Blog Nevine) + Careerjet API + MyJobMag Scrape]
+[HTTP Request × 4: OpenedCareer + CareerPoint + JobWeb + Blog Nevine]
   ↓
-Merge + Normalize
+Blog Nevine Filter (Code node — keyword regex on title)
   ↓
-EEE Keyword Filter
+Parse & Normalize (Code node — xmlToItems regex parser + field extraction)
   ↓
-Deduplicate against Notion (last 48h)
+EEE Keyword Filter (Code node — two-tier: Tier 1 standalone, Tier 2 needs Tier 1 context)
   ↓
-Score with FreeLLM (batched, 5 per call)
+Inspect Results (Code node — count by source, sample output)
   ↓
-[Parallel: Write to Notion + Post to Discord]
+Format Discord Payload (Code node — embed builder)
   ↓
-Execution Log → #log
+Send to Discord (HTTP Request — webhook POST)
+
+Not yet built: Deduplicate, FreeLLM scoring, Notion write
 ```
 
 ## Prerequisites

@@ -55,9 +55,9 @@ Blog Nevine gets an extra IF node before the parser (keyword filter on title sin
 5. Execute each trigger, inspect the raw JSON output
 
 **Test checkpoint:**
-- [ ] Each trigger returns items
-- [ ] Confirm field names match the Feed Verification Report
-- [ ] Note any fields that are missing or different from expected
+- [x] Each trigger returns items (4 HTTP Request nodes, not RSS Trigger — see rationale)
+- [x] n8n stores raw XML strings when responseFormat is "xml", requiring regex parsing
+- [x] 66 items parsed from 4 feeds on first successful run
 
 **Expected output per item (n8n normalizes RSS to this):**
 ```json
@@ -92,11 +92,12 @@ Blog Nevine gets an extra IF node before the parser (keyword filter on title sin
 4. Run workflow, inspect parser output
 
 **Test checkpoint:**
-- [ ] OpenedCareer items parse correctly (title, categories as tags)
-- [ ] CareerPoint items parse correctly (no content:encoded, categories include company)
-- [ ] JobWeb items parse correctly (title split into title + company + location)
-- [ ] Blog Nevine items parse correctly (author field different, thumbnail available)
-- [ ] All items have: `title`, `company`, `url`, `source`, `scraped_at`, `tags`, `description`
+- [x] OpenedCareer items parse correctly
+- [x] CareerPoint items parse correctly
+- [x] JobWeb items parse correctly (title split: "Title at Company Location")
+- [x] Blog Nevine items parse correctly
+- [x] All items have: `title`, `company`, `url`, `source`, `scraped_at`, `tags`, `description`
+- [x] Source detection uses link OR guid fallback (fixes "unknown" for guid-only items)
 
 **Output shape (target):**
 ```json
@@ -127,9 +128,9 @@ Blog Nevine gets an extra IF node before the parser (keyword filter on title sin
 4. Count: how many items pass vs total from Blog Nevine
 
 **Test checkpoint:**
-- [ ] Non-job posts are filtered out
-- [ ] Job-related posts pass through
-- [ ] No false positives (random lifestyle content leaking through)
+- [x] Non-job posts filtered by keyword regex: job|vacancy|internship|hiring|recruit|career|position|apply|graduate|attachment
+- [x] Job-related posts pass through
+- [x] 11 of 25 Blog Nevine items pass filter (rest are lifestyle/health content)
 
 ---
 
@@ -146,10 +147,11 @@ Blog Nevine gets an extra IF node before the parser (keyword filter on title sin
 4. Run workflow, inspect which items pass
 
 **Test checkpoint:**
-- [ ] Only EEE-relevant jobs pass through
-- [ ] Entry-level jobs are tagged
-- [ ] General admin/HR/marketing jobs are filtered out
-- [ ] Count: how many items from each source survive the filter
+- [x] Two-tier keyword filter: Tier 1 (unambiguous EEE terms) + Tier 2 (broad terms need Tier 1 context in title)
+- [x] Entry-level jobs tagged with "entry-level"
+- [x] General admin/HR/marketing filtered out
+- [x] "automation" moved to Tier 2 after matching too broadly
+- [x] Typical run: 1-3 matches from 66 total items
 
 **Note:** This is where we'll see if the feeds actually have EEE content. If zero items pass, the keyword list needs widening.
 
@@ -167,12 +169,11 @@ Blog Nevine gets an extra IF node before the parser (keyword filter on title sin
 5. Check Discord: does the embed look right? Title, company, location, score placeholder, link
 
 **Test checkpoint:**
-- [ ] Embeds appear in Discord
-- [ ] Title is readable (not HTML, not truncated weirdly)
-- [ ] Company and location are correct
-- [ ] Links work
-- [ ] Tags shown if present
-- [ ] Color coding works (placeholder scores for now)
+- [x] Embeds appear in #agents-playground
+- [x] Title readable, company/location correct
+- [x] Links work
+- [x] Source label shown
+- [x] Color: teal-green (0x00b894), no score coloring yet
 
 **Embed shape:**
 ```

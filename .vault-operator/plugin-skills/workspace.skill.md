@@ -64,7 +64,7 @@ Do NOT ask the user to open Settings UI. Modify config directly.
 main:
   id: 6ad08367c77f50e3
   type: split
-  children: [1 items]
+  children: [1 items: {...}...]
   direction: vertical
 left:
   id: 411a1bd43555aeac
@@ -72,7 +72,6 @@ left:
   children: [3 items: {...}, {...}, {...}...]
   direction: horizontal
   width: 355.5110321044922
-  collapsed: true
 right:
   id: af246568753de8a3
   type: split
@@ -94,7 +93,7 @@ left-ribbon:
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: MOCs/wpick.md, Projects/active/Dusky-Theme-Engine/wpick/00-Architecture.md, Projects/active/Dusky-Theme-Engine/wpick/01-Setup.md...]
+lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI.md, Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction.md, Projects/active/Dusky-Theme-Engine/wpick/Refactor/06-Orchestrator.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

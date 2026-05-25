@@ -13,11 +13,11 @@
 
 Three distinct surfaces — each needs a different strategy:
 
-| Surface | What | Tools |
-|---|---|---|
-| Pure logic | Oklab math, cosine similarity, cluster naming, centroid computation | pytest, no fixtures |
-| Integration | DB operations, pipeline stage I/O against real SQLite | pytest, tmp_path fixture |
-| Contract | auto-palette output parser, rofi entry format, swww/matugen CLI args | pytest, captured subprocess mock |
+| Surface     | What                                                                 | Tools                            |
+| ----------- | -------------------------------------------------------------------- | -------------------------------- |
+| Pure logic  | Oklab math, cosine similarity, cluster naming, centroid computation  | pytest, no fixtures              |
+| Integration | DB operations, pipeline stage I/O against real SQLite                | pytest, tmp_path fixture         |
+| Contract    | auto-palette output parser, rofi entry format, swww/matugen CLI args | pytest, captured subprocess mock |
 
 ---
 

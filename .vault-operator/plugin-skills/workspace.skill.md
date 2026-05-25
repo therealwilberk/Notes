@@ -64,7 +64,7 @@ Do NOT ask the user to open Settings UI. Modify config directly.
 main:
   id: 6ad08367c77f50e3
   type: split
-  children: [1 items: {...}...]
+  children: [1 items]
   direction: vertical
 left:
   id: 411a1bd43555aeac
@@ -78,7 +78,6 @@ right:
   children: [1 items: {...}...]
   direction: horizontal
   width: 577.5
-  collapsed: true
 left-ribbon:
   hiddenItems:
     obsidian-git:Open Git source control: false
@@ -92,8 +91,8 @@ left-ribbon:
     obsidian-excalidraw-plugin:New drawing: false
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
-active: e7d47aaf81bb3eff
-lastOpenFiles: [37 items: Notes/Business-Research/05-company-discovery-playbook.md, Projects/active/Dusky-Theme-Engine/wpick/Refactor/09-Tests.md, Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI.md...]
+active: d1a1b8d307f4b67e
+lastOpenFiles: [37 items: Projects/active/Job-Search-Infrastructure/_old-architecture-drafts/job-schema.md, Projects/active/Job-Search-Infrastructure/_old-architecture-drafts/discord-bot-setup.md, Projects/active/Job-Search-Infrastructure/_old-architecture-drafts/architecture.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

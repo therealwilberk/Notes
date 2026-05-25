@@ -57,7 +57,7 @@ graph LR
 
 | Layer | Tool | Role |
 |-------|------|------|
-| Hub | [[Discord Bot Setup]] | Visibility, coordination, alerts, human-in-the-loop |
+| Hub | [[Discord Architecture]] + [[Discord Bot Setup]] | Bot (interactive) + webhooks (automated) |
 | Automation | [[n8n Setup & Configuration]] | Workflows, scheduling, webhooks, orchestration |
 | Intelligence | FreeLLM (`127.0.0.1:3001`) | Per-task model selection for processing |
 | Storage | [[Notion Integration]] | Jobs DB, companies DB, CV, enrichment data |

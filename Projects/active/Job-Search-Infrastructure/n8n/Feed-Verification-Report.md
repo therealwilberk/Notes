@@ -14,6 +14,8 @@
 | **MyJobMag** | `/feeds/` | HTML | ❌ No RSS | — | HTML page listing categories, not XML |
 | **BrighterMonday** | `/jobs.rss` | — | ❌ 410 Gone | — | RSS endpoint removed |
 
+| **Blog Nevine** | `/feeds/posts/default?alt=rss` | Atom→RSS | ✅ Working | 25/page | Blogger, needs keyword filter (mixed content) |
+
 ## Detailed Findings
 
 ### 1. OpenedCareer — ✅ RSS Working
@@ -134,14 +136,46 @@ The RSS endpoint has been deliberately removed. Cloudflare-protected, requires b
 
 ---
 
+### 7. Blog Nevine — ✅ RSS Working (filtered)
+
+- **URL:** `https://blog.nevine.me/feeds/posts/default?alt=rss`
+- **Content-Type:** `application/rss+xml` (Blogger Atom→RSS bridge)
+- **Total posts:** 6,480 (25 per page, paginated)
+- **Format:** RSS 2.0 via Blogger
+
+**Fields available per item:**
+
+| Field | Example | Notes |
+|-------|---------|-------|
+| `title` | `Internship \| Job Vacancies at M.P. Shah Hospital` | Sometimes prefixed with category |
+| `link` | `https://blog.nevine.me/2025/06/client-relations-manager-at-mp-shah.html` | Direct URL |
+| `pubDate` | `Mon, 25 May 2026 08:27:29 +0000` | RFC 2822 format |
+| `category` | `Internship`, `Jobs` | Multiple, domain-namespaced |
+| `description` | HTML excerpt with images | Heavier than WordPress, includes `<img>` tags |
+| `author` | `noreply@blogger.com (Geoffrey Nevine)` | Author field (not dc:creator) |
+| `guid` | `tag:blogger.com,1999:blog-...post-...` | Blogger-specific, stable |
+| `updated` | `2026-05-25T11:27:29.280+03:00` | Atom timestamp (extra field) |
+| `thumbnail` | URL | Image thumbnail (Blogger-specific) |
+
+**Key difference from WordPress feeds:** Not a job board. General Kenyan lifestyle/career blog with 200+ categories (Jobs, Internship, career, plus health, beauty, cooking, etc.). Needs keyword filtering.
+
+**n8n mapping:** RSS Feed Trigger → IF Node (keyword filter on title) → Code Node → Discord/Notion.
+
+**Keyword filter (title match):** `job|vacancy|vacancies|internship|hiring|recruit|career|position|apply|graduate|attachment`
+
+**Pagination:** Blogger supports `?max-results=25&start-index=1` for pagination. n8n RSS Trigger handles first page; cron reruns catch new posts.
+
+---
+
 ## Phase 1 Implementation Plan (RSS-only)
 
-**3 working feeds, all WordPress RSS 2.0, all drop-in for n8n RSS Feed Trigger:**
+**4 working feeds (3 WordPress RSS + 1 Blogger), all drop-in for n8n RSS Feed Trigger:**
 
 ```
 OpenedCareer  → n8n RSS Trigger → Code Node → Discord webhook + Notion API
 CareerPoint   → n8n RSS Trigger → Code Node → Discord webhook + Notion API
 JobWeb        → n8n RSS Trigger → Code Node → Discord webhook + Notion API
+Blog Nevine   → n8n RSS Trigger → IF (keyword filter) → Code Node → Discord webhook + Notion API
 ```
 
 ### Common RSS 2.0 Fields (all 3 feeds)

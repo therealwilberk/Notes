@@ -11,7 +11,7 @@ aliases:
   - "WF1"
 parent: "[[Job Hunt Ops — Map of Content]]"
 created: 2026-05-25
-status: ready-to-build
+status: building
 ---
 
 # Workflow 1: Job Feed Scanner
@@ -25,7 +25,7 @@ n8n workflow. Cron-triggered every 4h. Scrapes EEE job sources, scores with Free
 ```
 Cron (4h)
   ↓
-[Parallel Fetch: RSS × 3 + Careerjet API + MyJobMag Scrape]
+[Parallel Fetch: RSS × 4 (OpenedCareer + CareerPoint + JobWeb + Blog Nevine) + Careerjet API + MyJobMag Scrape]
   ↓
 Merge + Normalize
   ↓

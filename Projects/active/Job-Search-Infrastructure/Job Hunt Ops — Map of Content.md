@@ -114,7 +114,7 @@ Architecture diagram: `system-architecture.excalidraw` in project root.
 
 | # | Workflow | Trigger | Status |
 |---|----------|---------|--------|
-| 1 | [[wf1-job-feed-scanner]] | Cron (4h) | Ready to build |
+| 1 | [[wf1-job-feed-scanner]] | Cron (4h) | Building — see [[wf1-build-plan]] |
 | 2 | [[wf2-company-enrichment]] | Sub-workflow from WF1 + 12h cron fallback | Ready to build |
 | 3 | Daily Dashboard | Cron (8am EAT) | Planned |
 | 4 | Cover Letter Generator | React emoji trigger | Later |
@@ -165,7 +165,7 @@ Architecture diagram: `system-architecture.excalidraw` in project root.
 - [x] Refresh Notion API token (currently 401)
 - [x] Create Notion databases (Jobs, Companies)
 - [ ] Create Discord bot + webhooks (in progress — other session)
-- [ ] Build Workflow 1 in n8n
+- [ ] Build Workflow 1 in n8n (sequential: RSS → parse → test output → Discord → Notion)
 - [ ] Build Workflow 2 in n8n
 - [ ] Store CV in Notion (Canva for formatting)
 

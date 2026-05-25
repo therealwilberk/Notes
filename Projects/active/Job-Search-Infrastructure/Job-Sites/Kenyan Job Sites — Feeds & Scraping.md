@@ -32,7 +32,7 @@ Research on Kenyan job sites for automated feed collection via [[n8n Setup & Con
 | **BrighterMonday**    | ❌               | Hard       | Browser scrape needed       |
 | **Fuzu**              | ❌               | Medium     | HTTP scrape                 |
 | **LinkedIn**          | ❌               | Very Hard  | **SKIP**                    |
-| **Blog Nevine**       | {Not sure}      | {Not sure} | {confirm}                   |
+| **Blog Nevine**       | ✅ Blogger RSS    | Easy       | Use `/feeds/posts/default?alt=rss` + keyword filter |
 
 > [!success] No existing Telegram/Discord bots found for any of these sites. No competition.
 
@@ -173,7 +173,23 @@ Standard web protection. HTTP scrape with pagination should work.
 ---
 
 ## 8. Blog Nevine
-url: https://blog.nevine.me/
+- **URL:** `https://blog.nevine.me/`
+- **Feed:** `https://blog.nevine.me/feeds/posts/default?alt=rss` ✅
+- **Platform:** Blogger (Google)
+- **Type:** General Kenyan lifestyle/career blog (not a job board)
+- **Total posts:** 6,480+
+- **Job-relevant categories:** Jobs, Internship, career, graduate, attachments
+- **Other categories:** 200+ (health, beauty, cooking, relationships, etc.)
+- **RSS format:** RSS 2.0 via Blogger Atom bridge
+
+### RSS Feed
+> [!success] **Working RSS feed.** Blogger Atom→RSS bridge. Needs keyword filtering (not pure job content).
+
+### Filter Strategy
+n8n IF Node on title: `job|vacancy|vacancies|internship|hiring|recruit|career|position|apply|graduate|attachment`
+
+### Why Include
+Geoffrey Nevine has strong LinkedIn network in Kenya. Posts job opportunities, internships, and career content that sometimes isn't on the major job boards. Worth monitoring with a filter.
 
 ## Recommended n8n Workflow
 
@@ -182,7 +198,8 @@ url: https://blog.nevine.me/
 │  Phase 1: RSS feeds (day 1)                        │
 │  ├── OpenedCareer RSS (RSS Feed Trigger)           │
 │  ├── CareerPoint RSS (RSS Feed Trigger)            │
-│  └── JobWeb RSS (RSS Feed Trigger)                 │
+│  ├── JobWeb RSS (RSS Feed Trigger)                 │
+│  └── Blog Nevine RSS (RSS Trigger + IF filter)    │
 ├─────────────────────────────────────────────────────┤
 │  Phase 2: API (day 1-2)                            │
 │  └── Careerjet API (HTTP Request node)             │

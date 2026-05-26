@@ -1,3 +1,11 @@
+---
+type: project
+tags: [project, wpick, matugen, plan]
+created: 2026-05-25
+status: in-progress
+parent: "[[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md]]"
+---
+
 # wpick Matugen Integration — Implementation Plan
 
 **Date:** 2026-05-25

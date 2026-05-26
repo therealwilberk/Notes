@@ -1,4 +1,5 @@
 ---
+type: project
 tags:
   - n8n
   - workflow
@@ -9,7 +10,7 @@ tags:
 aliases:
   - "Company Enrichment"
   - "WF2"
-parent: "[[Job Hunt Ops — Map of Content]]"
+parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md]]"
 created: 2026-05-25
 status: ready-to-build
 ---

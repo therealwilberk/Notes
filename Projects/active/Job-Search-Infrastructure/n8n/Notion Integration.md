@@ -1,4 +1,5 @@
 ---
+type: project
 tags:
   - notion
   - database
@@ -8,7 +9,7 @@ tags:
 aliases:
   - "Notion DB"
   - "Notion Jobs"
-parent: "[[Job Hunt Ops — Map of Content]]"
+parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md]]"
 created: 2026-05-25
 status: setup
 ---

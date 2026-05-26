@@ -1,3 +1,10 @@
+---
+type: project
+tags: [project, wpick]
+created: 2026-05-24
+status: in-progress
+---
+
 # 08 — CLI
 
 ## Current State (from `cli.py` audit)

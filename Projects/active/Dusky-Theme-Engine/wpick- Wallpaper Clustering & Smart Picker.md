@@ -1,3 +1,11 @@
+---
+type: project
+tags: [project, wpick, theming, desktop, hyprland]
+created: 2026-05-23
+status: in-progress
+parent: "[[MOCs/wpick.md]]"
+---
+
 
 
 ## Complete Roadmap: Dev → Production

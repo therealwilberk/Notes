@@ -4,3 +4,19 @@
 .obsidian/plugins/
 .trash/
 .DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.venv
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# CodeGraph
+.codegraph/
+
+# Obsidian comments plugin
+*.comments.json

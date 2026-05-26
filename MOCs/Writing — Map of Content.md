@@ -1,11 +1,9 @@
 ---
-tags:
-  - moc
-  - writing
-aliases:
-  - "Writing MOC"
-  - "Essays"
+type: moc
+tags: [moc, writing, essays]
+aliases: ["Writing MOC", "Essays"]
 created: 2026-05-21
+status: in-progress
 ---
 
 # Writing — Map of Content
@@ -16,8 +14,8 @@ created: 2026-05-21
 
 | Work | Status |
 |---|---|
-| [[Expectations]] | Draft — inline critique from editor agent |
+| [[Writing/essays/Expectations]] | Draft — inline critique from editor agent |
 
 ## Active
 
-- [[Expectations]] — short essay on expectation vs reality
+- [[Writing/essays/Expectations]] — short essay on expectation vs reality

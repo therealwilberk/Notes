@@ -1,13 +1,10 @@
 ---
-tags:
-  - project
-  - linear
-  - design
-  - research
-aliases:
-  - "Linear Layout Analysis"
-parent: "[[Linear Clone — Map of Content]]"
+type: project
+tags: [project, linear, design, research]
+aliases: ["Linear Layout Analysis"]
+parent: "[[MOCs/Linear Clone — Map of Content.md]]"
 created: 2026-05-21
+status: paused
 ---
 
 # Linear.app — Layout Analysis

@@ -1,4 +1,5 @@
 ---
+type: project
 tags:
   - n8n
   - workflow

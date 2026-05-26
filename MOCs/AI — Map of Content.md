@@ -1,4 +1,5 @@
 ---
+type: moc
 tags: [moc, ai, future-of-work, philosophy]
 aliases: ["AI MOC"]
 created: 2026-05-24
@@ -9,7 +10,7 @@ status: in-progress
 
 ## Core Essay
 
-- [[After Automation — Dan Shipper]] — the central argument: automation creates more expert work, not less
+- [[Research/AI/After Automation — Dan Shipper]] — the central argument: automation creates more expert work, not less
 
 ## Key Concepts
 
@@ -17,24 +18,24 @@ The essay breaks into four interconnected ideas:
 
 | Concept | One-liner |
 |---------|-----------|
-| [[The Allocation Economy]] | Work shifts from doing to managing AI agents |
-| [[Slop and Sameness]] | Cheap competence floods the system, creating demand for difference |
-| [[Zeno's Paradox of AI]] | The gap between humans and AI keeps regenerating |
-| [[Frames vs Framers]] | Benchmarks measure frames, not the humans who create them |
-| [[Agents Without Agency]] | Models have autonomy but no desires of their own |
+| [[Research/AI/The Allocation Economy]] | Work shifts from doing to managing AI agents |
+| [[Research/AI/Slop and Sameness]] | Cheap competence floods the system, creating demand for difference |
+| [[Research/AI/Zeno's Paradox of AI]] | The gap between humans and AI keeps regenerating |
+| [[Research/AI/Frames vs Framers]] | Benchmarks measure frames, not the humans who create them |
+| [[Research/AI/Agents Without Agency]] | Models have autonomy but no desires of their own |
 
 ## The Chain
 
 ```
-[[The Allocation Economy]] (2023 prediction)
+[[Research/AI/The Allocation Economy]] (2023 prediction)
         ↓
-[[Slop and Sameness]] (economic consequence)
+[[Research/AI/Slop and Sameness]] (economic consequence)
         ↓
-[[Zeno's Paradox of AI]] (technical observation)
+[[Research/AI/Zeno's Paradox of AI]] (technical observation)
         ↓
-[[Frames vs Framers]] (philosophical resolution)
+[[Research/AI/Frames vs Framers]] (philosophical resolution)
         ↓
-[[Agents Without Agency]] (why the gap persists)
+[[Research/AI/Agents Without Agency]] (why the gap persists)
 ```
 
 ## Other AI Notes

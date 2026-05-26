@@ -1,10 +1,12 @@
 ---
+type: project
 tags:
   - project
   - motor-starter
   - schedule
 parent: "[[Motor Starter Design — Map of Content]]"
 created: 2026-05-21
+status: in-progress
 ---
 
 # Drawing 4 — Device & Cable Schedule

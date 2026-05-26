@@ -1,14 +1,9 @@
 ---
-tags:
-  - moc
-  - project
-  - linear
-  - framer
-aliases:
-  - "Linear Clone"
-  - "Linear.app Clone"
+type: moc
+tags: [moc, project, linear, framer]
+aliases: ["Linear Clone", "Linear.app Clone"]
 created: 2026-05-21
-status: researching
+status: paused
 ---
 
 # Linear Clone — Map of Content

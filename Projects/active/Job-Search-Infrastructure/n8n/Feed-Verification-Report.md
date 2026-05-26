@@ -1,3 +1,11 @@
+---
+type: project
+tags: [project, job-search, n8n, feeds]
+created: 2026-05-25
+status: done
+parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md]]"
+---
+
 # Feed Verification Report
 
 **Date:** 2026-05-25

@@ -3,7 +3,7 @@ tags:
   - project
   - motor-starter
   - deliverables
-parent: "[[Motor Starter Design — Map of Content]]"
+parent: "[[MOCs/Motor Starter Design — Map of Content.md]]"
 created: 2026-05-21
 ---
 

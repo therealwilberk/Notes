@@ -1,13 +1,7 @@
 ---
-tags:
-  - moc
-  - project
-  - electrical
-  - motor-starter
-  - iec
-aliases:
-  - "Motor Starter Design"
-  - "Motor Mini-Project"
+type: moc
+tags: [moc, electrical, motor-starter, iec, project]
+aliases: ["Motor Starter Design", "Motor Mini-Project"]
 created: 2026-05-21
 status: in-progress
 ---
@@ -20,15 +14,15 @@ status: in-progress
 
 | # | Configuration | Status | Note |
 |---|---|---|---|
-| 1 | [[01 — DOL Starter]] | Not started | Self-latching, overload relay |
-| 2 | [[02 — Star-Delta Starter]] | Not started | Timer + interlocks |
-| 3 | [[03 — VFD Fed Motor Circuit]] | Not started | Screened cable, bypass |
-| 4 | [[04 — Device & Cable Schedule]] | Not started | Sizing per IEC 60364 |
+| 1 | [[Projects/active/Motor-Starter-Design/01 — DOL Starter]] | Not started | Self-latching, overload relay |
+| 2 | [[Projects/active/Motor-Starter-Design/02 — Star-Delta Starter]] | Not started | Timer + interlocks |
+| 3 | [[Projects/active/Motor-Starter-Design/03 — VFD Fed Motor Circuit]] | Not started | Screened cable, bypass |
+| 4 | [[Projects/active/Motor-Starter-Design/04 — Device & Cable Schedule]] | Not started | Sizing per IEC 60364 |
 
 ## Reference
 
-- [[Motor Data & Case Study]] — 7.5kW, 15.9A FLC, centrifugal pump
-- [[Deliverables & Phasing]] — tool setup, weekend plan, LinkedIn output
+- [[Projects/active/Motor-Starter-Design/Motor Data & Case Study]] — 7.5kW, 15.9A FLC, centrifugal pump
+- [[Projects/active/Motor-Starter-Design/Deliverables & Phasing]] — tool setup, weekend plan, LinkedIn output
 
 ## Progress
 

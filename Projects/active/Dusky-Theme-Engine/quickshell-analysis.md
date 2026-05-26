@@ -1,6 +1,7 @@
 ---
+type: project
 tags: [project, quickshell, qml, research]
-parent: "[[Dusky-Theme-Engine]]"
+parent: "[[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md]]"
 status: complete
 ---
 

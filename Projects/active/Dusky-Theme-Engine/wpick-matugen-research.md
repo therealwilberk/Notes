@@ -1,3 +1,11 @@
+---
+type: project
+tags: [project, wpick, matugen, research]
+created: 2026-05-25
+status: done
+parent: "[[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md]]"
+---
+
 # Matugen Color Scheme Options — Research Report
 
 **Date:** 2026-05-25

@@ -1,4 +1,5 @@
 ---
+type: project
 tags:
   - n8n
   - discord
@@ -7,7 +8,7 @@ tags:
 aliases:
   - "Discord Output"
   - "n8n Discord"
-parent: "[[Job Hunt Ops — Map of Content]]"
+parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md]]"
 created: 2026-05-21
 updated: 2026-05-25
 status: active

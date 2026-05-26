@@ -1,4 +1,5 @@
 ---
+type: project
 tags:
   - schema
   - job-search
@@ -7,7 +8,7 @@ tags:
 aliases:
   - "Job Schema"
   - "Job Data Model"
-parent: "[[Job Hunt Ops — Map of Content]]"
+parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md]]"
 created: 2026-05-25
 status: active
 ---

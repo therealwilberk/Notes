@@ -1,4 +1,5 @@
 ---
+type: project
 tags:
   - job-search
   - kenya
@@ -8,7 +9,7 @@ tags:
 aliases:
   - "KE Job Sites"
   - "Kenya Jobs"
-parent: "[[Job Hunt Ops — Map of Content]]"
+parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md]]"
 created: 2026-05-21
 updated: 2026-05-25
 status: active

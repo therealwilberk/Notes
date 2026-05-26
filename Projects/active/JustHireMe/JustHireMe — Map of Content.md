@@ -1,15 +1,9 @@
 ---
-tags:
-  - moc
-  - project
-  - justhireme
-  - fastapi
-  - python
-aliases:
-  - "JustHireMe"
-  - "JHM"
+type: moc
+tags: [moc, project, justhireme, fastapi, python]
+aliases: ["JustHireMe", "JHM"]
 created: 2026-05-21
-status: planning
+status: paused
 ---
 
 # JustHireMe — Map of Content

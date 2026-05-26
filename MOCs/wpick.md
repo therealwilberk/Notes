@@ -1,14 +1,10 @@
 ---
-tags:
-  - project
-  - wpick
-  - theming
-  - desktop
-aliases:
-  - "wpick MOC"
-  - "Wallpaper Picker"
+type: moc
+tags: [moc, wpick, theming, desktop, project]
+aliases: ["wpick MOC", "Wallpaper Picker"]
 status: active
 created: 2026-05-23
+parent: "[[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md]]"
 ---
 
 # wpick — Wallpaper Clustering & Smart Picker
@@ -47,7 +43,6 @@ swww img <path> + matugen image <path>
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — rofi card grid, Hyde-style UI, thumbnails
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI]] — Entry points, commands, keybinds
 - [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/09-Tests]] — Fixtures, test strategy
-- [[10-Deployment]] — systemd service, production checklist
 
 ## Stack
 
@@ -63,9 +58,9 @@ swww img <path> + matugen image <path>
 
 ## References
 
-- [[Dusky-Theme-Engine]] — Parent project
-- [[quickshell-analysis]] — QuickShell deep dive (Phase 2)
-- [[research-existing-solutions]] — Competitive research
+- [[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker]] — Parent project spec
+- [[Projects/active/Dusky-Theme-Engine/quickshell-analysis]] — QuickShell deep dive (Phase 2)
+- [[Projects/active/Dusky-Theme-Engine/research-existing-solutions]] — Competitive research
 - Hyde-project/hyde — Card grid reference
 - bjarneo/quickshell — Keyboard-first shell base
 

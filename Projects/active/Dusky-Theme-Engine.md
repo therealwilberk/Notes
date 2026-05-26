@@ -1,13 +1,8 @@
 ---
-tags:
-  - project
-  - desktop
-  - theming
-  - dusky
-aliases:
-  - "Dusky Themes"
-  - "Theme Engine"
-status: planning
+type: project
+tags: [project, desktop, theming, dusky]
+aliases: ["Dusky Themes", "Theme Engine"]
+status: in-progress
 created: 2026-05-23
 ---
 

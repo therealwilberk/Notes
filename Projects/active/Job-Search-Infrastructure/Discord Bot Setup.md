@@ -1,4 +1,5 @@
 ---
+type: project
 tags:
   - discord
   - bot
@@ -8,7 +9,7 @@ tags:
 aliases:
   - "Discord Setup"
   - "Discord Bot"
-parent: "[[Job Hunt Ops — Map of Content]]"
+parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md]]"
 created: 2026-05-25
 status: setup
 ---

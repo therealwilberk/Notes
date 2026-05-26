@@ -1,3 +1,10 @@
+---
+type: project
+tags: [project, wpick]
+created: 2026-05-24
+status: in-progress
+---
+
 # 07 — Picker
 
 ## Current State

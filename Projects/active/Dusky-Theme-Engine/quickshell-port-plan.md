@@ -1,7 +1,8 @@
 ---
+type: project
 tags: [project, quickshell, qml, planning]
-parent: "[[Dusky-Theme-Engine]]"
-status: ready
+parent: "[[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md]]"
+status: in-progress
 ---
 
 # QuickShell Port: Omarchy → Dusky

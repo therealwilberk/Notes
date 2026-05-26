@@ -33,17 +33,17 @@ These control HOW the three accent colors (primary/secondary/tertiary) are deriv
 
 ### Second Wallpaper (0010.jpg, source: #80699d purple, dark mode)
 
-| Scheme | primary | secondary | tertiary | Character |
-|---|---|---|---|---|
-| `scheme-content` | #d6bcf5 | #cfc1db | #fbb2ce | Purple + pink. Harmonious. |
-| `scheme-expressive` | #74d7cb | #ecb8ce | #e7b7e8 | Teal primary from purple! Very unexpected. |
-| `scheme-fidelity` | #d6bcf5 | #cfc1db | #cdca7c | Purple primary, but **yellow** tertiary — split complementary. |
-| `scheme-fruit-salad` | #a3c9ff | #a3c9fe | #d7bafb | Blue primary from purple source. Cool. |
-| `scheme-monochrome` | #ffffff | #c6c6c6 | #e2e2e2 | Same gray regardless of source. |
-| `scheme-neutral` | #cdc3d4 | #ccc4cf | #cfc2da | Muted lavender. |
-| `scheme-rainbow` | #d9b9ff | #cfc2da | #f2b7c1 | Wide hue spread. |
-| `scheme-tonal-spot` | #d7bafb | #cfc2da | #f2b7c1 | Default. Balanced. |
-| `scheme-vibrant` | #d9b9ff | #dabde2 | #ebb6e4 | More saturated version of tonal-spot. |
+| Scheme               | primary | secondary | tertiary | Character                                                      |
+| -------------------- | ------- | --------- | -------- | -------------------------------------------------------------- |
+| `scheme-content`     | #d6bcf5 | #cfc1db   | #fbb2ce  | Purple + pink. Harmonious.                                     |
+| `scheme-expressive`  | #74d7cb | #ecb8ce   | #e7b7e8  | Teal primary from purple! Very unexpected.                     |
+| `scheme-fidelity`    | #d6bcf5 | #cfc1db   | #cdca7c  | Purple primary, but **yellow** tertiary — split complementary. |
+| `scheme-fruit-salad` | #a3c9ff | #a3c9fe   | #d7bafb  | Blue primary from purple source. Cool.                         |
+| `scheme-monochrome`  | #ffffff | #c6c6c6   | #e2e2e2  | Same gray regardless of source.                                |
+| `scheme-neutral`     | #cdc3d4 | #ccc4cf   | #cfc2da  | Muted lavender.                                                |
+| `scheme-rainbow`     | #d9b9ff | #cfc2da   | #f2b7c1  | Wide hue spread.                                               |
+| `scheme-tonal-spot`  | #d7bafb | #cfc2da   | #f2b7c1  | Default. Balanced.                                             |
+| `scheme-vibrant`     | #d9b9ff | #dabde2   | #ebb6e4  | More saturated version of tonal-spot.                          |
 
 ### Third Wallpaper (0016.jpg, source: green-dominated, dark mode)
 
@@ -104,13 +104,13 @@ Adjusts the contrast of the generated scheme. Primarily affects **surface/contai
 
 ### Test: Wallpaper 0001.jpg, scheme-tonal-spot
 
-| Contrast | primary | surface_container | surface_container_high | on_primary |
-|---|---|---|---|---|
-| -1.0 | #7890c7 | #1e1f25 | #282a2f | #2a4476 |
-| -0.5 | #7b94cb | #1e1f25 | #282a2f | #022354 |
-| 0.0 (default) | #afc6ff | #1e1f25 | #282a2f | #132f60 |
-| +0.5 | #cfdcff | #26282d | #313238 | #032355 |
-| +1.0 | #ecefff | #2f3036 | #3a3b41 | #000000 |
+| Contrast      | primary | surface_container | surface_container_high | on_primary |
+| ------------- | ------- | ----------------- | ---------------------- | ---------- |
+| -1.0          | #7890c7 | #1e1f25           | #282a2f                | #2a4476    |
+| -0.5          | #7b94cb | #1e1f25           | #282a2f                | #022354    |
+| 0.0 (default) | #afc6ff | #1e1f25           | #282a2f                | #132f60    |
+| +0.5          | #cfdcff | #26282d           | #313238                | #032355    |
+| +1.0          | #ecefff | #2f3036           | #3a3b41                | #000000    |
 
 **Impact:** Moderate-high. Primary shifts from muted (#7890c7) to near-white (#ecefff). Surfaces get lighter at high contrast. The on_primary text goes to black at max contrast.
 
@@ -126,25 +126,25 @@ Fine-tunes how light/dark surfaces and containers are. This is an affine transfo
 
 ### lightness-dark Test (Wallpaper 0001.jpg, dark mode)
 
-| Value | surface | surface_container | background | primary | primary_container |
-|---|---|---|---|---|---|
-| -0.3 | #000000 | #000000 | #000000 | #a3b9ee | #0e1626 |
-| -0.1 | #000000 | #09090b | #000000 | #abc1f9 | #22365c |
-| 0.0 (default) | #121318 | #1e1f25 | #121318 | #afc6ff | #2d4678 |
-| +0.1 | #262833 | #32343e | #262833 | #b2caff | #375593 |
-| +0.3 | #50546b | #5b5e70 | #50546b | #bad2ff | #4b75c9 |
+| Value         | surface | surface_container | background | primary | primary_container |
+| ------------- | ------- | ----------------- | ---------- | ------- | ----------------- |
+| -0.3          | #000000 | #000000           | #000000    | #a3b9ee | #0e1626           |
+| -0.1          | #000000 | #09090b           | #000000    | #abc1f9 | #22365c           |
+| 0.0 (default) | #121318 | #1e1f25           | #121318    | #afc6ff | #2d4678           |
+| +0.1          | #262833 | #32343e           | #262833    | #b2caff | #375593           |
+| +0.3          | #50546b | #5b5e70           | #50546b    | #bad2ff | #4b75c9           |
 
 **Impact:** Dramatic. At -0.3, everything is pure black. At +0.3, surfaces are medium gray (#50546b). This controls the "darkness depth" of dark mode.
 
 ### lightness-light Test (Wallpaper 0001.jpg, light mode)
 
-| Value | surface | surface_container | background | primary | primary_container |
-|---|---|---|---|---|---|
-| -0.3 | #afaeb2 | #a6a5aa | #afaeb2 | #304165 | #979eb2 |
-| -0.1 | #e1e0e5 | #d6d5db | #e1e0e5 | #3e5482 | #c2cbe5 |
-| 0.0 (default) | #faf9ff | #eeedf4 | #faf9ff | #455e91 | #d8e2ff |
-| +0.1 | #ffffff | #ffffff | #ffffff | #4b679f | #edf8ff |
-| +0.3 | #ffffff | #ffffff | #ffffff | #597abc | #ffffff |
+| Value         | surface | surface_container | background | primary | primary_container |
+| ------------- | ------- | ----------------- | ---------- | ------- | ----------------- |
+| -0.3          | #afaeb2 | #a6a5aa           | #afaeb2    | #304165 | #979eb2           |
+| -0.1          | #e1e0e5 | #d6d5db           | #e1e0e5    | #3e5482 | #c2cbe5           |
+| 0.0 (default) | #faf9ff | #eeedf4           | #faf9ff    | #455e91 | #d8e2ff           |
+| +0.1          | #ffffff | #ffffff           | #ffffff    | #4b679f | #edf8ff           |
+| +0.3          | #ffffff | #ffffff           | #ffffff    | #597abc | #ffffff           |
 
 **Impact:** At +0.3, light mode surfaces are all pure white, and containers collapse to white too. At -0.3, surfaces become medium gray — very unusual for light mode.
 
@@ -158,15 +158,15 @@ Switches the entire scheme between light and dark variants. This is a fundamenta
 
 ### Comparison (Wallpaper 0010.jpg, scheme-tonal-spot)
 
-| Role | Dark Mode | Light Mode |
-|---|---|---|
-| primary | #d7bafb | #6c538c |
-| on_primary | #3c255a | #ffffff |
-| primary_container | #533b72 | #eedcff |
-| surface | #151218 | #fff7ff |
-| surface_container | #211e24 | #f3ecf4 |
-| background | #151218 | #fff7ff |
-| on_surface | #e7e0e8 | #1d1a20 |
+| Role              | Dark Mode | Light Mode |
+| ----------------- | --------- | ---------- |
+| primary           | #d7bafb   | #6c538c    |
+| on_primary        | #3c255a   | #ffffff    |
+| primary_container | #533b72   | #eedcff    |
+| surface           | #151218   | #fff7ff    |
+| surface_container | #211e24   | #f3ecf4    |
+| background        | #151218   | #fff7ff    |
+| on_surface        | #e7e0e8   | #1d1a20    |
 
 **Impact:** Complete inversion. Dark surfaces become light, primary colors swap from light to dark variants.
 
@@ -180,14 +180,14 @@ Controls which color is chosen when the image has multiple candidate source colo
 
 ### Test: Wallpaper 0016.jpg (green-dominated landscape)
 
-| Prefer | source_color | primary |
-|---|---|---|
-| darkness | #ba969a (muted rose) | #ffb2bc |
-| lightness | #c4efb7 (bright green) | #a4d397 |
-| saturation | #c4efb7 (bright green) | #a4d397 |
-| less-saturation | #ba969a (muted rose) | #ffb2bc |
-| value | #ba969a (muted rose) | #ffb2bc |
-| closest-to-fallback | (requires --fallback-color) | — |
+| Prefer              | source_color                | primary |
+| ------------------- | --------------------------- | ------- |
+| darkness            | #ba969a (muted rose)        | #ffb2bc |
+| lightness           | #c4efb7 (bright green)      | #a4d397 |
+| saturation          | #c4efb7 (bright green)      | #a4d397 |
+| less-saturation     | #ba969a (muted rose)        | #ffb2bc |
+| value               | #ba969a (muted rose)        | #ffb2bc |
+| closest-to-fallback | (requires --fallback-color) | —       |
 
 **Impact:** Significant. `saturation` picks the most vivid color (green), while `darkness` picks the darkest (rose). Can completely change the palette mood.
 
@@ -211,13 +211,13 @@ All filters produced nearly identical results for primary color (#a4d396–#abd2
 
 ## 8. Other Options
 
-| Option | What it does | Impact | wpick relevance |
-|---|---|---|---|
-| `--fallback-color` | Color used when image extraction fails | Safety net | Low — only matters for broken images |
-| `--prefix` | Path prefix for template output | File paths only | Low — for custom output locations |
-| `--opacity` | Alpha value for colors | No visible effect in JSON output | Low — affects template rendering only |
-| `--base16-backend` | Backend for base16 generation | Only `wal` available | Niche — only for base16 users |
-| `--dry-run` | Don't generate templates | Testing only | Not for user config |
+| Option             | What it does                           | Impact                           | wpick relevance                       |
+| ------------------ | -------------------------------------- | -------------------------------- | ------------------------------------- |
+| `--fallback-color` | Color used when image extraction fails | Safety net                       | Low — only matters for broken images  |
+| `--prefix`         | Path prefix for template output        | File paths only                  | Low — for custom output locations     |
+| `--opacity`        | Alpha value for colors                 | No visible effect in JSON output | Low — affects template rendering only |
+| `--base16-backend` | Backend for base16 generation          | Only `wal` available             | Niche — only for base16 users         |
+| `--dry-run`        | Don't generate templates               | Testing only                     | Not for user config                   |
 
 ---
 

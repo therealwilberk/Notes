@@ -165,6 +165,13 @@ showContextProgress: false
 customPrompts: [3 items: {...}, {...}, {...}...]
 vaultDNA:
   enabled: true
+skillVersioning:
+  retentionCount: 20
+backup:
+  autoDailyEnabled: false
+  autoDailyTargetPath: .vault-operator/cache/backups
+  retentionCount: 7
+  lastAutoBackupAt: 0
 pluginApi:
   enabled: true
 recipes:
@@ -223,8 +230,9 @@ _globalStorageMigrated: true
 _parentDirMigrated: true
 _legacyVaultDirsCleaned: true
 _encrypted: false
+_pluginDataDirsMigrated: true
 ```
-(13 sensitive field(s) redacted)
+(14 sensitive field(s) redacted)
 
 For full settings, read: `.obsidian/plugins/vault-operator/data.json`
 

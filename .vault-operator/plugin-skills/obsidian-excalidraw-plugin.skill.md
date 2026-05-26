@@ -322,7 +322,7 @@ forceWrap: false
 pageTransclusionCharLimit: 200
 wordWrappingDefault: 0
 removeTransclusionQuoteSigns: true
-iframelyAllowed: false
+oEmbedAllowed: false
 pngExportScale: 1
 exportWithTheme: true
 exportWithBackground: true
@@ -336,6 +336,7 @@ autoexportExcalidraw: false
 embedType: excalidraw
 embedMarkdownCommentLinks: true
 embedWikiLink: true
+embedPlaceholderImage: true
 syncExcalidraw: false
 experimentalFileType: false
 experimentalFileTag: ✏️
@@ -348,6 +349,7 @@ addDummyTextElement: false
 zoteroCompatibility: false
 fieldSuggester: true
 enableOnloadScripts: false
+enableCommandLinks: false
 compatibilityMode: false
 drawingOpenCount: 0
 library: deprecated
@@ -360,7 +362,7 @@ mdSVGmaxHeight: 800
 mdFont: Virgil
 mdFontColor: Black
 mdBorderColor: Black
-previousRelease: 2.23.3
+previousRelease: 2.23.6
 showReleaseNotes: true
 excalidrawMasteryPromoCollapsed: false
 compareManifestToPluginVersion: true
@@ -542,10 +544,7 @@ doubleClickLinkOpenViewMode: true
 rank: Bronze
 modifierKeyOverrides: [3 items]
 showSplashscreen: true
-pdfSettings:
-  pageSize: A4
-  pageOrientation: portrait
-
+pdfS
 [...truncated -- full settings in data.json]
 ```
 (8 sensitive field(s) redacted)

@@ -90,10 +90,9 @@ left-ribbon:
     templates:Insert template: false
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
-    vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
-active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md, Projects/active/Job-Search-Infrastructure/Discord Architecture.md, Notes/Business-Research/05-company-discovery-playbook.md...]
+active: d949166033e6a8fc
+lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/wpick-matugen-critique.md, Projects/active/Dusky-Theme-Engine/wpick-matugen-tasks.md, Projects/active/Dusky-Theme-Engine/wpick-matugen-plan.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

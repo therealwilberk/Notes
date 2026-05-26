@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-26T04:41:52.492Z",
+  "scannedAt": "2026-05-26T05:31:51.853Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -230,7 +230,7 @@
       "type": "community",
       "classification": "FULL",
       "status": "enabled",
-      "version": "2.23.3",
+      "version": "2.23.6",
       "source": "vault-native",
       "description": "Sketch Your Mind. Edit and view Excalidraw drawings. Enter the world of 4D Visual PKM.",
       "skillFile": "obsidian-excalidraw-plugin.skill.md"
@@ -285,7 +285,7 @@
       "type": "community",
       "classification": "FULL",
       "status": "enabled",
-      "version": "2.12.1",
+      "version": "2.12.2",
       "source": "vault-native",
       "description": "Quickly add new pages or content to your vault.",
       "skillFile": "quickadd.skill.md"
@@ -318,7 +318,7 @@
       "type": "community",
       "classification": "FULL",
       "status": "enabled",
-      "version": "2.11.6",
+      "version": "2.12.4",
       "source": "vault-native",
       "description": "Agentic AI operating layer for your vault. Discovers and uses installed plugins, maintains persistent unified memory, and adapts to your workflows, skills and tools with full safety controls.",
       "skillFile": "vault-operator.skill.md"

@@ -92,8 +92,8 @@ left-ribbon:
     obsidian-excalidraw-plugin:New drawing: false
     vault-operator:Vault Operator: false
     obsidian-kanban:Create new board: false
-active: e7d47aaf81bb3eff
-lastOpenFiles: [37 items: Notes/Design/Premium Desktop Feel.md, Projects/active/Dusky-Theme-Engine/quickshell-analysis.md, Projects/active/Dusky-Theme-Engine/wpick/00-Architecture.md...]
+active: d1a1b8d307f4b67e
+lastOpenFiles: [37 items: Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Content.md, Projects/active/Job-Search-Infrastructure/Discord Architecture.md, Notes/Business-Research/05-company-discovery-playbook.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

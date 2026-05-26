@@ -3,7 +3,7 @@
   "nativeMenus": true,
   "monospaceFontFamily": "Noto Color Emoji",
   "baseFontSizeAction": true,
-  "baseFontSize": 12,
+  "baseFontSize": 14,
   "enabledCssSnippets": [
     "anuppuccin-colors"
   ]

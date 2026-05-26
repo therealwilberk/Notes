@@ -72,7 +72,7 @@ The selector generates a rofi grid with thumbnail entries:
 ${thmList[$i]}\x00icon\x1f$thmbDir/$(set_hash "${thmWall[$i]}").${thmbExtn}
 ```
 
-Two layout styles:
+Two layout styles:]
 - **Square (default):** Large 500×500 thumbnails, text hidden, 23em icon size
 - **Quad:** Smaller triangular-cropped thumbnails, 20em icon size
 
@@ -100,18 +100,18 @@ Sanitization strips `exec` commands and deprecated shadow settings from `hypr.th
 
 ### Component Integration
 
-| Component | Config Target | Update Method |
-|-----------|---------------|---------------|
-| Hyprland | `~/.config/hypr/themes/theme.conf` | Sanitized write from `hypr.theme` |
-| GTK 2.0/3.0 | `~/.gtkrc-2.0`, `~/.config/gtk-3.0/settings.ini` | sed / toml_write |
-| GTK 4.0 | `~/.config/gtk-4.0/` | Symlink to theme dir |
-| Qt5/Qt6 | `qt5ct.conf` / `qt6ct.conf` | toml_write |
-| Icons | dconf + XDG default | dconf write |
-| Cursor | Xresources, Xdefaults | sed |
-| Kitty | `~/.config/kitty/theme.conf` | Wallbash template or static file |
-| Rofi | `~/.config/rofi/theme.rasi` | Wallbash template or static file |
-| Waybar | waybar CSS | Wallbash template or static file |
-| Wallpaper | Backend-specific | wallpaper.sh dispatches |
+| Component   | Config Target                                    | Update Method                     |
+| ----------- | ------------------------------------------------ | --------------------------------- |
+| Hyprland    | `~/.config/hypr/themes/theme.conf`               | Sanitized write from `hypr.theme` |
+| GTK 2.0/3.0 | `~/.gtkrc-2.0`, `~/.config/gtk-3.0/settings.ini` | sed / toml_write                  |
+| GTK 4.0     | `~/.config/gtk-4.0/`                             | Symlink to theme dir              |
+| Qt5/Qt6     | `qt5ct.conf` / `qt6ct.conf`                      | toml_write                        |
+| Icons       | dconf + XDG default                              | dconf write                       |
+| Cursor      | Xresources, Xdefaults                            | sed                               |
+| Kitty       | `~/.config/kitty/theme.conf`                     | Wallbash template or static file  |
+| Rofi        | `~/.config/rofi/theme.rasi`                      | Wallbash template or static file  |
+| Waybar      | waybar CSS                                       | Wallbash template or static file  |
+| Wallpaper   | Backend-specific                                 | wallpaper.sh dispatches           |
 
 **No rollback mechanism.** Theme application is one-way: `staterc` is updated immediately, config files are overwritten in-place, GTK4 symlinks are destructive (`rm -rf` + `ln -s`). A failed mid-switch leaves a partially themed state. Only recovery: switch again.
 

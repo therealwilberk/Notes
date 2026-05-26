@@ -294,3 +294,11 @@ Task 8 (scoring)     ← depends on Task 7
 - [[Feed-Verification-Report]] — live feed test results
 - [[Kenyan Job Sites — Feeds & Scraping]] — site research
 - [[Job Hunt Ops — Map of Content]] — project overview
+
+## Dropped Sources
+
+### OpenedCareer (Cloudflare Block)
+- **Status:** Dropped — Cloudflare blocks HTTP requests from n8n
+- **URL:** https://openedcareer.com/feed/
+- **Action:** Retest later with stealth browser or alternative approach
+- **Date:** 2026-05-26

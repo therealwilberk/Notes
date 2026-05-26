@@ -7,33 +7,33 @@
 .theme-dark, .theme-light {
 
     /* ── Accent colors ─────────────────────────────────────── */
-    --ctp-custom-rosewater:  116, 91, 12;
-    --ctp-custom-flamingo:   71, 102, 73;
-    --ctp-custom-pink:       186, 26, 26;
-    --ctp-custom-mauve:      105, 93, 63;
-    --ctp-custom-red:        186, 26, 26;
-    --ctp-custom-maroon:     255, 218, 214;
-    --ctp-custom-peach:      71, 102, 73;
-    --ctp-custom-yellow:     105, 93, 63;
-    --ctp-custom-green:      116, 91, 12;
-    --ctp-custom-teal:       71, 102, 73;
-    --ctp-custom-sky:        116, 91, 12;
-    --ctp-custom-sapphire:   116, 91, 12;
-    --ctp-custom-blue:       116, 91, 12;
-    --ctp-custom-lavender:   105, 93, 63;
+    --ctp-custom-rosewater:  156, 203, 251;
+    --ctp-custom-flamingo:   212, 190, 230;
+    --ctp-custom-pink:       255, 180, 171;
+    --ctp-custom-mauve:      185, 200, 218;
+    --ctp-custom-red:        255, 180, 171;
+    --ctp-custom-maroon:     147, 0, 10;
+    --ctp-custom-peach:      212, 190, 230;
+    --ctp-custom-yellow:     185, 200, 218;
+    --ctp-custom-green:      156, 203, 251;
+    --ctp-custom-teal:       212, 190, 230;
+    --ctp-custom-sky:        156, 203, 251;
+    --ctp-custom-sapphire:   156, 203, 251;
+    --ctp-custom-blue:       156, 203, 251;
+    --ctp-custom-lavender:   185, 200, 218;
 
     /* ── Neutral / surface scale ───────────────────────────── */
-    --ctp-custom-text:       31, 27, 19;
-    --ctp-custom-subtext1:   76, 70, 57;
-    --ctp-custom-subtext0:   126, 118, 103;
-    --ctp-custom-overlay2:   126, 118, 103;
-    --ctp-custom-overlay1:   207, 197, 180;
-    --ctp-custom-overlay0:   234, 225, 212;
-    --ctp-custom-surface2:   240, 231, 217;
-    --ctp-custom-surface1:   246, 237, 223;
-    --ctp-custom-surface0:   251, 242, 229;
-    --ctp-custom-base:       225, 217, 204;
-    --ctp-custom-mantle:     225, 217, 204;
-    --ctp-custom-crust:      225, 217, 204;
+    --ctp-custom-text:       224, 226, 232;
+    --ctp-custom-subtext1:   194, 199, 207;
+    --ctp-custom-subtext0:   140, 145, 153;
+    --ctp-custom-overlay2:   140, 145, 153;
+    --ctp-custom-overlay1:   66, 71, 78;
+    --ctp-custom-overlay0:   50, 53, 57;
+    --ctp-custom-surface2:   39, 42, 47;
+    --ctp-custom-surface1:   28, 32, 36;
+    --ctp-custom-surface0:   24, 28, 32;
+    --ctp-custom-base:       16, 20, 24;
+    --ctp-custom-mantle:     16, 20, 24;
+    --ctp-custom-crust:      16, 20, 24;
 
 }

@@ -91,7 +91,8 @@ left-ribbon:
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
-active: d949166033e6a8fc
+    vault-operator:Vault Operator: false
+active: d1a1b8d307f4b67e
 lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/wpick-matugen-critique.md, Projects/active/Dusky-Theme-Engine/wpick-matugen-tasks.md, Projects/active/Dusky-Theme-Engine/wpick-matugen-plan.md...]
 ```
 

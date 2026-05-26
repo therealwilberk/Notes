@@ -91,9 +91,8 @@ left-ribbon:
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
-    vault-operator:Vault Operator: false
-active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/wpick-matugen-critique.md, Projects/active/Dusky-Theme-Engine/wpick-matugen-tasks.md, Projects/active/Dusky-Theme-Engine/wpick-matugen-plan.md...]
+active: c43f4f04b5d4c828
+lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/theme-system-design.md, Research/Theming/Hyde-Theme-Study-Pipeline.md, Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

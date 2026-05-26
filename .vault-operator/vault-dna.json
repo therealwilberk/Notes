@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-26T11:20:00.361Z",
+  "scannedAt": "2026-05-26T17:13:31.560Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -306,7 +306,7 @@
       "name": "Threaded Comments",
       "type": "community",
       "classification": "PARTIAL",
-      "status": "enabled",
+      "status": "disabled",
       "version": "2.0.0",
       "source": "vault-native",
       "description": "Notion-style inline comments with highlights, speech bubbles, and threaded replies.",

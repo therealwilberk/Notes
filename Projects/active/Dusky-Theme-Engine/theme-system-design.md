@@ -240,3 +240,27 @@ Phases 4-5 can start before 2-3. The bug fix is independent.
 - [[Hyde-Theme-Study]] — How HyDE does themes (what to adopt, what to avoid)
 - [[wpick-matugen-research]] — All matugen CLI flags, empirical comparisons
 - [[wpick-matugen-plan]] — MatugenConfig expansion plan (incorporated here)
+
+---
+
+## Pitfalls (discovered during implementation)
+
+### Matugen `--prefer saturation` is REQUIRED
+Without `--prefer`, matugen crashes when the wallpaper has multiple source colors:
+```
+Multiple source colors found, no preference was inputted, and a terminal was not detected.
+Use --prefer=PREFERENCE to find suitable colors without needing user input.
+```
+**Always pass `--prefer saturation`** — it picks the most vibrant color from the wallpaper.
+
+### Selector lag: apply theme asynchronously
+If the selector waits for matugen + awww to finish before closing rofi, the UI feels sluggish (2-5s delay). Fix: run the apply pipeline in a background subshell and close rofi immediately. Show a notification ("Applying: Forest...") and a completion notification when done.
+
+### Light mode + scheme-tonal-spot = pure white
+`scheme-tonal-spot` with light mode generates very washed-out colors on many wallpapers. Options:
+- Use `scheme-content` or `scheme-vibrant` for light themes
+- Increase `contrast` (e.g., 0.3-0.5)
+- Keep `scheme-tonal-spot` for dark mode where it works well
+
+### theme-apply.sh is dead code
+The old `theme-apply.sh` was bypassed by the selector calling `theme_ctl.sh theme set` directly. Don't maintain two paths. The selector IS the apply mechanism.

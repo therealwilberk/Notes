@@ -1,70 +1,43 @@
 ---
 type: moc
-tags: [moc, wpick, theming, desktop, project]
+tags: [moc, wpick, theming, desktop, project, archived]
 aliases: ["wpick MOC", "Wallpaper Picker"]
-status: active
+status: archived
 created: 2026-05-23
-parent: "[[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md]]"
+archived: 2026-05-26
+reason: "Replaced by shell-based theme pipeline (theme_ctl.sh + cluster_v2.py + rofi_theme_selector.sh)"
 ---
 
-# wpick — Wallpaper Clustering & Smart Picker
+# wpick — Wallpaper Clustering & Smart Picker [ARCHIVED]
 
-> Wallpaper-driven mood system for Hyprland. Cluster by color, pick by vibe, theme follows.
+> wpick was replaced by a simpler shell-based approach. Source archived to `~/.local/archive/wpick/`.
 
-## Pipeline
+## What replaced it
+
+The clustering pipeline (`extract_and_cluster.py` + `cluster_v2.py`) produces themed directories under `~/Pictures/themes/{Dark,Light}/<theme>/`. Theme selection is handled by `theme_ctl.sh` (backend) and `rofi_theme_selector.sh` (UI). No numpy, no SQLite, no Python deps beyond stdlib.
+
+**Active tools:**
+- `~/user_scripts/theme_pipeline/` — clustering scripts
+- `~/user_scripts/theme_matugen/theme_ctl.sh` — theme state manager
+- `~/user_scripts/rofi/rofi_theme_selector.sh` — rofi theme picker
+- `~/Pictures/themes/` — 78 themes (54 Dark, 24 Light)
+
+## Original pipeline (for reference)
 
 ```
 wallpapers/ (dark/ & light/)
        ↓  scan
-auto-palette (Rust)
+matugen --dry-run --json hex
        ↓
-features.jsonl
-       ↓  cluster
-HDBSCAN
+extraction_results.json
+       ↓  cluster (K-means HSL)
+cluster_v2.py
        ↓
-clusters.json (with named centroids)
+~/Pictures/themes/{Dark,Light}/<theme>/ (symlinks)
        ↓  pick
-rofi card grid (Hyde-style)
+rofi_theme_selector.sh
        ↓
-swww img <path> + matugen image <path>
+theme_ctl.sh theme set <name>
+       ↓
+swww img + matugen image
 ```
-
-**Key separation:** matugen is downstream. Clustering = navigation. Theme accuracy = matugen's job.
-
-## Subdocs
-
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/00-Architecture]] — Mental model, data flow, module map
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/01-Setup]] — uv, dependencies, config.toml
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/02-Database]] — SQLite schema, db.py operations
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/03-Extraction]] — auto-palette integration, feature vectors
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/04-Clustering]] — HDBSCAN, cluster naming, recluster strategy
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/05-Assignment]] — Incremental assignment, cosine similarity
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/06-Orchestrator]] — Watcher, swww, matugen integration
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/07-Picker]] — rofi card grid, Hyde-style UI, thumbnails
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/08-CLI]] — Entry points, commands, keybinds
-- [[Projects/active/Dusky-Theme-Engine/wpick/Refactor/09-Tests]] — Fixtures, test strategy
-
-## Stack
-
-- Python 3.12+ (uv managed)
-- auto-palette (Rust binary, extraction)
-- HDBSCAN + scikit-learn (clustering)
-- Pillow (thumbnails)
-- Typer (CLI)
-- SQLite (storage)
-- swww (wallpaper)
-- matugen (theming)
-- rofi-wayland (picker UI)
-
-## References
-
-- [[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker]] — Parent project spec
-- [[Projects/active/Dusky-Theme-Engine/quickshell-analysis]] — QuickShell deep dive (Phase 2)
-- [[Projects/active/Dusky-Theme-Engine/research-existing-solutions]] — Competitive research
-- Hyde-project/hyde — Card grid reference
-- bjarneo/quickshell — Keyboard-first shell base
-
-## Source
-
-- Spec: `Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md`
-- Project dir: `~/.config/wpick/`

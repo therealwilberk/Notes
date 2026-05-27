@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-26T17:13:31.560Z",
+  "scannedAt": "2026-05-27T10:24:11.350Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -300,17 +300,6 @@
       "source": "vault-native",
       "description": "List files by most recently opened.",
       "skillFile": "recent-files-obsidian.skill.md"
-    },
-    {
-      "id": "threaded-comments",
-      "name": "Threaded Comments",
-      "type": "community",
-      "classification": "PARTIAL",
-      "status": "disabled",
-      "version": "2.0.0",
-      "source": "vault-native",
-      "description": "Notion-style inline comments with highlights, speech bubbles, and threaded replies.",
-      "skillFile": "threaded-comments.skill.md"
     },
     {
       "id": "vault-operator",

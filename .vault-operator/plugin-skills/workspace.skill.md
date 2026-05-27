@@ -64,7 +64,7 @@ Do NOT ask the user to open Settings UI. Modify config directly.
 main:
   id: 6ad08367c77f50e3
   type: split
-  children: [1 items]
+  children: [1 items: {...}...]
   direction: vertical
 left:
   id: 411a1bd43555aeac
@@ -91,8 +91,8 @@ left-ribbon:
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
-active: c43f4f04b5d4c828
-lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/theme-system-design.md, Research/Theming/Hyde-Theme-Study-Pipeline.md, Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smart Picker.md...]
+active: 4c0c0c5a9e245e7f
+lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/theme-system-design.md, Research/Theming/Hyde-Theme-Study.md, skills/herdr — agent skill.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

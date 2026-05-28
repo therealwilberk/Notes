@@ -93,7 +93,7 @@ left-ribbon:
     obsidian-kanban:Create new board: false
     vault-operator:Vault Operator: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Writing/essays/Expectations.md, Research/Business/company-pipeline/company-pipeline-review.md, Research/Business/05-company-discovery-playbook.md...]
+lastOpenFiles: [37 items: Projects/active/Job-Search-Infrastructure/n8n/Notion Integration.md, Projects/active/Job-Search-Infrastructure/n8n/n8n Setup & Configuration.md, Projects/active/Job-Search-Infrastructure/n8n/n8n + Discord Integration.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

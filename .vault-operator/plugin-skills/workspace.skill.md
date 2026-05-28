@@ -91,9 +91,8 @@ left-ribbon:
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
-    vault-operator:Vault Operator: false
-active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Projects/active/Job-Search-Infrastructure/n8n/Notion Integration.md, Projects/active/Job-Search-Infrastructure/n8n/n8n Setup & Configuration.md, Projects/active/Job-Search-Infrastructure/n8n/n8n + Discord Integration.md...]
+active: c43f4f04b5d4c828
+lastOpenFiles: [37 items: Research/AI/Frames vs Framers.md, Research/AI/Agents Without Agency.md, Research/AI/After Automation — Dan Shipper.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

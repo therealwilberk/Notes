@@ -23,17 +23,17 @@ Research on Kenyan job sites for automated feed collection via [[n8n Setup & Con
 
 ## Priority Matrix
 
-| Site                  | RSS/API         | Difficulty | Recommendation              |
-| --------------------- | --------------- | ---------- | --------------------------- |
-| **OpenedCareer**      | ✅ WordPress RSS | Easy       | **BEST** — Use `/feed/` RSS |
-| **Careerjet Kenya**   | ✅ Public API    | Easy       | Use API endpoint            |
-| **CareerPoint Kenya** | ✅ WordPress RSS | Easy       | Use `/feed/` RSS            |
-| **JobWeb Kenya**      | ✅ WordPress RSS | Easy       | Use `/feed/` RSS            |
-| **MyJobMag Kenya**    | ❌ No RSS/API    | Medium     | HTTP scrape (CSS selectors) |
-| **BrighterMonday**    | ❌               | Hard       | Browser scrape needed       |
-| **Fuzu**              | ❌               | Medium     | HTTP scrape                 |
-| **LinkedIn**          | ❌               | Very Hard  | **SKIP**                    |
-| **Blog Nevine**       | ✅ Blogger RSS    | Easy       | Use `/feeds/posts/default?alt=rss` + keyword filter |
+| Site                  | RSS/API         | Difficulty | Recommendation                                      |
+| --------------------- | --------------- | ---------- | --------------------------------------------------- |
+| **OpenedCareer**      | ✅ WordPress RSS | Easy       | **BEST** — Use `/feed/` RSS                         |
+| **Careerjet Kenya**   | ✅ Public API    | Easy       | Use API endpoint                                    |
+| **CareerPoint Kenya** | ✅ WordPress RSS | Easy       | Use `/feed/` RSS                                    |
+| **JobWeb Kenya**      | ✅ WordPress RSS | Easy       | Use `/feed/` RSS                                    |
+| **MyJobMag Kenya**    | ❌ No RSS/API    | Medium     | HTTP scrape (CSS selectors)                         |
+| **BrighterMonday**    | ❌               | Hard       | Browser scrape needed                               |
+| **Fuzu**              | ❌               | Medium     | HTTP scrape                                         |
+| **LinkedIn**          | ❌               | Very Hard  | **SKIP**                                            |
+| **Blog Nevine**       | ✅ Blogger RSS   | Easy       | Use `/feeds/posts/default?alt=rss` + keyword filter |
 
 > [!success] No existing Telegram/Discord bots found for any of these sites. No competition.
 

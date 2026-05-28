@@ -91,8 +91,9 @@ left-ribbon:
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
-active: c43f4f04b5d4c828
-lastOpenFiles: [37 items: Projects/active/Job-Search-Infrastructure/Job Feed Schema.md, Projects/active/Job-Search-Infrastructure/Discord Bot Setup.md, Research/Theming/Hyde-Theme-Study-Pipeline.md...]
+    vault-operator:Vault Operator: false
+active: d1a1b8d307f4b67e
+lastOpenFiles: [37 items: Research/Business/company-pipeline/company-pipeline-review.md, Research/Business/05-company-discovery-playbook.md, Projects/active/Job-Search-Infrastructure/n8n/Workflows/wf1-build-plan.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

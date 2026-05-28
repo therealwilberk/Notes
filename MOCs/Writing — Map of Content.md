@@ -16,6 +16,12 @@ status: in-progress
 |---|---|
 | [[Writing/essays/Expectations]] | Draft — inline critique from editor agent |
 
+## Articles
+
+| Work | Status |
+|---|---|
+| [[Writing/articles/The Luck Field Manual]] | Complete — 33 rules for engineering serendipity |
+
 ## Active
 
 - [[Writing/essays/Expectations]] — short essay on expectation vs reality

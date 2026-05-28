@@ -13,14 +13,14 @@ parent: "[[Projects/active/Job-Search-Infrastructure/Job Hunt Ops — Map of Con
 
 ## Summary
 
-| Site | Endpoint | Type | Status | Items | Notes |
-|------|----------|------|--------|-------|-------|
-| **OpenedCareer** | `/feed/` | RSS 2.0 | ✅ Working | 15 | WordPress, clean XML |
-| **CareerPoint Kenya** | `/feed/` | RSS 2.0 | ✅ Working | 30 | WordPress, clean XML |
-| **JobWeb Kenya** | `/feed/` | RSS 2.0 | ✅ Working | 10 | WordPress, clean XML |
-| **Careerjet** | `/v4/query` | JSON API | ❌ 401 | — | Needs API key (HTTP Basic Auth) |
-| **MyJobMag** | `/feeds/` | HTML | ❌ No RSS | — | HTML page listing categories, not XML |
-| **BrighterMonday** | `/jobs.rss` | — | ❌ 410 Gone | — | RSS endpoint removed |
+| Site                  | Endpoint    | Type     | Status     | Items | Notes                                 |
+| --------------------- | ----------- | -------- | ---------- | ----- | ------------------------------------- |
+| **OpenedCareer**      | `/feed/`    | RSS 2.0  | ✅ Working  | 15    | WordPress, clean XML                  |
+| **CareerPoint Kenya** | `/feed/`    | RSS 2.0  | ✅ Working  | 30    | WordPress, clean XML                  |
+| **JobWeb Kenya**      | `/feed/`    | RSS 2.0  | ✅ Working  | 10    | WordPress, clean XML                  |
+| **Careerjet**         | `/v4/query` | JSON API | ❌ 401      | —     | Needs API key (HTTP Basic Auth)       |
+| **MyJobMag**          | `/feeds/`   | HTML     | ❌ No RSS   | —     | HTML page listing categories, not XML |
+| **BrighterMonday**    | `/jobs.rss` | —        | ❌ 410 Gone | —     | RSS endpoint removed                  |
 
 | **Blog Nevine** | `/feeds/posts/default?alt=rss` | Atom→RSS | ✅ Working | 25/page | Blogger, needs keyword filter (mixed content) |
 

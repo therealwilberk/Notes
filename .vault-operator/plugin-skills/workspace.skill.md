@@ -93,7 +93,7 @@ left-ribbon:
     obsidian-kanban:Create new board: false
     vault-operator:Vault Operator: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Research/Business/company-pipeline/company-pipeline-review.md, Research/Business/05-company-discovery-playbook.md, Projects/active/Job-Search-Infrastructure/n8n/Workflows/wf1-build-plan.md...]
+lastOpenFiles: [37 items: Writing/essays/Expectations.md, Research/Business/company-pipeline/company-pipeline-review.md, Research/Business/05-company-discovery-playbook.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

@@ -91,8 +91,8 @@ left-ribbon:
     command-palette:Open command palette: false
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
-active: 4c0c0c5a9e245e7f
-lastOpenFiles: [37 items: Projects/active/Dusky-Theme-Engine/theme-system-design.md, Research/Theming/Hyde-Theme-Study.md, skills/herdr — agent skill.md...]
+active: c43f4f04b5d4c828
+lastOpenFiles: [37 items: Projects/active/Job-Search-Infrastructure/Job Feed Schema.md, Projects/active/Job-Search-Infrastructure/Discord Bot Setup.md, Research/Theming/Hyde-Theme-Study-Pipeline.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

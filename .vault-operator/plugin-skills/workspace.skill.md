@@ -81,6 +81,7 @@ right:
   collapsed: true
 left-ribbon:
   hiddenItems:
+    true-recall:True Recall: Open dashboard: false
     obsidian-git:Open Git source control: false
     bases:Create new base: false
     switcher:Open quick switcher: false
@@ -93,7 +94,7 @@ left-ribbon:
     obsidian-kanban:Create new board: false
     vault-operator:Vault Operator: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Writing/articles/The Luck Field Manual.md, Projects/active/Job-Search-Infrastructure/n8n/Workflows/wf2-company-enrichment.md, Projects/active/Job-Search-Infrastructure/n8n/Workflows/wf1-job-feed-scanner.md...]
+lastOpenFiles: [37 items: Research/Electrical Engineering/Wiring Diagrams/Wiring Diagram Reading — Notes.md, Research/Electrical Engineering/MOC-AutoCAD-Schneider.excalidraw.md, Research/Electrical Engineering/Flashcards/Wiring Diagrams.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

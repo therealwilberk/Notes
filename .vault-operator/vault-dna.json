@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-30T08:19:12.131Z",
+  "scannedAt": "2026-05-30T10:54:09.781Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -300,6 +300,17 @@
       "source": "vault-native",
       "description": "List files by most recently opened.",
       "skillFile": "recent-files-obsidian.skill.md"
+    },
+    {
+      "id": "true-recall",
+      "name": "True Recall",
+      "type": "community",
+      "classification": "FULL",
+      "status": "enabled",
+      "version": "1.9.4",
+      "source": "vault-native",
+      "description": "Review flashcards with FSRS spaced repetition. Supports Anki import/export, projects, and detailed statistics.",
+      "skillFile": "true-recall.skill.md"
     },
     {
       "id": "vault-operator",

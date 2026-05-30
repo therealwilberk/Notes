@@ -1,10 +1,18 @@
 ---
 type: research
-tags: [ai, economics, commoditization, slop, future-of-work, dan-shipper]
-aliases: ["Slop and Sameness", "Commoditization Cycle"]
+tags:
+  - ai
+  - economics
+  - commoditization
+  - slop
+  - future-of-work
+  - dan-shipper
+aliases:
+  - Slop and Sameness
+  - Commoditization Cycle
 created: 2026-05-24
 status: done
-parent: "[[Research/AI/After Automation — Dan Shipper.md]]"
+parent: "[[After Automation — Dan Shipper]]"
 ---
 
 # Slop and Sameness

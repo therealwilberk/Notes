@@ -1,9 +1,13 @@
 ---
 type: research
-tags: [business, kenya, pipeline, data-review]
+tags:
+  - business
+  - kenya
+  - pipeline
+  - data-review
 created: 2026-05-22
 status: in-progress
-parent: "[[Research/Business/company-pipeline/PROJECT.md]]"
+parent: "[[PROJECT]]"
 ---
 
 # Company Pipeline — Raw Data Review

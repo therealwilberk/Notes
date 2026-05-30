@@ -1,9 +1,13 @@
 ---
 type: research
-tags: [business, kenya, pipeline, session-handoff]
+tags:
+  - business
+  - kenya
+  - pipeline
+  - session-handoff
 created: 2026-05-22
 status: done
-parent: "[[Research/Business/company-pipeline/PROJECT.md]]"
+parent: "[[PROJECT]]"
 ---
 
 # Future Me — Session Handoff Notes

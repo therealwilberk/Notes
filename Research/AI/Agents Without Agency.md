@@ -1,10 +1,18 @@
 ---
 type: research
-tags: [ai, philosophy, agency, agents, consciousness, dan-shipper]
-aliases: ["Agents Without Agency", "Agency vs Agent"]
+tags:
+  - ai
+  - philosophy
+  - agency
+  - agents
+  - consciousness
+  - dan-shipper
+aliases:
+  - Agents Without Agency
+  - Agency vs Agent
 created: 2026-05-24
 status: done
-parent: "[[Research/AI/After Automation — Dan Shipper.md]]"
+parent: "[[After Automation — Dan Shipper]]"
 ---
 
 # Agents Without Agency

@@ -1,10 +1,16 @@
 ---
 type: research
-tags: [ai, philosophy, benchmarks, paradox, dan-shipper]
-aliases: ["Zeno's Paradox of AI"]
+tags:
+  - ai
+  - philosophy
+  - benchmarks
+  - paradox
+  - dan-shipper
+aliases:
+  - Zeno's Paradox of AI
 created: 2026-05-24
 status: done
-parent: "[[Research/AI/After Automation — Dan Shipper.md]]"
+parent: "[[After Automation — Dan Shipper]]"
 ---
 
 # Zeno's Paradox of AI

@@ -10,7 +10,7 @@ status: in-progress
 
 ## Core Essay
 
-- [[Research/AI/After Automation — Dan Shipper]] — the central argument: automation creates more expert work, not less
+- [[After Automation — Dan Shipper]] — the central argument: automation creates more expert work, not less
 
 ## Key Concepts
 
@@ -18,11 +18,11 @@ The essay breaks into four interconnected ideas:
 
 | Concept | One-liner |
 |---------|-----------|
-| [[Research/AI/The Allocation Economy]] | Work shifts from doing to managing AI agents |
-| [[Research/AI/Slop and Sameness]] | Cheap competence floods the system, creating demand for difference |
-| [[Research/AI/Zeno's Paradox of AI]] | The gap between humans and AI keeps regenerating |
-| [[Research/AI/Frames vs Framers]] | Benchmarks measure frames, not the humans who create them |
-| [[Research/AI/Agents Without Agency]] | Models have autonomy but no desires of their own |
+| [[The Allocation Economy]] | Work shifts from doing to managing AI agents |
+| [[Slop and Sameness]] | Cheap competence floods the system, creating demand for difference |
+| [[Zeno's Paradox of AI]] | The gap between humans and AI keeps regenerating |
+| [[Frames vs Framers]] | Benchmarks measure frames, not the humans who create them |
+| [[Agents Without Agency]] | Models have autonomy but no desires of their own |
 
 ## The Chain
 

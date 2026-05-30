@@ -12,17 +12,17 @@ status: complete
 
 ## Research Files
 
-- [[Research/Business/01-kenya-business-ideas]] — 18 non-cliche ideas ranked by fit
-- [[Research/Business/02-leverage-frameworks]] — 7 leverage patterns + 18 real examples
-- [[Research/Business/03-kenya-postmortems]] — 11 failed businesses + why they died
-- [[Research/Business/04-whatsapp-commerce-deep-dive]] — WhatsApp commerce bots for Kenyan retailers
-- [[Research/Business/05-company-discovery-playbook]] — Non-LinkedIn sources for Kenya EE/power/solar companies
+- [[01-kenya-business-ideas]] — 18 non-cliche ideas ranked by fit
+- [[02-leverage-frameworks]] — 7 leverage patterns + 18 real examples
+- [[03-kenya-postmortems]] — 11 failed businesses + why they died
+- [[04-whatsapp-commerce-deep-dive]] — WhatsApp commerce bots for Kenyan retailers
+- [[05-company-discovery-playbook]] — Non-LinkedIn sources for Kenya EE/power/solar companies
 
 ## Company Pipeline
 
-- [[Research/Business/company-pipeline/PROJECT]] — Company discovery pipeline
-- [[Research/Business/company-pipeline/FUTURE-ME]] — Session handoff notes
-- [[Research/Business/company-pipeline/company-pipeline-review]] — Raw data review (429 companies)
+- [[PROJECT]] — Company discovery pipeline
+- [[FUTURE-ME]] — Session handoff notes
+- [[company-pipeline-review]] — Raw data review (429 companies)
 
 ## Status
 - Phase 1: Research ✅ Complete

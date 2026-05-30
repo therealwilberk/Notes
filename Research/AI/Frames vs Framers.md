@@ -1,10 +1,17 @@
 ---
 type: research
-tags: [ai, philosophy, benchmarks, frames, dan-shipper]
-aliases: ["Frames vs Framers", "The Frame Is Not the Framer"]
+tags:
+  - ai
+  - philosophy
+  - benchmarks
+  - frames
+  - dan-shipper
+aliases:
+  - Frames vs Framers
+  - The Frame Is Not the Framer
 created: 2026-05-24
 status: done
-parent: "[[Research/AI/After Automation — Dan Shipper.md]]"
+parent: "[[After Automation — Dan Shipper]]"
 ---
 
 # Frames vs Framers

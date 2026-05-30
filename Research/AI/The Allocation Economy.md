@@ -1,10 +1,16 @@
 ---
 type: research
-tags: [ai, economics, future-of-work, allocation-economy, dan-shipper]
-aliases: ["Allocation Economy"]
+tags:
+  - ai
+  - economics
+  - future-of-work
+  - allocation-economy
+  - dan-shipper
+aliases:
+  - Allocation Economy
 created: 2026-05-24
 status: done
-parent: "[[Research/AI/After Automation — Dan Shipper.md]]"
+parent: "[[After Automation — Dan Shipper]]"
 ---
 
 # The Allocation Economy

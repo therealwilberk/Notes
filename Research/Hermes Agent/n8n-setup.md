@@ -1,9 +1,13 @@
 ---
 type: research
-tags: [n8n, automation, workflows, hermes-agent]
+tags:
+  - n8n
+  - automation
+  - workflows
+  - hermes-agent
 created: 2026-05-23
 status: in-progress
-parent: "[[Research/Hermes Agent/Hermes Masterclass 1 - Installation, Setup, Basic Commands.md]]"
+parent: "[[Hermes Masterclass 1 - Installation, Setup, Basic Commands]]"
 ---
 
 # n8n Setup & Workflows

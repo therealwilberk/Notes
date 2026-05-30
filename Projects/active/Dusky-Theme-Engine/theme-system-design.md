@@ -10,7 +10,7 @@ parent: "[[Projects/active/Dusky-Theme-Engine/wpick- Wallpaper Clustering & Smar
 
 **Date:** 2026-05-26
 **Status:** In Progress
-**Research:** [[Research/Theming/Hyde-Theme-Study]], [[Projects/active/Dusky-Theme-Engine/wpick-matugen-research]]
+**Research:** [[Hyde-Theme-Study]], [[Projects/active/Dusky-Theme-Engine/wpick-matugen-research]]
 
 ---
 

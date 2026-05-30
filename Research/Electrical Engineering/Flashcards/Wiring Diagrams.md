@@ -1,6 +1,8 @@
 ---
-tags: [flashcards/eee/wiring-diagrams]
-source: "[[Reading Electrical Diagrams]]", "[[Wiring Diagram Reading — Notes]]"
+tags:
+  - flashcards/eee/wiring-diagrams
+source: "[[Reading Electrical Diagrams]], [[Wiring Diagram Reading — Notes]]"
+flashcard_uid: bdfc256e
 ---
 
 ## IEC Reference Designations

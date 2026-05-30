@@ -355,7 +355,7 @@ drawingOpenCount: 0
 library: deprecated
 library2:
   type: excalidrawlib
-  source: https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag2.23.3
+  source: https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag2.23.6
 imageElementNotice: true
 mdSVGwidth: 500
 mdSVGmaxHeight: 800

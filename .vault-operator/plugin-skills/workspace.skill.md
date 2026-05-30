@@ -77,8 +77,7 @@ right:
   type: split
   children: [1 items: {...}...]
   direction: horizontal
-  width: 577.5
-  collapsed: true
+  width: 621
 left-ribbon:
   hiddenItems:
     true-recall:True Recall: Open dashboard: false
@@ -93,8 +92,8 @@ left-ribbon:
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
     vault-operator:Vault Operator: false
-active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Research/Electrical Engineering/Wiring Diagrams/Wiring Diagram Reading — Notes.md, Research/Electrical Engineering/MOC-AutoCAD-Schneider.excalidraw.md, Research/Electrical Engineering/Flashcards/Wiring Diagrams.md...]
+active: 1a63d6bf2a606971
+lastOpenFiles: [37 items: Excalidraw/Drawing 2026-05-30 11.00.17.excalidraw.md, Research/Electrical Engineering/MOC-AutoCAD-Schneider.excalidraw.md, Excalidraw...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

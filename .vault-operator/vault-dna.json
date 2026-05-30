@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-30T11:09:53.540Z",
+  "scannedAt": "2026-05-30T11:17:55.740Z",
   "agentVersion": "0.1.0",
   "mode": "local",
   "plugins": [
@@ -306,7 +306,7 @@
       "name": "True Recall",
       "type": "community",
       "classification": "FULL",
-      "status": "enabled",
+      "status": "disabled",
       "version": "1.9.4",
       "source": "vault-native",
       "description": "Review flashcards with FSRS spaced repetition. Supports Anki import/export, projects, and detailed statistics.",

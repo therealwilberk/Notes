@@ -3,10 +3,11 @@ id: true-recall
 name: True Recall
 source: vault-native
 plugin-type: community
-status: enabled
+status: disabled
 class: FULL
 description: "Review flashcards with FSRS spaced repetition. Supports Anki import/export, projects, and detailed statistics."
-has-settings: true
+has-settings: false
+needs-setup: true
 commands:
   - id: "true-recall:insert-project-dashboard"
     name: "True Recall: Insert project dashboard"
@@ -69,8 +70,13 @@ commands:
 # True Recall
 
 **Description:** Review flashcards with FSRS spaced repetition. Supports Anki import/export, projects, and detailed statistics.
-**Status:** Enabled
+**Status:** Disabled
 **Plugin ID:** true-recall
+
+## Setup Required
+
+Plugin is disabled. Use enable_plugin to activate it first.
+Guide the user to configure this plugin via Obsidian Settings if needed.
 
 ## Available Commands
 
@@ -115,93 +121,6 @@ To configure this plugin programmatically:
 
 Do NOT ask the user to open Settings UI. Modify data.json directly.
 
-## Current Configuration
-
-These are the plugin's current settings (sensitive values redacted):
-
-```
-enableDeviceSync: false
-providerType: openrouter
-customBaseUrl: http://localhost:11434/v1
-lmStudioBaseUrl: http://localhost:1234/v1
-aiModel: google/gemini-2.5-flash
-aiTier: byok
-generationLanguage: auto
-fsrsRequestRetention: 0.9
-fsrsMaximumInterval: 36500
-newCardsPerDay: 20
-reviewsPerDay: 200
-learningSteps: [1, 10]
-relearningSteps: [10]
-reviewMode: fullscreen
-reviewContentWidth: default
-showNextReviewTime: true
-autoAdvance: false
-showReviewHeader: true
-showReviewHeaderStats: true
-continuousCustomReviews: true
-ignoreDailyLimitsForNoteStudy: true
-reviewKeybindings:
-  revealAndGood:  
-  again: 1
-  hard: 2
-  easy: 4
-removeFlashcardContentAfterCollect: false
-newCardOrder: random
-reviewOrder: due-date
-newReviewMix: mix-with-reviews
-dayStartHour: 4
-autoBackupOnLoad: false
-maxBackups: 10
-periodicBackupEnabled: true
-backupIntervalMinutes: 60
-activityTriggeredBackup: false
-reviewsBeforeBackup: 50
-retentionPolicy:
-  hourlyBackupsToKeep: 24
-  dailyBackupsToKeep: 7
-  weeklyBackupsToKeep: 4
-copilotAutoContext: false
-loadBalanceEnabled: false
-loadBalanceTarget: 100
-loadBalanceMaxDeviation: 20
-loadBalanceMaxShiftDays: 3
-loadBalanceBulkDays: 30
-easyDaysMultiplier: 0.5
-siblingMinInterval: 3
-siblingDisperseEnabled: false
-fsrsPresets: [1 items]
-defaultPresetId: default
-showLinkStatusIndicators: true
-showDonutsInPanel: true
-showDonutsInReview: true
-showStatusBarWidget: true
-defaultTypeInMode: off
-noteReviewShowFrontmatter: false
-editorToolbarButtons: [8 items]
-globalToolbarButtons: [7 items]
-imageToolbarButtons: [3 items]
-enableLocalApi: false
-apiPort: 27182
-ragEnabled: false
-ragEmbeddingModel: baai/bge-m3
-ragExcludeFolders: [.true-recall, templates]
-ragIndexFlashcards: true
-ragAutoIndex: true
-ragDailyNoteExcludeHeadings: [Thoughts, Journal, Reflections, Random]
-ragChatConfig:
-  presetId: default
-  responseLength: medium
-generationPresets: [2 items: {...}, {...}...]
-defaultGenerationPresetId: builtin-basic-flashcards
-deviceId: 9xe2ks70
-lastSeenVersion: 1.9.4
-archiveCascadeMigrated: true
-```
-(2 sensitive field(s) redacted)
-
-For full settings, read: `.obsidian/plugins/true-recall/data.json`
-
 ## Documentation
 
 For detailed plugin documentation (commands, options, dependencies):
@@ -209,18 +128,5 @@ read_file(".vault-operator/plugin-skills/true-recall.readme.md")
 
 ## Usage
 
-When the user asks for functionality related to True Recall:
-1. Read the plugin documentation (.readme.md) to understand capabilities and dependencies
-2. Read the config file (.obsidian/plugins/true-recall/data.json). If it does not exist, that is normal -- create it with the required settings
-3. Configure the plugin by writing data.json with the values needed for the task
-4. Execute the task using the appropriate tool:
-   - For Obsidian-native commands (including file export): use execute_command
-   - For CLI-based conversion needing Pandoc/LaTeX: use execute_recipe
-   - For data queries: use call_plugin_api
-5. If a command opens a UI dialog, tell the user what to click.
-
-CRITICAL RULES:
-- Prefer native Obsidian commands over external tools when both can accomplish the task.
-- NEVER create fake output files. If the user asks for a PDF/DOCX/image export, use execute_recipe -- do NOT write content to a .pdf file yourself.
-- If a dependency is missing (e.g. Pandoc), tell the user what to install.
-IMPORTANT: After reading this file, ALWAYS take action or respond. Never end silently.
+This plugin is currently disabled. Use enable_plugin("true-recall") to activate it first.
+After enabling, the plugin's commands will become available for execute_command.

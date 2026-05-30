@@ -7,8 +7,6 @@ parent: "[[MOCs/Motor Starter Design — Map of Content.md]]"
 ---
 
 
-
-
 _Source: Upmation — How to Read Electrical Diagrams_
 
 ---
@@ -25,7 +23,7 @@ They can range from a single page (ceiling fan wiring) to 200+ pages (industrial
 
 Every proper wiring diagram should have a **legend and abbreviation page** — usually at the front. This is where all the symbols and nomenclature are defined for _that specific drawing_.
 
-Important note: symbols can look slightly different depending on the software. A fuse in EPLAN looks different from a fuse in AutoCAD Electrical. The legend tells you what's what _for this document_. Don't assume.
+Important note: symbols can look slightly different depending on the software. A fuse in EPLAN looks different from a fuse in AutoCAD Electrical. The legend tells what's what _for this document_. Don't assume.
 
 ---
 
@@ -33,7 +31,7 @@ Important note: symbols can look slightly different depending on the software. A
 
 Standard rule: **left to right, top to bottom** — like reading a book.
 
-But designers break this when it gives a better layout. In the example shown, the power actually enters at the _bottom_ of the page, not the top. So always check before you assume where to start.
+But designers break this when it gives a better layout. In the example shown, the power actually enters at the _bottom_ of the page, not the top. Always check before assuming where to start.
 
 ---
 
@@ -52,9 +50,9 @@ This is standard. Never forget it — misreading this causes a lot of confusion 
 
 The numbers on individual wires aren't random — they're **wire tags**. Each wire has a unique tag.
 
-Why it matters practically: if a wire comes loose during installation or maintenance, you look up the tag on the diagram and immediately know where it goes. Huge for troubleshooting. Panels built without proper wire tags are a nightmare to work on later.
+Why it matters practically: if a wire comes loose during installation or maintenance, look up the tag on the diagram and immediately know where it goes. Huge for troubleshooting. Panels built without proper wire tags are a nightmare to work on later.
 
-Devices inside the panel also have tags — you can physically locate a device in the panel using the tag shown on the drawing.
+Devices inside the panel also have tags — a device can be physically located in the panel using the tag shown on the drawing.
 
 ---
 
@@ -70,7 +68,7 @@ This is how cross-referencing works across pages:
 - Below a coil = list of all the contacts belonging to that coil, with their page.column addresses
 - Below a contact = where the coil driving it lives
 
-You will constantly flip between pages on a real drawing. That's not a sign you're doing it wrong — that's just how multi-page schematics work.
+Constantly flipping between pages on a real drawing is normal. That's not a sign of doing it wrong — that's just how multi-page schematics work.
 
 ---
 
@@ -78,7 +76,7 @@ You will constantly flip between pages on a real drawing. That's not a sign you'
 
 Groups of terminal blocks are given a **strip designation** (like X0, XC). The designation usually indicates a shared voltage level or function — all terminals in that strip carry the same voltage or serve the same purpose.
 
-Interesting one: **double-level terminal blocks** — same footprint as standard terminals but you can connect two wires per side. Used to save panel space. Worth knowing they exist because they can look confusing on a diagram if you don't know what they are.
+Interesting one: **double-level terminal blocks** — same footprint as standard terminals but two wires can be connected per side. Used to save panel space. Worth knowing they exist because they can look confusing on a diagram if unfamiliar.
 
 ---
 
@@ -87,7 +85,7 @@ Interesting one: **double-level terminal blocks** — same footprint as standard
 The label convention is drawing-specific — always check the legend. In the example:
 
 - **-KA** = relay (not a contactor)
-- The prefix letters tell you the component type
+- The prefix letters tell the component type
 
 Same physical symbol can mean different things depending on the nomenclature defined in that document. This is why jumping between different companies' drawings feels disorienting — the label system may be completely different.
 

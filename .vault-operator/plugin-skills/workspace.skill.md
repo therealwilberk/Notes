@@ -80,7 +80,6 @@ right:
   width: 366.5
 left-ribbon:
   hiddenItems:
-    true-recall:True Recall: Open dashboard: false
     obsidian-git:Open Git source control: false
     bases:Create new base: false
     switcher:Open quick switcher: false

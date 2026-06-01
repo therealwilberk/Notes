@@ -154,7 +154,7 @@ memory:
       unknown: manual
     livingDocumentByDefault: true
     strictSourceIsolation: false
-  lastAgingRunAt: 2026-05-30T08:19:10.980Z
+  lastAgingRunAt: 2026-05-31T11:05:27.419Z
   lastCapabilityHash: ae633956
 chatLinking:
   enabled: true

@@ -59,26 +59,26 @@ AI-powered talent marketplace matching vetted professionals with AI training pro
 
 ## Documents Needed
 
-| Document | Required? | Notes |
-|----------|-----------|-------|
-| Resume (PDF) | ✅ | Upload to profile |
-| Government ID | ✅ | Driver's license or passport |
-| Address history | ✅ | For background check |
-| Criminal records consent | ✅ | Part of background check |
-| Non-US resident declaration | ✅ | Signed document |
-| Degree certificates | ⚠️ | Not explicitly required but education claims are verified |
-| Stripe account | ✅ | For payouts — set up during onboarding |
-| SSN | ❌ | US only. International applicants report not needing it |
+| Document                    | Required? | Notes                                                     |
+| --------------------------- | --------- | --------------------------------------------------------- |
+| Resume (PDF)                | ✅         | Upload to profile                                         |
+| Government ID               | ✅         | Driver's license or passport                              |
+| Address history             | ✅         | For background check                                      |
+| Criminal records consent    | ✅         | Part of background check                                  |
+| Non-US resident declaration | ✅         | Signed document                                           |
+| Degree certificates         | ⚠️        | Not explicitly required but education claims are verified |
+| Stripe account              | ✅         | For payouts — set up during onboarding                    |
+| SSN                         | ❌         | US only. International applicants report not needing it   |
 
 ## Timeline
 
-| Stage | Duration |
-|-------|----------|
-| Application to AI Interview | Same day |
-| Interview to Offer | Hours to 1 week (fastest) or 3-4 weeks (slow) |
-| Background Check | 5-7 business days |
-| Onboarding | Same week after background check |
-| First Paid Work | Days to weeks after onboarding |
+| Stage                       | Duration                                      |
+| --------------------------- | --------------------------------------------- |
+| Application to AI Interview | Same day                                      |
+| Interview to Offer          | Hours to 1 week (fastest) or 3-4 weeks (slow) |
+| Background Check            | 5-7 business days                             |
+| Onboarding                  | Same week after background check              |
+| First Paid Work             | Days to weeks after onboarding                |
 
 > [!warning] Some users report **never hearing back for months.** One user applied 65 times with nothing. The platform is highly selective.
 

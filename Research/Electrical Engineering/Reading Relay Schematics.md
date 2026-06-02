@@ -63,3 +63,31 @@ Label conventions are **drawing-specific** — always check the legend. Common p
 - **-K** = generic (relay or contactor, depends on the drawing)
 
 The same physical symbol can mean different things depending on the nomenclature defined in that document.
+
+[[https://www.kynix.com/Blog/how-does-a-dpdt-relay-work.html]]
+
+
+1. **Poles**
+    
+    **Pole = the number of separate circuits a relay can control.** Think of it as how many independent switches are bundled into one relay, all actuated by the same coil.
+    
+    - **1 pole (single pole):** Controls one circuit. One common, one set of contacts.
+    - **2 poles (double pole):** Controls two independent circuits simultaneously. Two commons, two sets of contacts. This is what every relay in your project uses.
+    - **4 poles (quad pole):** Four independent circuits. Less common in BMS, more in industrial.
+    
+    **Why 2 poles in this project?** Pole 1 drives the visible stuff (lights on the panel). Pole 2 feeds the PLC. Same relay, two purposes, one coil. Clean design.
+    
+2. **Throw = the number of positions each pole's contact can connect to.** How many output paths from the common terminal.
+    
+    - **Single throw (ST):** One output path. The contact either connects or doesn't. That's it. ON or OFF.
+    - **Double throw (DT):** Two output paths. The common can connect to position A (NC) OR position B (NO). This gives you a changeover capability.
+    
+    ### The Four Types
+    
+    | Type | Full Name | Contacts | What it does | |------|-----------|----------|--------------| 
+    | **SPST** | Single Pole Single Throw | 1 common → 1 contact | Simple ON/OFF switch. One circuit, either connected or not. | 
+    | **SPDT** | Single Pole Double Throw | 1 common → NC + NO | Changeover. Common swings between two paths. The "Form C" contact. | 
+    | **DPST** | Double Pole Single Throw | 2 commons → 2 contacts | Two circuits switch ON/OFF together. Like two SPSTs with one coil. | 
+    | **DPDT** | Double Pole Double Throw | 2 commons → 2×(NC + NO) | Two independent changeover switches, one coil. The workhorse. |
+
+![[Pasted image 20260602084540.png]]

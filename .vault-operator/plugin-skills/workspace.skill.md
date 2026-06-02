@@ -64,7 +64,7 @@ Do NOT ask the user to open Settings UI. Modify config directly.
 main:
   id: 6ad08367c77f50e3
   type: split
-  children: [1 items: {...}...]
+  children: [1 items]
   direction: vertical
 left:
   id: 411a1bd43555aeac
@@ -91,8 +91,8 @@ left-ribbon:
     obsidian-excalidraw-plugin:New drawing: false
     obsidian-kanban:Create new board: false
     vault-operator:Vault Operator: false
-active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Notes/EEE/Schneider Wiki Map.md, Projects/active/Remote-Work-Platforms/Andela — Application Guide.md, Research/Business/02-leverage-frameworks.md...]
+active: b256271abc360239
+lastOpenFiles: [37 items: Research/Electrical Engineering/MOC — Electrical Installation.md, Research/Electrical Engineering/Circuit Numbering & Wire Tags.md, Research/Electrical Engineering/Sources/BMS Controls Training — 6hr Video.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

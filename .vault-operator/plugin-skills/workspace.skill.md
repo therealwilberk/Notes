@@ -77,7 +77,7 @@ right:
   type: split
   children: [1 items: {...}...]
   direction: horizontal
-  width: 366.5
+  width: 574.5
 left-ribbon:
   hiddenItems:
     obsidian-git:Open Git source control: false
@@ -92,7 +92,7 @@ left-ribbon:
     obsidian-kanban:Create new board: false
     vault-operator:Vault Operator: false
 active: d1a1b8d307f4b67e
-lastOpenFiles: [37 items: Excalidraw/Drawing 2026-05-30 11.00.17.excalidraw.md, Research/Electrical Engineering/MOC-AutoCAD-Schneider.excalidraw.md, Excalidraw...]
+lastOpenFiles: [37 items: Notes/EEE/Schneider Wiki Map.md, Projects/active/Remote-Work-Platforms/Andela — Application Guide.md, Research/Business/02-leverage-frameworks.md...]
 ```
 
 For full settings, read: `.obsidian/workspace.json`

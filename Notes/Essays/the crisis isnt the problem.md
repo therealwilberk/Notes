@@ -25,11 +25,11 @@ the crisis is just the moment you look up.
 
 ## the gap
 
-Camus called it the absurd. the gap between what we want from the universe (meaning, purpose, some kind of answer) and what the universe actually gives us (nothing, silence, indifference). we're screaming into a void that doesn't even know we're here.
+Camus called it the <mark style="background: #FF5582A6;">absurd</mark>. <mark style="background: #ABF7F7A6;">the gap between what we want from the universe (meaning, purpose, some kind of answer) and what the universe actually gives us (nothing, silence, indifference). </mark>we're screaming into a void that doesn't even know we're here.
 
 and the existentialists, they didn't try to close that gap. they just stood in it. which is uncomfortable. which is the whole point.
 
-there's a difference between fulfillment and meaning, and most people confuse the two. you can be fulfilled. gym body, nice apartment, good food, warm relationships. all the boxes checked. and still feel like something's missing. not because you're ungrateful. because fulfillment is about feeling good, and meaning is about mattering. those aren't the same thing.
+there's a difference between fulfillment and meaning, and most people confuse the two. you can be fulfilled. gym body, nice apartment, good food, warm relationships. all the boxes checked. and still feel like something's missing. not because you're ungrateful. because <mark style="background: #D2B3FFA6;">fulfillment is about feeling good, and meaning</mark> is about mattering. those aren't the same thing.
 
 ## the american problem
 
@@ -41,7 +41,7 @@ Sartre said freedom is what you do with what's been done to you. which sounds ni
 
 ## the authenticity trap
 
-there's this other thing that came up. authenticity. we throw that word around like it's simple. be authentic. be yourself. but psychology research shows authenticity is almost impossible to pin down. it usually just signals social desirability. you're not being yourself. you're being the version of yourself that gets the most approval.
+there's this other thing that came up. authenticity. we throw that word around like it's simple. be authentic. be yourself. but psychology research shows authenticity is almost impossible to pin down. it usually just signals social desirability. you're not being yourself. you're <mark style="background: #D2B3FFA6;">being the version of yourself that gets the most approval.</mark>
 
 which means the crisis gets worse before it gets better. because now you're not just questioning meaning. you're questioning whether the person doing the questioning is even real.
 

@@ -53,3 +53,7 @@ All field equipment should have a **local isolator** as well. This allows mainte
 ## Key Principle
 
 Every circuit leaves the panel through a **terminal block**. The terminal block is the boundary between panel wiring and field wiring. This separation is critical for fault-finding — if voltage is present at the terminal block but not at the field device, the fault is in the field wiring.
+
+
+- 0v supply (neutral) use case in controls:
+- 

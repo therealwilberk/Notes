@@ -1,0 +1,14 @@
+{
+  "primaryNotesLocation": "root",
+  "dailyNotes": {
+    "enabled": false,
+    "directory": "Daily Notes"
+  },
+  "weeklyNotes": {
+    "enabled": false,
+    "directory": "Weekly Notes"
+  },
+  "folderIcons": {
+    "inbox:Research/Programming": "sparkle"
+  }
+}

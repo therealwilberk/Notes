@@ -87,7 +87,7 @@ resp.status_code = 200;
 resp.body = String::from("OK");
 ```
 
-No way to make individual fields mutable -- it is all-or-nothing.
+**No way to make individual fields mutable -- it is all-or-nothing.**
 
 **Field init shorthand**: when a variable name matches the field name, write it once.
 

@@ -6,7 +6,7 @@ start: 2026-06-30
 target: 2026-08-25
 estimate: 135 hrs over 8 weeks
 pace: ~17 hrs/week (mixed with ml-basics early weeks)
-share: sequenced after ml-basics
+share: 35%
 ---
 
 # ML Pipeline — E2E_ml Implementation
@@ -15,7 +15,7 @@ share: sequenced after ml-basics
 
 Build the E2E_ml project from documentation to working code. The docs (`docs/`) and agent blueprints (`Agent/`) at `~/dev/repos/E2E_ml/` define the full spec: ingest → validate → features → train → evaluate → serve → monitor, using DVC, Pandera, Feast, LightGBM, MLflow, FastAPI, and Evidently.
 
-This phase starts after the Python data stack refresher (ml-basics) is done. For the first 2 weeks, it shares the daily ML slot with ml-basics — lighter load here until basics finish.
+Starts immediately after ml-basics finishes (Jun 30). No overlap — the ML slot opens fully once basics are done.
 
 **Source:** `~/dev/repos/E2E_ml/` (docs + blueprints)
 
@@ -99,15 +99,15 @@ Get the repository ready for implementation.
 
 ## Weekly Schedule
 
-| Week | Phase | Hrs | Note |
-|------|-------|-----|------|
-| 1 | P1: Project setup | 12 | Light — ml-basics still running |
-| 2 | P2: Data layer | 15 | ml-basics finishes ~mid-week |
-| 3 | P3: Feature engineering | 18 | |
-| 4 | P4: Training pipeline | 20 | Heaviest phase |
-| 5 | P5: Evaluation | 15 | |
-| 6 | P6: Serving | 18 | |
-| 7 | P7: CI/CD | 17 | |
+| Week | Phase | Hrs |
+|------|-------|-----|
+| 1 | P1: Project setup | 12 |
+| 2 | P2: Data layer | 15 |
+| 3 | P3: Feature engineering | 18 |
+| 4 | P4: Training pipeline | 20 |
+| 5 | P5: Evaluation + model selection | 15 |
+| 6 | P6: Serving | 18 |
+| 7 | P7: CI/CD | 17 |
 | 8 | P8: Monitoring + polish | 20 | |
 
 **Target end: 2026-08-25** (8 weeks from start, ml-basics first 2 weeks overlap)

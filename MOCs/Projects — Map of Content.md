@@ -10,31 +10,47 @@ status: active
 
 | Project | Share | Hrs/wk | Hrs/day | Start | Target | Weeks |
 |---------|-------|--------|---------|-------|--------|-------|
-| [[Projects/autocade\|AutoCADE — SLD Recreation]] | 40% | ~22 | 3.5-4 | Jun 16 | Aug 18 | 9 |
-| [[Projects/ml-basics\|ML Basics — Python Data Stack]] | * | ~21 | ~3 | Jun 16 | Jun 30 | 2 |
+| [[Projects/autocade\|AutoCADE — SLD Recreation]] | 40% | ~20 | 3-3.5 | Jun 16 | Aug 25 | 10 |
+| [[Projects/ml-basics\|ML Basics — Python Data Stack]] | * | ~21 | 3.5 | Jun 16 | Jun 30 | 2 |
 | [[Projects/ml-pipeline\|ML Pipeline — E2E_ml Build]] | 35% | ~17 | ~3 | Jun 30 | Aug 25 | 8 |
 | [[Projects/rust\|Rust — fcard CLI]] | 25% | ~14 | ~2 | Jun 16 | Aug 4 | 7 |
 
-\* ml-basics is a 2-week prerequisite that shares the daily ML slot with ml-pipeline's first 2 weeks (lighter load there). After basics finish, full ML hours go to pipeline.
+\* ml-basics is a 2-week prerequisite. After it finishes, its 3.5 hrs/day slot reverts to ml-pipeline (3 hrs/day, with buffer).
 
-**Total burn:** ~55 hrs/week (8-10 hrs/day, 6 days)
+**Total burn:** 8-10 hrs/day, 6 days/week
 
 ## Suggested Daily Schedule
 
+**Weeks 1-2 (all 4 active):**
 ```
-Morning:   ML     (3 hrs) — fresh brain for learning
-Mid-day:   EEE    (4 hrs) — focused AutoCAD
-Evening:   Rust   (2 hrs) — winding down
+Morning:   ML basics  (3.5 hrs) — fresh brain for data stack
+Mid-day:   AutoCADE   (3.5 hrs) — focused drawing work
+Evening:   Rust       (2 hrs)  — winding down
+Total: ~9 hrs/day
 ```
 
-After Rust finishes (week 7), its 2 hrs/day split between ML (+1) and EEE (+1).
+**Weeks 3-7 (Rust + AutoCADE + ML pipeline):**
+```
+Morning:   ML pipeline (3 hrs)
+Mid-day:   AutoCADE    (3.5 hrs)
+Evening:   Rust        (2 hrs)
+Total: ~8.5 hrs/day
+```
+
+**Weeks 8-10 (AutoCADE + ML pipeline, Rust finished):**
+```
+Morning:   ML pipeline (3.5 hrs) — more capacity
+Mid-day:   AutoCADE    (3.5-4 hrs) — finishing push
+Total: ~7-8 hrs/day (lighter finish)
+```
 
 ## Phasing
 
-| Jun 16 — Jun 30 | Jul 1 — Aug 4 | Aug 4 — Aug 25 |
-|-----------------|---------------|----------------|
-| All 4 active | Rust + ML + EEE | ML + EEE |
-| ml-basics + ml-pipeline P1 overlap | ml-pipeline P2-P6 | ml-pipeline P7-P8 + EEE finish |
+| Period | Active Projects |
+|--------|-----------------|
+| Jun 16 — Jun 30 | ml-basics + ml-pipeline (P1 only, 12 hrs/wk) + AutoCADE + Rust |
+| Jul 1 — Aug 4 | ml-pipeline (P2-P6) + AutoCADE + Rust |
+| Aug 4 — Aug 25 | ml-pipeline (P7-P8) + AutoCADE (P8-P12) |
 
 ## Principles
 

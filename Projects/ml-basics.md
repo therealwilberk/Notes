@@ -5,7 +5,8 @@ status: planning
 start: 2026-06-16
 target: 2026-06-30
 estimate: 42 hrs over 2 weeks
-pace: ~3 hrs/day (overlaps with ML pipeline project in same daily slot)
+pace: ~21 hrs/week (3.5 hrs/day, 6 days)
+note: increases daily ML slot from 3 to 3.5 hrs — still within 8-10 hr/day total
 ---
 
 # ML Basics — Python Data Stack Refresher

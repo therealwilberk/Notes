@@ -4,8 +4,8 @@ parent: "[[Projects — Map of Content]]"
 status: planning
 start: 2026-06-16
 target: 2026-08-04
-estimate: 100 hrs over 7 weeks
-pace: ~14 hrs/wk (2 hrs/day, 6 days)
+estimate: ~95 hrs over 7 weeks (+ ~7 hrs bat study = ~102 total)
+pace: ~14 hrs/wk (2 hrs/day, 6 days) including bat reading
 share: 25%
 ---
 
@@ -29,10 +29,10 @@ Build the fcard flashcard/SRS tool module by module. Each module adds new concep
 
 Close specific knowledge gaps that M1 assumes you know.
 
-- [ ] **Attributes**: Read a quick intro. `#[derive(Debug, Clone)]` auto-implements traits. `#[test]` marks a test function. `#[cfg(test)]` conditionally compiles test modules. `#[serde(default)]` is a serde-specific attribute. That's 90% of what you'll see.
+- [ ] **Attributes**: `#[derive(Debug, Clone)]` auto-implements traits. `#[test]` marks a test function. `#[cfg(test)]` conditionally compiles test modules. `#[serde(default)]` is a serde-specific attribute. That's 90% of what you'll see.
+- [ ] **Exercise**: Create a new cargo project. Define a struct with `#[derive(Debug, Clone)]`, instantiate it, print it with `{:?}`. Add a `#[test]` function. Wrap it in `#[cfg(test)]`. Compile and run `cargo test`. Takes 15 min.
 - [ ] **External crates 101**: docs.rs — every crate's docs. The `Cargo.toml` `[dependencies]` section. Version specifiers (`"1.0"`, `"0.8"`, `"2"`). How to find what you need.
 - [ ] **Lifetimes primer**: Read `rust-references.md` (it's already in your vault). Focus on the "dangling reference" rule — that's the whole reason lifetimes exist. The `<'a>` syntax tells the compiler "these two references live as long as each other."
-- [ ] **How to study a module README**: Each module tells you exactly what to build. Read the goals first, then the tasks, then the hints if stuck. The difficulty label tells you how much hand-holding to expect.
 
 ---
 

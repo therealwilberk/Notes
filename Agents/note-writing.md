@@ -25,7 +25,7 @@ Dense, actionable. For tools you already understand and need to use fast. Think 
 
 ## Voice & Tone (both flavors)
 
-- **Prefer third-person, instructional.** For teaching notes, first-person is allowed in trap sections ("This tripped me up"). For reference notes, keep third-person throughout.
+- **Prefer third-person, instructional.** For teaching notes, first-person is not allowed! For reference notes, keep third-person throughout.
 - Do not address the reader directly ("you can see", "you should"). Just state facts.
 - Concise, direct. No fluff. No introductions or conclusions.
 - **No emojis.**

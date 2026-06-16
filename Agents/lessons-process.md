@@ -64,26 +64,95 @@ After confirmation:
 
 Add a row for the new topic in the appropriate MOC with status "Complete".
 
-## Exercise Schema Reference
+## Exercise Schema
 
-Exercise modules follow this standardized structure (defined in `note-structure.md`):
+### Directory Layout
 
 ```
 exercises/
-├── README.md              # Index with difficulty key, prerequisites, module overview table
+├── README.md              # Module index (difficulty key, prerequisites, module table)
 ├── module-1/
-│   ├── README.md          # Module instructions with frontmatter
-│   ├── scaffold/          # Starter code (optional)
+│   ├── README.md          # Module instructions (see template below)
+│   ├── scaffold/          # Starter code files (optional)
 │   └── solutions/         # Answer key (optional)
 ├── module-2/
-└── ...
+│   └── ...
+└── module-N/
+    └── ...
 ```
 
-Each module README uses the standardized template: frontmatter → Learning Objectives → New Concepts → Requirements → Hints → Traps → Verification.
+### Module README Template
 
-Supported modes:
-- **learning**: concepts explained inline, guided exercises with hints/traps/verification
-- **project**: requirements-based, builds cumulative project, less hand-holding (e.g., Rust fcard)
+Every module README must follow this structure:
+
+```yaml
+---
+tags: [topic, exercise, module-N]
+parent: "[[Topic MOC]]"
+created: YYYY-MM-DD
+status: draft | in-progress | complete
+difficulty: guided | semi-guided | unguided | capstone | you're-on-your-own
+mode: learning | project
+---
+
+# Module N: Topic Name
+
+## Learning Objectives
+...
+
+## New Concepts
+... (code snippets explaining what you need)
+
+## Requirements / Exercises
+1. ...
+2. ...
+
+## Hints
+...
+
+## Trap: ...
+...
+
+## Verification
+```bash
+...
+```
+```
+
+### Two Exercise Modes
+
+| Mode | When | Style |
+|------|------|-------|
+| **learning** | Fresh on the topic, need hand-holding | Concepts explained inline in the module README. Guided exercises with hints, traps, verification. Scaffold provided. Companion teaching notes exist alongside. |
+| **project** | Building a real project across modules | Requirements-based. Less hand-holding, more discovery. Exercises build cumulatively (e.g., Rust fcard builds one CLI tool across 6 modules). |
+
+### Progressive Build Pattern (ML/Python series example)
+
+For a topic where exercises build on each other (numpy → pandas → sklearn):
+
+1. Each module takes the **output of the previous module** as its starting point
+2. Example: M1 produces a cleaned numpy array → M2 wraps it in a DataFrame, adds datetime → M3 feeds it into a sklearn pipeline
+3. The companion notes (teaching or reference) sit alongside `exercises/` at the topic level
+4. The capstone module is unguided: "build a complete pipeline from raw data to trained model"
+
+### Modularity Rules
+
+- Each module is self-contained in `module-N/`
+- Each module has exactly one `README.md` entry point
+- Difficulty must progress across modules: guided → semi-guided → unguided → capstone
+- Companion notes sit at the topic level alongside `exercises/` (e.g., `py-pandas.md` and `exercises/` are siblings)
+- Scaffold code goes in `module-N/scaffold/`
+- Solutions go in `module-N/solutions/` (optional, skip in learning mode)
+- Topic-level `exercises/README.md` has the difficulty key + module overview table
+
+### Project Hub Note
+
+When working on a real project (e.g., jua-ml in `~/dev/jua-ml`):
+
+- Create a lightweight README at `Research/<Project-Name>/README.md`
+- It links to the repo path, captures architecture decisions and traps encountered
+- Cross-references domain notes via wikilinks (e.g., `[[Notes/ML/Tools/ml-sklearn]]`)
+- The actual code stays in `~/dev/`
 
 ## Git Commits
 

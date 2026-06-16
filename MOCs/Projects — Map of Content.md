@@ -13,7 +13,7 @@ status: active
 | [[Projects/autocade\|AutoCADE — SLD Recreation]] | 40% | ~22 | 3.5-4 | Jun 16 | Aug 18 | 9 |
 | [[Projects/ml-basics\|ML Basics — Python Data Stack]] | * | ~21 | ~3 | Jun 16 | Jun 30 | 2 |
 | [[Projects/ml-pipeline\|ML Pipeline — E2E_ml Build]] | 35% | ~17 | ~3 | Jun 30 | Aug 25 | 8 |
-| [[Projects/rust\|Rust — fcard & Codebase Study]] | 25% | ~14 | ~2 | Jun 16 | Aug 4 | 7 |
+| [[Projects/rust\|Rust — fcard CLI]] | 25% | ~14 | ~2 | Jun 16 | Aug 4 | 7 |
 
 \* ml-basics is a 2-week prerequisite that shares the daily ML slot with ml-pipeline's first 2 weeks (lighter load there). After basics finish, full ML hours go to pipeline.
 

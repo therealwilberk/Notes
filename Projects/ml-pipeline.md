@@ -1,121 +1,113 @@
 ---
-tags: [ml, python, pipeline, project]
+tags: [ml, pipeline, project]
 parent: "[[Projects — Map of Content]]"
 status: planning
-start: 2026-06-16
+start: 2026-06-30
 target: 2026-08-25
-estimate: 185 hrs over 10 weeks
-pace: ~19 hrs/wk (3 hrs/day, 6 days)
-share: 35%
+estimate: 135 hrs over 8 weeks
+pace: ~17 hrs/week (mixed with ml-basics early weeks)
+share: sequenced after ml-basics
 ---
 
-# ML Pipeline — Python Data Stack to E2E Pipeline
+# ML Pipeline — E2E_ml Implementation
 
 ## Scope
 
-Start from the Python data stack (numpy, pandas, matplotlib, sklearn) and build up to a working end-to-end ML pipeline in the E2E_ml codebase. Covers data ingestion, validation, feature engineering, model training, evaluation, tracking, and containerized deployment.
+Build the E2E_ml project from documentation to working code. The docs (`docs/`) and agent blueprints (`Agent/`) at `~/dev/repos/E2E_ml/` define the full spec: ingest → validate → features → train → evaluate → serve → monitor, using DVC, Pandera, Feast, LightGBM, MLflow, FastAPI, and Evidently.
 
-**Codebase:** `~/dev/repos/E2E_ml/`
+This phase starts after the Python data stack refresher (ml-basics) is done. For the first 2 weeks, it shares the daily ML slot with ml-basics — lighter load here until basics finish.
 
-**Target: 10 weeks at ~19 hrs/week** (185 hrs total)
+**Source:** `~/dev/repos/E2E_ml/` (docs + blueprints)
+
+**Target: 8 weeks at ~17 hrs/week** (135 hrs total) — lighter first 2 weeks while ml-basics runs
 
 ---
 
 ## Phase Breakdown
 
-### Phase 1 — Python Data Stack Refresher (30 hrs)
+### Phase 1 — Project Setup (Week 1, ~12 hrs)
 
-**Week 1 — numpy & pandas (15 hrs)**
+Get the repository ready for implementation.
 
-- Rewrite py-numpy exercises from scratch
-- Rewrite py-pandas exercises from scratch
-- Master sensor dataset patterns: rolling, groupby, merge, null handling
-- Write pandas exercise module
+- [ ] Review all Agent/ blueprints and docs/ pages thoroughly
+- [ ] Create src/ package structure (ingest, validate, features, train, evaluate, serve, monitor)
+- [ ] Set up pyproject.toml with all dependencies
+- [ ] Create directories: configs/, tests/, data/, models/, notebooks/, reports/, logs/
+- [ ] .pre-commit-config.yaml with ruff + mypy + nbstripout
+- [ ] .env.example
+- [ ] Makefile with common commands
+- [ ] First uv sync — lockfile clean
 
-**Week 2 — matplotlib, sklearn & first pipeline (15 hrs)**
+### Phase 2 — Data Layer (Week 2, ~15 hrs)
 
-- EDA on a small dataset (sensor/titanic) — matplotlib/seaborn practice
-- sklearn: train/test split, scalers, encoders, Pipeline object
-- Write a barebones end-to-end ML script (no MLOps yet)
-- Rewrite py-matplotlib-seaborn.md if needed
+- [ ] Download UCI dataset (or your chosen dataset)
+- [ ] DVC init + data ingestion script (raw → parquet)
+- [ ] Pandera schemas for raw and processed data
+- [ ] DVC pipeline stage: ingest → validate
+- [ ] Smoke test: dvc repro runs end-to-end
 
-### Phase 2 — MLOps Tooling (60 hrs)
+### Phase 3 — Feature Engineering (Week 3, ~18 hrs)
 
-**Week 3 — MLflow (12 hrs)**
+- [ ] Feature design per docs (lag features, rolling stats, time features, site_type encoding)
+- [ ] Feature engineering module with unit tests
+- [ ] Feast setup: feature_store.yaml, FeatureViews, feature definitions
+- [ ] DVC pipeline stage: engineer features
+- [ ] Point-in-time correctness check (no leakage)
 
-- Experiment tracking, model registry, projects
-- Run 3 experiments with different params, compare in UI
+### Phase 4 — Training Pipeline (Week 4, ~20 hrs)
 
-**Week 4 — Validation & feature stores (20 hrs)**
+- [ ] Hydra config directory: config.yaml with dataset, features, model, training sections
+- [ ] LightGBM training script with MLflow autologging
+- [ ] TimeSeriesSplit cross-validation
+- [ ] Hyperparameter search (Optuna or GridSearch)
+- [ ] DVC pipeline stage: train
+- [ ] Verify: 3 experiments run, compare in MLflow UI
 
-- Pandera: dataframe schema validation
-- Evidently: data drift and model drift reports
-- Feast: feature store basics — definitions, serving
+### Phase 5 — Evaluation & Model Selection (Week 5, ~15 hrs)
 
-**Week 5 — DVC & Hydra (15 hrs)**
+- [ ] Offline evaluation: MAPE by slice (site_type, time period)
+- [ ] Threshold gates: overall < 15%, per-site < 25%, Q4 < 20%
+- [ ] MLflow model registry: register champion model
+- [ ] Shadow deployment script (champion vs challenger comparison)
+- [ ] Evaluation report generation
 
-- DVC: data versioning, pipeline stages, metrics
-- Hydra: hierarchical config, multi-run, composition
+### Phase 6 — Serving (Week 6, ~18 hrs)
 
-**Week 6 — E2E_ml architecture review (13 hrs)**
+- [ ] FastAPI app: /predict endpoint with Pydantic schemas
+- [ ] Load model from MLflow registry (Production stage)
+- [ ] Dockerfile for serving (multi-stage: build → run)
+- [ ] docker-compose: MLflow tracking server + app
+- [ ] Integration test: request → prediction
+- [ ] Health checks, logging (loguru)
 
-- Read docs/ directory thoroughly
-- Read Agent/Guide.md and blueprints
-- Map the architecture — which tools go where
-- Identify what exists vs what needs building
+### Phase 7 — CI/CD & Testing (Week 7, ~17 hrs)
 
-### Phase 3 — E2E Pipeline Build (75 hrs)
+- [ ] Unit tests for each module (pytest, 70%+ coverage)
+- [ ] GitHub Actions: PR workflow (lint + test + smoke infer)
+- [ ] GitHub Actions: Training workflow (full pipeline + gate + registry promotion)
+- [ ] Makefile targets: test, lint, train, serve, all
 
-**Week 7 — Data layer (18 hrs)**
+### Phase 8 — Monitoring & Polish (Week 8, ~20 hrs)
 
-- Pick a dataset (tabular, regression or classification)
-- DVC data ingestion + Pandera validation
-- Feature engineering pipeline
-- Unit tests for transforms
-
-**Week 8 — Training pipeline (20 hrs)**
-
-- sklearn pipeline with Hydra config
-- MLflow tracking integration
-- Evidently monitoring checks
-- Evaluation harness (metrics, plots, thresholds)
-
-**Week 9 — Production pipeline (20 hrs)**
-
-- Model registry via MLflow
-- Inference script / serving endpoint
-- Integration tests
-- Document full pipeline flow
-
-**Week 10 — Polish (17 hrs)**
-
-- Run full pipeline end-to-end
-- Edge cases: missing data, outliers, retraining trigger
-- Project README
-- Vault: document architecture decisions and traps
-
-### Phase 4 — Docker & Deployment (20 hrs — starts final weeks)
-
-- Docker basics: Dockerfile for training + inference
-- docker-compose for full stack
-- Simple API server with health checks
-- Basic monitoring / logging
+- [ ] Evidently drift detection: feature drift (PSI) + performance
+- [ ] Retraining loop: 3-trigger system (time/PSI/perf), non-inferiority gate
+- [ ] Demo: run full pipeline, make a prediction, check monitoring
+- [ ] Project README with architecture diagram
+- [ ] Vault: document architecture decisions, tool choices, traps
 
 ---
 
 ## Weekly Schedule
 
-| Week | Phase | Hrs | Cumulative |
-|------|-------|-----|------------|
-| 1 | P1: numpy + pandas | 19 | 19 |
-| 2 | P1: matplotlib + sklearn, pipeline draft | 19 | 38 |
-| 3 | P2: MLflow | 19 | 57 |
-| 4 | P2: Pandera, Evidently, Feast | 19 | 76 |
-| 5 | P2: DVC + Hydra | 19 | 95 |
-| 6 | P2: E2E_ml architecture review, P4 start (Docker basics) | 19 | 114 |
-| 7 | P3: Data layer, P4: Docker | 19 | 133 |
-| 8 | P3: Training pipeline, P4: Docker | 19 | 152 |
-| 9 | P3: Production pipeline, P4: compose + API | 19 | 171 |
-| 10 | P3: Polish + P4: finish deployment | 14 | 185 |
+| Week | Phase | Hrs | Note |
+|------|-------|-----|------|
+| 1 | P1: Project setup | 12 | Light — ml-basics still running |
+| 2 | P2: Data layer | 15 | ml-basics finishes ~mid-week |
+| 3 | P3: Feature engineering | 18 | |
+| 4 | P4: Training pipeline | 20 | Heaviest phase |
+| 5 | P5: Evaluation | 15 | |
+| 6 | P6: Serving | 18 | |
+| 7 | P7: CI/CD | 17 | |
+| 8 | P8: Monitoring + polish | 20 | |
 
-**Target end: 2026-08-25** (Week 10)
+**Target end: 2026-08-25** (8 weeks from start, ml-basics first 2 weeks overlap)

@@ -6,7 +6,7 @@ created: 2026-06-11
 status: complete
 ---
 
-# L4 -- matplotlib & seaborn
+# matplotlib & seaborn
 
 ## 80/20 Cheat Sheet
 

@@ -1,186 +1,130 @@
 ---
 tags: [autocade, electrical, schematic, project]
-parent: "[[Projects -- Map of Content]]"
+parent: "[[Projects — Map of Content]]"
 status: planning
 start: 2026-06-16
-target: 2026-10-01
-estimate: 14 weeks @ ~10 hrs/wk
+target: 2026-08-18
+estimate: 200 hrs over 9 weeks
+pace: ~22 hrs/wk (3.5-4 hrs/day, 6 days)
+share: 40%
 ---
 
 # AutoCADE — SLD Recreation Project
 
 ## Scope
 
-Recreate an IEC electrical schematic from scratch in AutoCAD, using a source PDF as reference. Goal is not the drawing — it's understanding the system, the standards, and the tool well enough to do original design work by Phase 12.
+Recreate an IEC electrical schematic from scratch in AutoCAD, using a source PDF as reference. Goal is not the drawing — it's understanding the system, the standards, and the tool.
 
 **Source:** `~/Documents/PDFs/IEC-Schematic-Learning-Resource-VER1.1.pdf`
 
-**Total: ~14 weeks at ~10 hrs/week** (140 hrs)
+**Target: 9 weeks at ~22 hrs/week** (200 hrs total)
 
 ---
 
 ## Phase Breakdown
 
-### Phase 1 — Reconnaissance (Weeks 1-2, ~20 hrs)
+### Phase 1 — Reconnaissance (12 hrs)
 
-Don't open AutoCAD. Read the entire schematic package. Build a mental model.
+Don't open AutoCAD. Read the PDF. Build a mental model.
 
-- [ ] Read cover to cover, noting every page type
-- [ ] Identify every major device, motor, relay, PLC module, power source
-- [ ] Create an "Unknowns" page — every symbol, acronym, component you don't understand
-- [ ] Research unknowns one by one
-- [ ] Write a one-page description: what the system does + list of major subsystems
+- Read cover to cover, noting every page type
+- Identify every major device, motor, relay, PLC module, power source
+- Create an "Unknowns" page — every symbol, acronym, component you don't understand
+- Research unknowns one by one
+- Write a one-page description of the system + list of major subsystems
 
-**Deliverable:** One-page system description + unknowns archive
-
----
-
-### Phase 2 — Standards Discovery (Weeks 2-3, ~15 hrs)
+### Phase 2 — Standards Discovery (10 hrs)
 
 Understand how the drawing itself is constructed.
 
-- [ ] Study title blocks, page numbering, wire numbering
-- [ ] Figure out device naming: K1, TOR1, Q1, PLC1 conventions
-- [ ] Understand cross-references between pages
-- [ ] Note coordinate system and symbol conventions
-- [ ] Document every rule you find
+- Study title blocks, page numbering, wire numbering
+- Figure out device naming conventions (K1, TOR1, Q1, PLC1...)
+- Understand cross-references between pages
+- Note coordinate system and symbol conventions
+- Document every rule you find
 
-**Deliverable:** Written drawing rules document
+### Phase 3 — AutoCAD Fundamentals (15 hrs)
 
----
+Only the commands you'll need.
 
-### Phase 3 — AutoCAD Fundamentals (Weeks 3-4, ~15 hrs)
+- Lines, polylines, layers, blocks, attributes
+- Object snaps, copying, mirroring, arrays
+- Text, dimensions, plotting
+- Tiny practice exercises unrelated to the project
 
-Only the commands you'll actually need.
-
-- [ ] Lines, polylines, layers, blocks, attributes
-- [ ] Object snaps, copying, mirroring, arrays
-- [ ] Text, dimensions, plotting
-- [ ] Practice exercises — nothing related to the project
-
-**Deliverable:** Familiarity with essential AutoCAD operations
-
----
-
-### Phase 4 — Symbol Library Construction (Weeks 4-5, ~10 hrs)
+### Phase 4 — Symbol Library Construction (15 hrs)
 
 Build reusable blocks for everything the project needs.
 
-- [ ] Motors, contactors, overload relays
-- [ ] Pushbuttons, selector switches, pilot lights
-- [ ] Terminal blocks, PLC modules, relays
-- [ ] Power supplies, breakers
+- Motors, contactors, overload relays
+- Pushbuttons, selector switches, pilot lights
+- Terminal blocks, PLC modules, relays
+- Power supplies, breakers
 
-**Deliverable:** Clean, reusable symbol library
+### Phase 5 — First Page Recreation (25 hrs)
 
----
+- Pick the simplest page
+- Recreate from scratch — slow, meticulous
+- Compare against original, fix mistakes
+- Do not move on until it's correct
 
-### Phase 5 — First Page Recreation (Weeks 5-6, ~10 hrs)
+### Phase 6 — Repetition & Pattern Recognition (40 hrs)
 
-- [ ] Pick the simplest page
-- [ ] Recreate from scratch
-- [ ] Compare against original, fix mistakes
-- [ ] Do not move on until it's correct
+Heaviest phase. Continue recreating pages one at a time.
 
-**Deliverable:** One correctly recreated page
+- Track time per page — look for acceleration
+- Document repeating patterns vs unique elements
+- First pages will be slow, speed builds as patterns click
 
----
-
-### Phase 6 — Repetition & Pattern Recognition (Weeks 6-8, ~20 hrs)
-
-- [ ] Continue recreating pages one at a time
-- [ ] Track time per page — look for acceleration
-- [ ] Document repeating patterns vs unique elements
-
-**Deliverable:** Growing page collection + pattern list
-
----
-
-### Phase 7 — Subsystem Analysis (Weeks 8-9, ~10 hrs)
+### Phase 7 — Subsystem Analysis (18 hrs)
 
 Stop drawing. Trace signals.
 
-- [ ] Follow signal from pushbutton → relays → PLC → contactor → motor
-- [ ] Trace wire references between pages
-- [ ] Document information flow through the system
+- Follow signal from pushbutton → relays → PLC → contactor → motor
+- Trace wire references between pages
+- Document information flow through the system
 
-**Deliverable:** End-to-end explanation of any major function
+### Phase 8 — Layout Work (18 hrs)
 
----
+- Study device mounting, terminal block organization, panel arrangement
+- Recreate panel layout and front-panel layout
 
-### Phase 8 — Layout Work (Weeks 9-10, ~10 hrs)
+### Phase 9 — Validation (15 hrs)
 
-- [ ] Learn device mounting locations
-- [ ] Study terminal block organization
-- [ ] Understand panel physical arrangement
-- [ ] Recreate panel layout and front-panel layout
+- Check device tags, wire numbers, references, terminal assignments
+- Check symbol consistency, layer usage, spacing, readability
+- Compare against source, fix discrepancies
 
-**Deliverable:** Recreated physical layout drawings
+### Phase 10 — Reconstruction from Memory (8 hrs)
 
----
+- Close the original
+- Recreate one subsystem from memory
+- Note every mistake — each reveals a knowledge gap
 
-### Phase 9 — Validation (Weeks 10-11, ~10 hrs)
+### Phase 11 — Extension (10 hrs)
 
-Review as if you're checking another engineer's work.
+Add something original — motor circuit, PLC input, safety device.
 
-- [ ] Check device tags, wire numbers, references
-- [ ] Check terminal assignments, symbol consistency
-- [ ] Check layer usage, spacing, readability
-- [ ] Compare against source, fix discrepancies
+### Phase 12 — Documentation (14 hrs)
 
-**Deliverable:** Corrected, internally consistent drawing package
-
----
-
-### Phase 10 — Reconstruction from Memory (Week 11, ~5 hrs)
-
-- [ ] Close the original
-- [ ] Recreate one subsystem from memory
-- [ ] Note every mistake — each reveals a knowledge gap
-
-**Deliverable:** List of concepts needing further study
+- Write down what slowed you down, which concepts repeated, which skills mattered
+- Which research sources were useful
+- Write your personal playbook for the next project
 
 ---
 
-### Phase 11 — Extension (Weeks 11-12, ~5 hrs)
+## Weekly Schedule
 
-Add something original:
+| Week | Phases Active | Hrs | Cumulative |
+|------|--------------|-----|------------|
+| 1 | P1 (recon), P2 (standards) | 22 | 22 |
+| 2 | P1 finish, P2 finish, P3 start (AutoCAD basics) | 22 | 44 |
+| 3 | P3 (AutoCAD), P4 start (symbols) | 22 | 66 |
+| 4 | P4 (symbols), P5 start (first page) | 22 | 88 |
+| 5 | P5 (first page) | 22 | 110 |
+| 6 | P5 finish, P6 start (repetition) | 22 | 132 |
+| 7 | P6 (repetition) | 22 | 154 |
+| 8 | P6 finish, P7 (subsystem), P8 start (layout) | 22 | 176 |
+| 9 | P8-12 (layout → validation → memory → extension → docs) | 24 | 200 |
 
-- [ ] Another motor circuit
-- [ ] Another PLC input
-- [ ] Another pilot light or safety device
-
-**Deliverable:** First piece of original design work
-
----
-
-### Phase 12 — Reflection & Documentation (Weeks 12-14, ~10 hrs)
-
-- [ ] Write down what slowed you down
-- [ ] Which concepts appeared repeatedly?
-- [ ] Which AutoCAD skills mattered most?
-- [ ] Which research sources were useful?
-- [ ] Write your personal playbook for the next project
-
-**Deliverable:** Reusable personal process document
-
----
-
-## Weekly Distribution
-
-| Week | Phase(s) | Hours |
-|------|----------|-------|
-| 1-2  | P1: Reconnaissance | 10/wk |
-| 2-3  | P2: Standards | 10/wk |
-| 3-4  | P3: AutoCAD basics | 10/wk |
-| 4-5  | P4: Symbol library | 10/wk |
-| 5-6  | P5: First page | 10/wk |
-| 6-8  | P6: Repetition | 10/wk |
-| 8-9  | P7: Subsystem analysis | 10/wk |
-| 9-10 | P8: Layout | 10/wk |
-| 10-11| P9: Validation | 10/wk |
-| 11   | P10: Memory recon | 5/wk |
-| 11-12| P11: Extension | 5/wk |
-| 12-14| P12: Documentation | 5/wk |
-
-**End date target: 2026-10-01**
+**Target end: 2026-08-18** (Week 9)

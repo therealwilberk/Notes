@@ -1,108 +1,79 @@
 ---
 tags: [rust, project, fcard, cli]
-parent: "[[Projects -- Map of Content]]"
+parent: "[[Projects — Map of Content]]"
 status: planning
 start: 2026-06-16
-target: 2026-08-31
-estimate: 11 weeks @ ~8 hrs/wk
+target: 2026-08-04
+estimate: 100 hrs over 7 weeks
+pace: ~14 hrs/wk (2 hrs/day, 6 days)
+share: 25%
 ---
 
 # Rust — Flashcard CLI & Codebase Study
 
 ## Scope
 
-Two tracks running in parallel:
+Two parallel tracks:
 
-1. **Codebase study** — learn how pros write Rust by reading idiomatic open-source projects
-2. **fcard exercises** — build the CLI flashcard/SRS tool module by module, applying what you learn
+1. **Codebase study** — read idiomatic Rust open-source projects (primary: ripgrep, secondary: just or bat)
+2. **fcard CLI** — build the flashcard/SRS tool module by module, applying what you learn
 
-**Total: ~11 weeks at ~8 hrs/week** (~88 hrs)
+Finishes first (week 7). After that, its 25% redistributes to AutoCADE and ML.
+
+**Target: 7 weeks at ~14 hrs/week** (100 hrs total)
 
 ---
 
-## Codebase Study Track
-
-The recommended codebases for learning idiomatic Rust, ordered from simpler to more complex:
-
-### Primary: `ripgrep` (BurntSushi/ripgrep)
-
-The gold standard. Clean crate structure, excellent trait usage, extensive testing, well-documented. CLI tool (not networking), widely used, actively maintained.
-
-- ~30 crates in workspace, good for learning crate decomposition
-- Heavy use of iterators, traits, error handling patterns
-- Excellent test suite — good example of testing strategy
-- `grep-regex` / `grep-searcher` / `grep-cli` is a good entry point
-
-### Secondary (choose 1 after ripgrep):
-
-- **`just`** (casey/just) — smaller, focused, very clean. Good for seeing minimal Rust done well.
-- **`bat`** (sharkdp/bat) — cat clone. Clean architecture, good use of syntect for syntax highlighting, well-structured.
+## Track A: Codebase Study (~24 hrs)
 
 ### Study Process
 
 For each codebase:
+1. **High-level** (1 hr): README, Cargo.toml, crate structure. What problem, how decomposed?
+2. **Module deep-dive** (2 hrs): Pick one crate/module. Read source. Note patterns, idioms.
+3. **Apply** (1 hr): Write a tiny thing mimicking one pattern you saw.
 
-1. **Day 1 — High-level** (1 hr): Read the README, `Cargo.toml`, crate structure. What problem does it solve? How is it decomposed?
-2. **Day 2 — Module deep-dive** (2 hrs): Pick one crate/module. Read the source. Note patterns, idioms, design decisions.
-3. **Day 3 — Apply** (1 hr): Write a tiny thing that mimics one pattern you saw.
+### Codebases
 
----
+**Primary: ripgrep** (BurntSushi/ripgrep) — the gold standard Rust project. CLI, not networking, clean trait usage, excellent test patterns, active maintenance. ~30 crates.
 
-## fcard Exercise Track
+- Entry points: `grep-cli`, `grep-regex`, `grep-searcher` crates
+- Study: crate decomposition, error handling patterns, iterator design, testing strategy
 
-6 modules, progressive difficulty. See `Notes/Programming/Rust/exercises/README.md` for full details.
+**Secondary (choose 1):**
 
-| Module | Topic | Difficulty | Est. Time |
-|--------|-------|------------|-----------|
-| 1 | Foundation — Data Model & CLI | G → SG | 10 hrs |
-| 2 | Persistence & Errors | G | 8 hrs |
-| 3 | SRS Engine & State Machine | SG | 8 hrs |
-| 4 | Search, Tags & HashMap | U | 6 hrs |
-| 5 | CLI Polish & Stats | U | 6 hrs |
-| 6 | Config & Discovery | U | 8 hrs |
-
-Difficulty key: G = Guided (goals + hints), SG = Semi-guided, U = Unguided (goal only)
+- **just** (casey/just) — command runner. Small, focused, minimal. Good for seeing compact idiomatic Rust.
+- **bat** (sharkdp/bat) — cat clone. Clean, well-structured, good syntect integration.
 
 ---
 
-## Weekly Distribution
+## Track B: fcard Exercises (~76 hrs)
 
-### Track A: Codebase Study (~2 hrs/wk)
+6 modules from `Notes/Programming/Rust/exercises/`.
 
-| Week | Focus |
-|------|-------|
-| 1-2  | ripgrep high-level + grep-cli module |
-| 3-4  | ripgrep deep-dive (grep-regex / search patterns) |
-| 5-6  | ripgrep deep-dive (parallelism, output) |
-| 7-8  | just or bat — secondary codebase |
-| 9-10 | just or bat — deep-dive |
-| 11   | Final reflection: patterns summary |
+| # | Module | Difficulty | Hrs |
+|---|--------|------------|-----|
+| 1 | Foundation — Data Model & CLI | G → SG | 12 |
+| 2 | Persistence & Errors | G | 10 |
+| 3 | SRS Engine & State Machine | SG | 12 |
+| 4 | Search, Tags & HashMap | U | 14 |
+| 5 | CLI Polish & Stats | U | 12 |
+| 6 | Config & Capstone | U | 16 |
 
-### Track B: fcard Exercises (~6 hrs/wk)
+G = guided (goals + hints), SG = semi-guided, U = unguided (goal only)
 
-| Week | Module | Cumulative Hours |
-|------|--------|------------------|
-| 1-2  | M1: Foundation | 20 |
-| 3-4  | M2: Persistence & Errors | 28 |
-| 5-6  | M3: SRS Engine | 36 |
-| 7-8  | M4: Search & Tags | 42 |
-| 9-10 | M5: CLI Polish | 48 |
-| 11   | M6: Config & Capstone | 56 |
+---
 
-### Combined Weekly Schedule
+## Weekly Schedule
 
-| Week | Codebase (2h) | fcard (6h) |
-|------|---------------|------------|
-| 1    | ripgrep intro | M1 start |
-| 2    | grep-cli | M1 finish |
-| 3    | grep-regex | M2 start |
-| 4    | search patterns | M2 finish |
-| 5    | parallelism | M3 start |
-| 6    | output/formatting | M3 finish |
-| 7    | just intro | M4 |
-| 8    | just deep-dive | M4 cont. |
-| 9    | bat intro | M5 |
-| 10   | bat deep-dive | M5 cont. |
-| 11   | Patterns summary | M6 |
+| Week | Codebase | fcard | Hrs |
+|------|----------|-------|-----|
+| 1 | ripgrep — high-level + crate structure | M1 start | 14 |
+| 2 | ripgrep — grep-cli module deep-dive | M1 finish + M2 start | 14 |
+| 3 | ripgrep — grep-regex, search patterns | M2 finish + M3 start | 14 |
+| 4 | ripgrep — parallelism, output formatting | M3 finish + M4 start | 14 |
+| 5 | just or bat — high-level + deep-dive | M4 finish + M5 start | 14 |
+| 6 | just or bat — deep-dive + apply | M5 finish + M6 start | 14 |
+| 7 | Patterns summary — what to carry forward | M6 finish | 16 |
 
-**End date target: 2026-08-31**
+**Target end: 2026-08-04** (Week 7)

@@ -27,7 +27,7 @@ Cross-domain content (e.g., pandas is both Python and ML) lives in its primary d
 | Domain | Subdirectories | Prefix |
 |--------|---------------|--------|
 | `Notes/ML/` | `Concepts/`, `Tools/` | `ml-` |
-| `Notes/Programming/Python/` | `Language/`, `Data/`, `Serving/`, `Tooling/` | `py-` |
+| `Notes/Programming/Python/` | `Python-Hitchhikers-Guide/`, `Data/`, `Serving/`, `Tooling/` | `py-`, `python-hg-` |
 | `Notes/Programming/Docker/` | `exercises/` | `docker-` |
 | `Notes/Programming/Rust/` | `exercises/` | `rust-` |
 | `Notes/EEE/` | — | — |
@@ -42,7 +42,7 @@ MOCs/Python -- Map of Content.md
 Notes/ML/Tools/ml-lightgbm.md
 Notes/ML/Concepts/Class Imbalance.md
 Notes/Programming/Python/Data/py-pandas.md
-Notes/Programming/Python/Language/python-hg-c1-functions-vs-classes.md
+Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-c1-functions-vs-classes.md
 Notes/Programming/Python/Serving/py-fastapi.md
 Notes/Programming/Python/Tooling/py-uv.md
 Notes/Programming/Rust/rust-ownership.md
@@ -87,6 +87,79 @@ exercises: "[[exercises/module-n]]"   # only if exercises exist
 - MOCs go directly in `MOCs/`
 - Exercises go alongside the note file (e.g., `Notes/Programming/Docker/exercises/`)
 - Never create top-level note files outside `Notes/` or `MOCs/`
+
+## Exercise Schema
+
+Exercise modules follow a standardized structure. Two supported modes:
+
+### Directory Layout
+
+```
+exercises/
+├── README.md              # Module index (difficulty key, prerequisites, module table)
+├── module-1/
+│   ├── README.md          # Module instructions (see template below)
+│   ├── scaffold/          # Starter code files (optional)
+│   └── solutions/         # Answer key (optional, avoid in learning mode)
+├── module-2/
+│   └── ...
+└── module-N/
+    └── ...
+```
+
+### Module README Template
+
+```yaml
+---
+tags: [topic, exercise, module-N]
+parent: "[[Topic MOC]]"
+created: YYYY-MM-DD
+status: draft | in-progress | complete
+difficulty: guided | semi-guided | unguided | capstone | you're-on-your-own
+mode: learning | project
+exercises: "[[exercises/module-N]]"
+---
+
+# Module N: Topic Name
+
+## Learning Objectives
+...
+
+## New Concepts
+... (code snippets explaining what you need)
+
+## Requirements / Exercises
+1. ...
+2. ...
+
+## Hints
+...
+
+## Trap: ...
+...
+
+## Verification
+```bash
+...
+```
+```
+
+### Exercise Modes
+
+| Mode | When | Style |
+|------|------|-------|
+| **learning** | Fresh on the topic, need hand-holding | Concepts explained inline. Guided exercises with hints, traps, and verification steps. Scaffold provided. |
+| **project** | Building a real project across modules | Requirements-based. Less hand-holding, more discovery. Exercises build cumulatively (e.g., Rust fcard). |
+
+### Modularity Rules
+
+- Each module is self-contained in `module-N/`
+- Each module has exactly one `README.md` entry point
+- Difficulty must progress across modules: guided → semi-guided → unguided → capstone
+- Companion theory notes sit at the topic level alongside `exercises/` (e.g., `docker-m1-containers.md` and `exercises/` are siblings)
+- Scaffold code goes in `module-N/scaffold/`
+- Solutions go in `module-N/solutions/` (optional, skip in learning mode to encourage effort)
+- Topic-level `exercises/README.md` has the difficulty key + module overview table
 
 ## Git Commits
 

@@ -63,3 +63,10 @@ If the paper is directly relevant to the user's stack, this section is critical:
 - Link to the original source prominently at the top
 - The "How It Applies" section is the most valuable part for future reference
 - If the paper introduces a technique the vault already covers (e.g., PSI drift detection), cross-link: `See [[ml-evidently]] for PSI thresholds`
+
+## Git Commits
+
+After adding a summary, commit with:
+```
+summary: add <Paper/Article Title>
+```

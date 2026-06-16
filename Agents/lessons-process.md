@@ -63,3 +63,32 @@ After confirmation:
 ## Step 6: Update MOC
 
 Add a row for the new topic in the appropriate MOC with status "Complete".
+
+## Exercise Schema Reference
+
+Exercise modules follow this standardized structure (defined in `note-structure.md`):
+
+```
+exercises/
+├── README.md              # Index with difficulty key, prerequisites, module overview table
+├── module-1/
+│   ├── README.md          # Module instructions with frontmatter
+│   ├── scaffold/          # Starter code (optional)
+│   └── solutions/         # Answer key (optional)
+├── module-2/
+└── ...
+```
+
+Each module README uses the standardized template: frontmatter → Learning Objectives → New Concepts → Requirements → Hints → Traps → Verification.
+
+Supported modes:
+- **learning**: concepts explained inline, guided exercises with hints/traps/verification
+- **project**: requirements-based, builds cumulative project, less hand-holding (e.g., Rust fcard)
+
+## Git Commits
+
+After building a curriculum, commit module by module or as a batch:
+```
+curriculum: add <topic> modules M1-M<N>
+curriculum: add <topic> exercises M1-M<N>
+```

@@ -60,3 +60,11 @@ Do:
 parent: "[[Rust -- Map of Content]]"
 See [[rust-slices]] for the range syntax.
 ```
+
+## Git Commits
+
+After writing or editing notes, commit with a message like:
+```
+notes: add <topic> note
+notes: update <topic> with <change>
+```

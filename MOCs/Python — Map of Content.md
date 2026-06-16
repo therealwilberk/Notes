@@ -10,17 +10,17 @@ status: in-progress
 
 Python language fundamentals, data tools, serving, and dev tooling.
 
-## Language
+## Hitchhiker's Guide
 
 | # | Topic | File | Status |
 |---|---|---|---|
-| C1 | Functions vs Classes | [[Notes/Programming/Python/Language/python-hg-c1-functions-vs-classes\|python-hg-c1]] | Complete |
-| C2 | Classes Properly | [[Notes/Programming/Python/Language/python-hg-c2-classes-properly\|python-hg-c2]] | Complete |
-| C3 | Inheritance and When to Avoid It | [[Notes/Programming/Python/Language/python-hg-c3-inheritance\|python-hg-c3]] | Complete |
-| C4 | Dunder Methods | [[Notes/Programming/Python/Language/python-hg-c4-dunder-methods\|python-hg-c4]] | Draft |
-| F1 | Scope | [[Notes/Programming/Python/Language/python-hg-f1-scope\|python-hg-f1]] | Complete |
-| F2 | \*args and \*\*kwargs | [[Notes/Programming/Python/Language/python-hg-f2-args-kwargs\|python-hg-f2]] | Draft |
-| F3 | Decorators | [[Notes/Programming/Python/Language/python-hg-f3-decorators\|python-hg-f3]] | Draft |
+| C1 | Functions vs Classes | [[Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-c1-functions-vs-classes\|python-hg-c1]] | Complete |
+| C2 | Classes Properly | [[Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-c2-classes-properly\|python-hg-c2]] | Complete |
+| C3 | Inheritance and When to Avoid It | [[Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-c3-inheritance\|python-hg-c3]] | Complete |
+| C4 | Dunder Methods | [[Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-c4-dunder-methods\|python-hg-c4]] | Draft |
+| F1 | Scope | [[Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-f1-scope\|python-hg-f1]] | Complete |
+| F2 | \*args and \*\*kwargs | [[Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-f2-args-kwargs\|python-hg-f2]] | Draft |
+| F3 | Decorators | [[Notes/Programming/Python/Python-Hitchhikers-Guide/python-hg-f3-decorators\|python-hg-f3]] | Draft |
 
 ## Data
 

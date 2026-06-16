@@ -62,3 +62,11 @@ Notes for The Rust Book. Compressed, example-heavy, no fluff -- skip the book an
 | R3 | [[Notes/Programming/Rust/rust-slices\|Slices]] | Complete |
 | R4 | [[Notes/Programming/Rust/rust-structs\|Structs & Methods]] | Complete |
 ```
+
+## Git Commits
+
+After every MOC change (new topic, updated links, removed stale rows), commit with a message like:
+```
+moc: add <Topic> MOC
+moc: update <Topic> MOC links
+```

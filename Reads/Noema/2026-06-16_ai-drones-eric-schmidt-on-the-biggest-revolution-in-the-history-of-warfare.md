@@ -1,0 +1,64 @@
+# AI & Drones: Eric Schmidt On The Biggest Revolution In The History Of Warfare
+
+**Source:** Noema  
+**Author:** Eric Schmidt  
+**Date:** 2026-06-16  
+**Link:** https://www.noemamag.com/ai-drones-eric-schmidt-on-the-biggest-revolution-in-the-history-of-warfare
+
+---
+
+Eric Schmidt is the former CEO of Google and the former chairman of the U.S. National Security Commission on Artificial Intelligence (NSCAI). He is now the CEO of Relativity Space, and has been heavily involved in developing AI-powered military drone technology for Ukraine through ventures such as White Stork and Swift Beat. He spoke recently with Noema Editor-in-Chief Nathan Gardels.
+
+**Nathan Gardels:** The wars in Ukraine and with Iran can arguably be considered the first AI and robot wars in human history, involving drone warfare and AI-enabled precision targeting on a massive scale. Given what we've seen so far, how do you envision the battlespace of the future evolving?** **
+
+**Eric Schmidt:** I've now made many trips to Ukraine over the last four years, and what I've seen there has changed my mind about almost everything I thought I knew about how wars are fought. This is the largest revolution in military affairs in history and most Western militaries have not yet absorbed what that means. 
+
+The first thing to understand is that this is no longer a war of _platforms_. It's a war of _systems_. The right unit of analysis isn't the drone or the missile or the launcher. It's the integrated architecture that lets a military see, decide, communicate, strike, survive and update faster than your adversary. 
+
+In the future, the front line will be a new form of the no-man’s land of World War I, as sensors and drones mean that anything that moves can be struck. Second, every weapon will be supported by AI in the system I mentioned. Third, and this is the part I think people are slow to appreciate: In future wars, the humans will go in last, not first. Today the basic order is humans first, with the technology supporting them. In the next war, that principle inverts. You send the robots in first to absorb fire and clear the battlefield. As Bob Work, the former deputy secretary of defense, and my former colleague on the NSCAI, put it: In the future, if the first person through the door is a human and not a robot, we are very stupid people. 
+
+**Gardels:** Will robots and drones eventually replace humans not only in fighting, but also in the life-and-death "kill" decisions themselves?** **
+
+**Schmidt:** No, humans will still play the central role in life-and-death decisions, but we are seeing a rebalancing of the relationship between humans and machines in some of the core elements of modern warfare.  
+
+In March of this year, 96% of Russian casualties were caused by Ukrainian drone units. The drone operator is now the highest-value target on the battlefield — Ukrainians prize killing a Russian drone operator even more than killing a tank. So the pressure to move the human farther from the battlefield is already very real.  
+
+The question then moves into what systems replace the human operator on the battlefield. The future will entail humans "on the loop" of a distributed system, rather than always "in the loop" — supervising, auditing and intervening when something looks wrong, but not necessarily authorizing each individual shot. This is really just the algorithmic form of the delegation down the chain of command that has marked militaries forever. 
+
+There are two factors worth nothing that will drive the development of this. The first is the prevalence of electronic warfare and jamming, as seen in Ukraine. When the link to the operator is cut, and it will be cut, the drone either becomes useless or finishes the engagement on its own, and every serious military is going to choose the second option.  
+
+The second, and this is an important warning, is what I'd call the “asymmetry of restraint” — the dynamic that emerges when two sides have different ideas about how to incorporate AI into the kill chain, and the more permissive side is perceived as having the advantage in conflict. 
+
+Consider the cautionary parallel of poison gas in the First World War. It was a horrific weapon that everyone agreed beforehand should never be used, and once one side used it, the pressure on the other to match became irresistible, regardless of pre-war commitments. We can imagine the same logic playing out here as the natural extension of where the technology is heading. If one side’s drones require human authorization for every shot and the adversary's don't, the more cautious side risks losing and its soldiers dying. History suggests that is not a position democracies are able to hold for long. We should understand that this is the dynamic we risk walking into well before we find ourselves in it. 
+
+> "In the future, the front line will be a new form of the no-man’s land of World War I, as sensors and drones mean that anything that moves can be struck."
+
+**Gardels:** The technologies on display in Ukraine and Iran promise more precise warfare and less collateral damage than the "dumb" wars of the past. But have they actually made war cleaner — or have they just shifted where the destruction happens?** **
+
+**Schmidt:** We are in an era of "precision mass" in warfare. In conflict, you used to have to choose between mass and accuracy. Either you fired a great deal of artillery inaccurately, or you fired a small number of expensive precision-guided weapons accurately. What has changed in the last few years is that cheap drones, cheap GPS and cheap sensors have upended that trade-off. You can now field huge numbers of weapons that each hit exactly what they aim at. The wars in Ukraine and against Iran have shown what this means. 
+
+In Ukraine, FPV [first-person-view] drones in the hands of trained operators have produced minimal collateral damage in the engagements I've seen. The dumb war of mass artillery flattening a city block is far worse than a $500 drone going through a single window. This is the strongest case for the era of precision mass. 
+
+Precision mass also exposes the dangerous vulnerabilities of our globalized world. The Iranians were doing the same thing the Ukrainians are doing — precision mass — but from the opposite end of the equation. They were firing cheap, accurate one-way drones in waves and forcing the U.S. and the Gulf states to defend with expensive missile systems. 
+
+And even when that defense works, it doesn't really. Suppose a combined defense achieves a 97% interception rate against Iranian drones and missiles over the Strait of Hormuz. That sounds like a triumph, and in technical terms it is. But the 3% that gets through is more than enough to sink a tanker in the Strait, hit an oil terminal or take out a data center. And once that happens, the insurance market does the rest of the work for the attacker. Shipping reroutes, premiums spike and energy prices follow. The defense was technically successful and strategically inadequate at the same time. To close that last 3% — to deliver the kind of total survivability the political narrative requires — takes more than we have yet reckoned with. ****
+
+**Gardels:** What limits should be placed on AI's role in the decision chain, particularly when it comes to the command and control of nuclear weapons? Must humans always remain in the loop, and what are the dangers if they are not?** **
+
+**Schmidt:** On nuclear command and control, yes. Nuclear weapons are the one category where the cost of a mistake can be civilization-ending, and where the case for AI-driven speed is weakest. The whole logic of nuclear stability for 70 years has rested on a small number of human beings, in a small number of minutes, having the ability to question what a system is telling them and judge the steps that should be taken. The danger of taking the human out of the loop is not that the machine malfunctions in some science-fiction sense, but that the machine functions exactly as designed, with bad data, and faster than anyone can stop it. 
+
+History already shows the importance of keeping people involved in the decisions around nuclear command and control. For example, in September 1983, a Soviet officer was on duty at an early-warning command center outside Moscow. The Soviet system reported that the United States had launched five intercontinental ballistic missiles. By the rules, [Stanislav] Petrov was supposed to pass the alert up the chain, which would almost certainly have triggered a retaliatory launch. But he didn’t. He judged that a real American first strike would involve hundreds of missiles, not five, and he reported it as a system malfunction. He was right: The satellites had been fooled by sunlight reflecting off cloud tops. Yet an AI optimized for speed may not make that judgment.  
+
+One thing we should also note is that as AI advances and is incorporated into the intelligence process, it can challenge the long-standing foundations of nuclear deterrence. Nuclear strategy has always rested on the assumption of each side having second-strike capabilities. As AI gets better at finding the hidden submarines or mobile launchers, however, that premise disintegrates. Furthermore, the data centers and computer centers that train AI might look like targets in their own right. This is the conversation the United States, China and Russia ought to be having now, in the way the nuclear powers during the Cold War negotiated limits on testing and on certain delivery systems.
+
+> "The danger of taking the human out of the loop is not that the machine malfunctions in some science-fiction sense, but that the machine functions exactly as designed, with bad data, and faster than anyone can stop it."
+
+**Gardels:** Finally, are there any other lessons that stand out to you from how frontier technologies have been used in Ukraine and Iran?** **
+
+**Schmidt:** The arithmetic of warfare is fundamentally changing. The Russians are aiming to produce 1,000 Shahed drones a day to fire against Ukraine, while Lockheed Martin produced 600 Patriot interceptors last year. For all of what AI will do for warfare and the world, that gap has to be filled by investing in our industrial capacity and building the cheaper, abundant systems that have been shown to be so important by the war in Ukraine.  
+
+American military doctrine is still organized around exquisite, expensive platforms designed for a kind of conflict that is no longer the one being fought. A great deal of current military spending is going to systems whose purpose, training pipelines and budgets are built on assumptions Ukraine has already disproven. The institutions have not yet acknowledged that the doctrines and resources no longer match the war they will have to fight. 
+
+As I said at the beginning, this is the greatest revolution in warfare in history. We are at the very beginning of working out what it means, and neither our political leaders nor our militaries have yet caught up with what is coming.
+
+The post [AI & Drones: Eric Schmidt On The Biggest Revolution In The History Of Warfare](https://www.noemamag.com/ai-drones-eric-schmidt-on-the-biggest-revolution-in-the-history-of-warfare) appeared first on [NOEMA](https://www.noemamag.com).

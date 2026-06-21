@@ -19,6 +19,8 @@ status: complete
 | Max T_j (°C) | 150-175 | 200-250 | 150-175 (limited by packaging) |
 | Baliga's FOM (rel. to Si) | 1 | 500-600 | >1000 |
 
+Baliga's Figure of Merit for power switching: $BFOM = \varepsilon \mu E_c^3$ where $\varepsilon$ is the permittivity, $\mu$ is the mobility, and $E_c$ is the critical field. The $E_c^3$ dependence explains the large WBG advantage — SiC's 10$\times$ higher critical field gives a 1000$\times$ FOM improvement.
+
 The critical field advantage is the most important: a 600 V SiC MOSFET requires a drift region that is 10× thinner than a Si MOSFET with the same voltage rating → R_DS(on) is dramatically lower for the same die area.
 
 ## SiC MOSFET Deep Dive
@@ -28,6 +30,10 @@ The critical field advantage is the most important: a 600 V SiC MOSFET requires 
 Vertical DMOS structure (similar to Si MOSFET). The drift region is epitaxial SiC. The gate oxide is the same SiO₂ (this limits the maximum gate voltage to 20-25 V, similar to Si).
 
 **Channel mobility**: SiC MOSFETs have lower channel mobility than Si (~30 cm²/V·s vs 300+ for Si). This creates a "channel resistance" component that dominates at low voltage ratings. At high voltage (>1 kV), the drift resistance dominates and SiC's advantage is clear.
+
+### SiC Module Packaging
+
+High-power SiC modules use DBC (direct bonded copper) substrates, often with active metal brazed (AMB) for better thermal cycling reliability than standard Al$_2$O$_3$ DBC. Die attach: silver sintering (200+ W/m·K) vs solder (50-70 W/m·K) — higher thermal conductivity and higher $T_j$ capability. Wire bonds: aluminum or silver — silver bonds reduce resistance and improve power cycling lifetime.
 
 ### Gate Drive Requirements
 
@@ -44,7 +50,7 @@ Vertical DMOS structure (similar to Si MOSFET). The drift region is epitaxial Si
 
 SiC MOSFETs switch at 10-50 V/ns. In a half-bridge configuration:
 
-When the low-side switch turns off, the high-side switch's gate sees a current through C_GD: I_Miller = C_GD × dV/dt.
+When the low-side switch turns off, the high-side switch's gate sees a current through $C_{GD}$: $I_{Miller} = C_{GD} \cdot \frac{dV}{dt}$.
 
 This current flows through the high-side gate loop impedance — if R_g(high-side) is high, the induced V_GS can exceed V_GS(th), turning on the high-side MOSFET and causing shoot-through.
 
@@ -86,6 +92,10 @@ Lateral device grown on a silicon (or SiC) substrate. The 2DEG channel forms at 
 **Dynamic R_DS(on) — "current collapse"**: Under high-voltage stress, electrons can be trapped in the buffer layer, causing temporary R_DS(on) increase. Modern p-GaN gate structures and carbon-doped buffers have largely eliminated this, but it remains a consideration for reliability testing.
 
 **Gate sensitivity**: Maximum V_GS for e-mode GaN is typically 6-7 V. The threshold is ~1.5 V — very low. The gate driver must have tight voltage regulation and low noise.
+
+### GaN Substrate Options
+
+GaN-on-Si: most common, low cost, 150-200 mm wafers, but limited by CTE mismatch and thermal conductivity of Si (1.5 W/cm·K). GaN-on-SiC: higher thermal conductivity (4.9 W/cm·K for SiC) — used in RF power and high-reliability applications. GaN-on-GaN: native substrate, highest quality, most expensive — used for vertical GaN devices (still R&D).
 
 ### Layout for GaN
 

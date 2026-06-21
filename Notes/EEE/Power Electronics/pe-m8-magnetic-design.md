@@ -30,13 +30,13 @@ The area product A_p = A_e × A_w (core cross-section × winding window area) de
 ### Design Procedure
 
 1. Specify: L, I_DC, ΔI, f_sw, maximum B (ΔB)
-2. Calculate the required energy handling: E = ½ × L × I_pk²
-3. Select core: A_p = (2 × E) / (K_u × B_max × J) — basic form, varies by topology
+2. Calculate the required energy handling: $E = \frac{1}{2} L I_{pk}^2$
+3. Select core: $A_p = \frac{2E}{K_u B_{max} J}$ — basic form, varies by topology
    - K_u = winding fill factor (typically 0.2-0.4)
    - J = current density (3-6 A/mm² for copper, derated for thermal)
-4. Calculate the required turns: N = L × I_pk / (B_max × A_e)
-5. Check ΔB = L × ΔI / (N × A_e) — must be < B_max
-6. Determine air gap: l_g = (N² × μ_0 × A_e) / L — for gapped ferrite designs
+4. Calculate the required turns: $N = \frac{L I_{pk}}{B_{max} A_e}$
+5. Check $\Delta B = \frac{L \Delta I}{N A_e}$ — must be < B_max
+6. Determine air gap: $l_g = \frac{N^2 \mu_0 A_e}{L}$ — for gapped ferrite designs
 7. Select wire gauge: AWG based on current and J, use Litz wire for f_sw > 100 kHz
 
 **Trap**: The area-product method gives a first-pass core estimate. Always verify the design with thermal calculations — the volume-to-surface ratio determines thermal resistance, and a core that fits electrically may overheat thermally.
@@ -45,19 +45,21 @@ The area product A_p = A_e × A_w (core cross-section × winding window area) de
 
 ### Turns Ratio
 
-For a forward converter: N_p / N_s = V_in(min) × D_max / V_out
+For a forward converter: $\frac{N_p}{N_s} = \frac{V_{in(min)} D_{max}}{V_{out}}$
 
-For a flyback: N_p / N_s = (V_in(min) × D_max) / ((V_out + V_diode) × (1-D_max))
+For a flyback: $\frac{N_p}{N_s} = \frac{V_{in(min)} D_{max}}{(V_{out} + V_F)(1 - D_{max})}$
+
+See [[pe-m3-isolated-dc-dc]] for transformer turns ratio constraints by topology.
 
 ### Area-Product for Transformers
 
-A_p = (P_out × 10^4) / (K_f × K_u × B_max × J × f_sw)
+$A_p = \frac{P_{out} \times 10^4}{K_f K_u B_{max} J f_{sw}}$
 
 Where K_f = waveform coefficient (4.0 for square wave, 4.44 for sine wave).
 
 ### Winding Loss
 
-**Skin depth**: δ = √(ρ / (π × μ_0 × μ_r × f)) = 66 / √f (mm for copper)
+**Skin depth**: $\delta = \sqrt{\frac{\rho}{\pi \mu_0 \mu_r f}} = \frac{66}{\sqrt{f}} \text{ mm (copper at 20°C)}$
 
 At 100 kHz: δ ≈ 0.21 mm. For wire diameter > 2δ, current crowds to the outer surface — the effective resistance increases. Use Litz wire (multiple insulated strands of ≤2δ diameter).
 
@@ -69,9 +71,7 @@ Dowell's equations: model the winding layers as equivalent foils and calculate t
 
 ### Core Loss
 
-Steinmetz equation: P_core = K × f^α × B^β
-
-Where K, α, β are material-specific coefficients from the datasheet. For ferrite 3C90: K ≈ 0.25, α ≈ 1.6, β ≈ 2.5-3.0 (varies with frequency and temperature).
+Steinmetz equation: $P_{core} = K f^\alpha \hat{B}^\beta$ where $\hat{B}$ is the peak AC flux density (half the peak-to-peak value, $\hat{B} = \Delta B / 2$). Note: always check the manufacturer's convention — some datasheets specify parameters for $\hat{B}$ (peak) while others use $\Delta B$ (peak-to-peak). For 3C90 ferrite (typical parameters, B in mT, f in kHz): $K \approx 0.25$, $\alpha \approx 1.6$, $\beta \approx 2.7$.
 
 **Improved Steinmetz Equation (ISE)**: accounts for the DC bias of the flux waveform in non-sinusoidal excitation (e.g., flyback inductor). Uses the average dV/dt correction. More accurate for square-wave excitation.
 

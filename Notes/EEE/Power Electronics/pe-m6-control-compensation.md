@@ -38,7 +38,7 @@ The PWM switch model (Vorpérian) further simplifies this — the three-terminal
 | Flyback (CCM) | V_in D/(1-D)² × N | Two poles | Yes |
 | Forward (CCM) | V_in × N × D | Two poles | No |
 
-In all CCM topologies, the output filter creates a double pole at f_0 = 1/(2π√(LC)). The ESR of the output capacitor adds a zero at f_ESR = 1/(2π × C × R_ESR).
+In all CCM topologies, the output filter creates a double pole at $f_0 = \frac{1}{2\pi\sqrt{LC}}$. The ESR of the output capacitor adds a zero at $f_{ESR} = \frac{1}{2\pi C R_{ESR}}$.
 
 **Trap**: In DCM, the control-to-output transfer function reduces to a single pole (the inductor pole disappears) — no RHPZ. This is why DCM converters are easier to stabilize than CCM converters, but the trade-off is higher ripple and lower efficiency.
 
@@ -52,7 +52,7 @@ Audio susceptibility — how well the output rejects input voltage disturbances.
 
 Single pole at origin. Low bandwidth. Rarely used alone — insufficient phase margin for most converters.
 
-G_c(s) = ω_p / s
+$G_c(s) = \frac{\omega_p}{s}$
 
 ### Type II Compensator (PI + one pole)
 
@@ -62,7 +62,7 @@ Good for current-mode control (where the plant has a single dominant pole). Prov
 - One pole at some frequency (reduce high-frequency gain)
 - One zero (phase boost to counteract the pole)
 
-G_c(s) = G_c0 × (1 + s/ω_z) / (s × (1 + s/ω_p))
+$G_c(s) = G_{c0} \frac{1 + s/\omega_z}{s(1 + s/\omega_p)}$
 
 Typical phase boost: up to 90°.
 
@@ -74,7 +74,7 @@ Required for voltage-mode control of CCM converters (double pole at LC resonance
 - Two zeros (placed near or below f_LC to cancel the double pole)
 - Two poles (one at f_ESR, one at f_sw/2 to roll off noise)
 
-G_c(s) = G_c0 × (1 + s/ω_z1)(1 + s/ω_z2) / (s × (1 + s/ω_p1)(1 + s/ω_p2))
+$G_c(s) = G_{c0} \frac{(1 + s/\omega_{z1})(1 + s/\omega_{z2})}{s(1 + s/\omega_{p1})(1 + s/\omega_{p2})}$
 
 Phase boost: up to 180°.
 
@@ -101,7 +101,7 @@ Peak current-mode control (PCMC) replaces the output inductor's dynamics with a 
 
 **Slope compensation is required for D > 50%**: Without slope compensation, the current loop is unstable above 50% duty cycle — subharmonic oscillation at f_sw/2. Add an external ramp to the current sense signal.
 
-The required compensation slope: m_c = m_2 / (1 + D/2) — but commonly set to m_c = m_2/2 (half the inductor current down-slope) for stability across all duty cycles.
+The required compensation slope for stability (per Ridley): $m_c \ge \frac{m_2}{2}$ for all duty cycles. A more precise stability criterion considering the sampling effect: $m_c \ge m_2 \frac{D - 0.5}{1 - D}$ for $D > 0.5$. Below $D = 0.5$, no slope compensation is theoretically required. In practice, slope compensation is often set to $m_c = m_2/2$ to ensure stability across all operating conditions.
 
 **Trap**: Subharmonic oscillation manifests as alternating pulse widths — the current waveform shows every-other-pulse widening. On the output, this appears as increased ripple at f_sw/2. The fix is proper slope compensation.
 
@@ -123,13 +123,17 @@ The plant must be discretized for digital control. Use the Z-transform with the 
 
 ### Digital PID
 
-P(z) = K_p + K_i × T_s / (z-1) + K_d × (z-1) / (T_s × z)
+$P(z) = K_p + K_i \frac{T_s}{z-1} + K_d \frac{z-1}{T_s z}$
 
 Implement in difference equation form:
 
-u[k] = u[k-1] + K_p × (e[k] - e[k-1]) + K_i × T_s × e[k] + K_d / T_s × (e[k] - 2e[k-1] + e[k-2])
+$u[k] = u[k-1] + K_p (e[k] - e[k-1]) + K_i T_s e[k] + \frac{K_d}{T_s} (e[k] - 2e[k-1] + e[k-2])$
 
 **Required**: output clamping (anti-windup), integrator clamping, and initialization handling at startup.
+
+### Feed-Forward Control
+
+Feed-forward control: the duty cycle is pre-computed from the input and output voltages ($D_{ff} = V_{out}/V_{in}$ for buck) and added to the compensator output. This improves transient response because the duty cycle changes immediately when the input voltage changes, without waiting for the feedback loop to respond. Feed-forward compensator: $G_{ff}(s) = \frac{1}{G_{vd}(0)}$ where $G_{vd}(0)$ is the DC gain of $G_{vd}(s)$.
 
 ### Deadbeat Control
 
@@ -144,6 +148,12 @@ One-step-ahead control: the controller is designed to drive the error to zero in
 | Digital power controller (UCD31xx) | Offline SMPS | 100 MHz | 12-bit | 250 ps |
 
 **Trap**: Digital control introduces a computation delay (ADC → compute → PWM update). This delay adds phase lag in the loop — approximately 1-2 switching cycles. At high f_c/f_sw ratios, this delay can significantly reduce the phase margin. Use single-cycle update (update the PWM within the same switching period as the ADC sample) to minimize delay.
+
+## Cross-References
+
+See [[pe-m2-non-isolated-dc-dc]] for buck converter example.
+See [[pe-m7-pwm-modulation]] for how the compensator output feeds the PWM modulator.
+See [[pe-m3-isolated-dc-dc]] for control of LLC and PSFB converters.
 
 ## References
 

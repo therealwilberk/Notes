@@ -12,25 +12,30 @@ status: complete
 
 ### Single-Phase Bridge Rectifier
 
-Four diodes in a full-bridge configuration. Output voltage: V_dc = (2√2/π) × V_ac ≈ 0.9 × V_ac (unfiltered).
+Four diodes in a full-bridge configuration. Output voltage: $V_{dc} = \frac{2\sqrt{2}}{\pi} V_{ac} \approx 0.9 V_{ac}$ (unfiltered).
 
-With a capacitor filter: the output rises to peak (√2 × V_ac) minus diode drops. The diodes conduct only near the voltage peak — pulsed input current causes high THD and low power factor (PF ~0.5-0.6).
+With a capacitor filter: the output rises to peak ($\sqrt{2} V_{ac}$) minus diode drops. The diodes conduct only near the voltage peak — pulsed input current causes high THD and low power factor (PF ~0.5-0.6).
 
 ### Three-Phase Bridge Rectifier
 
-Six diodes. Output voltage: V_dc = (3√2/π) × V_L-L ≈ 1.35 × V_L-L.
+Six diodes. Output voltage: $V_{dc} = \frac{3\sqrt{2}}{\pi} V_{L-L} \approx 1.35 V_{L-L}$.
 
 Lower output ripple than single-phase. The pulsed current is less severe but still causes significant THD (~30%).
 
 ## Thyristor (SCR) Rectifiers
 
-Controlled rectification. The firing angle α controls the average output voltage:
+Controlled rectification. The firing angle $\alpha$ controls the average output voltage. The topology determines the voltage characteristic:
 
-Single-phase: V_dc = (√2 × V_ac / π) × (1 + cos α)
+**Single-phase semi-converter** (one quadrant, freewheeling diode):
+$V_{dc} = \frac{\sqrt{2} V_{ac}}{\pi} (1 + \cos \alpha)$
 
-Three-phase: V_dc = (3√2 × V_L-L / π) × cos α
+**Single-phase fully-controlled bridge** (two quadrant, continuous current):
+$V_{dc} = \frac{2\sqrt{2} V_{ac}}{\pi} \cos \alpha$
 
-**Trap**: At low firing angles, the power factor is poor due to the phase lag between voltage and current fundamental. Six-pulse rectifiers generate 5th, 7th, 11th, 13th... harmonics (6n±1). Use multipulse (12/24 pulse) configurations with phase-shifting transformers to cancel low-order harmonics.
+**Three-phase fully-controlled bridge**:
+$V_{dc} = \frac{3\sqrt{2} V_{L-L}}{\pi} \cos \alpha$
+
+**Trap**: At low firing angles, the power factor is poor due to the phase lag between voltage and current fundamental. Six-pulse rectifiers generate 5th, 7th, 11th, 13th... harmonics ($6n \pm 1$). Use multipulse (12/24 pulse) configurations with phase-shifting transformers to cancel low-order harmonics.
 
 ## Power Factor Correction (PFC)
 
@@ -50,7 +55,7 @@ The most common active PFC topology. A boost converter between the bridge rectif
 1. **Outer voltage loop**: regulates the DC bus voltage (typically 380-400 V DC)
 2. **Inner current loop**: shapes the input current to follow a sinusoidal reference (multiplied by the voltage loop output)
 
-The current reference is: I_ref(t) = V_rectified(t) × V_error / V_rms²
+The current reference is: $I_{ref}(t) = V_{rectified}(t) \frac{V_{error}}{V_{rms}^2}$
 
 ### Operating Modes
 
@@ -60,7 +65,7 @@ The current reference is: I_ref(t) = V_rectified(t) × V_error / V_rms²
 | DCM / BCM | Returns to zero each cycle | Simple control, smaller inductor, higher peak current, good for <300 W |
 | CrCM (Critical) | Boundary between CCM/DCM | Variable frequency, ZVS at switch turn-on, good for 200-400 W |
 
-**Trap**: CCM boost PFC requires a fast recovery diode (or SiC Schottky) in the boost stage — the reverse recovery of a standard diode causes excessive loss and EMI at the switching transition. The boost diode conducts during MOSFET turn-on — snap recovery spikes the switching node.
+**Trap**: CCM boost PFC requires a fast recovery diode (or SiC Schottky — see [[pe-m1-switching-devices]]) in the boost stage — the reverse recovery of a standard diode causes excessive loss and EMI at the switching transition. The boost diode conducts during MOSFET turn-on — snap recovery spikes the switching node.
 
 ### Bridgeless PFC
 
@@ -68,7 +73,7 @@ Removes the input diode bridge — the MOSFET body diodes or additional low-freq
 
 **Topologies**: totem-pole (most common), bidirectional switch, dual-boost. Totem-pole with GaN FETs achieves >98% efficiency at 1 MHz switching.
 
-**Trap**: Totem-pole PFC cannot operate in CCM with standard MOSFETs (body diode reverse recovery causes shoot-through). GaN HEMTs (no body diode) or SiC MOSFETs (fast recovery) are required.
+**Trap**: Totem-pole PFC cannot operate in CCM with standard MOSFETs (body diode reverse recovery causes shoot-through). GaN HEMTs (see [[pe-m1-switching-devices]]) or SiC MOSFETs (see [[pe-m1-switching-devices]]) are required.
 
 ### Vienna Rectifier (Three-Phase)
 
@@ -88,7 +93,7 @@ Three-level, three-phase PFC. Uses a single switch per phase with a bidirectiona
 
 Two or more boost stages operating in parallel with phase-shifted clocks. Reduces input current ripple without increasing per-phase inductor size. Improves thermal distribution.
 
-## Harmonics Standards
+## Harmonics Standards — see [[pe-m13-grid-renewables]] for grid interconnection standards
 
 | Standard | Scope | Key Limits |
 |----------|-------|------------|
@@ -100,7 +105,7 @@ Two or more boost stages operating in parallel with phase-shifted clocks. Reduce
 
 ## Two-Stage vs Single-Stage
 
-**Two-stage**: PFC + downstream DC-DC. Higher efficiency, larger, more expensive. Used for >75 W applications.
+**Two-stage**: PFC + downstream DC-DC or inverter (see [[pe-m5-dc-ac-inverters]]). Higher efficiency, larger, more expensive. Used for >75 W applications.
 
 **Single-stage**: integrates PFC and DC-DC into one converter (e.g., flyback with valley switching). Used for <75 W applications where IEC 61000-3-2 may not apply (some exceptions). Lower efficiency but lower cost.
 

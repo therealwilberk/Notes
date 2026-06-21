@@ -41,13 +41,15 @@ A systematic power supply design proceeds through these stages:
 For each topology, calculate:
 - **Voltage stress**: V_DS(max) = V_in(max) + V_spike (leakage inductance + ringing). Include a derating factor of 0.7-0.8 for silicon, 0.8-0.85 for SiC/GaN.
 - **Current stress**: I_D(rms) and I_D(pk) — determine conduction loss (I²R) and ensure within SOA.
-- **Thermal stress**: P_loss = P_cond + P_sw. The junction temperature T_j = T_amb + R_θJA × P_loss must be < T_j(max).
+- **Thermal stress**: $P_{loss} = P_{cond} + P_{sw}$. The junction temperature $T_j = T_{amb} + R_{\theta JA} P_{loss}$ must be $< T_{j(max)}$.
 
 ### Capacitor Stress
 
 - **Voltage derating**: electrolytic caps at <80% of rated V; ceramic caps lose capacitance with DC bias (some lose 60-80% at rated V) — always check the DC bias curves
 - **Ripple current**: electrolytic caps have ESR-limited ripple current ratings. Exceeding this overheats and dries out the capacitor. Use multiple caps in parallel.
-- **Lifetime**: aluminum electrolytic lifetime halves for every 10°C rise (Arrhenius). For 105°C rated caps: L = L_rated × 2^((T_rated - T_actual)/10).
+- **Lifetime**: aluminum electrolytic lifetime halves for every 10°C rise (Arrhenius). For 105°C rated caps: $L(T) = L_0 \cdot 2^{(T_0 - T)/10}$ where $T_0$ is the rated temperature and $L_0$ is the rated lifetime.
+
+**Trap: ceramic DC bias derating** — ceramic capacitors (X5R, X7R) lose 60-80% of their nominal capacitance when operated near their rated DC voltage. Always derate by using a higher voltage rating (e.g., use 100 V rated ceramic for a 48 V bus) and check the DC bias curves in the datasheet.
 
 ### Inductor / Transformer Stress
 
@@ -78,6 +80,8 @@ The output voltage ramps up gradually (typically 1-10 ms) to prevent inrush curr
 - Digitally ramping the reference voltage (in digital controllers)
 - Switched capacitor soft-start (analog controllers)
 
+**Trap: pre-bias output** — if the converter starts into an output that already has voltage (pre-bias from a parallel supply), the soft-start ramp must start from the pre-bias voltage, not from zero. Otherwise, the output capacitor discharges through the synchronous rectifier, causing reverse current and an OCP trip. Most digital controllers have a pre-bias startup mode that reads the output voltage before starting.
+
 ### Inrush Current Limiting
 
 Without limiting, the input bulk capacitor draws a large current at power-on, tripping upstream breakers. Methods:
@@ -91,21 +95,7 @@ Without limiting, the input bulk capacitor draws a large current at power-on, tr
 
 ## Layout Considerations
 
-### Power Stage Layout
-
-- **Power loop area**: minimize the commutation loop (input cap → switch → output inductor → output cap → return). Each commutation loop generates magnetic field that couples into the control circuitry. Rule: loop inductance < 1 nH per 1 mm of loop perimeter.
-
-- **Gate drive loop**: the gate driver → gate resistor → MOSFET gate → Kelvin source → return to driver must be as small as possible. Long gate loops pick up noise and cause ringing — can destroy the MOSFET gate oxide.
-
-- **Current sense path**: use a Kelvin connection for shunt resistors. The sense traces should route directly to the shunt terminals, not through power plane copper.
-
-- **Thermal via arrays**: place arrays of vias under power components (MOSFETs, diodes) to conduct heat to internal copper planes. Via pitch: 1.0-1.2 mm, via diameter: 0.3-0.5 mm, barrel plating: 1 oz minimum.
-
-### Grounding
-
-- **Power ground / signal ground separation**: the high di/dt return current from the switch must not share a path with the control circuitry's ground reference. Route power ground and signal ground as separate planes, connected at a single point (typically the input capacitor negative terminal).
-
-**Trap**: A common mistake is routing the gate driver return current through the power ground plane. The voltage drop across the power ground impedance creates a voltage spike on the gate driver's ground reference — this differential voltage can exceed the gate-source rating. Always use a separate gate drive return trace to the source of the MOSFET.
+Power stage layout, gate drive loop design, current sensing, thermal vias, and grounding practices are covered in detail in [[pe-m11-thermal-emc-layout]]. The same principles apply to PSU design — refer to that module for specific layout guidance including commutation loop minimization, Kelvin sensing, and ground plane separation.
 
 ## Hold-Up Time
 
@@ -114,9 +104,9 @@ The minimum time the output stays in regulation after input power is removed. Re
 - Industrial PSU: 10-20 ms
 - Telecom: 5-20 ms
 
-Bulk capacitor requirement: C_bulk = 2 × P_out × t_hold / (V_in(min)² - V_in(turn-off)²)
+Bulk capacitor requirement: $C_{bulk} = \frac{2 P_{out} t_{hold}}{V_{in(min)}^2 - V_{in(toff)}^2}$
 
-For a PFC stage with 400 V DC bus and 300 V turn-off: C_bulk = 2 × P_out × t_hold / (400² - 300²) = 2 × P_out × t_hold / 70000.
+For a PFC stage with 400 V DC bus and 300 V turn-off: $C_{bulk} = \frac{2 P_{out} t_{hold}}{400^2 - 300^2} = \frac{2 P_{out} t_{hold}}{70000}$.
 
 ## References
 

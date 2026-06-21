@@ -34,7 +34,7 @@ Adds 1/6 of the third harmonic (at 3× fundamental) to a sinusoidal reference. R
 
 Result: the maximum modulation index increases from 1.0 (SPWM, 78.5% DC utilization) to 1.15 (90.7% DC utilization). Equivalent to SVPWM.
 
-Implementation: v_inj = v_ref + 1/6 × sin(3 × θ). Or simpler: v_inj = v_ref + 1/4 × (v_a - v_c) × (v_c - v_b) — the min-max injection method.
+Implementation: $v_{inj} = v_{ref} + \frac{1}{6} \sin(3\theta)$. Or simpler: $v_{inj} = v_{ref} + \frac{1}{4}(v_a - v_c)(v_c - v_b)$ — the min-max injection method.
 
 ## Space Vector PWM (SVPWM)
 
@@ -43,7 +43,7 @@ The three-phase voltage is represented as a single rotating vector in the αβ-p
 **Implementation**:
 1. Determine the sector (1-6) containing the reference vector V_ref
 2. Calculate dwell times for the two adjacent active vectors (T1, T2) and zero vectors (T0)
-3. T1 = m × sin(60° - θ) × T_sw, T2 = m × sin(θ) × T_sw, T0 = T_sw - T1 - T2
+3. $T_1 = m \sin(60^\circ - \theta) T_{sw}$, $T_2 = m \sin(\theta) T_{sw}$, $T_0 = T_{sw} - T_1 - T_2$
 4. Generate the switching sequence (symmetric: 0-1-2-7-2-1-0 for each sector)
 
 **Advantages over SPWM**:
@@ -88,7 +88,7 @@ Two or more converter phases operating in parallel with phase-shifted clocks. Ap
 
 **Benefits**: reduces net current ripple (ripple cancellation), spreads heat across phases, improves transient response.
 
-Ripple cancellation factor: depends on the number of phases and duty cycle — for 2 phases, optimal at D=0.5; for 3 phases, optimal at D=0.33 and D=0.66.
+Ripple cancellation factor: depends on the number of phases and duty cycle — for 2 phases, optimal at D=0.5; for 3 phases, optimal at D=0.33 and D=0.66. For $N$ interleaved phases at duty cycle $D$, the normalized peak-to-peak ripple cancellation factor is $K = \frac{(N D - m)(m + 1 - N D)}{N D (1 - D)}$ where $m = \lfloor N D \rfloor$. At $K = 0$ full cancellation occurs (e.g., $N=2$, $D=0.5$ gives $K=0$).
 
 ## Spread Spectrum (Frequency Dithering)
 
@@ -108,6 +108,14 @@ Modulating the switching frequency reduces peak EMI at the fundamental switching
 | SVPWM | ~4% | 90.7% | Moderate | Medium | Medium |
 | DPWM | ~6% | 90.7% | Low (33% less) | Medium | Medium |
 | SHE | Very low | Variable | Very low | High | Very high |
+
+## Trap: Deadtime Harmonics
+
+Deadtime insertion creates low-order harmonics in the output voltage, especially at high modulation index. The deadtime voltage error is $V_{err} = \pm t_{dead} \times V_{dc} \times f_{sw} \times \text{sign}(i_{phase})$. Compensation methods include: PWM timing adjustment based on current polarity, or measuring the actual voltage error and adding it to the reference. See [[pe-m5-dc-ac-inverters]] for more detail.
+
+## Trap: Carrier Synchronization in Parallel Converters
+
+Interleaved carriers must be synchronized to achieve ripple cancellation. Without synchronization, interleaving degrades to uncorrelated ripple, and the worst-case ripple is $N \times$ the single-phase ripple.
 
 ## References
 - Mohan, Undeland & Robbins. *Power Electronics*. 3rd ed. Ch 8, 15.

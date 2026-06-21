@@ -27,21 +27,37 @@ Three main types distinguished by reverse recovery behavior:
 Voltage-controlled device. Enhancement-mode N-channel is the standard power switch.
 
 **Key static parameters:**
-- R_DS(on): on-resistance, increases with temperature (positive TC — good for paralleling)
-- V_GS(th): gate threshold, typically 2-4 V
-- B_VDS: breakdown voltage
-- C_iss, C_rss, C_oss: input, reverse transfer (Miller), output capacitances
+- $R_{DS(on)}$: on-resistance, increases with temperature (positive TC — good for paralleling)
+- $V_{GS(th)}$: gate threshold, typically 2-4 V
+- $B_{VDS}$: breakdown voltage
+- $C_{iss}$, $C_{rss}$, $C_{oss}$: input, reverse transfer (Miller), output capacitances
 
 **Switching behavior:**
-- Turn-on: V_GS charges C_iss to V_GS(th) → I_D rises → Miller plateau (V_GS constant, V_DS falls) → ohmic region
-- Turn-off: Miller plateau in reverse, C_iss discharges
-- Switching loss: E_on + E_off = integral of v_DS(t) * i_D(t) over switching interval
+- Turn-on: $V_{GS}$ charges $C_{iss}$ to $V_{GS(th)}$ → $I_D$ rises → Miller plateau ($V_{GS}$ constant, $V_{DS}$ falls) → ohmic region
+- Turn-off: Miller plateau in reverse, $C_{iss}$ discharges
+- Switching loss: $E_{on} + E_{off} = \int v_{DS}(t) \, i_D(t) \, dt$ — see [[pe-m6-control-compensation]] for compensation implications
 
-**Miller effect**: C_rss (C_GD) creates feedback from drain to gate. During the Miller plateau, V_GS is clamped while V_DS changes. High dV/dt at the drain injects current back into the gate circuit — can cause spurious turn-on. Mitigate with low-impedance gate drive and Kelvin-source connection.
+**Miller effect**: $C_{rss}$ ($C_{GD}$) creates feedback from drain to gate. During the Miller plateau, $V_{GS}$ is clamped while $V_{DS}$ changes. High $dV/dt$ at the drain injects current back into the gate circuit — can cause spurious turn-on. Mitigate with low-impedance gate drive and Kelvin-source connection.
 
-**Trap**: MOSFETs can be turned on parasitically by high dV/dt through C_GD. If the gate driver impedance is high, the induced gate voltage may exceed V_GS(th). Use a gate-source resistor (10 kΩ typical) and/or a negative gate drive voltage for SiC.
+**Trap**: MOSFETs can be turned on parasitically by high $dV/dt$ through $C_{GD}$. If the gate driver impedance is high, the induced gate voltage may exceed $V_{GS(th)}$. Use a gate-source resistor (10 kΩ typical) and/or a negative gate drive voltage for SiC.
 
-**Body diode**: integral P-N diode in every power MOSFET. Slow recovery (typically), use external Schottky in parallel if body diode conducts in the topology (e.g., half-bridge).
+**Body diode**: integral P-N diode in every power MOSFET. Slow recovery (typically), use external Schottky in parallel if body diode conducts in the topology (e.g., half-bridge). See [[pe-m5-dc-ac-inverters]] for inverter body diode considerations.
+
+## Superjunction (CoolMOS) MOSFET
+
+Superjunction (SJ) MOSFETs use alternating p-type and n-type columns in the drift region to achieve a 3D charge balance. This allows a higher doping concentration in the drift region for a given breakdown voltage, dramatically reducing $R_{DS(on)}$ compared to planar/standard MOSFETs.
+
+**Key characteristics:**
+- Typical voltage range: 600–900 V
+- $R_{DS(on)}$ ~50–70% lower than planar for the same die size
+- Higher $C_{rss}$ (Miller capacitance) — slower switching than WBG but better than standard MOSFET
+
+**Applications:** PFC stages, LLC converters, and high-end power supplies.
+
+**Key manufacturers:**
+- Infineon — CoolMOS (C7, P7, CFx series)
+- STMicroelectronics — MDmesh (M2, M5, K5 series)
+- OnSemi — SuperFET (FRFET, Easy Drive series)
 
 ## IGBT
 
@@ -49,7 +65,7 @@ Voltage-controlled, minority carrier device. Combines MOSFET gate with BJT outpu
 
 | Characteristic | MOSFET | IGBT |
 |---------------|--------|------|
-| Conduction loss | I² × R_DS(on) — high at high V_BR | V_CE(sat) × I — lower at high voltage |
+| Conduction loss | $I^2 R_{DS(on)}$ — high at high $V_{BR}$ | $V_{CE(sat)} I$ — lower at high voltage |
 | Switching speed | Fast (ns) | Slower — tail current |
 | Tail current | None | Minority carriers must recombine at turn-off |
 | Paralleling | Easy (positive TC) | Harder (positive TC only at high current) |
@@ -59,26 +75,26 @@ Voltage-controlled, minority carrier device. Combines MOSFET gate with BJT outpu
 
 ## SiC MOSFET
 
-Wide bandgap (3.26 eV vs 1.12 eV for Si). Key advantages over silicon MOSFET:
+Wide bandgap (3.26 eV vs 1.12 eV for Si). See [[pe-m12-wide-bandgap]] for a detailed comparison of WBG materials. Key advantages over silicon MOSFET:
 
-- Higher breakdown field (10×) → thinner drift region → lower R_DS(on) for same V_BR
+- Higher breakdown field (10×) → thinner drift region → lower $R_{DS(on)}$ for same $V_{BR}$
 - Higher thermal conductivity (4.9 W/cm·K vs 1.5 W/cm·K)
 - Higher junction temperature rating (200°C+)
-- Lower switching losses — faster dV/dt (up to 50 V/ns)
+- Lower switching losses — faster $dV/dt$ (up to 50 V/ns)
 
 **Gate drive considerations:**
-- V_GS range: typically -5 V to +20 V (check datasheet — tighter than Si MOSFET)
-- Recommended V_GS(on): +15 V to +20 V
-- Recommended V_GS(off): -5 V to -2 V (to prevent dV/dt-induced turn-on)
-- Gate loop inductance must be minimized — ringing on V_GS can destroy the gate oxide
+- $V_{GS}$ range: typically $-5$ V to $+20$ V (check datasheet — tighter than Si MOSFET)
+- Recommended $V_{GS(on)}$: $+15$ V to $+20$ V
+- Recommended $V_{GS(off)}$: $-5$ V to $-2$ V (to prevent $dV/dt$-induced turn-on)
+- Gate loop inductance must be minimized — ringing on $V_{GS}$ can destroy the gate oxide
 
-**Trap**: SiC MOSFETs switch very fast. High dV/dt couples through C_GD to the gate. Without negative gate drive, the Miller current can raise V_GS above threshold and cause shoot-through in a half-bridge. Use a Kelvin-source connection or a dedicated source-sense pin.
+**Trap**: SiC MOSFETs switch very fast. High $dV/dt$ couples through $C_{GD}$ to the gate. Without negative gate drive, the Miller current can raise $V_{GS}$ above threshold and cause shoot-through in a half-bridge. Use a Kelvin-source connection or a dedicated source-sense pin.
 
 ## GaN HEMT
 
-Wide bandgap (3.44 eV). Enhancement-mode (e-mode) GaN HEMTs are normally off, depletion-mode (d-mode) are normally on (require cascode with Si MOSFET).
+Wide bandgap (3.44 eV). See [[pe-m12-wide-bandgap]] for detailed GaN physics and device structure. Enhancement-mode (e-mode) GaN HEMTs are normally off, depletion-mode (d-mode) are normally on (require cascode with Si MOSFET).
 
-**2DEG (2-dimensional electron gas):** forms at the AlGaN/GaN heterojunction interface. Electron mobility >2000 cm²/V·s — nearly 2× Si. No doping required.
+**2DEG (2-dimensional electron gas):** forms at the AlGaN/GaN heterojunction interface. Electron mobility $>2000$ cm²/V·s — nearly 2× Si. No doping required.
 
 **Key differences from Si MOSFET:**
 
@@ -86,19 +102,19 @@ Wide bandgap (3.44 eV). Enhancement-mode (e-mode) GaN HEMTs are normally off, de
 |----------|-----------|------------|----------|
 | Bandgap (eV) | 1.12 | 3.26 | 3.44 |
 | Mobility (cm²/V·s) | 1500 | 900 | 2000+ |
-| V_GS range | ±20 V | -5 to +25 V | -10 to +7 V (e-mode) |
-| Q_g (typical 650 V, 30 A) | ~60 nC | ~45 nC | ~6 nC |
+| $V_{GS}$ range | $\pm 20$ V | $-5$ to $+25$ V | $-10$ to $+7$ V (e-mode) |
+| $Q_g$ (typical 650 V, 30 A) | $\sim 60$ nC | $\sim 45$ nC | $\sim 6$ nC |
 | Reverse recovery | Slow body diode | Fast body diode | No body diode |
-| dV/dt capability | <10 V/ns | <50 V/ns | <150 V/ns |
+| $dV/dt$ capability | $<10$ V/ns | $<50$ V/ns | $<150$ V/ns |
 
-**No body diode**: GaN HEMTs conduct reverse current through the 2DEG channel when V_GS is off — essentially a "reverse conduction" mode with V_SD drop (~2 V). No reverse recovery charge. Deadtime power loss can be higher than Si because of the higher V_SD drop.
+**No body diode**: GaN HEMTs conduct reverse current through the 2DEG channel when $V_{GS}$ is off — essentially a "reverse conduction" mode with $V_{SD}$ drop (~2 V). No reverse recovery charge. Deadtime power loss can be higher than Si because of the higher $V_{SD}$ drop.
 
 **Gate drive is critical**:
-- e-mode GaN: V_GS(max) is typically 6-7 V. A ringing spike above this kills the device.
-- Gate loop inductance must be <1 nH — monolithic integration of driver + GaN FET (e.g., Navitas GaNFast) solves this.
+- e-mode GaN: $V_{GS(max)}$ is typically 6-7 V. A ringing spike above this kills the device.
+- Gate loop inductance must be $<1$ nH — monolithic integration of driver + GaN FET (e.g., Navitas GaNFast) solves this.
 - Use a GaN-specific gate driver with tight voltage regulation.
 
-**Trap**: e-mode GaN HEMTs have a normally off threshold of ~1.5 V. This is low — layout noise can cause false turn-on. Never leave the gate floating. Always use a pulldown resistor (10 kΩ or lower).
+**Trap**: e-mode GaN HEMTs have a normally off threshold of $\sim 1.5$ V. This is low — layout noise can cause false turn-on. Never leave the gate floating. Always use a pulldown resistor (10 kΩ or lower).
 
 ## References
 

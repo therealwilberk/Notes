@@ -10,9 +10,9 @@ status: complete
 
 ## Buck Converter (Step-Down)
 
-Steady-state: V_out = D × V_in (CCM, ideal)
+Steady-state: $V_{out} = D \cdot V_{in}$ (CCM, ideal)
 
-Three states — on-state (switch closed), off-state (switch open, diode conducts), and boundary conditions determine component selection.
+Three states — on-state (switch closed), off-state (switch open, diode conducts), and boundary conditions determine component selection. See [[pe-m1-switching-devices]] for switch characteristics and [[pe-m8-magnetic-design]] for inductor design.
 
 ### CCM vs DCM
 
@@ -20,35 +20,35 @@ Three states — on-state (switch closed), off-state (switch open, diode conduct
 
 **DCM** (Discontinuous Conduction Mode): inductor current hits zero before the next switching cycle. Occurs at light load. Transfer function changes to single-pole — easier compensation but higher ripple and lower efficiency due to increased peak current.
 
-Boundary inductance: L_crit = (1-D) × R_load / (2 × f_sw), where R_load = V_out / I_out.
+Boundary inductance: $L_{crit} = \frac{(1-D)R_{load}}{2 f_{sw}}$, where $R_{load} = V_{out} / I_{out}$.
 
-Below L_crit, the converter enters DCM for that load condition.
+Below $L_{crit}$, the converter enters DCM for that load condition.
 
 ### Output voltage ripple
 
-V_ripple = (ΔI_L × t_off) / (8 × C_out) + ΔI_L × ESR_C
+$V_{ripple} = \frac{\Delta I_L t_{off}}{8 C_{out}} + \Delta I_L \cdot ESR_C$
 
-At high switching frequencies, ESR (and ESL) dominate ripple. Ceramic capacitors with low ESR minimize ripple but can cause instability with some control loops due to low damping.
+At high switching frequencies, $ESR$ (and $ESL$) dominate ripple. Ceramic capacitors with low $ESR$ minimize ripple but can cause instability with some control loops due to low damping.
 
-**Trap**: Using only ceramic output caps (very low ESR) may cause loop instability with Type III compensation. Add a small electrolytic or use a specific "ceramic-capable" controller. Check the ESR zero frequency relative to crossover.
+**Trap**: Using only ceramic output caps (very low $ESR$) may cause loop instability with Type III compensation. Add a small electrolytic or use a specific "ceramic-capable" controller. Check the $ESR$ zero frequency relative to crossover.
 
 ## Boost Converter (Step-Up)
 
-V_out = V_in / (1-D) (CCM, ideal)
+$V_{out} = \frac{V_{in}}{1-D}$ (CCM, ideal)
 
-**Right-half-plane zero**: a unique feature of boost and buck-boost topologies. When the load increases, the inductor current must first increase (temporarily reducing V_out) before the output capacitor recharges. This creates a zero in the RHP — it adds negative phase shift (like a pole) while increasing gain (like a zero). This limits the achievable crossover frequency.
+**Right-half-plane zero**: a unique feature of boost and buck-boost topologies. When the load increases, the inductor current must first increase (temporarily reducing $V_{out}$) before the output capacitor recharges. This creates a zero in the RHP — it adds negative phase shift (like a pole) while increasing gain (like a zero). This limits the achievable crossover frequency.
 
-Control implication: the crossover frequency must be well below the RHP zero frequency, typically f_c < f_RHPZ / 3 to f_RHPZ / 5.
+Control implication: the crossover frequency must be well below the RHP zero frequency, typically $f_c < f_{RHPZ}/3$ to $f_{RHPZ}/5$.
 
-f_RHPZ = R_load × (1-D)² / (2π × L)
+$f_{RHPZ} = \frac{R_{load} (1-D)^2}{2\pi L}$
 
-Higher L pushes the RHPZ lower — there is a trade-off between ripple reduction and control bandwidth.
+Higher $L$ pushes the RHPZ lower — there is a trade-off between ripple reduction and control bandwidth.
 
-**Trap**: In boost converters, the output is disconnected from the input during normal operation, but there is a direct path from input to output through the inductor and diode. If the switch is shorted, V_in appears at the output. If the switch stays on continuously, the inductor saturates and the output collapses. Always include a loss-of-load protection and consider a buck-boost if short-circuit behavior matters.
+**Trap**: In boost converters, the output is disconnected from the input during normal operation, but there is a direct path from input to output through the inductor and diode. If the switch is shorted, $V_{in}$ appears at the output. If the switch stays on continuously, the inductor saturates and the output collapses. Always include a loss-of-load protection and consider a buck-boost if short-circuit behavior matters.
 
 ## Buck-Boost Converter
 
-V_out = -V_in × D / (1-D)
+$V_{out} = -V_{in} \frac{D}{1-D}$
 
 Inverting output. The switch, inductor, and diode form a topology where the inductor is connected to ground through the diode during off-time.
 
@@ -56,7 +56,7 @@ Inverting output. The switch, inductor, and diode form a topology where the indu
 
 ## SEPIC (Single-Ended Primary-Inductor Converter)
 
-V_out = V_in × D / (1-D) — same gain as buck-boost, but non-inverting.
+$V_{out} = V_{in} \frac{D}{1-D}$ — same gain as buck-boost, but non-inverting.
 
 Uses two inductors (or a coupled inductor) and a series capacitor.
 
@@ -66,11 +66,15 @@ Uses two inductors (or a coupled inductor) and a series capacitor.
 
 ## Cuk Converter
 
-V_out = -V_in × D / (1-D) — inverting, like buck-boost.
+$V_{out} = -V_{in} \frac{D}{1-D}$ — inverting, like buck-boost.
 
 Continuous input AND output current — lowest ripple among the basic non-isolated topologies. Uses a series capacitor for energy transfer.
 
 Series capacitor must carry full input current — high ripple rating required. Efficiency is generally lower than SEPIC due to higher conduction losses.
+
+## Zeta Converter
+
+Non-inverting version of Cuk. Same gain as SEPIC ($V_{out} = V_{in} \frac{D}{1-D}$) but with discontinuous input current and continuous output current. Uses a coupled inductor or two inductors with a series capacitor. Less common than SEPIC because the input current is pulsed.
 
 ## Topology Selection Guide
 
@@ -80,7 +84,8 @@ Series capacitor must carry full input current — high ripple rating required. 
 | V_out > V_in | Boost | Needs care with RHPZ and compensation |
 | V_out in/out range | SEPIC | Non-inverting, good for battery apps |
 | V_out < 0 (negative rail) | Buck-boost or Cuk | Cuk has lower ripple |
-| High step-up ratio (>5×) | Boost + coupled inductor | Avoid extreme D ratios |
+| Continuous output current, pulsed input current | Zeta | Non-inverting, coupled inductor needed |
+| High step-up ratio (>5×) | Boost + coupled inductor | Avoid extreme $D$ ratios |
 | Bidirectional | Buck-boost (sync) | Use two switches with synchronous rectification |
 
 ## Steady-State Analysis Procedure (Any Topology)
@@ -93,7 +98,7 @@ Series capacitor must carry full input current — high ripple rating required. 
 
 ## Trap: Duty Cycle Limits
 
-Real switches have minimum on-time and minimum off-time. At very high switching frequencies, these limits cap the achievable conversion ratio. A controller with 100 ns minimum on-time at 2 MHz cannot achieve D < 0.2.
+Real switches have minimum on-time and minimum off-time. At very high switching frequencies, these limits cap the achievable conversion ratio. A controller with 100 ns minimum on-time at 2 MHz cannot achieve $D < 0.2$.
 
 ## References
 - Erickson & Maksimovic. *Fundamentals of Power Electronics*. 3rd ed. Ch 1-6.

@@ -12,17 +12,17 @@ status: complete
 
 ### Conduction Loss
 
-MOSFET: P_cond = I_D(rms)² × R_DS(on) (R_DS(on) is temperature-dependent — use value at expected T_j)
+MOSFET: $P_{cond} = I_{D(rms)}^2 R_{DS(on)}$ ($R_{DS(on)}$ is temperature-dependent — use value at expected $T_j$)
 
-IGBT: P_cond = V_CE(sat) × I_avg (V_CE(sat) is current and temperature dependent)
+IGBT: $P_{cond} = V_{CE(sat)} I_{avg}$ ($V_{CE(sat)}$ is current and temperature dependent)
 
-Diode: P_cond = V_F × I_F(avg)
+Diode: $P_{cond} = V_F I_{F(avg)}$
 
 **Trap**: R_DS(on) roughly doubles from 25°C to 125°C. A MOSFET selected for 10 mΩ at 25°C will be ~20 mΩ at operating temperature. Use the hot value for thermal design.
 
 ### Switching Loss
 
-MOSFET: P_sw = ½ × V_DS × I_D × (t_rise + t_fall) × f_sw — the triangular approximation.
+MOSFET: $P_{sw} = \frac{1}{2} V_{DS} I_D (t_{rise} + t_{fall}) f_{sw}$ — the triangular approximation.
 
 More accurate: E_on + E_off from the datasheet switching energy curves, multiplied by f_sw.
 
@@ -37,13 +37,13 @@ More accurate: E_on + E_off from the datasheet switching energy curves, multipli
 
 ### Core Loss
 
-See [[pe-m8-magnetic-design]] — Steinmetz equation: P_core = K × f^α × ΔB^β.
+See [[pe-m8-magnetic-design]] — Steinmetz equation: $P_{core} = K f^\alpha \hat{B}^\beta$ where $\hat{B}$ is the peak AC flux density (half the peak-to-peak value, $\hat{B} = \Delta B / 2$).
 
 ## Thermal Management
 
 ### Thermal Resistance Model
 
-T_j = T_amb + P_loss × (R_θJC + R_θCS + R_θSA)
+$T_j = T_{amb} + P_{loss} (R_{\theta JC} + R_{\theta CS} + R_{\theta SA})$
 
 Where:
 - R_θJC: junction-to-case (device package)
@@ -87,12 +87,12 @@ Source: switching current harmonics. Propagates through input and output cables.
 EMI filter design procedure:
 1. Measure or estimate the DM and CM noise spectrum (up to 30 MHz)
 2. Determine the required attenuation at the worst-case frequency
-3. Design the filter corner frequency: f_c = f_sw / 10 to f_sw / 5 (for DM)
+3. Design the filter corner frequency: $f_c = f_{sw}/10$ to $f_{sw}/5$ (for DM)
 4. Select X-caps (across L-N, 0.1-1 µF) and Y-caps (L/N to ground, nF range — limited by leakage current standard)
-5. Design the CM choke: L_cm = 1/(2π × f_c)² × C_y
+5. Design the CM choke: $L_{cm} = \frac{1}{(2\pi f_c)^2 C_y}$
 6. Verify that the filter does not resonate with the converter input impedance
 
-**Trap**: An LC filter's output impedance (looking from the converter) can resonate with the converter's negative input impedance — this causes instability. The filter must be damped. Use a damping network (R_d + C_d in parallel with the input) or ensure the filter corner is well below the converter's control crossover frequency.
+**Trap**: An LC filter's output impedance (looking from the converter) can resonate with the converter's negative input impedance — this causes instability. The filter must be damped. Middlebrook stability criterion: $Z_{out(filter)} < Z_{in(converter)}$ at all frequencies. A practical damping approach: add $R_d \approx \sqrt{L_{cm}/C_x}$ in series with $C_d \approx 4 C_x$ across the filter output.
 
 ### Radiated Emissions (30 MHz - 1 GHz)
 

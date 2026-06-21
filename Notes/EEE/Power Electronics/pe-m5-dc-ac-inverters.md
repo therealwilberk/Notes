@@ -55,13 +55,36 @@ Each phase is built from multiple H-bridge cells with isolated DC sources. Most 
 
 **Trap**: Each H-bridge needs its own isolated DC source. This is straightforward for battery systems and solar (each panel has its own DC source) but requires a multi-winding transformer with separate rectifiers for general use.
 
+## Common-Mode Voltage (CMV)
+
+In a three-phase inverter, the common-mode voltage is $V_{CM} = (V_a + V_b + V_c)/3$. This voltage appears between the motor neutral and ground, creating motor bearing currents and conducted EMI.
+
+**Mitigation**:
+- Use DPWM schemes that avoid applying zero vectors (reduces CMV by up to 66% — see AZSPWM in [[pe-m7-pwm-modulation]])
+- Add common-mode chokes on the output
+- Use shielded motor cables with proper grounding
+- Active CMV cancellation circuits
+
+See [[pe-m11-thermal-emc-layout]] for CM choke design.
+
+## Output Filters
+
+### L Filter
+Simple first-order filter. Bulky because the inductance must be large to achieve sufficient attenuation at the switching frequency. Roll-off: -20 dB/decade.
+
+### LCL Filter
+Third-order roll-off (-60 dB/decade) — much smaller magnetics than an L filter for the same attenuation. **Risk**: resonance at $f_{res} = \frac{1}{2\pi}\sqrt{\frac{L_1 + L_2}{L_1 L_2 C_f}}$ requires active or passive damping to prevent instability.
+
+### LC Filter (Standalone Inverters)
+Corner frequency $f_c = 1/(2\pi\sqrt{LC})$ placed well below the switching frequency (typically $f_{sw}/10$ or lower). Used when the inverter operates in standalone mode (no grid connection).
+
 ## Modulation (Overview — see [[pe-m7-pwm-modulation]] for detail)
 
 | Scheme | THD | DC utilization | Complexity |
 |--------|-----|----------------|------------|
 | Square wave | 30-45% | Highest (no loss) | Simplest |
-| Sinusoidal PWM (SPWM) | ~5% | 78.5% (V_out/V_dc = m/2) | Simple |
-| Third harmonic injection | ~4% | 90.7% (V_out/V_dc = m/√3) | Moderate |
+| Sinusoidal PWM (SPWM) | ~5% | 78.5% ($V_{out}/V_{dc} = m/2$) | Simple |
+| Third harmonic injection | ~4% | 90.7% ($V_{out}/V_{dc} = m/\sqrt{3}$) | Moderate |
 | Space vector PWM (SVPWM) | ~4% | 90.7% (same as 3rd harmonic) | Moderate |
 | Selective harmonic elimination (SHE) | Very low | Depends on N | Complex |
 
@@ -73,7 +96,22 @@ Deadtime is required between complementary switch turn-on/turn-off to prevent sh
 - Low-frequency harmonics
 - Reduced fundamental voltage
 
-Compensation: measure current polarity and adjust the PWM timing to compensate for the deadtime voltage error. Most modern motor drive controllers include deadtime compensation.
+Deadtime compensation: the phase current polarity determines the deadtime voltage error polarity. Add or subtract a deadtime correction value (proportional to $t_{dead} \times V_{dc} \times \text{sign}(i_{phase})$) from the PWM duty cycle command. Implemented in the PWM update interrupt before the compare registers are loaded. Most modern motor drive controllers include deadtime compensation.
+
+## Trap: NPC Neutral Point Balancing
+
+In NPC inverters, the neutral point voltage can drift if the upper and lower DC-link capacitors are not equally charged. This unbalance can cause capacitor overvoltage and device destruction.
+
+**Mitigations**:
+- Select redundant switching states in SVPWM to balance the capacitor voltages
+- Inject zero-sequence voltage to shift the neutral point
+- Use a separate active balancing circuit (e.g., buck-boost converter across the DC link)
+
+## Cross-References
+
+See [[pe-m1-switching-devices]] for device selection.
+See [[pe-m10-motor-drives]] for motor drive applications.
+See [[pe-m13-grid-renewables]] for grid-tie inverter designs.
 
 ## References
 

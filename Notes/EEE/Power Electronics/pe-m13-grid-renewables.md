@@ -45,7 +45,7 @@ Perturb the operating voltage and observe the resulting power change. If power i
 
 ### Incremental Conductance (INC)
 
-Compares dI/dV to -I/V. At the MPP, dI/dV = -I/V. Determines whether the operating point is to the left (increase V) or right (decrease V) of the MPP.
+Compares $\frac{dI}{dV}$ to $-\frac{I}{V}$. At the MPP, $\frac{dI}{dV} = -\frac{I}{V}$. Determines whether the operating point is to the left (increase $V$) or right (decrease $V$) of the MPP.
 
 - More accurate than P&O under steady irradiance
 - Does not oscillate in steady state (if the threshold is set properly)
@@ -58,7 +58,7 @@ Compares dI/dV to -I/V. At the MPP, dI/dV = -I/V. Determines whether the operati
 |--------|-------|------------|-------------------|
 | P&O | Moderate | Low | V, I |
 | INC | Moderate | Moderate | V, I |
-| Constant voltage (V_ref = 0.75-0.8 × V_OC) | Fast | Very low | V only (periodic V_OC measurement) |
+| Constant voltage ($V_{ref} = (0.75\text{--}0.8) V_{OC}$) | Fast | Very low | V only (periodic $V_{OC}$ measurement) |
 | Constant current | Fast | Low | I only |
 | Fuzzy logic | Fast | High | V, I (expert knowledge) |
 | Neural network | Very fast | Very high | Irradiance, temperature, V, I (training required) |
@@ -69,7 +69,7 @@ A phase-locked loop synchronizes the inverter output to the grid voltage. The st
 
 **Key parameters**:
 - Bandwidth: typically 10-50 Hz — fast enough to track grid frequency variations, slow enough to reject grid voltage harmonics and noise
-- PI gains tuned for locking time and overshoot
+- PI gains: $K_p = 2\zeta\omega_n$, $K_i = \omega_n^2$, where $\omega_n$ is the natural frequency and $\zeta$ is the damping ratio (typically $\zeta = 0.707$). The PLL bandwidth $f_{bw} \approx \omega_n / 2\pi$
 
 **Trap**: PLL performance under weak grid (high grid impedance) or under distorted grid (high harmonic content) requires additional filtering. A pre-filter (notch at 2× grid frequency) is essential for single-phase PLLs because the 2nd harmonic ripple appears at the Park output. For three-phase, grid voltage imbalance creates 100 Hz ripple — use a notch filter at 100 Hz or decouple the positive and negative sequences.
 
@@ -86,6 +86,19 @@ When the grid disconnects, the inverter must detect the island condition and sto
 - **Impedance measurement**: inject a current perturbation and measure the resulting voltage change — grid impedance increases in an island
 
 **Standards**: IEEE 1547-2018 (US), VDE-AR-N-4105 (Germany), AS/NZS 4777.2 (Australia). Islanding detection + voltage regulation + frequency response + power quality requirements.
+
+## Wind Power Converter Topologies
+
+| Type | Generator | Converter | Power flow | Market share |
+|------|-----------|-----------|------------|--------------|
+| Type 1 | Squirrel cage induction | Soft starter (no full converter) | Fixed speed, unidirectional | Decreasing |
+| Type 2 | Wound rotor induction | Variable rotor resistance (external) | Limited variable speed | Niche |
+| Type 3 (DFIG) | Wound rotor induction | Partial-scale converter (rotor circuit, ~30% of rated power) | Variable speed, bidirectional rotor power | Most common (multi-MW) |
+| Type 4 | Synchronous or induction | Full-scale converter (same architecture as PV) | Full variable speed, bidir | Growing (direct-drive) |
+
+**DFIG**: the partial-scale converter handles ~30% of total power — lower cost and losses than Type 4. Requires multistage gearbox. Grid fault ride-through is more complex than Type 4 because the stator is directly connected to the grid. Crowbar protection (short the rotor windings during faults) is standard.
+
+**Type 4**: full-scale converter decouples the generator from the grid completely — better grid support capability (LVRT, reactive power). Enables direct-drive (gearbox-less) operation with multi-pole synchronous generators.
 
 ## Energy Storage Systems
 
@@ -146,6 +159,13 @@ The microgrid must establish its own voltage and frequency reference. The primar
 | VDE-AR-N 4105 | Germany (low-voltage DER) | 1:1 phase balance, 50% P 1-min ramp, frequency-dependent power reduction |
 | IEC 62109 | PV inverter safety | Clearance/creepage, ground fault protection, arc fault detection |
 | UL 1741 | US inverter safety | Anti-islanding, DC injection, ground fault (SA) |
+
+## Cross-References
+
+See [[pe-m4-ac-dc-pfc]] for bridgeless PFC topology shared with grid-tie inverters.
+See [[pe-m5-dc-ac-inverters]] for inverter topologies used in grid interface.
+See [[pe-m7-pwm-modulation]] for modulation schemes (SVPWM, DPWM) relevant to grid-connected inverters.
+See [[pe-m11-thermal-emc-layout]] for EMC standards and filter design.
 
 ## References
 - Blaabjerg, F. et al. "Power Electronics in Renewable Energy Systems." *IEEE Trans. Power Elec.*, 2006.

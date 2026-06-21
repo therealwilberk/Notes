@@ -35,19 +35,21 @@ PMSMs have sinusoidal back-EMF and distributed windings. FOC provides smooth tor
 
 **Clarke transform**: convert three-phase currents (a, b, c) to a stationary two-axis system (α, β):
 
-```
-i_α = i_a
-i_β = (i_a + 2×i_b) / √3
-```
+$i_\alpha = i_a$
+
+$i_\beta = \frac{i_a + 2 i_b}{\sqrt{3}}$
 
 **Park transform**: rotate the stationary frame to align with the rotor flux:
 
-```
-i_d = i_α × cos(θ) + i_β × sin(θ)
-i_q = -i_α × sin(θ) + i_β × cos(θ)
-```
+$i_d = i_\alpha \cos\theta + i_\beta \sin\theta$
 
-Result: i_q (quadrature) controls torque, i_d (direct) controls flux. For surface-mount PMSM (SPMSM), i_d is set to 0 for maximum torque per ampere (MTPA). For interior PMSM (IPMSM), injecting negative i_d exploits reluctance torque.
+$i_q = -i_\alpha \sin\theta + i_\beta \cos\theta$
+
+Result: $i_q$ (quadrature) controls torque, $i_d$ (direct) controls flux. For surface-mount PMSM (SPMSM), $i_d$ is set to 0 for maximum torque per ampere (MTPA). For interior PMSM (IPMSM), injecting negative $i_d$ exploits reluctance torque. The MTPA trajectory for IPMSM is:
+
+$i_d = \frac{\psi_{pm}}{2(L_q - L_d)} - \sqrt{\frac{\psi_{pm}^2}{4(L_q - L_d)^2} + i_q^2}$
+
+where $\psi_{pm}$ is the permanent magnet flux linkage, $L_d$ and $L_q$ are the d- and q-axis inductances. For SPMSM ($L_d = L_q$), MTPA reduces to $i_d = 0$.
 
 ### Control Structure
 
@@ -62,8 +64,9 @@ Plant: the motor winding is an RL circuit (L_s, R_s). In the dq-frame, the elect
 
 Tune the PI gains for a desired current loop bandwidth f_c (typically f_sw/20):
 
-K_p = 2π × f_c × L_s
-K_i = K_p × R_s / L_s (zero at -R_s/L_s cancels the plant pole)
+$K_p = 2\pi f_c L_s$
+
+$K_i = K_p \frac{R_s}{L_s}$ (zero at $-R_s/L_s$ cancels the plant pole)
 
 ### Sensorless FOC
 
@@ -91,7 +94,7 @@ Keep the V/f ratio constant to maintain constant flux. Simple, open-loop, adequa
 
 **Rotor flux orientation (RFO-FOC)**: align the d-axis with the rotor flux vector. The slip frequency is injected to maintain rotor flux orientation:
 
-ω_slip = R_r × i_q / (L_r × i_d)
+$\omega_{slip} = \frac{R_r i_q}{L_r i_d}$
 
 Slower than PMSM FOC (the rotor flux has a time constant τ_r = L_r / R_r). Flux estimation requires a model of the rotor circuit.
 
@@ -132,6 +135,12 @@ Automotive traction drives (EV/HEV) have specific requirements:
 - **Safety**: ASIL-D functional safety (ISO 26262), galvanic isolation, redundant sensors
 
 **Trap**: 800 V bus traction inverters require careful consideration of partial discharge and clearance/creepage distances in the motor windings. Standard insulation systems designed for 400 V may fail at 800 V. Motor rewinding or custom insulation is required.
+
+## Cross-References
+
+See [[pe-m1-switching-devices]] for SiC/GaN device selection for traction inverters.
+See [[pe-m12-wide-bandgap]] for 800 V bus SiC deep dive.
+See [[pe-m5-dc-ac-inverters]] for inverter topology reference.
 
 ## References
 - Mohan, N. *Advanced Electric Drives: Analysis, Control, and Modeling Using MATLAB/Simulink*. Wiley, 2014.

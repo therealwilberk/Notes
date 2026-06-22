@@ -1,0 +1,56 @@
+# Necessary Losses: The Life-Shaping Art of Letting Go
+
+**Source:** The Marginalian  
+**Author:** Maria Popova  
+**Date:** 2026-06-18  
+**Link:** https://www.themarginalian.org/2026/06/18/necessary-losses/
+
+---
+
+[![Necessary Losses: The Life-Shaping Art of Letting Go](https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2023/11/necessarylosses_vrost.jpg?fit=320%2C487&ssl=1)](https://www.amazon.com/Necessary-Losses-Dependencies-Impossible-Expectations/dp/0684844958/?tag=braipick-20)
+
+"The art of losing isn't hard to master," Elizabeth Bishop wrote in [one of the great masterpieces of poetry](https://www.themarginalian.org/2021/01/31/elizabeth-bishop-one-art/). "Every mortal loss is an Immortal Gain," William Blake wrote two centuries before her in his [beautiful letter to a bereaved father](https://www.themarginalian.org/2022/07/16/william-blake-loss-letter/). 
+
+We dream of immortality because we are creatures made of loss -- the death of the individual is what ensured the survival of the species along the evolutionary vector of adaptation -- and made for loss: All of our creativity, all of our compulsive productivity, all of our poems and our space telescopes, are but a coping mechanism for our mortality, for the elemental knowledge that we will lose everything and everyone we cherish as we inevitably return our borrowed stardust to the universe. 
+
+And yet the measure of life, the meaning of it, may be precisely what we make of our losses -- how we turn the dust of disappointment and dissolution into clay for creation and self-creation, how we make of loss a reason to love more fully and live more deeply. 
+
+[![](https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2017/12/tree_by_MariaPopova.jpg?resize=680%2C680&ssl=1)](https://society6.com/product/brokenhearted-by-maria-popova_print?curator=brainpicker)"Broken/hearted" by Maria Popova. (Available [as a print](https://society6.com/product/brokenhearted-by-maria-popova_print?curator=brainpicker).)
+
+That is what **Judith Viorst** explores in her 1987 consolation of a book [**_Necessary Losses_**](https://www.amazon.com/Necessary-Losses-Dependencies-Impossible-Expectations/dp/0684844958/?tag=braipick-20) ([_public library_](https://search.worldcat.org/title/51541788)) -- an inquiry into the profound and far-reaching relationship between our losses and our gains, revealing renunciation as a fulcrum of growth. She paints the vast landscape of loss upon which life plays out:
+
+> When we think of loss we think of the loss, through death, of people we love. But loss is a far more encompassing theme in our life. For we lose not only through death, but also by leaving and being left, by changing and letting go and moving on. And our losses include not only our separations and departures from those we love, but our conscious and unconscious losses of romantic dreams, impossible expectations, illusions of freedom and power, illusions of safety -- and the loss of our own younger self, the self that thought it always would be unwrinkled and invulnerable and immortal.
+> 
+> […]
+> 
+> These necessary losses… we confront when we are confronted by the inescapable fact… that we are essentially out here on our own; that we will have to accept -- in other people and ourselves -- the mingling of love with hate, of the good with the bad;… that there are flaws in every human connection; that our status on this planet is implacably impermanent; and that we are utterly powerless to offer ourselves or those we love protection -- protection from danger and pain, from the in-roads of time, from the coming of age, from the coming of death; protection from our necessary losses.
+> 
+> These losses are a part of life -- universal, unavoidable, inexorable. And these losses are necessary because we grow by losing and leaving and letting go.
+
+As a sculpture is shaped by what is chiseled off from the block of stone, so too are we shaped by what we lose -- by choice, with all the complexities and difficulties of letting go, or by the scythe of chance, which takes away as impartially as it gives. Viorst writes:
+
+> The road to human development is paved with renunciation. Throughout our life we grow by giving up. We give up some of our deepest attachments to others. We give up certain cherished parts of ourselves. We must confront, in the dreams we dream, as well as in our intimate relationships, all that we never will have and never will be. Passionate investment leaves us vulnerable to loss. And sometimes, no matter how clever we are, we must lose… It is only through our losses that we become fully developed human beings.
+
+[![](https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2021/12/beforeigrewup6-scaled.jpg)](https://www.themarginalian.org/2021/12/16/before-i-grew-up-miller-cucco/)Art by Giuliano Cucco from [_Before I Grew Up_](https://www.themarginalian.org/2021/12/16/before-i-grew-up-miller-cucco/) -- a soulful illustrated elegy for loss and our search for light
+
+We enter the realm of loss the moment the umbilical cord is cut to sever what Viorst calls the "blurred-boundary bliss of mother-child oneness" -- the primal loss that sets off [the ongoing task of becoming ourselves](https://www.themarginalian.org/2022/09/10/jane-ellen-harrison-crabbed-age-and-youth-alpha-and-omega/). From this origin point, she traces the lifelong vector of losses and gains:
+
+> Exchanging the illusion of absolute shelter and absolute safety for the triumphant anxieties of standing alone… we become a moral, responsible, adult self, discovering -- within the limitations imposed by necessity -- our freedoms and choices. And in giving up our impossible expectations, we become a lovingly connected self, renouncing ideal visions of perfect friendship, marriage, children, family life for the sweet imperfections of all-too-human relationships. And in confronting the many losses that are brought by time and death, we become a mourning and adapting self, finding at every stage -- until we draw our final breath -- opportunities for creative transformations.
+
+In a sentiment the poet Mark Doty would echo -- "you need to both remember where love leads and love anyway," he wrote in [his beautiful reckoning with love and loss](https://www.themarginalian.org/2021/09/26/whitman-love-death-doty/) -- she adds:
+
+> We cannot deeply love anything without becoming vulnerable to loss. And we cannot become separate people, responsible people, connected people, reflective people without some losing and leaving and letting go.
+
+Complement [**_Necessary Losses_**](https://www.amazon.com/Necessary-Losses-Dependencies-Impossible-Expectations/dp/0684844958/?tag=braipick-20), which goes on to explore the many regions of loss in human life and how they can become frontiers of growth, with Hannah Arendt on [learning how to live with the fundamental fear of loss](https://www.themarginalian.org/2019/02/25/love-and-saint-augustine-hannah-arendt/), Thoreau on [living through a loss](https://www.themarginalian.org/2023/03/01/thoreau-grief/), and Alan Watts on [learning not to think of gain and loss](https://www.themarginalian.org/2015/11/06/alan-watts-swimming-headless/), then explore two uncommon lenses on loss: [fractals](https://www.themarginalian.org/2021/11/10/geometry-of-grief-michael-frame/) and [chlorophyll](https://www.themarginalian.org/2021/10/26/why-leaves-change-color/).
+
+* * *
+
+### donating = loving
+
+For seventeen years, I have been spending hundreds of hours and thousands of dollars each month composing _The Marginalian_ (which [bore the outgrown name _Brain Pickings_](https://www.themarginalian.org/2021/10/22/brain-pickings-becoming-the-marginalian/) for its first fifteen years). It has remained free and ad-free and alive thanks to patronage from readers. I have no staff, no interns, no assistant — a thoroughly one-woman labor of love that is also my life and my livelihood. If this labor makes your own life more livable in any way, please consider lending a helping hand with a [donation](https://www.themarginalian.org/donate/). Your support makes all the difference.
+
+* * *
+
+### newsletter
+
+_The Marginalian_ has a free weekly newsletter. It comes out on Sundays and offers the week’s most inspiring reading. Here’s [what to expect](https://mailchi.mp/brainpickings/janna-levin-rebecca-elson-anne-lamott-james-gleick). Like? [Sign up.](https://www.themarginalian.org/newsletter/)

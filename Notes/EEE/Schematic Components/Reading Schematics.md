@@ -274,3 +274,76 @@ These aren't homework — they're the kind of question that'll come up naturally
 - How will you represent parent/child cross-references in AutoCAD Electrical specifically — does it auto-generate page/location cross-refs, or do you need to place them manually? Worth checking the AutoCAD Electrical docs for "PLC I/O" and "component cross-referencing" features specifically, since this drawing leans on that heavily.
 - Your Savanna House SLD project is a single-line diagram, not a full control schematic — at what point does it need this level of control-circuit detail (if at all), versus staying at the power-distribution level this set's page 2 represents?
 
+---
+
+## 11. Phase 2 Deliverable — Drawing Construction Rules
+
+This section is the "rules" document specifically — how the drawing *itself* is built, independent of what any individual circuit does. Treat everything below as confirmed for **this** drawing set only; the closing caveat at the end matters as much as the rules themselves.
+
+### 11.1 Title block fields
+
+Every page carries the same fixed set of fields, bottom-right or bottom-center:
+
+| Field | Purpose |
+|-------|---------|
+| Page Title | What this specific page covers (e.g. "Incoming Supply & DOL Power") — lets you find a page without opening it |
+| Project / Client | Identifies which job this belongs to — matters once you have more than one project's drawings in front of you |
+| Drawing | Drawing standard/type note (here: "IEC Drawing") |
+| Drawing No. | A unique identifier for *this drawing set*, separate from page number — page number changes per page, drawing number doesn't |
+| Creator | Who drew it — accountability/contact trail |
+| Created / Edited dates | Two separate dates, not one — "Created" never changes, "Edited" updates every revision. The gap between them tells you how actively a drawing set is still being worked on |
+| Scale | Matters on the physical layout pages (Front Panel, Back Plate) where real dimensions are drawn to scale; meaningless on schematic pages, which are logical, not physical |
+| Page X of Y | Confirms you have a complete set — if Y doesn't match the actual page count you have, pages are missing |
+
+**Rule:** the title block is metadata about the *document*, not the *circuit*. If you ever can't find what a page is about, read the title block before reading the schematic.
+
+### 11.2 Page numbering & Table of Contents
+
+- Page order is **functionally grouped**, not arbitrary: legend → incoming power → DOL motor circuits → VFD/heater/control power → PLC modules (in I/O-address order) → physical layout drawings → terminal/wiring schedules → BOM. This ordering itself is a convention worth relying on: expect *power first, control logic in the middle, physical/mechanical layout near the end, parts list last* on most industrial control sets, not just this one.
+- The TOC carries a **Revision** column (blank in this sample, since it's a single-revision teaching document). In a live project, each page can be revised independently — a change to one page doesn't require renumbering or reprinting the whole set, only that page's revision letter/number increments. **Rule:** never assume a multi-page drawing set is internally consistent across revisions unless you check that every page you're relying on is the same revision level — a real panel can have page 4 at Rev C while page 9 is still at Rev A if updates were issued piecemeal.
+
+### 11.3 Device designator letters (reference designations)
+
+| Letter | Device class (as used in *this* drawing) |
+|--------|---|
+| Q | Circuit breaker / disconnect / motor protective switch |
+| K | Contactor or relay used for motor/power switching (including safety relays K5/K6) |
+| R | General-purpose control relay (heaters, brake, solenoid, mode-select) |
+| TOR | Thermal overload relay |
+| M | Motor |
+| H | Heater |
+| F | Fuse |
+| PS | Power supply |
+| PB | Push button |
+| PL | Pilot light |
+| SS | Selector switch |
+| ES | Emergency stop device |
+| TC | Temperature controller |
+| TO | Thermocouple (note: distinct from "TC" — easy to confuse, drawing distinguishes them deliberately) |
+| Y | Solenoid/actuator |
+| PLC | Programmable logic controller |
+| INV | Inverter / VFD |
+| LS | Limit switch |
+| X / TB | Terminal block (TB = the physical strip, X-prefixed numbers = individual terminal points on it, e.g. `X2-13`) |
+
+**Important caveat, stated plainly because it'll bite you otherwise:** these letters are *this drawing's* convention, not a universal law. The formal standard governing reference designations is **IEC 61346**, and it doesn't map letter-for-letter onto what's used here (for example, the formal standard's letter for heating elements and for indicator lamps differs from the more intuitive H/PL choices made in this teaching set). Real drawings you encounter later — especially from different consultants, countries, or eras — may use different letters for the same device class. **The rule that actually transfers is: always check the legend/symbol page first, every single time, and never assume a letter means the same thing on a new drawing set just because it meant that here.**
+
+### 11.4 Cross-reference & coordinate system — restated as a rule, not a description
+
+- Grid: letters down the side, numbers across the top. Coordinate `1.E7` = page 1, location E7.
+- Cross-reference format: `/page.location` next to a component means *this same reference designator continues at that page/location*. Always written as a small annotation directly beside the symbol it applies to, never as a separate note elsewhere on the page.
+- **Rule for multi-instance designators:** when a single reference designator (e.g. K1) has multiple cross-references listed together (e.g. `/2.D4`, `/5.H1`, `/5.C2` all next to one coil symbol), each one points to a *different* part of that same device — coil, one set of contacts, another set of contacts. Count the cross-references to know how many other places on the drawing set you need to check before you've seen the whole device.
+
+### 11.5 Symbol & wire convention summary (consolidated from Section 5, restated as flat rules)
+
+1. Wire numbers increment at every new segment (split point), not at every terminal.
+2. Wire numbers do **not** change passing through a terminal block — terminal = connection point, not a new segment.
+3. 3-phase line designations (`1L1, 1L2, 1L3`) increment as a full triplet at each new segment (`2L1, 2L2, 2L3`, etc.) — single-phase wires don't follow this triplet pattern.
+4. Contact terminal numbers encode pole and type: tens digit = pole number, units digit pattern (1-2 = NC, 3-4 = NO) = contact type.
+5. Wire color encodes which "world" a wire belongs to (power/control/earth) before you even read its number — check color before number when scanning quickly.
+
+### 11.6 What's still open after Phase 2
+
+Two things worth resolving before you call this "done," since they came up but weren't fully nailed down:
+- Confirm the exact terminal layout of any safety module (or similarly complex device) you rely on in your own AutoCAD work by reading the actual manufacturer wiring diagram, not by inferring from a single drawing's instance of it — we saw firsthand how easy it is to misread spatial layout from a flattened source.
+- Decide, before you draw your own first sheet, which of the above rules you're **adopting as your own house standard** versus which you're treating as "specific to drawings I read, not drawings I produce." That decision belongs at the start of Phase 3, not mid-drawing.

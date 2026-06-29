@@ -91,22 +91,88 @@ The cable must also be harmonised with the method: if the selected cross-section
 
 ## Step 4 — Apply Correction Factors
 
-Published Iz tables assume ideal conditions (30 °C air, 20 °C ground, single circuit, no thermal insulation). Real installations differ.
+The current-carrying capacity (Iz) in IEC tables is determined under reference conditions. Real installations almost never match those conditions, so the cable is derated (or occasionally uprated) using correction factors:
 
-Common correction factors:
+```
+Iz = Itable × k₁ × k₂ × k₃ × k₄ × ...
+```
 
-- **Ambient temperature (k₁):** Hotter environments reduce Iz. A 30 °C-rated cable in a 45 °C ambient might carry only 0.79 of its tabulated value.
-- **Grouping (k₂):** Multiple cables in proximity reduce heat dissipation. For 5 circuits bunched, the factor might be 0.60–0.70.
-- **Thermal insulation (k₃):** A cable buried in insulation has drastically reduced heat loss.
-- **Burial depth and soil thermal resistivity (for buried cables).**
+where Itable is the value from the IEC ampacity tables and each k accounts for one real-world condition.
 
-Example:
-- Table Iz = 57 A (method C, 10 mm² copper PVC)
-- Ambient factor = 0.91
-- Grouping factor = 0.80
-- Corrected Iz = 57 × 0.91 × 0.80 ≈ 41.5 A
+### k₁ — Ambient Temperature
 
-The cable did not become smaller — it carries less safely under those conditions.
+The tables assume 30 °C in air and 20 °C underground.
+
+If a cable runs through a ceiling space at 45 °C, a PVC cable is already warmer before any current flows. Typical correction for 45 °C ambient with PVC insulation: k₁ ≈ 0.82.
+
+```
+Table ampacity = 37 A (4 mm² Cu PVC, method C)
+Ambient factor  = 0.82
+Corrected       = 37 × 0.82 ≈ 30.3 A
+```
+
+The cable effectively becomes a 30 A cable under those conditions.
+
+### k₂ — Thermal Insulation
+
+When a cable is buried in thermal insulation, heat cannot escape. Two identical cables differ only in their cooling:
+
+- Cable A — clipped to a wall surface: heat escapes into the air.
+- Cable B — buried in fibreglass insulation: heat is trapped.
+
+The cable itself has not changed. Its cooling has. A typical factor for a cable in thermal insulation is k₂ ≈ 0.70.
+
+### k₃ — Soil Thermal Resistivity (Buried Cables Only)
+
+The soil acts as the cable's heatsink. Wet soil conducts heat away effectively; dry sand traps it. The IEC tables assume a soil thermal resistivity of 2.5 K·m/W. When the actual soil differs, a correction factor is applied.
+
+| Soil Condition | k₃   |
+|----------------|-----:|
+| Very wet       | 1.21 |
+| Wet            | 1.13 |
+| Damp           | 1.05 |
+| Standard (ref) | 1.00 |
+| Very dry       | 0.86 |
+
+A factor above 1.00 means the soil cools better than the reference, so permissible current increases. A factor below 1.00 means poorer cooling and a lower current rating.
+
+### k₄ — Grouping
+
+One of the largest derating factors. A single cable dumps heat into the surrounding air. Six cables touching each other create mutual heating — each cable heats its neighbours, and the middle cables become the hottest.
+
+The grouping factor depends on:
+
+- Number of circuits
+- Spacing between cables
+- Installation method (tray, conduit, free air, buried)
+- Whether cables are touching or separated
+
+For five circuits bunched, k₄ might be 0.60–0.70.
+
+### Worked Example — All Factors Combined
+
+Initial table value:
+
+```
+Iz = 37 A (4 mm² Cu PVC, method C)
+```
+
+Apply sequentially:
+
+| Factor | Value | Cumulative Iz |
+|--------|------:|--------------:|
+| Table  | —     | 37.0 A |
+| k₁ (ambient 45 °C) | 0.82 | 30.3 A |
+| k₂ (thermal insulation) | 0.70 | 21.2 A |
+| k₄ (grouping) | 0.80 | 17.0 A |
+
+```
+37 × 0.82 × 0.70 × 0.80 ≈ 17.0 A
+```
+
+A cable that looked adequate from the table alone is no longer suitable because the installation conditions are much harsher than the reference.
+
+Two identical 4 mm² cables can legitimately have current ratings from roughly 20 A to over 40 A depending entirely on where and how they are installed — not because the copper changed, but because the thermal environment did.
 
 ## Step 5 — Select the Smallest Cable Satisfying IB ≤ In ≤ Iz
 

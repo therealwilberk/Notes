@@ -109,6 +109,12 @@ In practice: switchgear at the service entrance or transformer secondary feeds s
 
 These technologies reduce incident energy, limit arc flash damage, and improve safety without sacrificing selective coordination during normal operation.
 
+## See Also
+
+- [[Notes/EEE/LV/cable-sizing-methodology]] — complete cable sizing workflow from IB to short-circuit check
+- [[Notes/EEE/LV/cable-sizing-protection-coordination]] — IB, In, Iz, I₂ coordination rules
+- [[Notes/EEE/LV/cable-sizing-adiabatic]] — short-circuit withstand verification (I²t = k²S²)
+
 ## References
 
 - Eaton. *Low-voltage switchgear fundamentals.* (Technical content only; vendor-specific sales content discarded)

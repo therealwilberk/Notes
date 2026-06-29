@@ -8,6 +8,8 @@ status: complete
 
 # Earth Electrodes and Measurement
 
+See [[Notes/EEE/Earthing/earthing-electrode-installation]] for practical installation guidance and measurement procedures.
+
 ## What an Earth Electrode Does
 
 The earth electrode is the physical interface between the electrical system and the general mass of earth. It provides:

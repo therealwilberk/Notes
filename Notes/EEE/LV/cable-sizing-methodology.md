@@ -193,9 +193,42 @@ Cable sizing is iterative: start with a tentative cross-section, look up its Iz 
 
 ## Step 6 — Check Voltage Drop
 
-Ampacity compliance does not guarantee acceptable voltage at the load.
+Ampacity compliance does not guarantee acceptable voltage at the load. Ampacity answers: can the cable carry the current without overheating? Voltage drop answers: will the load still receive sufficient voltage to operate correctly? A cable can pass the first and fail the second.
 
-Permitted voltage drop (typical): 3 % for lighting circuits, 5 % for power circuits (values vary by national standard).
+Every cable has resistance (and AC impedance). As current flows, V_drop = I × Z (or approximately I × R for short LV circuits). The cable consumes part of the supply voltage:
+
+```
+Distribution board
+230 V
+ │
+ │  Cable (voltage lost)
+ ▼
+Load
+221 V
+```
+
+### Why Voltage Drop Matters
+
+A resistive load (heater, oven, kettle) receiving 219 V instead of 230 V still works — it produces slightly less power. A motor receiving 360 V instead of 400 V develops less torque, draws more current, runs hotter, and may fail to start under load. Voltage drop is therefore not just an efficiency concern — it affects equipment performance.
+
+### IEC Limits
+
+| Supply Type | Lighting | Other Loads |
+|-------------|--------:|-----------:|
+| Public LV supply | 3 % | 5 % |
+| Private LV supply | 6 % | 8 % |
+
+These percentages are measured from the origin of the installation to the load under normal operating conditions. They do not apply during motor starting or other temporary events.
+
+Lighting receives a tighter limit because humans notice voltage reduction visually. A 3 % drop on a 230 V circuit (6.9 V) can produce visibly dimmer lamps, particularly with older lighting technologies.
+
+Power circuits allow 5 % because most resistive loads (water heaters, ovens, toasters) are insensitive. The appliance simply produces slightly less power.
+
+### Why 8 % Is Not Recommended for Motors
+
+If a private installation allows 8 % steady-state drop, a 400 V motor sees 368 V during normal operation. At startup, motors draw 5–7× rated current. Since voltage drop is proportional to current, the starting drop becomes approximately 48 %, leaving only about 208 V at the motor terminals. The motor may not produce enough starting torque, remain stalled, and draw high current until the overload protection trips. The guide recommends staying well below the maximum 8 % where motor loads are involved.
+
+### Voltage Drop Calculation
 
 Voltage drop approximation for three-phase:
 
@@ -203,7 +236,42 @@ Voltage drop approximation for three-phase:
 ΔU = √3 × IB × (R cos φ + X sin φ) × L
 ```
 
-For a 6 mm² cable, 250 m long, 30 A load, the voltage drop may exceed limits even though the thermal rating is adequate. If it does, increase the cable size regardless of the thermal check.
+For single-phase:
+
+```
+ΔU = 2 × IB × (R cos φ + X sin φ) × L
+```
+
+Where R and X are the cable resistance and reactance per unit length, and L is the cable length.
+
+### Worked Example
+
+An 8 kW oven on a 230 V supply:
+
+- IB = 35 A
+- Cable length = 60 m
+- 6 mm² copper, PVC
+
+Calculated voltage drop: 15 V.
+
+```
+Percentage = 15 / 230 × 100 ≈ 6.5 %
+```
+
+Power circuit limit = 5 %. The cable fails the voltage drop check despite being thermally adequate (Iz = 47 A > 35 A).
+
+Solution: increase to 10 mm². The larger conductor has lower resistance, reducing the voltage drop to within the limit.
+
+### Distance as the Limiting Factor
+
+| Distance | Likely limiting factor |
+|--------:|------------------------|
+| 5 m | Ampacity |
+| 20 m | Usually ampacity |
+| 80 m | Often voltage drop |
+| 200 m | Almost certainly voltage drop |
+
+Long cable runs can force a larger conductor even though the current is modest. This explains why a house might have a 10 mm² cable feeding only a 30 A load — the driver is distance, not current.
 
 ## Step 7 — Check Short-Circuit Withstand (Adiabatic)
 
@@ -218,6 +286,8 @@ A cable may carry 30 A continuously and have acceptable voltage drop but still f
 - Increase the cable cross-section S
 - Choose a faster protective device (lower t)
 - Use a current-limiting device
+
+Correctly sized: the cable passes all four checks. Cable sizing is iterative — a cable that satisfies ampacity may fail voltage drop, requiring the next larger size.
 
 ## Interpreting the Current-Carrying Tables
 
@@ -254,4 +324,6 @@ Cable sizing is fundamentally a thermal problem with electrical constraints. The
 - IEC 60364-4-44. *Protection against voltage disturbances and electromagnetic disturbances.*
 - Schneider Electric. *Electrical Installation Guide.* Chapter G: Sizing and protection of conductors. [[source]](https://www.electrical-installation.org/enwiki/General_method_for_cable_sizing)
 - Schneider Electric. *Conductor sizing: methodology and definition.* [[source]](https://www.electrical-installation.org/enwiki/Conductor_sizing:_methodology_and_definition)
+- Schneider Electric. *Maximum voltage drop limit.* [[source]](https://www.electrical-installation.org/enwiki/Maximum_voltage_drop_limit)
+- Schneider Electric. *Quality of supply voltage.* [[source]](https://www.electrical-installation.org/enwiki/Quality_of_supply_voltage)
 - BS 7671. *Requirements for Electrical Installations (IET Wiring Regulations).* Appendix 4.
